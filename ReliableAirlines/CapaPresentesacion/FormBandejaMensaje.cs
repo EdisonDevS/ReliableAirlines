@@ -21,5 +21,10 @@ namespace CapaPresentesacion
         {
 
         }
+
+        private void FormBandejaMensaje_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
