@@ -13,7 +13,7 @@ namespace CapaDatos
     class CD_Conexion
     {
 
-        SqlConnection Conexion = new SqlConnection("Data Source=<Nombre del servidor>; Initial catalog = <Nombre de la DB>; Integrated Security = True");
+        SqlConnection Conexion = new SqlConnection("Data Source = <Nombre del servidor>; Initial catalog = <Nombre de la DB>; Integrated Security = True");
 
         public SqlConnection AbrirConexion()
         {
