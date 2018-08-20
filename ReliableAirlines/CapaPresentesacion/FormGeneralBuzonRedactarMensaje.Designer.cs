@@ -33,7 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDestinatario = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -87,13 +87,13 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Cuerpo:";
             // 
-            // textBox3
+            // txtDestinatario
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox3.Location = new System.Drawing.Point(145, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(269, 31);
-            this.textBox3.TabIndex = 7;
+            this.txtDestinatario.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtDestinatario.Location = new System.Drawing.Point(145, 81);
+            this.txtDestinatario.Name = "txtDestinatario";
+            this.txtDestinatario.Size = new System.Drawing.Size(269, 31);
+            this.txtDestinatario.TabIndex = 7;
             // 
             // button3
             // 
@@ -116,7 +116,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(984, 655);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDestinatario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox1);
@@ -137,7 +137,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDestinatario;
         private System.Windows.Forms.Button button3;
     }
 }

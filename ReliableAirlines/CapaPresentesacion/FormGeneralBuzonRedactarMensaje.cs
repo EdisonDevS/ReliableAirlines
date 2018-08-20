@@ -12,6 +12,12 @@ namespace CapaPresentesacion
 {
     public partial class FormGeneralBuzonRedactarMensaje : Form
     {
+        public FormGeneralBuzonRedactarMensaje(string destinatario)
+        {
+            InitializeComponent();
+            this.txtDestinatario.Text = destinatario;
+        }
+
         public FormGeneralBuzonRedactarMensaje()
         {
             InitializeComponent();
