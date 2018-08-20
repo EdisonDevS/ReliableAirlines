@@ -39,6 +39,7 @@ namespace CapaPresentesacion
             btnAdministración.BackColor = Color.FromArgb(23, 185, 120);
             btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
             btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
+            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
         }
 
         private void btnContabilidad_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace CapaPresentesacion
             btnContabilidad.BackColor = Color.FromArgb(23, 185, 120);
             btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
             btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
+            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
         }
 
         private void btnEstadistica_Click(object sender, EventArgs e)
@@ -56,6 +58,15 @@ namespace CapaPresentesacion
             btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
             btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
             btnEstadistica.BackColor = Color.FromArgb(23, 185, 120);
+            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
+        }
+
+        private void btnMiCuenta_Click(object sender, EventArgs e)
+        {
+            btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
+            btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
+            btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
+            btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);
         }
     }
 }

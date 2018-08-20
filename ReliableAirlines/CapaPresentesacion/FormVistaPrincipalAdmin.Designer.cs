@@ -32,7 +32,7 @@
             this.panelLateral = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnMiCuenta = new System.Windows.Forms.Button();
             this.btnEstadistica = new System.Windows.Forms.Button();
             this.btnContabilidad = new System.Windows.Forms.Button();
             this.btnAdministración = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.panelLateral.Controls.Add(this.label1);
             this.panelLateral.Controls.Add(this.pictureBox1);
-            this.panelLateral.Controls.Add(this.button3);
+            this.panelLateral.Controls.Add(this.btnMiCuenta);
             this.panelLateral.Controls.Add(this.btnEstadistica);
             this.panelLateral.Controls.Add(this.btnContabilidad);
             this.panelLateral.Controls.Add(this.btnAdministración);
@@ -79,22 +79,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnMiCuenta
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 559);
-            this.button3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(278, 55);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Mi cuenta";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMiCuenta.FlatAppearance.BorderSize = 0;
+            this.btnMiCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMiCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMiCuenta.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMiCuenta.ForeColor = System.Drawing.Color.White;
+            this.btnMiCuenta.Image = ((System.Drawing.Image)(resources.GetObject("btnMiCuenta.Image")));
+            this.btnMiCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMiCuenta.Location = new System.Drawing.Point(0, 559);
+            this.btnMiCuenta.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnMiCuenta.Name = "btnMiCuenta";
+            this.btnMiCuenta.Size = new System.Drawing.Size(278, 55);
+            this.btnMiCuenta.TabIndex = 4;
+            this.btnMiCuenta.Text = "Mi cuenta";
+            this.btnMiCuenta.UseVisualStyleBackColor = true;
+            this.btnMiCuenta.Click += new System.EventHandler(this.btnMiCuenta_Click);
             // 
             // btnEstadistica
             // 
@@ -209,7 +210,7 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lblRuta;
         private System.Windows.Forms.Panel panelSuperior;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMiCuenta;
         private System.Windows.Forms.Button btnEstadistica;
         private System.Windows.Forms.Button btnContabilidad;
         private System.Windows.Forms.Label label1;
