@@ -181,7 +181,7 @@
             this.pnlActivoAeronave.TabIndex = 17;
             this.pnlActivoAeronave.Visible = false;
             // 
-            // Administracion
+            // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +199,7 @@
             this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnNomina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Administracion";
+            this.Name = "FormAdmin";
             this.Text = "Administracion";
             this.Load += new System.EventHandler(this.Administracion_Load);
             this.ResumeLayout(false);
