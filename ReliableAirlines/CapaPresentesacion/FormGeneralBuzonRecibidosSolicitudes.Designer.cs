@@ -61,6 +61,7 @@
             this.rbSugerencia.TabStop = true;
             this.rbSugerencia.Text = "Sugerencia";
             this.rbSugerencia.UseVisualStyleBackColor = true;
+            this.rbSugerencia.CheckedChanged += new System.EventHandler(this.rbSugerencia_CheckedChanged);
             // 
             // rbRenuncia
             // 
@@ -74,6 +75,7 @@
             this.rbRenuncia.TabStop = true;
             this.rbRenuncia.Text = "Denuncia";
             this.rbRenuncia.UseVisualStyleBackColor = true;
+            this.rbRenuncia.CheckedChanged += new System.EventHandler(this.rbRenuncia_CheckedChanged);
             // 
             // rbConsulta
             // 
@@ -87,6 +89,7 @@
             this.rbConsulta.TabStop = true;
             this.rbConsulta.Text = "Consulta";
             this.rbConsulta.UseVisualStyleBackColor = true;
+            this.rbConsulta.CheckedChanged += new System.EventHandler(this.rbConsulta_CheckedChanged);
             // 
             // rbReclamo
             // 
@@ -100,6 +103,7 @@
             this.rbReclamo.TabStop = true;
             this.rbReclamo.Text = "Reclamo";
             this.rbReclamo.UseVisualStyleBackColor = true;
+            this.rbReclamo.CheckedChanged += new System.EventHandler(this.rbReclamo_CheckedChanged);
             // 
             // rbQueja
             // 
@@ -113,6 +117,7 @@
             this.rbQueja.TabStop = true;
             this.rbQueja.Text = "Queja";
             this.rbQueja.UseVisualStyleBackColor = true;
+            this.rbQueja.CheckedChanged += new System.EventHandler(this.rbQueja_CheckedChanged);
             // 
             // rbPrestamo
             // 
@@ -126,6 +131,7 @@
             this.rbPrestamo.TabStop = true;
             this.rbPrestamo.Text = "Préstamo";
             this.rbPrestamo.UseVisualStyleBackColor = true;
+            this.rbPrestamo.CheckedChanged += new System.EventHandler(this.rbPrestamo_CheckedChanged);
             // 
             // rbIncapacidad
             // 
@@ -139,6 +145,7 @@
             this.rbIncapacidad.TabStop = true;
             this.rbIncapacidad.Text = "Incapacidad";
             this.rbIncapacidad.UseVisualStyleBackColor = true;
+            this.rbIncapacidad.CheckedChanged += new System.EventHandler(this.rbIncapacidad_CheckedChanged);
             // 
             // rbReembolso
             // 

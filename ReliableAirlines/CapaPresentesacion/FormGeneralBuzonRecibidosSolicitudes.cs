@@ -32,7 +32,42 @@ namespace CapaPresentesacion
 
         private void rbReembolso_CheckedChanged(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar());//en el constructor se manda el tipo
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("reembolso"));//en el constructor se manda el tipo
+        }
+
+        private void rbRenuncia_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("denuncia"));
+        }
+
+        private void rbSugerencia_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("sugerencia"));
+        }
+
+        private void rbQueja_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("queja"));
+        }
+
+        private void rbReclamo_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("reclamo"));
+        }
+
+        private void rbConsulta_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("consulta"));
+        }
+
+        private void rbIncapacidad_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("incapacidad"));
+        }
+
+        private void rbPrestamo_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRecibidosSolicitudesGargar("prestamo"));
         }
     }
 }

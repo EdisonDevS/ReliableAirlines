@@ -118,6 +118,12 @@
     <Compile Include="FormGeneralBuzonRecibidosSolicitudesGargar.Designer.cs">
       <DependentUpon>FormGeneralBuzonRecibidosSolicitudesGargar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeneralBuzonRedactarMensaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudesGargar.resx">
       <DependentUpon>FormGeneralBuzonRecibidosSolicitudesGargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.resx">
+      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRedactarMensaje.resx">
       <DependentUpon>FormGeneralBuzonRedactarMensaje.cs</DependentUpon>

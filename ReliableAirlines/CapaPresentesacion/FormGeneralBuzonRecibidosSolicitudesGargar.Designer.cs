@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnVerSeleccionado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,19 +41,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(920, 277);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button3
+            // btnVerSeleccionado
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(774, 295);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 56);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Ver Seleccionado";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnVerSeleccionado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVerSeleccionado.FlatAppearance.BorderSize = 0;
+            this.btnVerSeleccionado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerSeleccionado.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerSeleccionado.ForeColor = System.Drawing.Color.White;
+            this.btnVerSeleccionado.Location = new System.Drawing.Point(774, 295);
+            this.btnVerSeleccionado.Name = "btnVerSeleccionado";
+            this.btnVerSeleccionado.Size = new System.Drawing.Size(158, 56);
+            this.btnVerSeleccionado.TabIndex = 31;
+            this.btnVerSeleccionado.Text = "Ver Seleccionado";
+            this.btnVerSeleccionado.UseVisualStyleBackColor = false;
+            this.btnVerSeleccionado.Click += new System.EventHandler(this.btnVerSeleccionado_Click);
             // 
             // FormGeneralBuzonRecibidosSolicitudesGargar
             // 
@@ -61,7 +62,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(944, 363);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnVerSeleccionado);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGeneralBuzonRecibidosSolicitudesGargar";
@@ -74,6 +75,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnVerSeleccionado;
     }
 }
