@@ -28,7 +28,10 @@ namespace CapaPresentesacion
                     FormGeneralBuzonRecibidosSolicitudGargarReembolso reembolso = new FormGeneralBuzonRecibidosSolicitudGargarReembolso();
                     reembolso.Show();
                     break;
-                //poner default para los otros
+                default:
+                    FormGeneralBuzonRecibidosSolicitudGargarOtras otras = new FormGeneralBuzonRecibidosSolicitudGargarOtras();
+                    otras.Show();
+                    break;
             }
         }
     }
