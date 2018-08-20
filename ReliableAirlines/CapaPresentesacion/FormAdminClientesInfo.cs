@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormAdminClientes : Form
+    public partial class FormAdminClientesInfo : Form
     {
-        public FormAdminClientes()
+        public FormAdminClientesInfo()
         {
             InitializeComponent();
-        }
-
-        private void btnVer_Click(object sender, EventArgs e)
-        {
-            FormAdminClientesInfo info = new FormAdminClientesInfo();
-            info.Show();
         }
     }
 }

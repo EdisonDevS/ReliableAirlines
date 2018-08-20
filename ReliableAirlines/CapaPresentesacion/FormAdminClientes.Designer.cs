@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVer = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnVer
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(198, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 28);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Ver";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnVer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVer.FlatAppearance.BorderSize = 0;
+            this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVer.ForeColor = System.Drawing.Color.White;
+            this.btnVer.Location = new System.Drawing.Point(198, 111);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(88, 28);
+            this.btnVer.TabIndex = 52;
+            this.btnVer.Text = "Ver";
+            this.btnVer.UseVisualStyleBackColor = false;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
             // textBox1
             // 
@@ -71,7 +72,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 203);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnVer);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -84,7 +85,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label16;
     }
