@@ -16,5 +16,11 @@ namespace CapaPresentesacion
         {
             InitializeComponent();
         }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            FormContabilidadGeneralEstadistica estadistica = new FormContabilidadGeneralEstadistica();
+            estadistica.Show();
+        }
     }
 }

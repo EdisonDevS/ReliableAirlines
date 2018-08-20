@@ -46,6 +46,7 @@
             this.btnEstadistica.TabIndex = 83;
             this.btnEstadistica.Text = "Estadistica";
             this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
             // 
             // panel1
             // 
