@@ -17,8 +17,22 @@ namespace CapaPresentesacion
             InitializeComponent();
         }
 
+        private void abrirFormularioHijo(object formulario)
+        {
+            if (this.panelEleccionContabilidad.Controls.Count > 0)
+                this.panelEleccionContabilidad.Controls.RemoveAt(0);
+
+            Form hijo = formulario as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.panelEleccionContabilidad.Controls.Add(hijo);
+            this.panelEleccionContabilidad.Tag = hijo;
+            hijo.Show();
+        }
+
         private void btnGeneral_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormContabilidadGeneral());
             pnlActivoGeneral.Visible = true;
             pnlActivoGastos.Visible = false;
             pnlActivoIngresos.Visible = false;

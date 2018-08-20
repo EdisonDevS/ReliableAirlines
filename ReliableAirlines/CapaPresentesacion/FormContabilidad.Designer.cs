@@ -35,7 +35,7 @@
             this.btnGastos = new System.Windows.Forms.Button();
             this.pnlActivoIngresos = new System.Windows.Forms.Panel();
             this.btnIngresos = new System.Windows.Forms.Button();
-            this.panelEleccionAdmin = new System.Windows.Forms.Panel();
+            this.panelEleccionContabilidad = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // pnlActivoGeneral
@@ -116,13 +116,13 @@
             this.btnIngresos.UseVisualStyleBackColor = true;
             this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
-            // panelEleccionAdmin
+            // panelEleccionContabilidad
             // 
-            this.panelEleccionAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelEleccionAdmin.Location = new System.Drawing.Point(12, 129);
-            this.panelEleccionAdmin.Name = "panelEleccionAdmin";
-            this.panelEleccionAdmin.Size = new System.Drawing.Size(497, 227);
-            this.panelEleccionAdmin.TabIndex = 23;
+            this.panelEleccionContabilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelEleccionContabilidad.Location = new System.Drawing.Point(12, 129);
+            this.panelEleccionContabilidad.Name = "panelEleccionContabilidad";
+            this.panelEleccionContabilidad.Size = new System.Drawing.Size(497, 227);
+            this.panelEleccionContabilidad.TabIndex = 23;
             // 
             // FormContabilidad
             // 
@@ -130,7 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.ClientSize = new System.Drawing.Size(729, 485);
-            this.Controls.Add(this.panelEleccionAdmin);
+            this.Controls.Add(this.panelEleccionContabilidad);
             this.Controls.Add(this.pnlActivoIngresos);
             this.Controls.Add(this.btnIngresos);
             this.Controls.Add(this.pnlActivoGastos);
@@ -152,6 +152,6 @@
         private System.Windows.Forms.Button btnGastos;
         private System.Windows.Forms.Panel pnlActivoIngresos;
         private System.Windows.Forms.Button btnIngresos;
-        private System.Windows.Forms.Panel panelEleccionAdmin;
+        private System.Windows.Forms.Panel panelEleccionContabilidad;
     }
 }
