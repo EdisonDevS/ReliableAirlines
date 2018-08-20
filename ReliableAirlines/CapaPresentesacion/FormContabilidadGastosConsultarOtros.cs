@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormContabilidadGastosConsultarNomina : Form
+    public partial class FormContabilidadGastosConsultarOtros : Form
     {
-        public FormContabilidadGastosConsultarNomina()
+        public FormContabilidadGastosConsultarOtros()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

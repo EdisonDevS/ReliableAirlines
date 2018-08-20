@@ -137,6 +137,12 @@
     <Compile Include="FormContabilidadGastosConsultarNomina.Designer.cs">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidadGastosConsultarOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadGastosConsultarOtros.Designer.cs">
+      <DependentUpon>FormContabilidadGastosConsultarOtros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContabilidadGastosGenerar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastosConsultarNomina.resx">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadGastosConsultarOtros.resx">
+      <DependentUpon>FormContabilidadGastosConsultarOtros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastosGenerar.resx">
       <DependentUpon>FormContabilidadGastosGenerar.cs</DependentUpon>

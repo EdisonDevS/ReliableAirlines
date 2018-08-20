@@ -54,6 +54,7 @@
             this.btnOtros.TabIndex = 7;
             this.btnOtros.Text = "Otros gastos";
             this.btnOtros.UseVisualStyleBackColor = false;
+            this.btnOtros.Click += new System.EventHandler(this.btnOtros_Click);
             // 
             // btnNomina
             // 
@@ -68,6 +69,7 @@
             this.btnNomina.TabIndex = 6;
             this.btnNomina.Text = "Pago de nomina";
             this.btnNomina.UseVisualStyleBackColor = false;
+            this.btnNomina.Click += new System.EventHandler(this.btnNomina_Click);
             // 
             // FormContabilidadGastosConsultar
             // 
