@@ -71,6 +71,7 @@ namespace CapaPresentesacion
 
         private void btnClientes_Click_1(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormAdminClientes());
             this.pnlActivoNomina.Visible = false;
             this.pnlActivoClientes.Visible = true;
             this.pnlActivoBuzon.Visible = false;

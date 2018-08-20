@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdminClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminClientes.Designer.cs">
+      <DependentUpon>FormAdminClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdminNominaActualizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,9 @@
       <DependentUpon>FormAdminVuelosGestionExistente.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FormAdminClientes.resx">
+      <DependentUpon>FormAdminClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaActualizacion.resx">
       <DependentUpon>FormAdminNominaActualizacion.cs</DependentUpon>
     </EmbeddedResource>
