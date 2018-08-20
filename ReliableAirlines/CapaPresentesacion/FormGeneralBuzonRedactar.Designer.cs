@@ -71,7 +71,7 @@
             this.btnMensajes.UseVisualStyleBackColor = false;
             this.btnMensajes.Click += new System.EventHandler(this.btnMensajes_Click);
             // 
-            // FormVentanaRedactar
+            // FormGeneralBuzonRedactar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,7 +81,7 @@
             this.Controls.Add(this.btnSolicitud);
             this.Controls.Add(this.btnMensajes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FormVentanaRedactar";
+            this.Name = "FormGeneralBuzonRedactar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ventanaRedactar";
             this.Load += new System.EventHandler(this.FormVentanaRedactar_Load);

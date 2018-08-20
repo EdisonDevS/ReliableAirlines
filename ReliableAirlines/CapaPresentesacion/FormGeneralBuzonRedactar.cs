@@ -40,6 +40,7 @@ namespace CapaPresentesacion
 
         private void btnSolicitud_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitud());
             this.btnMensajes.BackColor = Color.FromArgb(46, 61, 79);
             this.btnSolicitud.BackColor = Color.FromArgb(23, 185, 120);
         }

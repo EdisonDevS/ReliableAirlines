@@ -201,12 +201,12 @@
             this.panelLlenarSolicitud.Size = new System.Drawing.Size(944, 363);
             this.panelLlenarSolicitud.TabIndex = 44;
             // 
-            // FormCrearSolicitud
+            // FormGeneralBuzonRedactarSolicitud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(968, 616);
+            this.ClientSize = new System.Drawing.Size(984, 655);
             this.Controls.Add(this.panelLlenarSolicitud);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -221,8 +221,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FormCrearSolicitud";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormGeneralBuzonRedactarSolicitud";
             this.Text = "FormCrearSolicitud";
             this.ResumeLayout(false);
             this.PerformLayout();
