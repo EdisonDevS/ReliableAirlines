@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormGeneralBuzonRecibidosSolicitudGargarReembolso : Form
+    public partial class FormGeneralBuzonRecibidosSolicitudGargarOtras : Form
     {
-        public FormGeneralBuzonRecibidosSolicitudGargarReembolso()
+        public FormGeneralBuzonRecibidosSolicitudGargarOtras()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
