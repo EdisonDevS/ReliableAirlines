@@ -22,5 +22,11 @@ namespace CapaPresentesacion
             FormContabilidadIngresosGenerar generar = new FormContabilidadIngresosGenerar();
             generar.Show();
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            FormContabilidadIngresosConsultar consulta = new FormContabilidadIngresosConsultar();
+            consulta.Show();
+        }
     }
 }

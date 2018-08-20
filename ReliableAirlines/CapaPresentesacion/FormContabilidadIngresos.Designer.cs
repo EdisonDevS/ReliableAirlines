@@ -69,6 +69,7 @@
             this.btnConsultar.TabIndex = 87;
             this.btnConsultar.Text = "Consultar ingreso";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // FormContabilidadIngresos
             // 
