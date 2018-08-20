@@ -119,6 +119,12 @@
     <Compile Include="FormContabilidad.Designer.cs">
       <DependentUpon>FormContabilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidadGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadGastos.Designer.cs">
+      <DependentUpon>FormContabilidadGastos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContabilidadGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidad.resx">
       <DependentUpon>FormContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadGastos.resx">
+      <DependentUpon>FormContabilidadGastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGeneral.resx">
       <DependentUpon>FormContabilidadGeneral.cs</DependentUpon>
