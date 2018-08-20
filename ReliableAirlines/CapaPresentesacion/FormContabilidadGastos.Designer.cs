@@ -69,6 +69,7 @@
             this.btnConsultar.TabIndex = 84;
             this.btnConsultar.Text = "Consultar gasto";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // FormContabilidadGastos
             // 
