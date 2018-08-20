@@ -55,6 +55,7 @@
             this.btnExternos.TabIndex = 7;
             this.btnExternos.Text = "Ingresos externos";
             this.btnExternos.UseVisualStyleBackColor = false;
+            this.btnExternos.Click += new System.EventHandler(this.btnExternos_Click);
             // 
             // btnVentas
             // 

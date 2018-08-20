@@ -32,12 +32,22 @@ namespace CapaPresentesacion
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
+            btnVentas.BackColor = Color.FromArgb(23, 185, 120);
+            btnExternos.BackColor = Color.FromArgb(44, 61, 79);
             abrirFormularioHijo(new FormContabilidadIngresosGenerarVentas());
+        }
+        private void btnExternos_Click(object sender, EventArgs e)
+        {
+            btnVentas.BackColor = Color.FromArgb(44, 61, 79);
+            btnExternos.BackColor = Color.FromArgb(23, 185, 120);
+            abrirFormularioHijo(new FormContabilidadIngresosGenerarExternos());
         }
 
         private void panelGenerarIngreso_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        
     }
 }

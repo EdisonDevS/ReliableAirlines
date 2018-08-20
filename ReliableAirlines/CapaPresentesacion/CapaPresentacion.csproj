@@ -191,6 +191,12 @@
     <Compile Include="FormContabilidadIngresosGenerar.Designer.cs">
       <DependentUpon>FormContabilidadIngresosGenerar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidadIngresosGenerarExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadIngresosGenerarExternos.Designer.cs">
+      <DependentUpon>FormContabilidadIngresosGenerarExternos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContabilidadIngresosGenerarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadIngresosGenerar.resx">
       <DependentUpon>FormContabilidadIngresosGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadIngresosGenerarExternos.resx">
+      <DependentUpon>FormContabilidadIngresosGenerarExternos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadIngresosGenerarVentas.resx">
       <DependentUpon>FormContabilidadIngresosGenerarVentas.cs</DependentUpon>
