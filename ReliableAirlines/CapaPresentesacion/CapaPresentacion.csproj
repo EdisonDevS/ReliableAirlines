@@ -64,77 +64,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormActualizacionEmpleado.cs">
+    <Compile Include="FormAdminNominaActualizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormActualizacionEmpleado.Designer.cs">
-      <DependentUpon>FormActualizacionEmpleado.cs</DependentUpon>
+    <Compile Include="FormAdminNominaActualizacion.Designer.cs">
+      <DependentUpon>FormAdminNominaActualizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdministracion.cs">
+    <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdministracion.Designer.cs">
-      <DependentUpon>FormAdministracion.cs</DependentUpon>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdministracionVuelos.cs">
+    <Compile Include="FormAdminVuelosGestion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdministracionVuelos.Designer.cs">
-      <DependentUpon>FormAdministracionVuelos.cs</DependentUpon>
+    <Compile Include="FormAdminVuelosGestion.Designer.cs">
+      <DependentUpon>FormAdminVuelosGestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdministrarAeronave.cs">
+    <Compile Include="FormAdminAeronavesAeronave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdministrarAeronave.Designer.cs">
-      <DependentUpon>FormAdministrarAeronave.cs</DependentUpon>
+    <Compile Include="FormAdminAeronavesAeronave.Designer.cs">
+      <DependentUpon>FormAdminAeronavesAeronave.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdministrarVuelos.cs">
+    <Compile Include="FormAdminVuelos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdministrarVuelos.Designer.cs">
-      <DependentUpon>FormAdministrarVuelos.cs</DependentUpon>
+    <Compile Include="FormAdminVuelos.Designer.cs">
+      <DependentUpon>FormAdminVuelos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAjusteNomina.cs">
+    <Compile Include="FormAdminNominaConsultaAjuste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAjusteNomina.Designer.cs">
-      <DependentUpon>FormAjusteNomina.cs</DependentUpon>
+    <Compile Include="FormAdminNominaConsultaAjuste.Designer.cs">
+      <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBandejaMensaje.cs">
+    <Compile Include="FormGeneralBuzonRedactarMensaje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBandejaMensaje.Designer.cs">
-      <DependentUpon>FormBandejaMensaje.cs</DependentUpon>
+    <Compile Include="FormGeneralBuzonRedactarMensaje.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRedactarMensaje.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConsultaNomGeneral.cs">
+    <Compile Include="FormAdminNominaConsultaGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultaNomGeneral.Designer.cs">
-      <DependentUpon>FormConsultaNomGeneral.cs</DependentUpon>
+    <Compile Include="FormAdminNominaConsultaGeneral.Designer.cs">
+      <DependentUpon>FormAdminNominaConsultaGeneral.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConsultaNomina.cs">
+    <Compile Include="FormAdminNominaConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultaNomina.Designer.cs">
-      <DependentUpon>FormConsultaNomina.cs</DependentUpon>
+    <Compile Include="FormAdminNominaConsulta.Designer.cs">
+      <DependentUpon>FormAdminNominaConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConsultarVuelo.cs">
+    <Compile Include="FormAdminVuelosConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultarVuelo.Designer.cs">
-      <DependentUpon>FormConsultarVuelo.cs</DependentUpon>
+    <Compile Include="FormAdminVuelosConsulta.Designer.cs">
+      <DependentUpon>FormAdminVuelosConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCrearRuta.cs">
+    <Compile Include="FormAdminRutas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCrearRuta.Designer.cs">
-      <DependentUpon>FormCrearRuta.cs</DependentUpon>
+      <DependentUpon>FormAdminRutas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCrearSolicitud.cs">
+    <Compile Include="FormGeneralBuzonRedactarSolicitud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCrearSolicitud.Designer.cs">
-      <DependentUpon>FormCrearSolicitud.cs</DependentUpon>
+    <Compile Include="FormGeneralBuzonRedactarSolicitud.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
@@ -142,61 +142,61 @@
     <Compile Include="FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuAeronaves.cs">
+    <Compile Include="FormAdminAeronaves.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenuAeronaves.Designer.cs">
-      <DependentUpon>FormMenuAeronaves.cs</DependentUpon>
+    <Compile Include="FormAdminAeronaves.Designer.cs">
+      <DependentUpon>FormAdminAeronaves.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuBuzon.cs">
+    <Compile Include="FormGeneralBuzon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenuBuzon.Designer.cs">
-      <DependentUpon>FormMenuBuzon.cs</DependentUpon>
+    <Compile Include="FormGeneralBuzon.Designer.cs">
+      <DependentUpon>FormGeneralBuzon.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuNomina.cs">
+    <Compile Include="FormAdminNomina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenuNomina.Designer.cs">
-      <DependentUpon>FormMenuNomina.cs</DependentUpon>
+    <Compile Include="FormAdminNomina.Designer.cs">
+      <DependentUpon>FormAdminNomina.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuRutas.cs">
+    <Compile Include="FormAdminRutasVuelos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenuRutas.Designer.cs">
-      <DependentUpon>FormMenuRutas.cs</DependentUpon>
+    <Compile Include="FormAdminRutasVuelos.Designer.cs">
+      <DependentUpon>FormAdminRutasVuelos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNuevoVuelo.cs">
+    <Compile Include="FormAdminVuelosGestionNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNuevoVuelo.Designer.cs">
-      <DependentUpon>FormNuevoVuelo.cs</DependentUpon>
+    <Compile Include="FormAdminVuelosGestionNuevo.Designer.cs">
+      <DependentUpon>FormAdminVuelosGestionNuevo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormRegistroAeronave.cs">
+    <Compile Include="FormAdminAeronavesRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistroAeronave.Designer.cs">
-      <DependentUpon>FormRegistroAeronave.cs</DependentUpon>
+    <Compile Include="FormAdminAeronavesRegistro.Designer.cs">
+      <DependentUpon>FormAdminAeronavesRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistroEmpleado.cs">
+    <Compile Include="FormAdminNominaRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistroEmpleado.Designer.cs">
-      <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
+    <Compile Include="FormAdminNominaRegistro.Designer.cs">
+      <DependentUpon>FormAdminNominaRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVentanaRecibidos.cs">
+    <Compile Include="FormGeneralBuzonRecibidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVentanaRecibidos.Designer.cs">
-      <DependentUpon>FormVentanaRecibidos.cs</DependentUpon>
+    <Compile Include="FormGeneralBuzonRecibidos.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRecibidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVentanaRedactar.cs">
+    <Compile Include="FormGeneralBuzonRedactar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVentanaRedactar.Designer.cs">
-      <DependentUpon>FormVentanaRedactar.cs</DependentUpon>
+    <Compile Include="FormGeneralBuzonRedactar.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRedactar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVistaPrincipalAdmin.cs">
       <SubType>Form</SubType>
@@ -204,66 +204,66 @@
     <Compile Include="FormVistaPrincipalAdmin.Designer.cs">
       <DependentUpon>FormVistaPrincipalAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVueloExistente.cs">
+    <Compile Include="FormAdminVuelosGestionExistente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVueloExistente.Designer.cs">
-      <DependentUpon>FormVueloExistente.cs</DependentUpon>
+    <Compile Include="FormAdminVuelosGestionExistente.Designer.cs">
+      <DependentUpon>FormAdminVuelosGestionExistente.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="FormActualizacionEmpleado.resx">
-      <DependentUpon>FormActualizacionEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNominaActualizacion.resx">
+      <DependentUpon>FormAdminNominaActualizacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdministracion.resx">
-      <DependentUpon>FormAdministracion.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdministracionVuelos.resx">
-      <DependentUpon>FormAdministracionVuelos.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminVuelosGestion.resx">
+      <DependentUpon>FormAdminVuelosGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdministrarAeronave.resx">
-      <DependentUpon>FormAdministrarAeronave.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminAeronavesAeronave.resx">
+      <DependentUpon>FormAdminAeronavesAeronave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdministrarVuelos.resx">
-      <DependentUpon>FormAdministrarVuelos.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminVuelos.resx">
+      <DependentUpon>FormAdminVuelos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAjusteNomina.resx">
-      <DependentUpon>FormAjusteNomina.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNominaConsultaAjuste.resx">
+      <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBandejaMensaje.resx">
-      <DependentUpon>FormBandejaMensaje.cs</DependentUpon>
+    <EmbeddedResource Include="FormGeneralBuzonRedactarMensaje.resx">
+      <DependentUpon>FormGeneralBuzonRedactarMensaje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsultaNomGeneral.resx">
-      <DependentUpon>FormConsultaNomGeneral.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNominaConsultaGeneral.resx">
+      <DependentUpon>FormAdminNominaConsultaGeneral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsultaNomina.resx">
-      <DependentUpon>FormConsultaNomina.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNominaConsulta.resx">
+      <DependentUpon>FormAdminNominaConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsultarVuelo.resx">
-      <DependentUpon>FormConsultarVuelo.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminVuelosConsulta.resx">
+      <DependentUpon>FormAdminVuelosConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCrearRuta.resx">
-      <DependentUpon>FormCrearRuta.cs</DependentUpon>
+      <DependentUpon>FormAdminRutas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCrearSolicitud.resx">
-      <DependentUpon>FormCrearSolicitud.cs</DependentUpon>
+    <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitud.resx">
+      <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuAeronaves.resx">
-      <DependentUpon>FormMenuAeronaves.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminAeronaves.resx">
+      <DependentUpon>FormAdminAeronaves.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuBuzon.resx">
-      <DependentUpon>FormMenuBuzon.cs</DependentUpon>
+    <EmbeddedResource Include="FormGeneralBuzon.resx">
+      <DependentUpon>FormGeneralBuzon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuNomina.resx">
-      <DependentUpon>FormMenuNomina.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNomina.resx">
+      <DependentUpon>FormAdminNomina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuRutas.resx">
-      <DependentUpon>FormMenuRutas.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminRutasVuelos.resx">
+      <DependentUpon>FormAdminRutasVuelos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNuevoVuelo.resx">
-      <DependentUpon>FormNuevoVuelo.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminVuelosGestionNuevo.resx">
+      <DependentUpon>FormAdminVuelosGestionNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -275,23 +275,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FormRegistroAeronave.resx">
-      <DependentUpon>FormRegistroAeronave.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminAeronavesRegistro.resx">
+      <DependentUpon>FormAdminAeronavesRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistroEmpleado.resx">
-      <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminNominaRegistro.resx">
+      <DependentUpon>FormAdminNominaRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVentanaRecibidos.resx">
-      <DependentUpon>FormVentanaRecibidos.cs</DependentUpon>
+    <EmbeddedResource Include="FormGeneralBuzonRecibidos.resx">
+      <DependentUpon>FormGeneralBuzonRecibidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVentanaRedactar.resx">
-      <DependentUpon>FormVentanaRedactar.cs</DependentUpon>
+    <EmbeddedResource Include="FormGeneralBuzonRedactar.resx">
+      <DependentUpon>FormGeneralBuzonRedactar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalAdmin.resx">
       <DependentUpon>FormVistaPrincipalAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVueloExistente.resx">
-      <DependentUpon>FormVueloExistente.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminVuelosGestionExistente.resx">
+      <DependentUpon>FormAdminVuelosGestionExistente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

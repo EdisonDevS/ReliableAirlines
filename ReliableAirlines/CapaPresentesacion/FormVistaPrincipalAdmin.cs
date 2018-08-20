@@ -34,7 +34,7 @@ namespace CapaPresentesacion
 
         private void btnAdministración_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormAdministracion());
+            abrirFormularioHijo(new FormAdmin());
             lblRuta.Text = "Administración";
             btnAdministración.BackColor = Color.FromArgb(23, 185, 120);
         }
