@@ -31,7 +31,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnResponder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel2
@@ -64,19 +64,20 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Descripción: ";
             // 
-            // button3
+            // btnResponder
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(678, 455);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 56);
-            this.button3.TabIndex = 50;
-            this.button3.Text = "Responder";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnResponder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnResponder.FlatAppearance.BorderSize = 0;
+            this.btnResponder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResponder.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResponder.ForeColor = System.Drawing.Color.White;
+            this.btnResponder.Location = new System.Drawing.Point(678, 455);
+            this.btnResponder.Name = "btnResponder";
+            this.btnResponder.Size = new System.Drawing.Size(158, 56);
+            this.btnResponder.TabIndex = 50;
+            this.btnResponder.Text = "Responder";
+            this.btnResponder.UseVisualStyleBackColor = false;
+            this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
             // FormGeneralBuzonRecibidosSolicitudGargarOtras
             // 
@@ -84,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(845, 523);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnResponder);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -102,6 +103,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnResponder;
     }
 }
