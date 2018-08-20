@@ -1,2 +1,3 @@
 # ReliableAirlines
-Proyecto final para la materia Bases de datos I
+
+Software de administración completo orientado a la gestión de aerolineas
