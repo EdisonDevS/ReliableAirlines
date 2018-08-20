@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.btnContabilidad = new System.Windows.Forms.Button();
             this.btnAdministración = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
@@ -50,7 +50,7 @@
             this.panelLateral.Controls.Add(this.label1);
             this.panelLateral.Controls.Add(this.pictureBox1);
             this.panelLateral.Controls.Add(this.button3);
-            this.panelLateral.Controls.Add(this.button2);
+            this.panelLateral.Controls.Add(this.btnEstadistica);
             this.panelLateral.Controls.Add(this.btnContabilidad);
             this.panelLateral.Controls.Add(this.btnAdministración);
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
@@ -96,22 +96,23 @@
             this.button3.Text = "Mi cuenta";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEstadistica
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 422);
-            this.button2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 55);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Estdistica";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEstadistica.FlatAppearance.BorderSize = 0;
+            this.btnEstadistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnEstadistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadistica.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadistica.ForeColor = System.Drawing.Color.White;
+            this.btnEstadistica.Image = ((System.Drawing.Image)(resources.GetObject("btnEstadistica.Image")));
+            this.btnEstadistica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstadistica.Location = new System.Drawing.Point(0, 422);
+            this.btnEstadistica.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(278, 55);
+            this.btnEstadistica.TabIndex = 3;
+            this.btnEstadistica.Text = "Estdistica";
+            this.btnEstadistica.UseVisualStyleBackColor = true;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
             // 
             // btnContabilidad
             // 
@@ -209,7 +210,7 @@
         private System.Windows.Forms.Label lblRuta;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEstadistica;
         private System.Windows.Forms.Button btnContabilidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -38,6 +38,7 @@ namespace CapaPresentesacion
             lblRuta.Text = "Administración";
             btnAdministración.BackColor = Color.FromArgb(23, 185, 120);
             btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
+            btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
         }
 
         private void btnContabilidad_Click(object sender, EventArgs e)
@@ -46,6 +47,15 @@ namespace CapaPresentesacion
             lblRuta.Text = "Contabilidad";
             btnContabilidad.BackColor = Color.FromArgb(23, 185, 120);
             btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
+            btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormEstadistica());
+            btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
+            btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
+            btnEstadistica.BackColor = Color.FromArgb(23, 185, 120);
         }
     }
 }
