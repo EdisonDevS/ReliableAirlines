@@ -46,6 +46,7 @@
             this.btnGenerar.TabIndex = 86;
             this.btnGenerar.Text = "Generar gasto";
             this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // panel1
             // 
