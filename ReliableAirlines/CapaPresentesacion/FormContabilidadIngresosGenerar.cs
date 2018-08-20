@@ -32,6 +32,11 @@ namespace CapaPresentesacion
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormContabilidadIngresosGenerarVentas());
+        }
+
+        private void panelGenerarIngreso_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

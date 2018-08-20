@@ -40,6 +40,7 @@
             this.panelGenerarIngreso.Name = "panelGenerarIngreso";
             this.panelGenerarIngreso.Size = new System.Drawing.Size(984, 655);
             this.panelGenerarIngreso.TabIndex = 8;
+            this.panelGenerarIngreso.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGenerarIngreso_Paint);
             // 
             // btnExternos
             // 
