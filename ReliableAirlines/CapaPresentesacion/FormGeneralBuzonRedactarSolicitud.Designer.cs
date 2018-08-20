@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbReembolso = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -74,18 +74,19 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Tipo de solicitud:";
             // 
-            // radioButton1
+            // rbReembolso
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(48, 129);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(113, 25);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Reembolso";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbReembolso.AutoSize = true;
+            this.rbReembolso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbReembolso.ForeColor = System.Drawing.Color.White;
+            this.rbReembolso.Location = new System.Drawing.Point(48, 129);
+            this.rbReembolso.Name = "rbReembolso";
+            this.rbReembolso.Size = new System.Drawing.Size(113, 25);
+            this.rbReembolso.TabIndex = 9;
+            this.rbReembolso.TabStop = true;
+            this.rbReembolso.Text = "Reembolso";
+            this.rbReembolso.UseVisualStyleBackColor = true;
+            this.rbReembolso.CheckedChanged += new System.EventHandler(this.rbReembolso_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -217,7 +218,7 @@
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbReembolso);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
@@ -234,7 +235,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbReembolso;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
