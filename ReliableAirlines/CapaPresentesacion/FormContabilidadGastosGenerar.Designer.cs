@@ -54,6 +54,7 @@
             this.btnOtros.TabIndex = 4;
             this.btnOtros.Text = "Otros gastos";
             this.btnOtros.UseVisualStyleBackColor = false;
+            this.btnOtros.Click += new System.EventHandler(this.btnOtros_Click);
             // 
             // btnNomina
             // 
