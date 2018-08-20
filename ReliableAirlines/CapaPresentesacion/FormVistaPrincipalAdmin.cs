@@ -44,7 +44,7 @@ namespace CapaPresentesacion
         {
             abrirFormularioHijo(new FormContabilidad());
             lblRuta.Text = "Contabilidad";
-            btnContabilidad.BackColor = Color.FromArgb(23, 285, 120);
+            btnContabilidad.BackColor = Color.FromArgb(23, 185, 120);
             btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
         }
     }
