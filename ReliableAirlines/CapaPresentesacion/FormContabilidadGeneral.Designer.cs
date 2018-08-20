@@ -67,8 +67,9 @@
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(229, 100);
             this.btnInformes.TabIndex = 81;
-            this.btnInformes.Text = "Informes";
+            this.btnInformes.Text = "Informe";
             this.btnInformes.UseVisualStyleBackColor = false;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // FormContabilidadGeneral
             // 

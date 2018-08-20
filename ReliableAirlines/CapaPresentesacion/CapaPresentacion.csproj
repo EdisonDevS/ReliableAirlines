@@ -131,6 +131,12 @@
     <Compile Include="FormContabilidadGeneralEstadistica.Designer.cs">
       <DependentUpon>FormContabilidadGeneralEstadistica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidadGeneralInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadGeneralInforme.Designer.cs">
+      <DependentUpon>FormContabilidadGeneralInforme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeneralBuzonRecibidosMensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGeneralEstadistica.resx">
       <DependentUpon>FormContabilidadGeneralEstadistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadGeneralInforme.resx">
+      <DependentUpon>FormContabilidadGeneralInforme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRecibidosMensajes.resx">
       <DependentUpon>FormGeneralBuzonRecibidosMensajes.cs</DependentUpon>
