@@ -16,5 +16,11 @@ namespace CapaPresentesacion
         {
             InitializeComponent();
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            FormContabilidadIngresosGenerar generar = new FormContabilidadIngresosGenerar();
+            generar.Show();
+        }
     }
 }

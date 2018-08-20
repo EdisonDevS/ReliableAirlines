@@ -48,6 +48,7 @@ namespace CapaPresentesacion
 
         private void btnIngresos_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormContabilidadIngresos());
             pnlActivoGeneral.Visible = false;
             pnlActivoGastos.Visible = false;
             pnlActivoIngresos.Visible = true;

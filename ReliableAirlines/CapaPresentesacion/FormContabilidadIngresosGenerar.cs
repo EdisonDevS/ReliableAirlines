@@ -16,5 +16,23 @@ namespace CapaPresentesacion
         {
             InitializeComponent();
         }
+
+        private void abrirFormularioHijo(object formulario)
+        {
+            if (this.panelGenerarIngreso.Controls.Count > 0)
+                this.panelGenerarIngreso.Controls.RemoveAt(0);
+
+            Form hijo = formulario as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.panelGenerarIngreso.Controls.Add(hijo);
+            this.panelGenerarIngreso.Tag = hijo;
+            hijo.Show();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,6 +68,7 @@
             this.btnVentas.TabIndex = 6;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // FormContabilidadIngresosGenerar
             // 

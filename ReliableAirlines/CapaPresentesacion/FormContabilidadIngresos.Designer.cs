@@ -46,6 +46,7 @@
             this.btnGenerar.TabIndex = 89;
             this.btnGenerar.Text = "Generar ingreso";
             this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // panel1
             // 
