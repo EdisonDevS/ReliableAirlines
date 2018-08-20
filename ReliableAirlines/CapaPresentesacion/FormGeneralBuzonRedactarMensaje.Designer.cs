@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +86,7 @@
             this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.richTextBox1.Location = new System.Drawing.Point(145, 205);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(701, 342);
+            this.richTextBox1.Size = new System.Drawing.Size(701, 287);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
@@ -116,12 +117,27 @@
             this.textBox3.Size = new System.Drawing.Size(269, 31);
             this.textBox3.TabIndex = 7;
             // 
-            // FormBandejaMensaje
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(688, 532);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(158, 56);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Guardar cambios";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // FormGeneralBuzonRedactarMensaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(984, 655);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
@@ -131,7 +147,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormBandejaMensaje";
+            this.Name = "FormGeneralBuzonRedactarMensaje";
             this.Text = "bandejaMensaje";
             this.Load += new System.EventHandler(this.FormBandejaMensaje_Load);
             this.ResumeLayout(false);
@@ -149,5 +165,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button3;
     }
 }
