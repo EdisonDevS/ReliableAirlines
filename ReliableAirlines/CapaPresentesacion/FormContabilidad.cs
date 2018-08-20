@@ -16,5 +16,26 @@ namespace CapaPresentesacion
         {
             InitializeComponent();
         }
+
+        private void btnGeneral_Click(object sender, EventArgs e)
+        {
+            pnlActivoGeneral.Visible = true;
+            pnlActivoGastos.Visible = false;
+            pnlActivoIngresos.Visible = false;
+        }
+
+        private void btnGastos_Click(object sender, EventArgs e)
+        {
+            pnlActivoGeneral.Visible = false;
+            pnlActivoGastos.Visible = true;
+            pnlActivoIngresos.Visible = false;
+        }
+
+        private void btnIngresos_Click(object sender, EventArgs e)
+        {
+            pnlActivoGeneral.Visible = false;
+            pnlActivoGastos.Visible = false;
+            pnlActivoIngresos.Visible = true;
+        }
     }
 }

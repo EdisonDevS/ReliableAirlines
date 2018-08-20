@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormContabilidad));
-            this.pnlActivoNomina = new System.Windows.Forms.Panel();
+            this.pnlActivoGeneral = new System.Windows.Forms.Panel();
             this.btnGeneral = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pnlActivoGastos = new System.Windows.Forms.Panel();
+            this.btnGastos = new System.Windows.Forms.Button();
+            this.pnlActivoIngresos = new System.Windows.Forms.Panel();
+            this.btnIngresos = new System.Windows.Forms.Button();
             this.panelEleccionAdmin = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // pnlActivoNomina
+            // pnlActivoGeneral
             // 
-            this.pnlActivoNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoNomina.Location = new System.Drawing.Point(82, 115);
-            this.pnlActivoNomina.Name = "pnlActivoNomina";
-            this.pnlActivoNomina.Size = new System.Drawing.Size(80, 8);
-            this.pnlActivoNomina.TabIndex = 18;
-            this.pnlActivoNomina.Visible = false;
+            this.pnlActivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.pnlActivoGeneral.Location = new System.Drawing.Point(82, 115);
+            this.pnlActivoGeneral.Name = "pnlActivoGeneral";
+            this.pnlActivoGeneral.Size = new System.Drawing.Size(80, 8);
+            this.pnlActivoGeneral.TabIndex = 18;
+            this.pnlActivoGeneral.Visible = false;
             // 
             // btnGeneral
             // 
@@ -62,56 +62,59 @@
             this.btnGeneral.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnGeneral.UseVisualStyleBackColor = true;
+            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
             // 
-            // panel1
+            // pnlActivoGastos
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(213, 115);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 8);
-            this.panel1.TabIndex = 20;
-            this.panel1.Visible = false;
+            this.pnlActivoGastos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.pnlActivoGastos.Location = new System.Drawing.Point(213, 115);
+            this.pnlActivoGastos.Name = "pnlActivoGastos";
+            this.pnlActivoGastos.Size = new System.Drawing.Size(80, 8);
+            this.pnlActivoGastos.TabIndex = 20;
+            this.pnlActivoGastos.Visible = false;
             // 
-            // button1
+            // btnGastos
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(213, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 111);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Gastos";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGastos.FlatAppearance.BorderSize = 0;
+            this.btnGastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGastos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGastos.ForeColor = System.Drawing.Color.White;
+            this.btnGastos.Image = ((System.Drawing.Image)(resources.GetObject("btnGastos.Image")));
+            this.btnGastos.Location = new System.Drawing.Point(213, 12);
+            this.btnGastos.Name = "btnGastos";
+            this.btnGastos.Size = new System.Drawing.Size(80, 111);
+            this.btnGastos.TabIndex = 19;
+            this.btnGastos.Text = "Gastos";
+            this.btnGastos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGastos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnGastos.UseVisualStyleBackColor = true;
+            this.btnGastos.Click += new System.EventHandler(this.btnGastos_Click);
             // 
-            // panel2
+            // pnlActivoIngresos
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel2.Location = new System.Drawing.Point(346, 115);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(80, 8);
-            this.panel2.TabIndex = 22;
-            this.panel2.Visible = false;
+            this.pnlActivoIngresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.pnlActivoIngresos.Location = new System.Drawing.Point(346, 115);
+            this.pnlActivoIngresos.Name = "pnlActivoIngresos";
+            this.pnlActivoIngresos.Size = new System.Drawing.Size(80, 8);
+            this.pnlActivoIngresos.TabIndex = 22;
+            this.pnlActivoIngresos.Visible = false;
             // 
-            // button2
+            // btnIngresos
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(346, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 111);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Ingresos";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnIngresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresos.ForeColor = System.Drawing.Color.White;
+            this.btnIngresos.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresos.Image")));
+            this.btnIngresos.Location = new System.Drawing.Point(346, 12);
+            this.btnIngresos.Name = "btnIngresos";
+            this.btnIngresos.Size = new System.Drawing.Size(80, 111);
+            this.btnIngresos.TabIndex = 21;
+            this.btnIngresos.Text = "Ingresos";
+            this.btnIngresos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnIngresos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnIngresos.UseVisualStyleBackColor = true;
+            this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
             // panelEleccionAdmin
             // 
@@ -128,11 +131,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.ClientSize = new System.Drawing.Size(729, 485);
             this.Controls.Add(this.panelEleccionAdmin);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pnlActivoNomina);
+            this.Controls.Add(this.pnlActivoIngresos);
+            this.Controls.Add(this.btnIngresos);
+            this.Controls.Add(this.pnlActivoGastos);
+            this.Controls.Add(this.btnGastos);
+            this.Controls.Add(this.pnlActivoGeneral);
             this.Controls.Add(this.btnGeneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormContabilidad";
@@ -143,12 +146,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlActivoNomina;
+        private System.Windows.Forms.Panel pnlActivoGeneral;
         private System.Windows.Forms.Button btnGeneral;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel pnlActivoGastos;
+        private System.Windows.Forms.Button btnGastos;
+        private System.Windows.Forms.Panel pnlActivoIngresos;
+        private System.Windows.Forms.Button btnIngresos;
         private System.Windows.Forms.Panel panelEleccionAdmin;
     }
 }
