@@ -34,5 +34,40 @@ namespace CapaPresentesacion
         {
             abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudReembolso());
         }
+
+        private void rbIncapacidad_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbPrestamo_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbQueja_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbReclamo_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbConsulta_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbRenuncia_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
+
+        private void rbSugerencia_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormGeneralBuzonRedactarSolicitudOtra());
+        }
     }
 }

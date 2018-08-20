@@ -136,6 +136,12 @@
     <Compile Include="FormGeneralBuzonRedactarSolicitud.Designer.cs">
       <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGeneralBuzonRedactarSolicitudOtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneralBuzonRedactarSolicitudOtra.Designer.cs">
+      <DependentUpon>FormGeneralBuzonRedactarSolicitudOtra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeneralBuzonRedactarSolicitudReembolso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitud.resx">
       <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitudOtra.resx">
+      <DependentUpon>FormGeneralBuzonRedactarSolicitudOtra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitudReembolso.resx">
       <DependentUpon>FormGeneralBuzonRedactarSolicitudReembolso.cs</DependentUpon>

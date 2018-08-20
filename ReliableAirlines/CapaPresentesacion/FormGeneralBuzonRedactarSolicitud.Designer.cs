@@ -32,13 +32,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rbReembolso = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.rbIncapacidad = new System.Windows.Forms.RadioButton();
+            this.rbPrestamo = new System.Windows.Forms.RadioButton();
+            this.rbQueja = new System.Windows.Forms.RadioButton();
+            this.rbSugerencia = new System.Windows.Forms.RadioButton();
+            this.rbRenuncia = new System.Windows.Forms.RadioButton();
+            this.rbConsulta = new System.Windows.Forms.RadioButton();
+            this.rbReclamo = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelLlenarSolicitud = new System.Windows.Forms.Panel();
@@ -88,96 +88,103 @@
             this.rbReembolso.UseVisualStyleBackColor = true;
             this.rbReembolso.CheckedChanged += new System.EventHandler(this.rbReembolso_CheckedChanged);
             // 
-            // radioButton2
+            // rbIncapacidad
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(264, 129);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(132, 25);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Incapacidad";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbIncapacidad.AutoSize = true;
+            this.rbIncapacidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbIncapacidad.ForeColor = System.Drawing.Color.White;
+            this.rbIncapacidad.Location = new System.Drawing.Point(461, 160);
+            this.rbIncapacidad.Name = "rbIncapacidad";
+            this.rbIncapacidad.Size = new System.Drawing.Size(132, 25);
+            this.rbIncapacidad.TabIndex = 10;
+            this.rbIncapacidad.TabStop = true;
+            this.rbIncapacidad.Text = "Incapacidad";
+            this.rbIncapacidad.UseVisualStyleBackColor = true;
+            this.rbIncapacidad.CheckedChanged += new System.EventHandler(this.rbIncapacidad_CheckedChanged);
             // 
-            // radioButton3
+            // rbPrestamo
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(510, 129);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(101, 25);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Préstamo";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbPrestamo.AutoSize = true;
+            this.rbPrestamo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPrestamo.ForeColor = System.Drawing.Color.White;
+            this.rbPrestamo.Location = new System.Drawing.Point(707, 160);
+            this.rbPrestamo.Name = "rbPrestamo";
+            this.rbPrestamo.Size = new System.Drawing.Size(101, 25);
+            this.rbPrestamo.TabIndex = 11;
+            this.rbPrestamo.TabStop = true;
+            this.rbPrestamo.Text = "Préstamo";
+            this.rbPrestamo.UseVisualStyleBackColor = true;
+            this.rbPrestamo.CheckedChanged += new System.EventHandler(this.rbPrestamo_CheckedChanged);
             // 
-            // radioButton4
+            // rbQueja
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(707, 129);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(76, 25);
-            this.radioButton4.TabIndex = 12;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Queja";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbQueja.AutoSize = true;
+            this.rbQueja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbQueja.ForeColor = System.Drawing.Color.White;
+            this.rbQueja.Location = new System.Drawing.Point(707, 129);
+            this.rbQueja.Name = "rbQueja";
+            this.rbQueja.Size = new System.Drawing.Size(76, 25);
+            this.rbQueja.TabIndex = 12;
+            this.rbQueja.TabStop = true;
+            this.rbQueja.Text = "Queja";
+            this.rbQueja.UseVisualStyleBackColor = true;
+            this.rbQueja.CheckedChanged += new System.EventHandler(this.rbQueja_CheckedChanged);
             // 
-            // radioButton5
+            // rbSugerencia
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.ForeColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(707, 160);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(116, 25);
-            this.radioButton5.TabIndex = 16;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Sugerencia";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbSugerencia.AutoSize = true;
+            this.rbSugerencia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSugerencia.ForeColor = System.Drawing.Color.White;
+            this.rbSugerencia.Location = new System.Drawing.Point(461, 129);
+            this.rbSugerencia.Name = "rbSugerencia";
+            this.rbSugerencia.Size = new System.Drawing.Size(116, 25);
+            this.rbSugerencia.TabIndex = 16;
+            this.rbSugerencia.TabStop = true;
+            this.rbSugerencia.Text = "Sugerencia";
+            this.rbSugerencia.UseVisualStyleBackColor = true;
+            this.rbSugerencia.CheckedChanged += new System.EventHandler(this.rbSugerencia_CheckedChanged);
             // 
-            // radioButton6
+            // rbRenuncia
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.ForeColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(510, 160);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(104, 25);
-            this.radioButton6.TabIndex = 15;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Denuncia";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbRenuncia.AutoSize = true;
+            this.rbRenuncia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRenuncia.ForeColor = System.Drawing.Color.White;
+            this.rbRenuncia.Location = new System.Drawing.Point(264, 129);
+            this.rbRenuncia.Name = "rbRenuncia";
+            this.rbRenuncia.Size = new System.Drawing.Size(104, 25);
+            this.rbRenuncia.TabIndex = 15;
+            this.rbRenuncia.TabStop = true;
+            this.rbRenuncia.Text = "Denuncia";
+            this.rbRenuncia.UseVisualStyleBackColor = true;
+            this.rbRenuncia.CheckedChanged += new System.EventHandler(this.rbRenuncia_CheckedChanged);
             // 
-            // radioButton7
+            // rbConsulta
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.ForeColor = System.Drawing.Color.White;
-            this.radioButton7.Location = new System.Drawing.Point(264, 160);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(98, 25);
-            this.radioButton7.TabIndex = 14;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Consulta";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rbConsulta.AutoSize = true;
+            this.rbConsulta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbConsulta.ForeColor = System.Drawing.Color.White;
+            this.rbConsulta.Location = new System.Drawing.Point(264, 160);
+            this.rbConsulta.Name = "rbConsulta";
+            this.rbConsulta.Size = new System.Drawing.Size(98, 25);
+            this.rbConsulta.TabIndex = 14;
+            this.rbConsulta.TabStop = true;
+            this.rbConsulta.Text = "Consulta";
+            this.rbConsulta.UseVisualStyleBackColor = true;
+            this.rbConsulta.CheckedChanged += new System.EventHandler(this.rbConsulta_CheckedChanged);
             // 
-            // radioButton8
+            // rbReclamo
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.ForeColor = System.Drawing.Color.White;
-            this.radioButton8.Location = new System.Drawing.Point(48, 160);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(97, 25);
-            this.radioButton8.TabIndex = 13;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Reclamo";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rbReclamo.AutoSize = true;
+            this.rbReclamo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbReclamo.ForeColor = System.Drawing.Color.White;
+            this.rbReclamo.Location = new System.Drawing.Point(48, 160);
+            this.rbReclamo.Name = "rbReclamo";
+            this.rbReclamo.Size = new System.Drawing.Size(97, 25);
+            this.rbReclamo.TabIndex = 13;
+            this.rbReclamo.TabStop = true;
+            this.rbReclamo.Text = "Reclamo";
+            this.rbReclamo.UseVisualStyleBackColor = true;
+            this.rbReclamo.CheckedChanged += new System.EventHandler(this.rbReclamo_CheckedChanged);
             // 
             // panel1
             // 
@@ -211,13 +218,13 @@
             this.Controls.Add(this.panelLlenarSolicitud);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.rbSugerencia);
+            this.Controls.Add(this.rbRenuncia);
+            this.Controls.Add(this.rbConsulta);
+            this.Controls.Add(this.rbReclamo);
+            this.Controls.Add(this.rbQueja);
+            this.Controls.Add(this.rbPrestamo);
+            this.Controls.Add(this.rbIncapacidad);
             this.Controls.Add(this.rbReembolso);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -236,13 +243,13 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbReembolso;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton rbIncapacidad;
+        private System.Windows.Forms.RadioButton rbPrestamo;
+        private System.Windows.Forms.RadioButton rbQueja;
+        private System.Windows.Forms.RadioButton rbSugerencia;
+        private System.Windows.Forms.RadioButton rbRenuncia;
+        private System.Windows.Forms.RadioButton rbConsulta;
+        private System.Windows.Forms.RadioButton rbReclamo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelLlenarSolicitud;
