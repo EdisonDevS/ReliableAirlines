@@ -130,6 +130,12 @@
     <Compile Include="FormCrearRuta.Designer.cs">
       <DependentUpon>FormCrearRuta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCrearSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearSolicitud.Designer.cs">
+      <DependentUpon>FormCrearSolicitud.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCrearRuta.resx">
       <DependentUpon>FormCrearRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearSolicitud.resx">
+      <DependentUpon>FormCrearSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
