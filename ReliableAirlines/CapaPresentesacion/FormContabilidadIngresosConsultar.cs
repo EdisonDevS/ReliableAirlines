@@ -30,6 +30,7 @@ namespace CapaPresentesacion
         }
         private void btnVentas_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormContabilidadIngresosConsultarVentas());
             btnVentas.BackColor = Color.FromArgb(23, 185, 120);
             btnExternos.BackColor = Color.FromArgb(44, 61, 79);
         }
