@@ -1,3 +1,3 @@
 # ReliableAirlines
 
-Software de administración completo orientado a la gestión de aerolineas
+Todos los derechos reservados para este pechito xD
