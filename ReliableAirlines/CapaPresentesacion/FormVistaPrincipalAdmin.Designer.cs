@@ -34,7 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnContabilidad = new System.Windows.Forms.Button();
             this.btnAdministración = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.panelLateral.Controls.Add(this.pictureBox1);
             this.panelLateral.Controls.Add(this.button3);
             this.panelLateral.Controls.Add(this.button2);
-            this.panelLateral.Controls.Add(this.button1);
+            this.panelLateral.Controls.Add(this.btnContabilidad);
             this.panelLateral.Controls.Add(this.btnAdministración);
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLateral.Location = new System.Drawing.Point(0, 0);
@@ -113,22 +113,23 @@
             this.button2.Text = "Estdistica";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnContabilidad
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 296);
-            this.button1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 55);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Contabilidad";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnContabilidad.FlatAppearance.BorderSize = 0;
+            this.btnContabilidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnContabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContabilidad.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContabilidad.ForeColor = System.Drawing.Color.White;
+            this.btnContabilidad.Image = ((System.Drawing.Image)(resources.GetObject("btnContabilidad.Image")));
+            this.btnContabilidad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContabilidad.Location = new System.Drawing.Point(0, 296);
+            this.btnContabilidad.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnContabilidad.Name = "btnContabilidad";
+            this.btnContabilidad.Size = new System.Drawing.Size(278, 55);
+            this.btnContabilidad.TabIndex = 2;
+            this.btnContabilidad.Text = "Contabilidad";
+            this.btnContabilidad.UseVisualStyleBackColor = true;
+            this.btnContabilidad.Click += new System.EventHandler(this.btnContabilidad_Click);
             // 
             // btnAdministración
             // 
@@ -176,7 +177,7 @@
             this.panelSuperior.Size = new System.Drawing.Size(729, 36);
             this.panelSuperior.TabIndex = 0;
             // 
-            // VistaPrincipalAdmin
+            // FormVistaPrincipalAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +189,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Name = "VistaPrincipalAdmin";
+            this.Name = "FormVistaPrincipalAdmin";
             this.Text = "VistaPrincipalAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelLateral.ResumeLayout(false);
@@ -209,7 +210,7 @@
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnContabilidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

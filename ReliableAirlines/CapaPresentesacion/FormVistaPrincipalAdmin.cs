@@ -39,5 +39,9 @@ namespace CapaPresentesacion
             btnAdministración.BackColor = Color.FromArgb(23, 185, 120);
         }
 
+        private void btnContabilidad_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormContabilidad());
+        }
     }
 }

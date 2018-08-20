@@ -112,6 +112,12 @@
     <Compile Include="FormAdminNominaConsultaAjuste.Designer.cs">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidad.Designer.cs">
+      <DependentUpon>FormContabilidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeneralBuzonRecibidosMensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaConsultaAjuste.resx">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidad.resx">
+      <DependentUpon>FormContabilidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRecibidosMensajes.resx">
       <DependentUpon>FormGeneralBuzonRecibidosMensajes.cs</DependentUpon>
