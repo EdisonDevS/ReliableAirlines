@@ -227,6 +227,18 @@
     <Compile Include="FormEstadistica.Designer.cs">
       <DependentUpon>FormEstadistica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEstadisticaAfluencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadisticaAfluencia.Designer.cs">
+      <DependentUpon>FormEstadisticaAfluencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstadisticaAfluenciaGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadisticaAfluenciaGrafica.Designer.cs">
+      <DependentUpon>FormEstadisticaAfluenciaGrafica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeneralBuzonRecibidosMensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +478,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEstadistica.resx">
       <DependentUpon>FormEstadistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadisticaAfluencia.resx">
+      <DependentUpon>FormEstadisticaAfluencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadisticaAfluenciaGrafica.resx">
+      <DependentUpon>FormEstadisticaAfluenciaGrafica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRecibidosMensajes.resx">
       <DependentUpon>FormGeneralBuzonRecibidosMensajes.cs</DependentUpon>
