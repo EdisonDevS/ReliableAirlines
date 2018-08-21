@@ -70,6 +70,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -93,7 +94,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(385, 64);
+            this.textBox10.Location = new System.Drawing.Point(385, 66);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(97, 20);
             this.textBox10.TabIndex = 73;
@@ -103,7 +104,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(335, 68);
+            this.label14.Location = new System.Drawing.Point(335, 69);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(92, 23);
             this.label14.TabIndex = 72;
@@ -111,7 +112,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(368, 45);
+            this.textBox9.Location = new System.Drawing.Point(368, 46);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(114, 20);
             this.textBox9.TabIndex = 71;
@@ -277,7 +278,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(159, 98);
+            this.label5.Location = new System.Drawing.Point(159, 96);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(166, 23);
             this.label5.TabIndex = 55;
@@ -302,7 +303,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(159, 75);
+            this.label4.Location = new System.Drawing.Point(159, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 23);
             this.label4.TabIndex = 53;
@@ -313,7 +314,7 @@
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(257, 71);
+            this.dateTimePicker1.Location = new System.Drawing.Point(257, 66);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(64, 31);
             this.dateTimePicker1.TabIndex = 52;
@@ -321,7 +322,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(255, 49);
+            this.textBox3.Location = new System.Drawing.Point(255, 46);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(66, 20);
             this.textBox3.TabIndex = 51;
@@ -334,7 +335,7 @@
             "C.C",
             "T.I",
             "C.E"});
-            this.listBox1.Location = new System.Drawing.Point(216, 51);
+            this.listBox1.Location = new System.Drawing.Point(216, 48);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(33, 17);
             this.listBox1.TabIndex = 50;
@@ -345,7 +346,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(159, 52);
+            this.label3.Location = new System.Drawing.Point(159, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 23);
             this.label3.TabIndex = 49;
@@ -468,7 +469,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(385, 90);
+            this.textBox14.Location = new System.Drawing.Point(385, 86);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(97, 20);
             this.textBox14.TabIndex = 85;
@@ -478,7 +479,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(335, 95);
+            this.label21.Location = new System.Drawing.Point(335, 91);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(85, 23);
             this.label21.TabIndex = 84;
@@ -498,12 +499,20 @@
             this.btnRegistrar.Text = "Guardar cambios";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             // 
-            // actualizacionEmpleado
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(54, 66);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(97, 20);
+            this.textBox15.TabIndex = 87;
+            // 
+            // FormAdminNominaActualizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 209);
+            this.Controls.Add(this.textBox15);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label21);
@@ -548,7 +557,7 @@
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "actualizacionEmpleado";
+            this.Name = "FormAdminNominaActualizacion";
             this.Text = "actualizacionEmpleado";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -599,5 +608,6 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
