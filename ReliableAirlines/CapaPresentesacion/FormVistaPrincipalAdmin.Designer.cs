@@ -36,9 +36,9 @@
             this.btnEstadistica = new System.Windows.Forms.Button();
             this.btnContabilidad = new System.Windows.Forms.Button();
             this.btnAdministración = new System.Windows.Forms.Button();
-            this.panelContainer = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panelLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSuperior.SuspendLayout();
@@ -151,14 +151,6 @@
             this.btnAdministración.UseVisualStyleBackColor = true;
             this.btnAdministración.Click += new System.EventHandler(this.btnAdministración_Click);
             // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(245, 0);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(729, 651);
-            this.panelContainer.TabIndex = 1;
-            // 
             // lblRuta
             // 
             this.lblRuta.AutoSize = true;
@@ -178,6 +170,15 @@
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(729, 36);
             this.panelSuperior.TabIndex = 0;
+            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(245, 36);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(729, 615);
+            this.panelContainer.TabIndex = 1;
             // 
             // FormVistaPrincipalAdmin
             // 
@@ -185,8 +186,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(974, 651);
-            this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelContainer);
+            this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -194,6 +195,7 @@
             this.Name = "FormVistaPrincipalAdmin";
             this.Text = "VistaPrincipalAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormVistaPrincipalAdmin_Load);
             this.panelLateral.ResumeLayout(false);
             this.panelLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -207,7 +209,6 @@
 
         private System.Windows.Forms.Panel panelLateral;
         private System.Windows.Forms.Button btnAdministración;
-        private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lblRuta;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Button btnMiCuenta;
@@ -215,5 +216,6 @@
         private System.Windows.Forms.Button btnContabilidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelContainer;
     }
 }

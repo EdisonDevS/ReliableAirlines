@@ -69,5 +69,15 @@ namespace CapaPresentesacion
             btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);
         }
+
+        private void FormVistaPrincipalAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSuperior_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

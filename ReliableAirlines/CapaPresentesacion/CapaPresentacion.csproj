@@ -359,6 +359,12 @@
     <Compile Include="FormMiCuenta.Designer.cs">
       <DependentUpon>FormMiCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVentasVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVentasVenta.Designer.cs">
+      <DependentUpon>FormVentasVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVistaPrincipalVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -550,6 +556,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMiCuenta.resx">
       <DependentUpon>FormMiCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVentasVenta.resx">
+      <DependentUpon>FormVentasVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalVentas.resx">
       <DependentUpon>FormVistaPrincipalVentas.cs</DependentUpon>
