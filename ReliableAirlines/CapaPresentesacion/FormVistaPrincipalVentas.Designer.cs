@@ -29,42 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVistaPrincipalVentas));
-            this.panelLateral = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMiCuenta = new System.Windows.Forms.Button();
-            this.btnBuzon = new System.Windows.Forms.Button();
-            this.btnReembolso = new System.Windows.Forms.Button();
-            this.btnVentas = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
-            this.panelLateral.SuspendLayout();
+            this.btnVenta = new System.Windows.Forms.Button();
+            this.panelLateral = new System.Windows.Forms.Panel();
+            this.btnMiCuenta = new System.Windows.Forms.Button();
+            this.btnBuzon = new System.Windows.Forms.Button();
+            this.btnReembolso = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelContainer.SuspendLayout();
             this.panelSuperior.SuspendLayout();
+            this.panelLateral.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelLateral
-            // 
-            this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.panelLateral.Controls.Add(this.label1);
-            this.panelLateral.Controls.Add(this.pictureBox1);
-            this.panelLateral.Controls.Add(this.btnMiCuenta);
-            this.panelLateral.Controls.Add(this.btnBuzon);
-            this.panelLateral.Controls.Add(this.btnReembolso);
-            this.panelLateral.Controls.Add(this.btnVentas);
-            this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLateral.Location = new System.Drawing.Point(0, 0);
-            this.panelLateral.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(245, 651);
-            this.panelLateral.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(77, 12);
             this.label1.Name = "label1";
@@ -80,6 +63,70 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 82);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(245, 36);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(729, 615);
+            this.panelContainer.TabIndex = 4;
+            // 
+            // panelSuperior
+            // 
+            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.panelSuperior.Controls.Add(this.lblRuta);
+            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSuperior.Location = new System.Drawing.Point(245, 0);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(729, 36);
+            this.panelSuperior.TabIndex = 2;
+            // 
+            // lblRuta
+            // 
+            this.lblRuta.AutoSize = true;
+            this.lblRuta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblRuta.ForeColor = System.Drawing.Color.White;
+            this.lblRuta.Location = new System.Drawing.Point(3, 0);
+            this.lblRuta.Name = "lblRuta";
+            this.lblRuta.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.lblRuta.Size = new System.Drawing.Size(67, 29);
+            this.lblRuta.TabIndex = 1;
+            this.lblRuta.Text = "Inicio";
+            // 
+            // btnVenta
+            // 
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVenta.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVenta.ForeColor = System.Drawing.Color.White;
+            this.btnVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnVenta.Image")));
+            this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVenta.Location = new System.Drawing.Point(0, 167);
+            this.btnVenta.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Size = new System.Drawing.Size(278, 55);
+            this.btnVenta.TabIndex = 1;
+            this.btnVenta.Text = "Venta";
+            this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
+            // 
+            // panelLateral
+            // 
+            this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.panelLateral.Controls.Add(this.label1);
+            this.panelLateral.Controls.Add(this.pictureBox1);
+            this.panelLateral.Controls.Add(this.btnMiCuenta);
+            this.panelLateral.Controls.Add(this.btnBuzon);
+            this.panelLateral.Controls.Add(this.btnReembolso);
+            this.panelLateral.Controls.Add(this.btnVenta);
+            this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLateral.Location = new System.Drawing.Point(0, 0);
+            this.panelLateral.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.panelLateral.Name = "panelLateral";
+            this.panelLateral.Size = new System.Drawing.Size(245, 651);
+            this.panelLateral.TabIndex = 3;
             // 
             // btnMiCuenta
             // 
@@ -97,7 +144,6 @@
             this.btnMiCuenta.TabIndex = 4;
             this.btnMiCuenta.Text = "Mi cuenta";
             this.btnMiCuenta.UseVisualStyleBackColor = true;
-            this.btnMiCuenta.Click += new System.EventHandler(this.btnMiCuenta_Click);
             // 
             // btnBuzon
             // 
@@ -115,7 +161,6 @@
             this.btnBuzon.TabIndex = 3;
             this.btnBuzon.Text = "Buzón";
             this.btnBuzon.UseVisualStyleBackColor = true;
-            this.btnBuzon.Click += new System.EventHandler(this.btnBuzon_Click);
             // 
             // btnReembolso
             // 
@@ -133,89 +178,39 @@
             this.btnReembolso.TabIndex = 2;
             this.btnReembolso.Text = "Reembolso";
             this.btnReembolso.UseVisualStyleBackColor = true;
-            this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
-            // 
-            // btnVentas
-            // 
-            this.btnVentas.FlatAppearance.BorderSize = 0;
-            this.btnVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.ForeColor = System.Drawing.Color.White;
-            this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
-            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(0, 167);
-            this.btnVentas.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(278, 55);
-            this.btnVentas.TabIndex = 1;
-            this.btnVentas.Text = "Venta";
-            this.btnVentas.UseVisualStyleBackColor = true;
-            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelContainer.Controls.Add(this.panelSuperior);
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(245, 0);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(729, 651);
-            this.panelContainer.TabIndex = 3;
-            // 
-            // panelSuperior
-            // 
-            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.panelSuperior.Controls.Add(this.lblRuta);
-            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(729, 36);
-            this.panelSuperior.TabIndex = 3;
-            // 
-            // lblRuta
-            // 
-            this.lblRuta.AutoSize = true;
-            this.lblRuta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblRuta.ForeColor = System.Drawing.Color.White;
-            this.lblRuta.Location = new System.Drawing.Point(3, 0);
-            this.lblRuta.Name = "lblRuta";
-            this.lblRuta.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.lblRuta.Size = new System.Drawing.Size(67, 29);
-            this.lblRuta.TabIndex = 1;
-            this.lblRuta.Text = "Inicio";
             // 
             // FormVistaPrincipalVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(974, 651);
             this.Controls.Add(this.panelContainer);
+            this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
             this.Name = "FormVistaPrincipalVentas";
             this.Text = "FormVistaPrincipalVentas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panelLateral.ResumeLayout(false);
-            this.panelLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelContainer.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
             this.panelSuperior.PerformLayout();
+            this.panelLateral.ResumeLayout(false);
+            this.panelLateral.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelLateral;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnMiCuenta;
-        private System.Windows.Forms.Button btnBuzon;
-        private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Panel panelContainer;
-        private System.Windows.Forms.Button btnReembolso;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Label lblRuta;
+        private System.Windows.Forms.Button btnVenta;
+        private System.Windows.Forms.Panel panelLateral;
+        private System.Windows.Forms.Button btnMiCuenta;
+        private System.Windows.Forms.Button btnBuzon;
+        private System.Windows.Forms.Button btnReembolso;
     }
 }

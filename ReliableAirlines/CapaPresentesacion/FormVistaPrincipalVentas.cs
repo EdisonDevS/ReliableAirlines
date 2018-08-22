@@ -15,7 +15,9 @@ namespace CapaPresentesacion
         public FormVistaPrincipalVentas()
         {
             InitializeComponent();
+            abrirFormularioHijo(new FormInicio());
         }
+
         private void abrirFormularioHijo(object formulario)
         {
             if (this.panelContainer.Controls.Count > 0)
@@ -28,37 +30,10 @@ namespace CapaPresentesacion
             this.panelContainer.Tag = hijo;
             hijo.Show();
         }
-        private void btnVentas_Click(object sender, EventArgs e)
+
+        private void btnVenta_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FormVentasVenta());
-            btnVentas.BackColor = Color.FromArgb(23, 185, 120);
-            btnReembolso.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
-            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
-        }
-
-        private void btnReembolso_Click(object sender, EventArgs e)
-        {
-            btnVentas.BackColor = Color.FromArgb(44, 61, 79);
-            btnReembolso.BackColor = Color.FromArgb(23, 185, 120);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
-            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
-        }
-
-        private void btnBuzon_Click(object sender, EventArgs e)
-        {
-            btnVentas.BackColor = Color.FromArgb(44, 61, 79);
-            btnReembolso.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(23, 185, 120);
-            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
-        }
-
-        private void btnMiCuenta_Click(object sender, EventArgs e)
-        {
-            btnVentas.BackColor = Color.FromArgb(44, 61, 79);
-            btnReembolso.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
-            btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);
         }
     }
 }
