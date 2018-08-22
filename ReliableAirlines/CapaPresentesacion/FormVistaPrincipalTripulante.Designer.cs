@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormVistaPrincipalCaja
+    partial class FormVistaPrincipalTripulante
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVistaPrincipalCaja));
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVistaPrincipalTripulante));
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
-            this.btnVenta = new System.Windows.Forms.Button();
             this.panelLateral = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMiCuenta = new System.Windows.Forms.Button();
             this.btnBuzon = new System.Windows.Forms.Button();
-            this.btnReembolso = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnInformes = new System.Windows.Forms.Button();
+            this.btnIntinerario = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
             this.panelLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
+            this.panelContainer.ForeColor = System.Drawing.Color.White;
+            this.panelContainer.Location = new System.Drawing.Point(245, 36);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(729, 615);
+            this.panelContainer.TabIndex = 7;
+            // 
+            // panelSuperior
+            // 
+            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.panelSuperior.Controls.Add(this.lblRuta);
+            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSuperior.Location = new System.Drawing.Point(245, 0);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(729, 36);
+            this.panelSuperior.TabIndex = 5;
+            // 
+            // lblRuta
+            // 
+            this.lblRuta.AutoSize = true;
+            this.lblRuta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblRuta.ForeColor = System.Drawing.Color.White;
+            this.lblRuta.Location = new System.Drawing.Point(3, 0);
+            this.lblRuta.Name = "lblRuta";
+            this.lblRuta.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.lblRuta.Size = new System.Drawing.Size(67, 29);
+            this.lblRuta.TabIndex = 1;
+            this.lblRuta.Text = "Inicio";
+            // 
+            // panelLateral
+            // 
+            this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.panelLateral.Controls.Add(this.label1);
+            this.panelLateral.Controls.Add(this.pictureBox1);
+            this.panelLateral.Controls.Add(this.btnMiCuenta);
+            this.panelLateral.Controls.Add(this.btnBuzon);
+            this.panelLateral.Controls.Add(this.btnInformes);
+            this.panelLateral.Controls.Add(this.btnIntinerario);
+            this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLateral.Location = new System.Drawing.Point(0, 0);
+            this.panelLateral.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.panelLateral.Name = "panelLateral";
+            this.panelLateral.Size = new System.Drawing.Size(245, 651);
+            this.panelLateral.TabIndex = 6;
             // 
             // label1
             // 
@@ -64,72 +112,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.panelContainer.ForeColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(245, 36);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(729, 615);
-            this.panelContainer.TabIndex = 4;
-            // 
-            // panelSuperior
-            // 
-            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.panelSuperior.Controls.Add(this.lblRuta);
-            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(245, 0);
-            this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(729, 36);
-            this.panelSuperior.TabIndex = 2;
-            // 
-            // lblRuta
-            // 
-            this.lblRuta.AutoSize = true;
-            this.lblRuta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblRuta.ForeColor = System.Drawing.Color.White;
-            this.lblRuta.Location = new System.Drawing.Point(3, 0);
-            this.lblRuta.Name = "lblRuta";
-            this.lblRuta.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.lblRuta.Size = new System.Drawing.Size(67, 29);
-            this.lblRuta.TabIndex = 1;
-            this.lblRuta.Text = "Inicio";
-            // 
-            // btnVenta
-            // 
-            this.btnVenta.FlatAppearance.BorderSize = 0;
-            this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVenta.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVenta.ForeColor = System.Drawing.Color.White;
-            this.btnVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnVenta.Image")));
-            this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVenta.Location = new System.Drawing.Point(0, 167);
-            this.btnVenta.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnVenta.Name = "btnVenta";
-            this.btnVenta.Size = new System.Drawing.Size(278, 55);
-            this.btnVenta.TabIndex = 1;
-            this.btnVenta.Text = "Venta";
-            this.btnVenta.UseVisualStyleBackColor = true;
-            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
-            // 
-            // panelLateral
-            // 
-            this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.panelLateral.Controls.Add(this.label1);
-            this.panelLateral.Controls.Add(this.pictureBox1);
-            this.panelLateral.Controls.Add(this.btnMiCuenta);
-            this.panelLateral.Controls.Add(this.btnBuzon);
-            this.panelLateral.Controls.Add(this.btnReembolso);
-            this.panelLateral.Controls.Add(this.btnVenta);
-            this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLateral.Location = new System.Drawing.Point(0, 0);
-            this.panelLateral.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(245, 651);
-            this.panelLateral.TabIndex = 3;
-            // 
             // btnMiCuenta
             // 
             this.btnMiCuenta.FlatAppearance.BorderSize = 0;
@@ -146,7 +128,6 @@
             this.btnMiCuenta.TabIndex = 4;
             this.btnMiCuenta.Text = "Mi cuenta";
             this.btnMiCuenta.UseVisualStyleBackColor = true;
-            this.btnMiCuenta.Click += new System.EventHandler(this.btnMiCuenta_Click);
             // 
             // btnBuzon
             // 
@@ -164,27 +145,42 @@
             this.btnBuzon.TabIndex = 3;
             this.btnBuzon.Text = "Buzón";
             this.btnBuzon.UseVisualStyleBackColor = true;
-            this.btnBuzon.Click += new System.EventHandler(this.btnBuzon_Click_1);
             // 
-            // btnReembolso
+            // btnInformes
             // 
-            this.btnReembolso.FlatAppearance.BorderSize = 0;
-            this.btnReembolso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnReembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReembolso.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReembolso.ForeColor = System.Drawing.Color.White;
-            this.btnReembolso.Image = ((System.Drawing.Image)(resources.GetObject("btnReembolso.Image")));
-            this.btnReembolso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReembolso.Location = new System.Drawing.Point(0, 296);
-            this.btnReembolso.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnReembolso.Name = "btnReembolso";
-            this.btnReembolso.Size = new System.Drawing.Size(278, 55);
-            this.btnReembolso.TabIndex = 2;
-            this.btnReembolso.Text = "Solicitudes";
-            this.btnReembolso.UseVisualStyleBackColor = true;
-            this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
+            this.btnInformes.FlatAppearance.BorderSize = 0;
+            this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformes.ForeColor = System.Drawing.Color.White;
+            this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
+            this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInformes.Location = new System.Drawing.Point(0, 296);
+            this.btnInformes.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(278, 55);
+            this.btnInformes.TabIndex = 2;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.UseVisualStyleBackColor = true;
             // 
-            // FormVistaPrincipalCaja
+            // btnIntinerario
+            // 
+            this.btnIntinerario.FlatAppearance.BorderSize = 0;
+            this.btnIntinerario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnIntinerario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIntinerario.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIntinerario.ForeColor = System.Drawing.Color.White;
+            this.btnIntinerario.Image = ((System.Drawing.Image)(resources.GetObject("btnIntinerario.Image")));
+            this.btnIntinerario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIntinerario.Location = new System.Drawing.Point(0, 167);
+            this.btnIntinerario.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnIntinerario.Name = "btnIntinerario";
+            this.btnIntinerario.Size = new System.Drawing.Size(278, 55);
+            this.btnIntinerario.TabIndex = 1;
+            this.btnIntinerario.Text = "Intinerario";
+            this.btnIntinerario.UseVisualStyleBackColor = true;
+            // 
+            // FormVistaPrincipalTripulante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,29 +189,29 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
-            this.Name = "FormVistaPrincipalCaja";
-            this.Text = "FormVistaPrincipalVentas";
+            this.Name = "FormVistaPrincipalTripulante";
+            this.Text = "FormVistaPrincipalTripulante";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSuperior.ResumeLayout(false);
             this.panelSuperior.PerformLayout();
             this.panelLateral.ResumeLayout(false);
             this.panelLateral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Label lblRuta;
-        private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.Panel panelLateral;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMiCuenta;
         private System.Windows.Forms.Button btnBuzon;
-        private System.Windows.Forms.Button btnReembolso;
+        private System.Windows.Forms.Button btnInformes;
+        private System.Windows.Forms.Button btnIntinerario;
     }
 }
