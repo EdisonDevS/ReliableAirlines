@@ -113,6 +113,18 @@
     <Compile Include="FormAdminNominaConsultaAjuste.Designer.cs">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCajaVentasValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajaVentasValidacion.Designer.cs">
+      <DependentUpon>FormCajaVentasValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCajaVentasVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajaVentasVenta.Designer.cs">
+      <DependentUpon>FormCajaVentasVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContabilidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,17 +371,17 @@
     <Compile Include="FormMiCuenta.Designer.cs">
       <DependentUpon>FormMiCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVentasVenta.cs">
+    <Compile Include="FormCajaVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVentasVenta.Designer.cs">
-      <DependentUpon>FormVentasVenta.cs</DependentUpon>
+    <Compile Include="FormCajaVentas.Designer.cs">
+      <DependentUpon>FormCajaVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVistaPrincipalVentas.cs">
+    <Compile Include="FormVistaPrincipalCaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVistaPrincipalVentas.Designer.cs">
-      <DependentUpon>FormVistaPrincipalVentas.cs</DependentUpon>
+    <Compile Include="FormVistaPrincipalCaja.Designer.cs">
+      <DependentUpon>FormVistaPrincipalCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -433,6 +445,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaConsultaAjuste.resx">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCajaVentasValidacion.resx">
+      <DependentUpon>FormCajaVentasValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCajaVentasVenta.resx">
+      <DependentUpon>FormCajaVentasVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidad.resx">
       <DependentUpon>FormContabilidad.cs</DependentUpon>
@@ -557,11 +575,11 @@
     <EmbeddedResource Include="FormMiCuenta.resx">
       <DependentUpon>FormMiCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVentasVenta.resx">
-      <DependentUpon>FormVentasVenta.cs</DependentUpon>
+    <EmbeddedResource Include="FormCajaVentas.resx">
+      <DependentUpon>FormCajaVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVistaPrincipalVentas.resx">
-      <DependentUpon>FormVistaPrincipalVentas.cs</DependentUpon>
+    <EmbeddedResource Include="FormVistaPrincipalCaja.resx">
+      <DependentUpon>FormVistaPrincipalCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

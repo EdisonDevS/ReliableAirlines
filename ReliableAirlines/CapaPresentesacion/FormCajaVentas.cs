@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormVentasVenta : Form
+    public partial class FormCajaVentas : Form
     {
-        public FormVentasVenta()
+        public FormCajaVentas()
         {
             InitializeComponent();
         }
@@ -32,12 +32,14 @@ namespace CapaPresentesacion
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormCajaVentasVenta());
             panelActivoValidacion.Visible = false;
             pnlActivoVenta.Visible = true;
         }
 
         private void btnValidacion_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormCajaVentasValidacion());
             panelActivoValidacion.Visible = true;
             pnlActivoVenta.Visible = false;
         }

@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormVentasVenta
+    partial class FormCajaVentas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVentasVenta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCajaVentas));
             this.pnlActivoVenta = new System.Windows.Forms.Panel();
             this.btnVenta = new System.Windows.Forms.Button();
             this.panelEleccionVentas = new System.Windows.Forms.Panel();
@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(1316, 788);
+            this.ClientSize = new System.Drawing.Size(1125, 671);
             this.Controls.Add(this.panelActivoValidacion);
             this.Controls.Add(this.btnValidacion);
             this.Controls.Add(this.panelEleccionVentas);

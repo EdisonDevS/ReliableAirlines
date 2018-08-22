@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormVistaPrincipalVentas : Form
+    public partial class FormVistaPrincipalCaja : Form
     {
-        public FormVistaPrincipalVentas()
+        public FormVistaPrincipalCaja()
         {
             InitializeComponent();
             abrirFormularioHijo(new FormInicio());
@@ -33,7 +33,7 @@ namespace CapaPresentesacion
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormVentasVenta());
+            abrirFormularioHijo(new FormCajaVentas());
         }
     }
 }
