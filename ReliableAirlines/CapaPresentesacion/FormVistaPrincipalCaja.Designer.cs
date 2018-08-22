@@ -144,6 +144,7 @@
             this.btnMiCuenta.TabIndex = 4;
             this.btnMiCuenta.Text = "Mi cuenta";
             this.btnMiCuenta.UseVisualStyleBackColor = true;
+            this.btnMiCuenta.Click += new System.EventHandler(this.btnMiCuenta_Click);
             // 
             // btnBuzon
             // 
@@ -161,6 +162,7 @@
             this.btnBuzon.TabIndex = 3;
             this.btnBuzon.Text = "Buzón";
             this.btnBuzon.UseVisualStyleBackColor = true;
+            this.btnBuzon.Click += new System.EventHandler(this.btnBuzon_Click_1);
             // 
             // btnReembolso
             // 
@@ -176,10 +178,11 @@
             this.btnReembolso.Name = "btnReembolso";
             this.btnReembolso.Size = new System.Drawing.Size(278, 55);
             this.btnReembolso.TabIndex = 2;
-            this.btnReembolso.Text = "Reembolso";
+            this.btnReembolso.Text = "Solicitudes";
             this.btnReembolso.UseVisualStyleBackColor = true;
+            this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
             // 
-            // FormVistaPrincipalVentas
+            // FormVistaPrincipalCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +191,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
-            this.Name = "FormVistaPrincipalVentas";
+            this.Name = "FormVistaPrincipalCaja";
             this.Text = "FormVistaPrincipalVentas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
