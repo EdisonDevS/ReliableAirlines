@@ -63,10 +63,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Forte", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 12);
+            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 82);
+            this.label1.Size = new System.Drawing.Size(167, 82);
             this.label1.TabIndex = 2;
             this.label1.Text = "Reliable\r\nAirlines\r\n";
             // 

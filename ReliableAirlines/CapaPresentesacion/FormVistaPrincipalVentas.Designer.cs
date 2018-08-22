@@ -34,9 +34,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMiCuenta = new System.Windows.Forms.Button();
             this.btnBuzon = new System.Windows.Forms.Button();
+            this.btnReembolso = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btnReembolso = new System.Windows.Forms.Button();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
             this.panelLateral.SuspendLayout();
@@ -64,11 +64,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Forte", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(86, 12);
+            this.label1.Location = new System.Drawing.Point(77, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 82);
+            this.label1.Size = new System.Drawing.Size(167, 82);
             this.label1.TabIndex = 2;
             this.label1.Text = "Reliable\r\nAirlines\r\n";
             // 
@@ -117,6 +117,24 @@
             this.btnBuzon.UseVisualStyleBackColor = true;
             this.btnBuzon.Click += new System.EventHandler(this.btnBuzon_Click);
             // 
+            // btnReembolso
+            // 
+            this.btnReembolso.FlatAppearance.BorderSize = 0;
+            this.btnReembolso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnReembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReembolso.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReembolso.ForeColor = System.Drawing.Color.White;
+            this.btnReembolso.Image = ((System.Drawing.Image)(resources.GetObject("btnReembolso.Image")));
+            this.btnReembolso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReembolso.Location = new System.Drawing.Point(0, 296);
+            this.btnReembolso.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnReembolso.Name = "btnReembolso";
+            this.btnReembolso.Size = new System.Drawing.Size(278, 55);
+            this.btnReembolso.TabIndex = 2;
+            this.btnReembolso.Text = "Reembolso";
+            this.btnReembolso.UseVisualStyleBackColor = true;
+            this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
+            // 
             // btnVentas
             // 
             this.btnVentas.FlatAppearance.BorderSize = 0;
@@ -144,24 +162,6 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(729, 651);
             this.panelContainer.TabIndex = 3;
-            // 
-            // btnReembolso
-            // 
-            this.btnReembolso.FlatAppearance.BorderSize = 0;
-            this.btnReembolso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnReembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReembolso.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReembolso.ForeColor = System.Drawing.Color.White;
-            this.btnReembolso.Image = ((System.Drawing.Image)(resources.GetObject("btnReembolso.Image")));
-            this.btnReembolso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReembolso.Location = new System.Drawing.Point(0, 296);
-            this.btnReembolso.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnReembolso.Name = "btnReembolso";
-            this.btnReembolso.Size = new System.Drawing.Size(278, 55);
-            this.btnReembolso.TabIndex = 2;
-            this.btnReembolso.Text = "Reembolso";
-            this.btnReembolso.UseVisualStyleBackColor = true;
-            this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
             // 
             // panelSuperior
             // 
