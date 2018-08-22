@@ -371,6 +371,12 @@
     <Compile Include="FormAdminVuelosGestionNuevo.Designer.cs">
       <DependentUpon>FormAdminVuelosGestionNuevo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMiCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -580,6 +586,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminVuelosGestionNuevo.resx">
       <DependentUpon>FormAdminVuelosGestionNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMiCuenta.resx">
       <DependentUpon>FormMiCuenta.cs</DependentUpon>
