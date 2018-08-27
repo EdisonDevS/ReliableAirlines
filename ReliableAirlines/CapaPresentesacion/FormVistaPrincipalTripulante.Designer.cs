@@ -179,6 +179,7 @@
             this.btnIntinerario.TabIndex = 1;
             this.btnIntinerario.Text = "Intinerario";
             this.btnIntinerario.UseVisualStyleBackColor = true;
+            this.btnIntinerario.Click += new System.EventHandler(this.btnIntinerario_Click);
             // 
             // FormVistaPrincipalTripulante
             // 

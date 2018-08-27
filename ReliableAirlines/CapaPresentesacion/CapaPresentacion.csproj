@@ -389,6 +389,12 @@
     <Compile Include="FormCajaVentas.Designer.cs">
       <DependentUpon>FormCajaVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTripulacionIntinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTripulacionIntinerario.Designer.cs">
+      <DependentUpon>FormTripulacionIntinerario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVistaPrincipalCaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -601,6 +607,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCajaVentas.resx">
       <DependentUpon>FormCajaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTripulacionIntinerario.resx">
+      <DependentUpon>FormTripulacionIntinerario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalCaja.resx">
       <DependentUpon>FormVistaPrincipalCaja.cs</DependentUpon>
