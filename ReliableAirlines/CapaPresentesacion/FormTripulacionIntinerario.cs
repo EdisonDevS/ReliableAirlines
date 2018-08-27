@@ -28,5 +28,11 @@ namespace CapaPresentesacion
             btnProximos.BackColor = Color.FromArgb(44, 61, 79);
             btnHistorial.BackColor = Color.FromArgb(23, 185, 120);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormTripulacionIntinerarioInfo informacion = new FormTripulacionIntinerarioInfo();
+            informacion.Show();
+        }
     }
 }

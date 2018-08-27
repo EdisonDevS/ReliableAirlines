@@ -88,8 +88,9 @@
             this.button1.TabIndex = 28;
             this.button1.Text = "Ver \r\nseleccionado";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormTripulacion
+            // FormTripulacionIntinerario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +101,7 @@
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormTripulacion";
+            this.Name = "FormTripulacionIntinerario";
             this.Text = "FormTripulacion";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
