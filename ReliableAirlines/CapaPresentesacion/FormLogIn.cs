@@ -46,6 +46,13 @@ namespace CapaPresentesacion
                 FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados();
                 emple.Show();
             }
+
+            if (txtUser.Text == "clien" && txtPass.Text == "1234")
+            {
+                this.Hide();
+                FormVistaPrincipalCliente clien = new FormVistaPrincipalCliente();
+                clien.Show();
+            }
         }
     }
 }

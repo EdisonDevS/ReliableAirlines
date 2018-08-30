@@ -419,6 +419,12 @@
     <Compile Include="FormVistaPrincipalCaja.Designer.cs">
       <DependentUpon>FormVistaPrincipalCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVistaPrincipalCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaPrincipalCliente.Designer.cs">
+      <DependentUpon>FormVistaPrincipalCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVistaPrincipalTripulante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -646,6 +652,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalCaja.resx">
       <DependentUpon>FormVistaPrincipalCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaPrincipalCliente.resx">
+      <DependentUpon>FormVistaPrincipalCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalTripulante.resx">
       <DependentUpon>FormVistaPrincipalTripulante.cs</DependentUpon>
