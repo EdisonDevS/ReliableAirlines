@@ -40,6 +40,7 @@ namespace CapaPresentesacion
 
         private void btnInformes_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormTripulacionInformes());
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(23, 185, 120);
             btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
@@ -48,6 +49,7 @@ namespace CapaPresentesacion
 
         private void btnBuzon_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormGeneralBuzon());
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(44, 61, 79);
             btnBuzon.BackColor = Color.FromArgb(23, 185, 120);
@@ -56,6 +58,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormMiCuenta());
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(44, 61, 79);
             btnBuzon.BackColor = Color.FromArgb(44, 61, 79);

@@ -121,7 +121,7 @@
             this.btnMiCuenta.ForeColor = System.Drawing.Color.White;
             this.btnMiCuenta.Image = ((System.Drawing.Image)(resources.GetObject("btnMiCuenta.Image")));
             this.btnMiCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMiCuenta.Location = new System.Drawing.Point(0, 559);
+            this.btnMiCuenta.Location = new System.Drawing.Point(0, 553);
             this.btnMiCuenta.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnMiCuenta.Name = "btnMiCuenta";
             this.btnMiCuenta.Size = new System.Drawing.Size(278, 55);
