@@ -128,6 +128,7 @@
             this.btnMiCuenta.TabIndex = 4;
             this.btnMiCuenta.Text = "Mi cuenta";
             this.btnMiCuenta.UseVisualStyleBackColor = true;
+            this.btnMiCuenta.Click += new System.EventHandler(this.btnMiCuenta_Click);
             // 
             // btnBuzon
             // 
@@ -145,6 +146,7 @@
             this.btnBuzon.TabIndex = 3;
             this.btnBuzon.Text = "Buzón";
             this.btnBuzon.UseVisualStyleBackColor = true;
+            this.btnBuzon.Click += new System.EventHandler(this.btnBuzon_Click);
             // 
             // btnInformes
             // 
@@ -162,6 +164,7 @@
             this.btnInformes.TabIndex = 2;
             this.btnInformes.Text = "Informes";
             this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // btnIntinerario
             // 
