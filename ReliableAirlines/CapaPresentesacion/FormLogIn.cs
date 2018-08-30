@@ -39,6 +39,13 @@ namespace CapaPresentesacion
                 FormVistaPrincipalTripulante tripu = new FormVistaPrincipalTripulante();
                 tripu.Show();
             }
+
+            if (txtUser.Text == "emple" && txtPass.Text == "1234")
+            {
+                this.Hide();
+                FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados();
+                emple.Show();
+            }
         }
     }
 }
