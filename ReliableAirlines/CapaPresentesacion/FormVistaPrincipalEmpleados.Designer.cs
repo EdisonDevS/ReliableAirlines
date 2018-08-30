@@ -176,6 +176,7 @@
             this.Name = "FormVistaPrincipalEmpleados";
             this.Text = "VistaPrincipalEmpleados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormVistaPrincipalEmpleados_Load);
             this.panelLateral.ResumeLayout(false);
             this.panelLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
