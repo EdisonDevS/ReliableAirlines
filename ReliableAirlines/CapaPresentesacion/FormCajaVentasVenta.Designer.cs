@@ -55,9 +55,9 @@
             this.btnGenerarGasto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarGasto.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarGasto.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarGasto.Location = new System.Drawing.Point(960, 373);
+            this.btnGenerarGasto.Location = new System.Drawing.Point(394, 186);
             this.btnGenerarGasto.Name = "btnGenerarGasto";
-            this.btnGenerarGasto.Size = new System.Drawing.Size(125, 55);
+            this.btnGenerarGasto.Size = new System.Drawing.Size(98, 29);
             this.btnGenerarGasto.TabIndex = 101;
             this.btnGenerarGasto.Text = "Validar reserva";
             this.btnGenerarGasto.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 293);
+            this.label2.Location = new System.Drawing.Point(12, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 24);
             this.label2.TabIndex = 100;
@@ -76,9 +76,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(16, 281);
+            this.panel1.Location = new System.Drawing.Point(16, 149);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1062, 1);
+            this.panel1.Size = new System.Drawing.Size(475, 1);
             this.panel1.TabIndex = 97;
             // 
             // label1
@@ -97,7 +97,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(592, 12);
+            this.label3.Location = new System.Drawing.Point(282, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 24);
             this.label3.TabIndex = 102;
@@ -107,7 +107,7 @@
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(206, 72);
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 45);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(154, 33);
             this.dateTimePicker1.TabIndex = 104;
@@ -117,7 +117,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 78);
+            this.label4.Location = new System.Drawing.Point(12, 45);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 24);
             this.label4.TabIndex = 105;
@@ -130,9 +130,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(905, 50);
+            this.button1.Location = new System.Drawing.Point(383, 32);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 55);
+            this.button1.Size = new System.Drawing.Size(109, 37);
             this.button1.TabIndex = 106;
             this.button1.Text = "Ver vuelos disponibles";
             this.button1.UseVisualStyleBackColor = false;
@@ -141,25 +141,25 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 114);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1062, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(476, 69);
             this.dataGridView1.TabIndex = 107;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox3.Location = new System.Drawing.Point(126, 290);
+            this.textBox3.Location = new System.Drawing.Point(70, 156);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(297, 33);
+            this.textBox3.Size = new System.Drawing.Size(116, 33);
             this.textBox3.TabIndex = 108;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox4.Location = new System.Drawing.Point(765, 290);
+            this.textBox4.Location = new System.Drawing.Point(376, 156);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(297, 33);
+            this.textBox4.Size = new System.Drawing.Size(115, 33);
             this.textBox4.TabIndex = 110;
             // 
             // label5
@@ -167,7 +167,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(651, 293);
+            this.label5.Location = new System.Drawing.Point(313, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 24);
             this.label5.TabIndex = 109;
@@ -176,9 +176,9 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox5.Location = new System.Drawing.Point(231, 354);
+            this.textBox5.Location = new System.Drawing.Point(123, 185);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 33);
+            this.textBox5.Size = new System.Drawing.Size(136, 33);
             this.textBox5.TabIndex = 112;
             // 
             // label6
@@ -186,7 +186,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 357);
+            this.label6.Location = new System.Drawing.Point(12, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 24);
             this.label6.TabIndex = 111;
@@ -200,9 +200,9 @@
             "C.C",
             "T.I",
             "C.E"});
-            this.comboBox1.Location = new System.Drawing.Point(157, 354);
+            this.comboBox1.Location = new System.Drawing.Point(82, 185);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(68, 32);
+            this.comboBox1.Size = new System.Drawing.Size(41, 32);
             this.comboBox1.TabIndex = 113;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -210,18 +210,18 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(206, 12);
+            this.comboBox2.Location = new System.Drawing.Point(100, 12);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(223, 32);
+            this.comboBox2.Size = new System.Drawing.Size(114, 32);
             this.comboBox2.TabIndex = 114;
             // 
             // comboBox3
             // 
             this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(808, 12);
+            this.comboBox3.Location = new System.Drawing.Point(381, 12);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(222, 32);
+            this.comboBox3.Size = new System.Drawing.Size(111, 32);
             this.comboBox3.TabIndex = 115;
             // 
             // FormCajaVentasVenta

@@ -49,7 +49,7 @@
             this.btnAeronaves.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAeronaves.ForeColor = System.Drawing.Color.White;
             this.btnAeronaves.Image = ((System.Drawing.Image)(resources.GetObject("btnAeronaves.Image")));
-            this.btnAeronaves.Location = new System.Drawing.Point(394, 12);
+            this.btnAeronaves.Location = new System.Drawing.Point(394, 3);
             this.btnAeronaves.Name = "btnAeronaves";
             this.btnAeronaves.Size = new System.Drawing.Size(80, 111);
             this.btnAeronaves.TabIndex = 14;
@@ -66,7 +66,7 @@
             this.btnRutas.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRutas.ForeColor = System.Drawing.Color.White;
             this.btnRutas.Image = ((System.Drawing.Image)(resources.GetObject("btnRutas.Image")));
-            this.btnRutas.Location = new System.Drawing.Point(308, 12);
+            this.btnRutas.Location = new System.Drawing.Point(308, 3);
             this.btnRutas.Name = "btnRutas";
             this.btnRutas.Size = new System.Drawing.Size(80, 111);
             this.btnRutas.TabIndex = 13;
@@ -83,7 +83,7 @@
             this.btnBuzon.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuzon.ForeColor = System.Drawing.Color.White;
             this.btnBuzon.Image = ((System.Drawing.Image)(resources.GetObject("btnBuzon.Image")));
-            this.btnBuzon.Location = new System.Drawing.Point(222, 12);
+            this.btnBuzon.Location = new System.Drawing.Point(222, 3);
             this.btnBuzon.Name = "btnBuzon";
             this.btnBuzon.Size = new System.Drawing.Size(80, 111);
             this.btnBuzon.TabIndex = 12;
@@ -100,7 +100,7 @@
             this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
-            this.btnClientes.Location = new System.Drawing.Point(136, 12);
+            this.btnClientes.Location = new System.Drawing.Point(136, 3);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(80, 111);
             this.btnClientes.TabIndex = 11;
@@ -117,7 +117,7 @@
             this.btnNomina.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomina.ForeColor = System.Drawing.Color.White;
             this.btnNomina.Image = ((System.Drawing.Image)(resources.GetObject("btnNomina.Image")));
-            this.btnNomina.Location = new System.Drawing.Point(50, 12);
+            this.btnNomina.Location = new System.Drawing.Point(50, 3);
             this.btnNomina.Name = "btnNomina";
             this.btnNomina.Size = new System.Drawing.Size(80, 111);
             this.btnNomina.TabIndex = 10;
@@ -130,7 +130,7 @@
             // panelEleccionAdmin
             // 
             this.panelEleccionAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelEleccionAdmin.Location = new System.Drawing.Point(12, 129);
+            this.panelEleccionAdmin.Location = new System.Drawing.Point(12, 120);
             this.panelEleccionAdmin.Name = "panelEleccionAdmin";
             this.panelEleccionAdmin.Size = new System.Drawing.Size(497, 227);
             this.panelEleccionAdmin.TabIndex = 15;
@@ -138,7 +138,7 @@
             // pnlActivoNomina
             // 
             this.pnlActivoNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoNomina.Location = new System.Drawing.Point(50, 115);
+            this.pnlActivoNomina.Location = new System.Drawing.Point(50, 106);
             this.pnlActivoNomina.Name = "pnlActivoNomina";
             this.pnlActivoNomina.Size = new System.Drawing.Size(80, 8);
             this.pnlActivoNomina.TabIndex = 16;
@@ -147,7 +147,7 @@
             // pnlActivoBuzon
             // 
             this.pnlActivoBuzon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoBuzon.Location = new System.Drawing.Point(222, 115);
+            this.pnlActivoBuzon.Location = new System.Drawing.Point(222, 106);
             this.pnlActivoBuzon.Name = "pnlActivoBuzon";
             this.pnlActivoBuzon.Size = new System.Drawing.Size(80, 8);
             this.pnlActivoBuzon.TabIndex = 17;
@@ -157,7 +157,7 @@
             // pnlActivoClientes
             // 
             this.pnlActivoClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoClientes.Location = new System.Drawing.Point(136, 115);
+            this.pnlActivoClientes.Location = new System.Drawing.Point(136, 106);
             this.pnlActivoClientes.Name = "pnlActivoClientes";
             this.pnlActivoClientes.Size = new System.Drawing.Size(80, 8);
             this.pnlActivoClientes.TabIndex = 17;
@@ -166,7 +166,7 @@
             // pnlActivoRuta
             // 
             this.pnlActivoRuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoRuta.Location = new System.Drawing.Point(308, 115);
+            this.pnlActivoRuta.Location = new System.Drawing.Point(308, 106);
             this.pnlActivoRuta.Name = "pnlActivoRuta";
             this.pnlActivoRuta.Size = new System.Drawing.Size(80, 8);
             this.pnlActivoRuta.TabIndex = 17;
@@ -175,7 +175,7 @@
             // pnlActivoAeronave
             // 
             this.pnlActivoAeronave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoAeronave.Location = new System.Drawing.Point(394, 115);
+            this.pnlActivoAeronave.Location = new System.Drawing.Point(394, 106);
             this.pnlActivoAeronave.Name = "pnlActivoAeronave";
             this.pnlActivoAeronave.Size = new System.Drawing.Size(80, 8);
             this.pnlActivoAeronave.TabIndex = 17;

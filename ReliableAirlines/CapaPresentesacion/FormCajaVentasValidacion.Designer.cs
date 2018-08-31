@@ -40,7 +40,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 70);
+            this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(279, 24);
             this.label2.TabIndex = 95;
@@ -49,9 +49,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(224, 6);
+            this.textBox1.Location = new System.Drawing.Point(117, 7);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 33);
+            this.textBox1.Size = new System.Drawing.Size(198, 33);
             this.textBox1.TabIndex = 94;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -70,9 +70,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(16, 58);
+            this.panel1.Location = new System.Drawing.Point(16, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1062, 1);
+            this.panel1.Size = new System.Drawing.Size(481, 1);
             this.panel1.TabIndex = 92;
             // 
             // btnGenerarGasto
@@ -82,9 +82,9 @@
             this.btnGenerarGasto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarGasto.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarGasto.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarGasto.Location = new System.Drawing.Point(960, 370);
+            this.btnGenerarGasto.Location = new System.Drawing.Point(396, 184);
             this.btnGenerarGasto.Name = "btnGenerarGasto";
-            this.btnGenerarGasto.Size = new System.Drawing.Size(125, 55);
+            this.btnGenerarGasto.Size = new System.Drawing.Size(101, 31);
             this.btnGenerarGasto.TabIndex = 96;
             this.btnGenerarGasto.Text = "Validar reserva";
             this.btnGenerarGasto.UseVisualStyleBackColor = false;

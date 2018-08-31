@@ -50,7 +50,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormCajaMiCuenta());
+            abrirFormularioHijo(new FormMiCuenta());
         }
     }
 }
