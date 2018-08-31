@@ -81,7 +81,7 @@
             // 
             // panelContainer
             // 
-            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.panelContainer.Location = new System.Drawing.Point(0, 30);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(519, 317);
@@ -92,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(729, 485);
+            this.ClientSize = new System.Drawing.Size(528, 357);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnMisVuelos);

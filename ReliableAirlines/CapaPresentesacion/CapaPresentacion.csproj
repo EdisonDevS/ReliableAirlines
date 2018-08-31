@@ -131,6 +131,18 @@
     <Compile Include="FormClientesReservas.Designer.cs">
       <DependentUpon>FormClientesReservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormClientesReservasHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientesReservasHistorial.Designer.cs">
+      <DependentUpon>FormClientesReservasHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientesReservasMisReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientesReservasMisReservas.Designer.cs">
+      <DependentUpon>FormClientesReservasMisReservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClientesReservasReservar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -514,6 +526,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientesReservas.resx">
       <DependentUpon>FormClientesReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientesReservasHistorial.resx">
+      <DependentUpon>FormClientesReservasHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientesReservasMisReservas.resx">
+      <DependentUpon>FormClientesReservasMisReservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientesReservasReservar.resx">
       <DependentUpon>FormClientesReservasReservar.cs</DependentUpon>
