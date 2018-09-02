@@ -26,7 +26,7 @@ namespace CapaPresentesacion
                 registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text,
                 cbbTipoUsuario.Text, txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
                 txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
-                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfoAdicional.Text);
+                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfoAdicional.Text,txtSueldo.Text);
             }
             else
             {

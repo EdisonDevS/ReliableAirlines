@@ -17,7 +17,7 @@ namespace CapaDatos
         public void registro (string documento, string tipoDoc, string usuario,
             string contraseña, string permisos, string nombres, string apellidos, string nacimiento,
             string email, string telefono,string tipoContra, string puesto,string cuenta,
-            string tipoCuenta,string banco,string eps, string direccion,string ciudad,string info)
+            string tipoCuenta,string banco,string eps, string direccion,string ciudad,string info, string sueldo)
         {
             consulta.Connection = conexion.AbrirConexion();
             
@@ -42,6 +42,7 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@direccion", direccion);
             consulta.Parameters.AddWithValue("@ciudad", ciudad);
             consulta.Parameters.AddWithValue("@infoAdicional", info);
+            consulta.Parameters.AddWithValue("@sueldo",sueldo);
 
             consulta.ExecuteNonQuery();
             consulta.Parameters.Clear();

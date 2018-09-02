@@ -19,7 +19,7 @@ namespace CapaNegociacion
         public void registro(string documento, string tipoDoc, string usuario,
             string contraseña, string tipoUsuario, string nombres, string apellidos, string nacimiento,
             string email, string telefono, string tipoContra, string puesto, string cuenta,
-            string tipoCuenta, string banco, string eps, string direccion, string ciudad, string info)
+            string tipoCuenta, string banco, string eps, string direccion, string ciudad, string info, string sueldo)
         {
             nacimiento = conversorFecha.convertirAFormatoSQL(nacimiento);
             string permisos = permiso.generarPermisos(tipoUsuario);
@@ -27,10 +27,10 @@ namespace CapaNegociacion
             try
             {
                 registrar.registro(documento, tipoDoc, usuario, contraseña, permisos, nombres, apellidos, nacimiento,
-                email, telefono, tipoContra, puesto, cuenta, tipoCuenta, banco, eps, direccion, ciudad, info);
-            }catch(Exception)
+                email, telefono, tipoContra, puesto, cuenta, tipoCuenta, banco, eps, direccion, ciudad, info, sueldo);
+            }catch(Exception ex)
             {
-                MessageBox.Show("Ohh ohh, parece que ya existe un usuario con esta identificación,\n" +
+                MessageBox.Show("Ohh ohh, parece que ya existe un usuario con esta identificación,\n" +ex+
                                 "verifica tus datos e intentalo nuevamente.");
             }
             
