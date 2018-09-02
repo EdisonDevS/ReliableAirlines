@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegociacion
 {
-    class CnPermisos
+    public class CnPermisos
     {
         public List<string> traducirPermisos(string cadena)
         {
@@ -14,7 +14,16 @@ namespace CapaNegociacion
 
             foreach (char x in cadena)
             {
-                permisos.Add(Convert.ToString(Convert.ToByte(x)));
+                string aux = Convert.ToString(Convert.ToInt32(((int)x).ToString("X"), 16), 2);
+                int medida = aux.Length;
+                if(aux.Length<8)
+                {
+                    for(int i=0; i<(8-medida);i++)
+                    {
+                        aux = "0" + aux;
+                    }
+                }
+                permisos.Add(aux);
             }
 
             foreach(string x in permisos)
