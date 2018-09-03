@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 
 namespace CapaPresentesacion
@@ -20,40 +21,44 @@ namespace CapaPresentesacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "admin" && txtPass.Text == "1234")
+            CnSesion autorizacion = new CnSesion();
+            if(autorizacion.iniciarSesion(txtUser.Text, txtPass.Text))
             {
-                this.Hide();
-                FormVistaPrincipalAdmin admin = new FormVistaPrincipalAdmin();
-                admin.Show();
+                switch (autorizacion.permisos[0])
+                {
+                    case '1':
+                        this.Hide();
+                        FormVistaPrincipalAdmin admin = new FormVistaPrincipalAdmin();
+                        admin.Show();
+                        break;
+                    case '2':
+                        this.Hide();
+                        FormVistaPrincipalCaja caja = new FormVistaPrincipalCaja();
+                        caja.Show();
+                        break;
+                    case '3':
+                        this.Hide();
+                        FormVistaPrincipalTripulante tripu = new FormVistaPrincipalTripulante();
+                        tripu.Show();
+                        break;
+                    case '4':
+                        this.Hide();
+                        FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados();
+                        emple.Show();
+                        break;
+                    case '5':
+                        this.Hide();
+                        FormVistaPrincipalCliente clien = new FormVistaPrincipalCliente();
+                        clien.Show();
+                        break;
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
             }
 
-            if (txtUser.Text == "caja" && txtPass.Text == "1234")
-            {
-                this.Hide();
-                FormVistaPrincipalCaja caja = new FormVistaPrincipalCaja();
-                caja.Show();
-            }
-
-            if (txtUser.Text == "tripu" && txtPass.Text == "1234")
-            {
-                this.Hide();
-                FormVistaPrincipalTripulante tripu = new FormVistaPrincipalTripulante();
-                tripu.Show();
-            }
-
-            if (txtUser.Text == "emple" && txtPass.Text == "1234")
-            {
-                this.Hide();
-                FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados();
-                emple.Show();
-            }
-
-            if (txtUser.Text == "clien" && txtPass.Text == "1234")
-            {
-                this.Hide();
-                FormVistaPrincipalCliente clien = new FormVistaPrincipalCliente();
-                clien.Show();
-            }
         }
     }
 }

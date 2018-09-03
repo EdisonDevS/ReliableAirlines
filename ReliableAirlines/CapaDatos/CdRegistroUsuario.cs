@@ -45,6 +45,8 @@ namespace CapaDatos
 
             consulta.ExecuteNonQuery();
             consulta.Parameters.Clear();
+
+            conexion.CerrarConexion();
         }
         
     }
