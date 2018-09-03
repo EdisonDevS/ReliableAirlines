@@ -19,5 +19,19 @@ namespace CapaNegociacion
 
             return tabla;
         }
+
+        public void realizarCambios(string documento, string tipoDoc, string usuario,
+            string nombres, string apellidos, string nacimiento,
+            string email, string telefono, string tipoContra, string puesto, string cuenta,
+            string tipoCuenta, string banco, string eps, string direccion, string ciudad, string info, string sueldo)
+        {
+            CdModificarUsuario cambiar = new CdModificarUsuario();
+            CnFechas fechas = new CnFechas();
+            nacimiento = fechas.convertirAFormatoSQL(nacimiento);
+        
+            cambiar.modificar(documento, tipoDoc, usuario, nombres, apellidos, nacimiento,
+                email, telefono, tipoContra, puesto, cuenta, tipoCuenta, banco, eps, direccion, ciudad, info, sueldo);
+
+        }
     }
 }

@@ -72,6 +72,7 @@
             this.cbbBanco = new System.Windows.Forms.ComboBox();
             this.btnVer = new System.Windows.Forms.Button();
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtInfo
@@ -175,7 +176,6 @@
             this.label10.Size = new System.Drawing.Size(74, 23);
             this.label10.TabIndex = 64;
             this.label10.Text = "Banco:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -285,6 +285,7 @@
             // 
             // txtDoc
             // 
+            this.txtDoc.Enabled = false;
             this.txtDoc.Location = new System.Drawing.Point(255, 46);
             this.txtDoc.Name = "txtDoc";
             this.txtDoc.Size = new System.Drawing.Size(66, 20);
@@ -313,7 +314,6 @@
             this.label2.Size = new System.Drawing.Size(102, 23);
             this.label2.TabIndex = 48;
             this.label2.Text = "Apellidos:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtApellidos
             // 
@@ -363,6 +363,7 @@
             // 
             this.txtVerificarContra.Location = new System.Drawing.Point(67, 136);
             this.txtVerificarContra.Name = "txtVerificarContra";
+            this.txtVerificarContra.PasswordChar = '*';
             this.txtVerificarContra.Size = new System.Drawing.Size(84, 20);
             this.txtVerificarContra.TabIndex = 82;
             // 
@@ -392,6 +393,7 @@
             // 
             this.txtContraseña.Location = new System.Drawing.Point(67, 105);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(84, 20);
             this.txtContraseña.TabIndex = 79;
             // 
@@ -448,7 +450,7 @@
             this.btnGuardarCambios.TabIndex = 86;
             this.btnGuardarCambios.Text = "Guardar cambios";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
-            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
+            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click_1);
             // 
             // txtUsuario
             // 
@@ -519,12 +521,27 @@
             this.cbbTipoCuenta.Size = new System.Drawing.Size(58, 21);
             this.cbbTipoCuenta.TabIndex = 92;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(96, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 28);
+            this.button1.TabIndex = 93;
+            this.button1.Text = "Modificar\r\nPermisos";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FormAdminNominaActualizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 209);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cbbTipoCuenta);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.cbbBanco);
@@ -624,5 +641,6 @@
         private System.Windows.Forms.ComboBox cbbBanco;
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
+        private System.Windows.Forms.Button button1;
     }
 }

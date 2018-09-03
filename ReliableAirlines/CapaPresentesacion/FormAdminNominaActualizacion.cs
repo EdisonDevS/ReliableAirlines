@@ -24,7 +24,7 @@ namespace CapaPresentesacion
         {
             CnModificarUsuario modificarUsuario = new CnModificarUsuario();
             DataTable informacion = modificarUsuario.cargarDatos(txtDocumento.Text);
-            if(informacion.Rows.Count>0)
+            if (informacion.Rows.Count > 0)
             {
                 txtNombres.Text = informacion.Rows[0]["nombres"].ToString();
                 txtApellidos.Text = informacion.Rows[0]["apellidos"].ToString();
@@ -49,22 +49,16 @@ namespace CapaPresentesacion
             {
                 MessageBox.Show("No se encontraron usuarios con este documento");
             }
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void btnGuardarCambios_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            CnModificarUsuario modificarUsuario = new CnModificarUsuario();
+            modificarUsuario.realizarCambios(txtDoc.Text, cbbTipoDoc.Text, txtUsuario.Text,
+                txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
+                txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
+                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfo.Text, txtSueldo.Text);
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -147,9 +141,6 @@ namespace CapaPresentesacion
 
         }
 
-        private void btnGuardarCambios_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
