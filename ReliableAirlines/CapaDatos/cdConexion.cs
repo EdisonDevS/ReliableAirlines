@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaDatos
 {
-    class CD_Conexion
+    class CdConexion
     {
 
-        SqlConnection Conexion = new SqlConnection("Data Source = <Nombre del servidor>; Initial catalog = <Nombre de la DB>; Integrated Security = True");
+        SqlConnection Conexion = new SqlConnection("Data Source = DESKTOP-EMQ2NTE\\SQLEXPRESS;" +
+            " Initial catalog = ReliableAirlines; Integrated Security = True");
 
         public SqlConnection AbrirConexion()
         {

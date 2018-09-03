@@ -8,6 +8,29 @@ namespace CapaNegociacion
 {
     public class CnPermisos
     {
+        public string generarPermisos(string tipoUsuario)
+        {
+            string permisos = "";
+
+            switch(tipoUsuario)
+            {
+                case "Admin":
+                    permisos = permisos + "1";
+                    break;
+                case "Caja":
+                    permisos = permisos + "2";
+                    break;
+                case "Tripulación":
+                    permisos = permisos + "3";
+                    break;
+                case "Empleado":
+                    permisos = permisos + "4";
+                    break;
+            }
+
+            return permisos;
+        }
+
         public List<string> traducirPermisos(string cadena)
         {
             List<string> permisos = new List<string>();
