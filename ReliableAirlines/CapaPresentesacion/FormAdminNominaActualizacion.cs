@@ -22,7 +22,7 @@ namespace CapaPresentesacion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            CnModificarUsuario modificarUsuario = new CnModificarUsuario();
+            CnAdministracionUsuarios modificarUsuario = new CnAdministracionUsuarios();
             DataTable informacion = modificarUsuario.cargarDatos(txtDocumento.Text);
             if (informacion.Rows.Count > 0)
             {
@@ -54,11 +54,14 @@ namespace CapaPresentesacion
 
         private void btnGuardarCambios_Click_1(object sender, EventArgs e)
         {
-            CnModificarUsuario modificarUsuario = new CnModificarUsuario();
+            CnAdministracionUsuarios modificarUsuario = new CnAdministracionUsuarios();
             modificarUsuario.realizarCambios(txtDoc.Text, cbbTipoDoc.Text, txtUsuario.Text,
                 txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
                 txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
                 cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfo.Text, txtSueldo.Text);
+            
+            MessageBox.Show("Se han modificado los \n" +
+                            "datos correctamente.");
         }
 
         private void label9_Click(object sender, EventArgs e)

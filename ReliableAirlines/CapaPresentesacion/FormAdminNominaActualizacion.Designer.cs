@@ -57,11 +57,6 @@
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.TextBox();
-            this.txtVerificarContra = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.txtCiudad = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -73,6 +68,7 @@
             this.btnVer = new System.Windows.Forms.Button();
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtInfo
@@ -359,55 +355,6 @@
             this.txtDocumento.Size = new System.Drawing.Size(125, 20);
             this.txtDocumento.TabIndex = 77;
             // 
-            // txtVerificarContra
-            // 
-            this.txtVerificarContra.Location = new System.Drawing.Point(67, 136);
-            this.txtVerificarContra.Name = "txtVerificarContra";
-            this.txtVerificarContra.PasswordChar = '*';
-            this.txtVerificarContra.Size = new System.Drawing.Size(84, 20);
-            this.txtVerificarContra.TabIndex = 82;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(10, 127);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 23);
-            this.label19.TabIndex = 81;
-            this.label19.Text = "Verificar";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(10, 140);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(119, 23);
-            this.label18.TabIndex = 80;
-            this.label18.Text = "contraseña:";
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(67, 105);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(84, 20);
-            this.txtContraseña.TabIndex = 79;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(10, 108);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 23);
-            this.label17.TabIndex = 78;
-            this.label17.Text = "Contraseña:";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -446,7 +393,7 @@
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
             this.btnGuardarCambios.Location = new System.Drawing.Point(13, 166);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(88, 28);
+            this.btnGuardarCambios.Size = new System.Drawing.Size(80, 28);
             this.btnGuardarCambios.TabIndex = 86;
             this.btnGuardarCambios.Text = "Guardar cambios";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
@@ -454,6 +401,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Enabled = false;
             this.txtUsuario.Location = new System.Drawing.Point(54, 78);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(97, 20);
@@ -535,12 +483,27 @@
             this.button1.Text = "Modificar\r\nPermisos";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(13, 104);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 28);
+            this.button2.TabIndex = 94;
+            this.button2.Text = "Resetear contraseña";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // FormAdminNominaActualizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 209);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbbTipoCuenta);
             this.Controls.Add(this.btnVer);
@@ -552,11 +515,6 @@
             this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.txtVerificarContra);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.txtDocumento);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtInfo);
@@ -626,11 +584,6 @@
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtDocumento;
-        private System.Windows.Forms.TextBox txtVerificarContra;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label label21;
@@ -642,5 +595,6 @@
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

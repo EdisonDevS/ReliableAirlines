@@ -42,10 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CnFechas.cs" />
-    <Compile Include="CnModificarUsuario.cs" />
     <Compile Include="CnSesion.cs" />
     <Compile Include="CnPermisos.cs" />
-    <Compile Include="CnRegistroUsuario.cs" />
+    <Compile Include="CnAdministracionUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
