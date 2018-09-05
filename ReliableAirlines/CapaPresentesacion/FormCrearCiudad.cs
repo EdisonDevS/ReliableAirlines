@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormCrearRuta : Form
+    public partial class FormCrearCiudad : Form
     {
-        public FormCrearRuta()
+        public FormCrearCiudad()
         {
             InitializeComponent();
         }
-
-        private void btnAgragarCiudad_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void crearRuta_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

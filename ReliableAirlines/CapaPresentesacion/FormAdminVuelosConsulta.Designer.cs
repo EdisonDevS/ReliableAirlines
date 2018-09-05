@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDDestino = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.rbRuta = new System.Windows.Forms.RadioButton();
             this.rbNumeroVuelo = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,14 +114,6 @@
             this.label3.Size = new System.Drawing.Size(247, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "ID Aeropuerto de destino:";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(12, 150);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(960, 1);
-            this.panel1.TabIndex = 42;
             // 
             // label4
             // 
@@ -316,7 +308,15 @@
             this.rbNumeroVuelo.UseVisualStyleBackColor = true;
             this.rbNumeroVuelo.CheckedChanged += new System.EventHandler(this.rbNumeroVuelo_CheckedChanged);
             // 
-            // consultarVuelo
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.panel1.Location = new System.Drawing.Point(12, 150);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(960, 1);
+            this.panel1.TabIndex = 42;
+            // 
+            // FormAdminVuelosConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -348,7 +348,7 @@
             this.Controls.Add(this.txtNumVuelo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "consultarVuelo";
+            this.Name = "FormAdminVuelosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "consultarVuelo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -364,7 +364,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIDDestino;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -383,5 +382,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton rbRuta;
         private System.Windows.Forms.RadioButton rbNumeroVuelo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

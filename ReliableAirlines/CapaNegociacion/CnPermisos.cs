@@ -38,6 +38,7 @@ namespace CapaNegociacion
             foreach (char x in cadena)
             {
                 string aux = Convert.ToString(Convert.ToInt32(((int)x).ToString("X"), 16), 2);
+
                 int medida = aux.Length;
                 if(aux.Length<8)
                 {

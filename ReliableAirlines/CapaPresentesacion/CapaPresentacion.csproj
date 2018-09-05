@@ -257,6 +257,12 @@
     <Compile Include="FormContabilidadIngresosGenerarVentas.Designer.cs">
       <DependentUpon>FormContabilidadIngresosGenerarVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCrearCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearCiudad.Designer.cs">
+      <DependentUpon>FormCrearCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmpleadosInformes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -338,7 +344,7 @@
     <Compile Include="FormAdminRutas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCrearRuta.Designer.cs">
+    <Compile Include="FormAdminRutas.Designer.cs">
       <DependentUpon>FormAdminRutas.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGeneralBuzonRedactarSolicitud.cs">
@@ -512,6 +518,9 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminRutas.resx">
+      <DependentUpon>FormAdminRutas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdminVuelosGestion.resx">
       <DependentUpon>FormAdminVuelosGestion.cs</DependentUpon>
     </EmbeddedResource>
@@ -596,6 +605,9 @@
     <EmbeddedResource Include="FormContabilidadIngresosGenerarVentas.resx">
       <DependentUpon>FormContabilidadIngresosGenerarVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearCiudad.resx">
+      <DependentUpon>FormCrearCiudad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmpleadosInformes.resx">
       <DependentUpon>FormEmpleadosInformes.cs</DependentUpon>
     </EmbeddedResource>
@@ -634,9 +646,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminVuelosConsulta.resx">
       <DependentUpon>FormAdminVuelosConsulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCrearRuta.resx">
-      <DependentUpon>FormAdminRutas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitud.resx">
       <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
