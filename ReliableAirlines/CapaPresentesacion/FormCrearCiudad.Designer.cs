@@ -36,11 +36,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbbCiudadAeropuerto = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnAeropuerto = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAeropuerto = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbbCiudadAeropuerto = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.panel1.Controls.Add(this.btnGuardarCiudad);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtCiudad);
@@ -121,7 +121,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.panel3.Controls.Add(this.cbbCiudadAeropuerto);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.btnAeropuerto);
@@ -131,6 +131,26 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(776, 95);
             this.panel3.TabIndex = 44;
+            // 
+            // cbbCiudadAeropuerto
+            // 
+            this.cbbCiudadAeropuerto.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.cbbCiudadAeropuerto.FormattingEnabled = true;
+            this.cbbCiudadAeropuerto.Location = new System.Drawing.Point(367, 50);
+            this.cbbCiudadAeropuerto.Name = "cbbCiudadAeropuerto";
+            this.cbbCiudadAeropuerto.Size = new System.Drawing.Size(271, 32);
+            this.cbbCiudadAeropuerto.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(27, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(251, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Ciudad del aeropuerto:";
             // 
             // btnAeropuerto
             // 
@@ -165,38 +185,19 @@
             this.txtAeropuerto.Size = new System.Drawing.Size(271, 33);
             this.txtAeropuerto.TabIndex = 14;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 24);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Ciudad del aeropuerto:";
-            // 
-            // cbbCiudadAeropuerto
-            // 
-            this.cbbCiudadAeropuerto.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.cbbCiudadAeropuerto.FormattingEnabled = true;
-            this.cbbCiudadAeropuerto.Location = new System.Drawing.Point(367, 50);
-            this.cbbCiudadAeropuerto.Name = "cbbCiudadAeropuerto";
-            this.cbbCiudadAeropuerto.Size = new System.Drawing.Size(271, 32);
-            this.cbbCiudadAeropuerto.TabIndex = 17;
-            // 
             // FormCrearCiudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 259);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "FormCrearCiudad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCrearCiudad";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

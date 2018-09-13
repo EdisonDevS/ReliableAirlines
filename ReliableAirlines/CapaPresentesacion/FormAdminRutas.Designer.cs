@@ -30,13 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -44,6 +40,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAgragarCiudad = new System.Windows.Forms.Button();
+            this.cbbAerSal = new System.Windows.Forms.ComboBox();
+            this.cbbAerLleg = new System.Windows.Forms.ComboBox();
+            this.cbbCiuSal = new System.Windows.Forms.ComboBox();
+            this.cbbCiuDest = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -63,15 +63,8 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(134, 71);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 20);
+            this.textBox1.Size = new System.Drawing.Size(102, 20);
             this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(122, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 20);
-            this.textBox2.TabIndex = 3;
             // 
             // label2
             // 
@@ -84,13 +77,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Ciudad de origen:";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(344, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(114, 20);
-            this.textBox3.TabIndex = 5;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -102,13 +88,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Ciudad de destino:";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(149, 123);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(87, 20);
-            this.textBox4.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -119,13 +98,6 @@
             this.label4.Size = new System.Drawing.Size(236, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "ID Aeropuerto de origen:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(371, 123);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(87, 20);
-            this.textBox5.TabIndex = 9;
             // 
             // label5
             // 
@@ -205,6 +177,38 @@
             this.btnAgragarCiudad.UseVisualStyleBackColor = false;
             this.btnAgragarCiudad.Click += new System.EventHandler(this.btnAgragarCiudad_Click);
             // 
+            // cbbAerSal
+            // 
+            this.cbbAerSal.FormattingEnabled = true;
+            this.cbbAerSal.Location = new System.Drawing.Point(152, 123);
+            this.cbbAerSal.Name = "cbbAerSal";
+            this.cbbAerSal.Size = new System.Drawing.Size(83, 21);
+            this.cbbAerSal.TabIndex = 16;
+            // 
+            // cbbAerLleg
+            // 
+            this.cbbAerLleg.FormattingEnabled = true;
+            this.cbbAerLleg.Location = new System.Drawing.Point(374, 123);
+            this.cbbAerLleg.Name = "cbbAerLleg";
+            this.cbbAerLleg.Size = new System.Drawing.Size(84, 21);
+            this.cbbAerLleg.TabIndex = 17;
+            // 
+            // cbbCiuSal
+            // 
+            this.cbbCiuSal.FormattingEnabled = true;
+            this.cbbCiuSal.Location = new System.Drawing.Point(129, 103);
+            this.cbbCiuSal.Name = "cbbCiuSal";
+            this.cbbCiuSal.Size = new System.Drawing.Size(106, 21);
+            this.cbbCiuSal.TabIndex = 18;
+            // 
+            // cbbCiuDest
+            // 
+            this.cbbCiuDest.FormattingEnabled = true;
+            this.cbbCiuDest.Location = new System.Drawing.Point(351, 103);
+            this.cbbCiuDest.Name = "cbbCiuDest";
+            this.cbbCiuDest.Size = new System.Drawing.Size(107, 21);
+            this.cbbCiuDest.TabIndex = 19;
+            // 
             // FormCrearRuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,18 +219,18 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cbbAerSal);
+            this.Controls.Add(this.cbbAerLleg);
+            this.Controls.Add(this.cbbCiuSal);
+            this.Controls.Add(this.cbbCiuDest);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCrearRuta";
             this.Text = "crearRuta";
@@ -242,13 +246,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox listBox1;
@@ -256,5 +256,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnAgragarCiudad;
+        private System.Windows.Forms.ComboBox cbbAerSal;
+        private System.Windows.Forms.ComboBox cbbAerLleg;
+        private System.Windows.Forms.ComboBox cbbCiuSal;
+        private System.Windows.Forms.ComboBox cbbCiuDest;
     }
 }

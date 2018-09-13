@@ -19,7 +19,8 @@ namespace CapaPresentesacion
 
         private void btnAgragarCiudad_Click(object sender, EventArgs e)
         {
-
+            FormCrearCiudad ciudad = new FormCrearCiudad();
+            ciudad.Show();
         }
 
         private void crearRuta_Load(object sender, EventArgs e)
