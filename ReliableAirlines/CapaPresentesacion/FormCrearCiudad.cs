@@ -61,5 +61,76 @@ namespace CapaPresentesacion
             consultas.CrearAeropuerto(ciudad, txtAeropuerto.Text);
         }
 
+        private void rbPais_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPais.Enabled = true;
+            btnCrearPais.Enabled = true;
+            cbbEstPais.Enabled = false;
+            txtEstado.Enabled = false;
+            btnCrearEstado.Enabled = false;
+            cbbCiuPais.Enabled = false;
+            cbbCiuEstado.Enabled = false;
+            txtCiudad.Enabled = false;
+            btnCrearCiudad.Enabled = false;
+            cbbAerPais.Enabled = false;
+            cbbAerEstado.Enabled = false;
+            cbbAerCiudad.Enabled = false;
+            txtAeropuerto.Enabled = false;
+            btnCrearAeropuerto.Enabled = false;
+        }
+
+        private void rbEstado_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPais.Enabled = false;
+            btnCrearPais.Enabled = false;
+            cbbEstPais.Enabled = true;
+            txtEstado.Enabled = true;
+            btnCrearEstado.Enabled = true;
+            cbbCiuPais.Enabled = false;
+            cbbCiuEstado.Enabled = false;
+            txtCiudad.Enabled = false;
+            btnCrearCiudad.Enabled = false;
+            cbbAerPais.Enabled = false;
+            cbbAerEstado.Enabled = false;
+            cbbAerCiudad.Enabled = false;
+            txtAeropuerto.Enabled = false;
+            btnCrearAeropuerto.Enabled = false;
+        }
+
+        private void rbCiudad_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPais.Enabled = false;
+            btnCrearPais.Enabled = false;
+            cbbEstPais.Enabled = false;
+            txtEstado.Enabled = false;
+            btnCrearEstado.Enabled = false;
+            cbbCiuPais.Enabled = true;
+            cbbCiuEstado.Enabled = true;
+            txtCiudad.Enabled = true;
+            btnCrearCiudad.Enabled = true;
+            cbbAerPais.Enabled = false;
+            cbbAerEstado.Enabled = false;
+            cbbAerCiudad.Enabled = false;
+            txtAeropuerto.Enabled = false;
+            btnCrearAeropuerto.Enabled = false;
+        }
+
+        private void rbAeropuerto_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPais.Enabled = false;
+            btnCrearPais.Enabled = false;
+            cbbEstPais.Enabled = false;
+            txtEstado.Enabled = false;
+            btnCrearEstado.Enabled = false;
+            cbbCiuPais.Enabled = false;
+            cbbCiuEstado.Enabled = false;
+            txtCiudad.Enabled = false;
+            btnCrearCiudad.Enabled = false;
+            cbbAerPais.Enabled = true;
+            cbbAerEstado.Enabled = true;
+            cbbAerCiudad.Enabled = true;
+            txtAeropuerto.Enabled = true;
+            btnCrearAeropuerto.Enabled = true;
+        }
     }
 }

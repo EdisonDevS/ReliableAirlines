@@ -63,10 +63,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnCrearPais = new System.Windows.Forms.Button();
             this.txtPais = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rbPais = new System.Windows.Forms.RadioButton();
+            this.rbEstado = new System.Windows.Forms.RadioButton();
+            this.rbCiudad = new System.Windows.Forms.RadioButton();
+            this.rbAeropuerto = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -76,6 +76,7 @@
             // btnCrearCiudad
             // 
             this.btnCrearCiudad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnCrearCiudad.Enabled = false;
             this.btnCrearCiudad.FlatAppearance.BorderSize = 0;
             this.btnCrearCiudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearCiudad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,6 +91,7 @@
             // 
             // txtCiudad
             // 
+            this.txtCiudad.Enabled = false;
             this.txtCiudad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiudad.Location = new System.Drawing.Point(371, 96);
             this.txtCiudad.Name = "txtCiudad";
@@ -124,6 +126,7 @@
             // 
             // cbbCiuEstado
             // 
+            this.cbbCiuEstado.Enabled = false;
             this.cbbCiuEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbCiuEstado.FormattingEnabled = true;
             this.cbbCiuEstado.Location = new System.Drawing.Point(371, 55);
@@ -133,6 +136,7 @@
             // 
             // cbbCiuPais
             // 
+            this.cbbCiuPais.Enabled = false;
             this.cbbCiuPais.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbCiuPais.FormattingEnabled = true;
             this.cbbCiuPais.Location = new System.Drawing.Point(371, 15);
@@ -211,6 +215,7 @@
             // 
             // cbbAerEstado
             // 
+            this.cbbAerEstado.Enabled = false;
             this.cbbAerEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerEstado.FormattingEnabled = true;
             this.cbbAerEstado.Location = new System.Drawing.Point(367, 51);
@@ -220,6 +225,7 @@
             // 
             // cbbAerCiudad
             // 
+            this.cbbAerCiudad.Enabled = false;
             this.cbbAerCiudad.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerCiudad.FormattingEnabled = true;
             this.cbbAerCiudad.Location = new System.Drawing.Point(367, 91);
@@ -229,6 +235,7 @@
             // 
             // cbbAerPais
             // 
+            this.cbbAerPais.Enabled = false;
             this.cbbAerPais.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerPais.FormattingEnabled = true;
             this.cbbAerPais.Location = new System.Drawing.Point(367, 11);
@@ -272,6 +279,7 @@
             // btnCrearAeropuerto
             // 
             this.btnCrearAeropuerto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnCrearAeropuerto.Enabled = false;
             this.btnCrearAeropuerto.FlatAppearance.BorderSize = 0;
             this.btnCrearAeropuerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearAeropuerto.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -297,6 +305,7 @@
             // 
             // txtAeropuerto
             // 
+            this.txtAeropuerto.Enabled = false;
             this.txtAeropuerto.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAeropuerto.Location = new System.Drawing.Point(367, 131);
             this.txtAeropuerto.Name = "txtAeropuerto";
@@ -337,6 +346,7 @@
             // 
             // cbbEstPais
             // 
+            this.cbbEstPais.Enabled = false;
             this.cbbEstPais.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbEstPais.FormattingEnabled = true;
             this.cbbEstPais.Location = new System.Drawing.Point(371, 15);
@@ -369,6 +379,7 @@
             // btnCrearEstado
             // 
             this.btnCrearEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnCrearEstado.Enabled = false;
             this.btnCrearEstado.FlatAppearance.BorderSize = 0;
             this.btnCrearEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,6 +394,7 @@
             // 
             // txtEstado
             // 
+            this.txtEstado.Enabled = false;
             this.txtEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.Location = new System.Drawing.Point(371, 58);
             this.txtEstado.Name = "txtEstado";
@@ -453,53 +465,55 @@
             this.txtPais.Size = new System.Drawing.Size(271, 33);
             this.txtPais.TabIndex = 14;
             // 
-            // radioButton1
+            // rbPais
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(16, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 18;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbPais.AutoSize = true;
+            this.rbPais.Checked = true;
+            this.rbPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPais.ForeColor = System.Drawing.Color.White;
+            this.rbPais.Location = new System.Drawing.Point(16, 16);
+            this.rbPais.Name = "rbPais";
+            this.rbPais.Size = new System.Drawing.Size(14, 13);
+            this.rbPais.TabIndex = 18;
+            this.rbPais.TabStop = true;
+            this.rbPais.UseVisualStyleBackColor = true;
+            this.rbPais.CheckedChanged += new System.EventHandler(this.rbPais_CheckedChanged);
             // 
-            // radioButton2
+            // rbEstado
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(16, 112);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 50;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbEstado.AutoSize = true;
+            this.rbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbEstado.ForeColor = System.Drawing.Color.White;
+            this.rbEstado.Location = new System.Drawing.Point(16, 112);
+            this.rbEstado.Name = "rbEstado";
+            this.rbEstado.Size = new System.Drawing.Size(14, 13);
+            this.rbEstado.TabIndex = 50;
+            this.rbEstado.UseVisualStyleBackColor = true;
+            this.rbEstado.CheckedChanged += new System.EventHandler(this.rbEstado_CheckedChanged);
             // 
-            // radioButton3
+            // rbCiudad
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(16, 257);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 51;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbCiudad.AutoSize = true;
+            this.rbCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCiudad.ForeColor = System.Drawing.Color.White;
+            this.rbCiudad.Location = new System.Drawing.Point(16, 257);
+            this.rbCiudad.Name = "rbCiudad";
+            this.rbCiudad.Size = new System.Drawing.Size(14, 13);
+            this.rbCiudad.TabIndex = 51;
+            this.rbCiudad.UseVisualStyleBackColor = true;
+            this.rbCiudad.CheckedChanged += new System.EventHandler(this.rbCiudad_CheckedChanged);
             // 
-            // radioButton4
+            // rbAeropuerto
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(16, 431);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 52;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbAeropuerto.AutoSize = true;
+            this.rbAeropuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAeropuerto.ForeColor = System.Drawing.Color.White;
+            this.rbAeropuerto.Location = new System.Drawing.Point(16, 431);
+            this.rbAeropuerto.Name = "rbAeropuerto";
+            this.rbAeropuerto.Size = new System.Drawing.Size(14, 13);
+            this.rbAeropuerto.TabIndex = 52;
+            this.rbAeropuerto.UseVisualStyleBackColor = true;
+            this.rbAeropuerto.CheckedChanged += new System.EventHandler(this.rbAeropuerto_CheckedChanged);
             // 
             // FormCrearCiudad
             // 
@@ -507,10 +521,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
             this.ClientSize = new System.Drawing.Size(804, 645);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbAeropuerto);
+            this.Controls.Add(this.rbCiudad);
+            this.Controls.Add(this.rbEstado);
+            this.Controls.Add(this.rbPais);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label11);
@@ -571,10 +585,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnCrearPais;
         private System.Windows.Forms.TextBox txtPais;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rbPais;
+        private System.Windows.Forms.RadioButton rbEstado;
+        private System.Windows.Forms.RadioButton rbCiudad;
+        private System.Windows.Forms.RadioButton rbAeropuerto;
         private System.Windows.Forms.ComboBox cbbAerEstado;
         private System.Windows.Forms.ComboBox cbbAerPais;
         private System.Windows.Forms.Label label13;
