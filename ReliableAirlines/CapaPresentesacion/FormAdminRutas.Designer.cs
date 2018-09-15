@@ -50,6 +50,7 @@
             this.cbbAerDestino = new System.Windows.Forms.ComboBox();
             this.cbbCiudadDestino = new System.Windows.Forms.ComboBox();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
+            this.btnVerRutas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -110,7 +111,7 @@
             this.btnCrearRuta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRuta.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearRuta.ForeColor = System.Drawing.Color.White;
-            this.btnCrearRuta.Location = new System.Drawing.Point(384, 157);
+            this.btnCrearRuta.Location = new System.Drawing.Point(363, 158);
             this.btnCrearRuta.Name = "btnCrearRuta";
             this.btnCrearRuta.Size = new System.Drawing.Size(90, 33);
             this.btnCrearRuta.TabIndex = 12;
@@ -298,12 +299,27 @@
             this.cbbEstado.Size = new System.Drawing.Size(93, 21);
             this.cbbEstado.TabIndex = 34;
             // 
+            // btnVerRutas
+            // 
+            this.btnVerRutas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVerRutas.FlatAppearance.BorderSize = 0;
+            this.btnVerRutas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerRutas.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerRutas.ForeColor = System.Drawing.Color.White;
+            this.btnVerRutas.Location = new System.Drawing.Point(267, 158);
+            this.btnVerRutas.Name = "btnVerRutas";
+            this.btnVerRutas.Size = new System.Drawing.Size(90, 33);
+            this.btnVerRutas.TabIndex = 35;
+            this.btnVerRutas.Text = "Ver rutas";
+            this.btnVerRutas.UseVisualStyleBackColor = false;
+            // 
             // FormCrearRuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 202);
+            this.Controls.Add(this.btnVerRutas);
             this.Controls.Add(this.cbbEstado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbbEstadoDestino);
@@ -359,5 +375,6 @@
         private System.Windows.Forms.ComboBox cbbAerDestino;
         private System.Windows.Forms.ComboBox cbbCiudadDestino;
         private System.Windows.Forms.ComboBox cbbEstado;
+        private System.Windows.Forms.Button btnVerRutas;
     }
 }

@@ -42,7 +42,7 @@
             this.btnAdministrarRuta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarRuta.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrarRuta.ForeColor = System.Drawing.Color.White;
-            this.btnAdministrarRuta.Location = new System.Drawing.Point(248, 0);
+            this.btnAdministrarRuta.Location = new System.Drawing.Point(248, -1);
             this.btnAdministrarRuta.Name = "btnAdministrarRuta";
             this.btnAdministrarRuta.Size = new System.Drawing.Size(249, 27);
             this.btnAdministrarRuta.TabIndex = 4;
@@ -70,7 +70,7 @@
             this.btnCrearRuta.Name = "btnCrearRuta";
             this.btnCrearRuta.Size = new System.Drawing.Size(248, 27);
             this.btnCrearRuta.TabIndex = 6;
-            this.btnCrearRuta.Text = "Crear ruta nueva";
+            this.btnCrearRuta.Text = "Gestiónar rutas";
             this.btnCrearRuta.UseVisualStyleBackColor = false;
             this.btnCrearRuta.Click += new System.EventHandler(this.btnRegistrarEmpleado_Click_1);
             // 
@@ -89,7 +89,7 @@
             this.btnCrear.Text = "Crear ruta nueva";
             this.btnCrear.UseVisualStyleBackColor = false;
             // 
-            // menuRutas
+            // FormAdminRutasVuelos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.panelRutas);
             this.Controls.Add(this.btnAdministrarRuta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "menuRutas";
+            this.Name = "FormAdminRutasVuelos";
             this.Text = " ";
             this.ResumeLayout(false);
 
