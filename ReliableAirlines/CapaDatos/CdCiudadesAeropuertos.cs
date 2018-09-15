@@ -37,12 +37,11 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
-        public void CrearCiudad(int pais, int estado, string ciudad)
+        public void CrearCiudad(int estado, string ciudad)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "CREAR_CIUDAD";
-            comando.Parameters.AddWithValue("@pais", pais);
             comando.Parameters.AddWithValue("@estado", estado);
             comando.Parameters.AddWithValue("@ciudad", ciudad);
 

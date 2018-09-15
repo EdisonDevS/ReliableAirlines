@@ -23,9 +23,9 @@ namespace CapaNegociacion
             consultas.CrearEstado(pais, estado);
         }
 
-        public void CrearCiudad(int pais, int estado, string ciudad)
+        public void CrearCiudad(int estado, string ciudad)
         {
-            consultas.CrearCiudad(pais, estado, ciudad);
+            consultas.CrearCiudad(estado, ciudad);
         }
 
         public void CrearAeropuerto(int ciudad, string aeropuerto)

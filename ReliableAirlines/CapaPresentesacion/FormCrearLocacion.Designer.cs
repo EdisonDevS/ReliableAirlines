@@ -143,6 +143,7 @@
             this.cbbCiuPais.Name = "cbbCiuPais";
             this.cbbCiuPais.Size = new System.Drawing.Size(271, 32);
             this.cbbCiuPais.TabIndex = 18;
+            this.cbbCiuPais.SelectedIndexChanged += new System.EventHandler(this.cbbCiuPais_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -222,6 +223,7 @@
             this.cbbAerEstado.Name = "cbbAerEstado";
             this.cbbAerEstado.Size = new System.Drawing.Size(271, 32);
             this.cbbAerEstado.TabIndex = 23;
+            this.cbbAerEstado.SelectedIndexChanged += new System.EventHandler(this.cbbAerEstado_SelectedIndexChanged);
             // 
             // cbbAerCiudad
             // 
@@ -242,6 +244,7 @@
             this.cbbAerPais.Name = "cbbAerPais";
             this.cbbAerPais.Size = new System.Drawing.Size(271, 32);
             this.cbbAerPais.TabIndex = 22;
+            this.cbbAerPais.SelectedIndexChanged += new System.EventHandler(this.cbbAerPais_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -515,7 +518,7 @@
             this.rbAeropuerto.UseVisualStyleBackColor = true;
             this.rbAeropuerto.CheckedChanged += new System.EventHandler(this.rbAeropuerto_CheckedChanged);
             // 
-            // FormCrearCiudad
+            // FormCrearLocacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -536,7 +539,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Name = "FormCrearCiudad";
+            this.Name = "FormCrearLocacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCrearCiudad";
             this.panel1.ResumeLayout(false);
