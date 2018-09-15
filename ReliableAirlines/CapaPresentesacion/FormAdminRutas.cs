@@ -13,7 +13,8 @@ namespace CapaPresentesacion
 {
     public partial class FormCrearRuta : Form
     {
-        CnCiudadesAeropuertos consultas = new CnCiudadesAeropuertos();
+        CnLocaciones locaciones = new CnLocaciones();
+        CnRutas rutas = new CnRutas();
         public FormCrearRuta()
         {
             InitializeComponent();
@@ -28,49 +29,49 @@ namespace CapaPresentesacion
         private void FormCrearRuta_Load(object sender, EventArgs e)
         {
             DataTable tablaPaisOrigen = new DataTable();
-            tablaPaisOrigen = consultas.ConsultarPaises();
+            tablaPaisOrigen = locaciones.ConsultarPaises();
             cbbPaisOrigen.DataSource = tablaPaisOrigen;
             cbbPaisOrigen.DisplayMember = "nombre";
             cbbPaisOrigen.ValueMember = "id";
 
             DataTable tablaEstOrigen = new DataTable();
-            tablaEstOrigen = consultas.ConsultarEstados(Convert.ToInt32(cbbPaisOrigen.SelectedValue));
+            tablaEstOrigen = locaciones.ConsultarEstados(Convert.ToInt32(cbbPaisOrigen.SelectedValue));
             cbbEstadoOrigen.DataSource = tablaEstOrigen;
             cbbEstadoOrigen.DisplayMember = "nombre";
             cbbEstadoOrigen.ValueMember = "id";
 
             DataTable tablaCiuOrigen = new DataTable();
-            tablaCiuOrigen = consultas.ConsultarCiudades(Convert.ToInt32(cbbEstadoOrigen.SelectedValue));
+            tablaCiuOrigen = locaciones.ConsultarCiudades(Convert.ToInt32(cbbEstadoOrigen.SelectedValue));
             cbbCiudadOrigen.DataSource = tablaCiuOrigen;
             cbbCiudadOrigen.DisplayMember = "nombre";
             cbbCiudadOrigen.ValueMember = "id";
 
             DataTable tablaAerOrigen = new DataTable();
-            tablaAerOrigen = consultas.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadOrigen.SelectedValue));
+            tablaAerOrigen = locaciones.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadOrigen.SelectedValue));
             cbbAerOrigen.DataSource = tablaAerOrigen;
             cbbAerOrigen.DisplayMember = "nombre";
             cbbAerOrigen.ValueMember = "idAeropuerto";
 
             DataTable tablaPaisDestino = new DataTable();
-            tablaPaisDestino = consultas.ConsultarPaises();
+            tablaPaisDestino = locaciones.ConsultarPaises();
             cbbPaisDestino.DataSource = tablaPaisDestino;
             cbbPaisDestino.DisplayMember = "nombre";
             cbbPaisDestino.ValueMember = "id";
 
             DataTable tablaEstDestino = new DataTable();
-            tablaEstDestino = consultas.ConsultarEstados(Convert.ToInt32(cbbPaisDestino.SelectedValue));
+            tablaEstDestino = locaciones.ConsultarEstados(Convert.ToInt32(cbbPaisDestino.SelectedValue));
             cbbEstadoDestino.DataSource = tablaEstDestino;
             cbbEstadoDestino.DisplayMember = "nombre";
             cbbEstadoDestino.ValueMember = "id";
 
             DataTable tablaCiuDestino = new DataTable();
-            tablaCiuDestino = consultas.ConsultarCiudades(Convert.ToInt32(cbbEstadoDestino.SelectedValue));
+            tablaCiuDestino = locaciones.ConsultarCiudades(Convert.ToInt32(cbbEstadoDestino.SelectedValue));
             cbbCiudadDestino.DataSource = tablaCiuDestino;
             cbbCiudadDestino.DisplayMember = "nombre";
             cbbCiudadDestino.ValueMember = "id";
 
             DataTable tablaAerDestino = new DataTable();
-            tablaAerDestino = consultas.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadDestino.SelectedValue));
+            tablaAerDestino = locaciones.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadDestino.SelectedValue));
             cbbAerDestino.DataSource = tablaAerDestino;
             cbbAerDestino.DisplayMember = "nombre";
             cbbAerDestino.ValueMember = "idAeropuerto";
@@ -85,7 +86,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaEstOrigen = new DataTable();
-                tablaEstOrigen = consultas.ConsultarEstados(Convert.ToInt32(cbbPaisOrigen.SelectedValue));
+                tablaEstOrigen = locaciones.ConsultarEstados(Convert.ToInt32(cbbPaisOrigen.SelectedValue));
                 cbbEstadoOrigen.DataSource = tablaEstOrigen;
                 cbbEstadoOrigen.DisplayMember = "nombre";
                 cbbEstadoOrigen.ValueMember = "id";
@@ -104,7 +105,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaCiuOrigen = new DataTable();
-                tablaCiuOrigen = consultas.ConsultarCiudades(Convert.ToInt32(cbbEstadoOrigen.SelectedValue));
+                tablaCiuOrigen = locaciones.ConsultarCiudades(Convert.ToInt32(cbbEstadoOrigen.SelectedValue));
                 cbbCiudadOrigen.DataSource = tablaCiuOrigen;
                 cbbCiudadOrigen.DisplayMember = "nombre";
                 cbbCiudadOrigen.ValueMember = "id";
@@ -122,7 +123,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaAerOrigen = new DataTable();
-                tablaAerOrigen = consultas.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadOrigen.SelectedValue));
+                tablaAerOrigen = locaciones.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadOrigen.SelectedValue));
                 cbbAerOrigen.DataSource = tablaAerOrigen;
                 cbbAerOrigen.DisplayMember = "nombre";
                 cbbAerOrigen.ValueMember = "idAeropuerto";
@@ -142,7 +143,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaEstDestino = new DataTable();
-                tablaEstDestino = consultas.ConsultarEstados(Convert.ToInt32(cbbPaisDestino.SelectedValue));
+                tablaEstDestino = locaciones.ConsultarEstados(Convert.ToInt32(cbbPaisDestino.SelectedValue));
                 cbbEstadoDestino.DataSource = tablaEstDestino;
                 cbbEstadoDestino.DisplayMember = "nombre";
                 cbbEstadoDestino.ValueMember = "id";
@@ -161,7 +162,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaCiuDestino = new DataTable();
-                tablaCiuDestino = consultas.ConsultarCiudades(Convert.ToInt32(cbbEstadoDestino.SelectedValue));
+                tablaCiuDestino = locaciones.ConsultarCiudades(Convert.ToInt32(cbbEstadoDestino.SelectedValue));
                 cbbCiudadDestino.DataSource = tablaCiuDestino;
                 cbbCiudadDestino.DisplayMember = "nombre";
                 cbbCiudadDestino.ValueMember = "id";
@@ -179,7 +180,7 @@ namespace CapaPresentesacion
             try
             {
                 DataTable tablaAerDestino = new DataTable();
-                tablaAerDestino = consultas.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadDestino.SelectedValue));
+                tablaAerDestino = locaciones.ConsultarAeropuertos(Convert.ToInt32(cbbCiudadDestino.SelectedValue));
                 cbbAerDestino.DataSource = tablaAerDestino;
                 cbbAerDestino.DisplayMember = "nombre";
                 cbbAerDestino.ValueMember = "idAeropuerto";
@@ -192,7 +193,18 @@ namespace CapaPresentesacion
 
         private void btnCrearRuta_Click(object sender, EventArgs e)
         {
-
+            int origen = Convert.ToInt32(cbbAerOrigen.SelectedValue);
+            int destino = Convert.ToInt32(cbbAerDestino.SelectedValue);
+            try
+            {
+                rutas.CrearRuta(txtNombre.Text, origen, destino, cbbEstado.Text);
+                MessageBox.Show("Se ha creado la ruta correctamente");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error creando la ruta");
+            }
+            
         }
     }
 }

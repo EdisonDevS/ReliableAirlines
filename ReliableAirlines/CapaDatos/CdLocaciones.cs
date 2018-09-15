@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    public class CdCiudadesAeropuertos
+    public class CdLocaciones
     {
         CdConexion conexion = new CdConexion();
         SqlCommand comando = new SqlCommand();

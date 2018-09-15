@@ -9,9 +9,9 @@ using System.Data.SqlClient;
 
 namespace CapaNegociacion
 {
-    public class CnCiudadesAeropuertos
+    public class CnLocaciones
     {
-        CdCiudadesAeropuertos consultas = new CdCiudadesAeropuertos();
+        CdLocaciones consultas = new CdLocaciones();
 
         public void CrearPais(string pais)
         {

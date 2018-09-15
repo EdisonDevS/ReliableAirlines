@@ -15,7 +15,7 @@ namespace CapaPresentesacion
 {
     public partial class FormCrearLocacion : Form
     {
-        CnCiudadesAeropuertos consultas = new CnCiudadesAeropuertos();
+        CnLocaciones consultas = new CnLocaciones();
 
         public FormCrearLocacion()
         {

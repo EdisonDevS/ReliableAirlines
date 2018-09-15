@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CdCiudadesAeropuertos.cs" />
+    <Compile Include="CdLocaciones.cs" />
     <Compile Include="CdConexion.cs" />
     <Compile Include="CdAdministracionUsuarios.cs" />
+    <Compile Include="CdRutas.cs" />
     <Compile Include="CdSesion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

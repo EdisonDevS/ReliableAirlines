@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CnCiudadesAeropuertos.cs" />
+    <Compile Include="CnLocaciones.cs" />
     <Compile Include="CnFechas.cs" />
+    <Compile Include="CnRutas.cs" />
     <Compile Include="CnSesion.cs" />
     <Compile Include="CnPermisos.cs" />
     <Compile Include="CnAdministracionUsuarios.cs" />
