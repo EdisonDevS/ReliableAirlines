@@ -126,6 +126,8 @@
             // 
             // cbbCiuEstado
             // 
+            this.cbbCiuEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbCiuEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbCiuEstado.Enabled = false;
             this.cbbCiuEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbCiuEstado.FormattingEnabled = true;
@@ -216,6 +218,8 @@
             // 
             // cbbAerEstado
             // 
+            this.cbbAerEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbAerEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbAerEstado.Enabled = false;
             this.cbbAerEstado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerEstado.FormattingEnabled = true;
@@ -227,6 +231,8 @@
             // 
             // cbbAerCiudad
             // 
+            this.cbbAerCiudad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbAerCiudad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbAerCiudad.Enabled = false;
             this.cbbAerCiudad.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerCiudad.FormattingEnabled = true;
@@ -237,6 +243,8 @@
             // 
             // cbbAerPais
             // 
+            this.cbbAerPais.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbAerPais.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbAerPais.Enabled = false;
             this.cbbAerPais.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbAerPais.FormattingEnabled = true;
@@ -349,6 +357,8 @@
             // 
             // cbbEstPais
             // 
+            this.cbbEstPais.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstPais.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbEstPais.Enabled = false;
             this.cbbEstPais.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.cbbEstPais.FormattingEnabled = true;

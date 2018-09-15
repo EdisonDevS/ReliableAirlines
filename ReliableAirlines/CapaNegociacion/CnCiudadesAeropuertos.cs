@@ -47,5 +47,10 @@ namespace CapaNegociacion
         {
             return consultas.ConsultaCiudad(estado);
         }
+
+        public DataTable ConsultarAeropuertos(int ciudad)
+        {
+            return consultas.ConsultaAeropuerto(ciudad);
+        }
     }
 }

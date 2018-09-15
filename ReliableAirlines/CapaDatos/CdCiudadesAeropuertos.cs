@@ -57,6 +57,8 @@ namespace CapaDatos
             comando.CommandText = "CREAR_AEROPUERTO";
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@ciudad", ciudad);
+
+            comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
@@ -106,6 +108,21 @@ namespace CapaDatos
             return tabla;
         }
 
+        public DataTable ConsultaAeropuerto(int ciudad)
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CONSULTA_AEROPUERTOS";
+            comando.Parameters.AddWithValue("@ciudad", ciudad);
+
+            filas = comando.ExecuteReader();
+            tabla.Load(filas);
+
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
 
     }
 }
