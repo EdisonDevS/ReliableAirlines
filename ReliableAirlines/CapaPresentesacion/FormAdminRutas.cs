@@ -19,7 +19,7 @@ namespace CapaPresentesacion
 
         private void btnAgragarCiudad_Click(object sender, EventArgs e)
         {
-            FormCrearCiudad ciudad = new FormCrearCiudad();
+            FormCrearLocacion ciudad = new FormCrearLocacion();
             ciudad.Show();
         }
 

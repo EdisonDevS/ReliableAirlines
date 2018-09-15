@@ -285,19 +285,18 @@ INSERT INTO PAISES VALUES(@nombre)
 GO
 
 CREATE PROC CREAR_ESTADO
-	@nombre VARCHAR(20),
-	@pais INT
+	@pais INT,
+	@nombre VARCHAR(20)
 AS
-INSERT INTO ESTADOS VALUES(@nombre, @pais)
+INSERT INTO ESTADOS VALUES(@pais, @nombre)
 
 GO
 
 CREATE PROC CREAR_CIUDAD
-	@pais VARCHAR(20),
 	@estado VARCHAR(20),
 	@ciudad VARCHAR(20)
 AS
-INSERT INTO CIUDADES VALUES(@pais,@estado,@ciudad)
+INSERT INTO CIUDADES VALUES(@estado,@ciudad)
 
 GO
 

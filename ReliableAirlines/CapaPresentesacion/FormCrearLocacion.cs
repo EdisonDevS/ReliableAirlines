@@ -13,16 +13,23 @@ using System.Data.SqlClient;
 
 namespace CapaPresentesacion
 {
-    public partial class FormCrearCiudad : Form
+    public partial class FormCrearLocacion : Form
     {
         CnCiudadesAeropuertos consultas = new CnCiudadesAeropuertos();
 
-        public FormCrearCiudad()
+        public FormCrearLocacion()
         {
             InitializeComponent();
 
             DataTable paises = new DataTable();
-            paises = consultas.ConsultarPaises();
+            try
+            {
+                paises = consultas.ConsultarPaises();
+            }
+            catch
+            {
+
+            }
 
             cbbEstPais.DataSource = paises;
             cbbEstPais.DisplayMember = "nombre";
@@ -44,20 +51,20 @@ namespace CapaPresentesacion
 
         private void btnCrearEstado_Click(object sender, EventArgs e)
         {
-            int pais = Int32.Parse(cbbEstPais.SelectedValue.ToString());
+            int pais = Convert.ToInt32(cbbEstPais.SelectedValue);
             consultas.CrearEstado(pais, txtEstado.Text);
         }
 
         private void btnCrearCiudad_Click(object sender, EventArgs e)
         {
-            int pais = Int32.Parse(cbbCiuPais.SelectedValue.ToString());
-            int estado = Int32.Parse(cbbCiuEstado.SelectedValue.ToString());
+            int pais = Convert.ToInt32(cbbCiuPais.SelectedValue);
+            int estado = Convert.ToInt32(cbbCiuEstado.SelectedValue);
             consultas.CrearCiudad(pais, estado, txtCiudad.Text);
         }
 
         private void btnCrearAeropuerto_Click(object sender, EventArgs e)
         {
-            int ciudad = Int32.Parse(cbbAerCiudad.SelectedValue.ToString());
+            int ciudad = Convert.ToInt32(cbbAerCiudad.SelectedValue);
             consultas.CrearAeropuerto(ciudad, txtAeropuerto.Text);
         }
 

@@ -257,11 +257,11 @@
     <Compile Include="FormContabilidadIngresosGenerarVentas.Designer.cs">
       <DependentUpon>FormContabilidadIngresosGenerarVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCrearCiudad.cs">
+    <Compile Include="FormCrearLocacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCrearCiudad.Designer.cs">
-      <DependentUpon>FormCrearCiudad.cs</DependentUpon>
+    <Compile Include="FormCrearLocacion.Designer.cs">
+      <DependentUpon>FormCrearLocacion.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEmpleadosInformes.cs">
       <SubType>Form</SubType>
@@ -605,8 +605,8 @@
     <EmbeddedResource Include="FormContabilidadIngresosGenerarVentas.resx">
       <DependentUpon>FormContabilidadIngresosGenerarVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCrearCiudad.resx">
-      <DependentUpon>FormCrearCiudad.cs</DependentUpon>
+    <EmbeddedResource Include="FormCrearLocacion.resx">
+      <DependentUpon>FormCrearLocacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmpleadosInformes.resx">
       <DependentUpon>FormEmpleadosInformes.cs</DependentUpon>

@@ -25,13 +25,13 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
-        public void CrearEstado(string nombre, int pais)
+        public void CrearEstado(int pais, string nombre)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "CREAR_ESTADO";
-            comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@pais", pais);
+            comando.Parameters.AddWithValue("@nombre", nombre);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();

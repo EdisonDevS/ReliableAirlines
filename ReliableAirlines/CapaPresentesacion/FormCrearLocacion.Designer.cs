@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormCrearCiudad
+    partial class FormCrearLocacion
     {
         /// <summary>
         /// Required designer variable.
