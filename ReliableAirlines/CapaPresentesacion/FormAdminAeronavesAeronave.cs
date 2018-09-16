@@ -24,7 +24,7 @@ namespace CapaPresentesacion
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
             aeronaves.ActualizarDatos(cbbMatricula.Text, txtTipo.Text, Convert.ToInt32(txtPclase.Text), Convert.ToInt32(txtCturista.Text),
-                                      txtProv.Text, Convert.ToInt32(txtEqui.Text), dtpAdqui.Text);
+                                      txtProv.Text, Convert.ToInt32(txtEqui.Text), dtpAdqui.Text, cbbEstadoActual.Text);
             MessageBox.Show("Se han guardado los cambios correctamente");
         }
 
@@ -40,6 +40,7 @@ namespace CapaPresentesacion
                 txtCturista.Text = datos.Rows[0][3].ToString();
                 txtEqui.Text = datos.Rows[0][5].ToString();
                 dtpAdqui.Text = datos.Rows[0][6].ToString();
+                cbbEstadoActual.Text = datos.Rows[0][7].ToString();
 
                 txtTipo.Enabled = true;
                 txtProv.Enabled = true;
@@ -48,6 +49,7 @@ namespace CapaPresentesacion
                 txtEqui.Enabled = true;
                 dtpAdqui.Enabled = true;
                 btnGuardarCambios.Enabled = true;
+                cbbEstadoActual.Enabled = true;
             }
             catch(Exception)
             {

@@ -14,7 +14,7 @@ namespace CapaDatos
         SqlCommand comando = new SqlCommand();
         SqlDataReader filas;
 
-        public void CrearAeronaves(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion)
+        public void CrearAeronaves(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion,string estado)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
@@ -26,6 +26,7 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@proveedor", prov);
             comando.Parameters.AddWithValue("@equipaje", equi);
             comando.Parameters.AddWithValue("@adquisicion", adquisicion);
+            comando.Parameters.AddWithValue("@estado", estado);
 
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
@@ -44,7 +45,7 @@ namespace CapaDatos
             return resultados;
         }
 
-        public void ActualizarDatos(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion)
+        public void ActualizarDatos(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion, string estado)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
@@ -56,6 +57,7 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@proveedor", prov);
             comando.Parameters.AddWithValue("@equipaje", equi);
             comando.Parameters.AddWithValue("@adquisicion", adquisicion);
+            comando.Parameters.AddWithValue("@estado", estado);
 
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();

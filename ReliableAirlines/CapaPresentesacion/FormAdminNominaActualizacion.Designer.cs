@@ -58,7 +58,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -69,6 +68,9 @@
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.cbbCiudades = new System.Windows.Forms.ComboBox();
+            this.cbbEstado = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInfo
@@ -366,13 +368,6 @@
             this.label20.TabIndex = 83;
             this.label20.Text = "Usuario:";
             // 
-            // txtCiudad
-            // 
-            this.txtCiudad.Location = new System.Drawing.Point(385, 86);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(97, 20);
-            this.txtCiudad.TabIndex = 85;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -497,12 +492,54 @@
             this.button2.Text = "Resetear contraseña";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // cbbCiudades
+            // 
+            this.cbbCiudades.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbCiudades.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudades.FormattingEnabled = true;
+            this.cbbCiudades.Location = new System.Drawing.Point(403, 86);
+            this.cbbCiudades.Name = "cbbCiudades";
+            this.cbbCiudades.Size = new System.Drawing.Size(79, 21);
+            this.cbbCiudades.TabIndex = 95;
+            // 
+            // cbbEstado
+            // 
+            this.cbbEstado.AutoCompleteCustomSource.AddRange(new string[] {
+            "Administrador",
+            "Caja",
+            "Tripulación",
+            "Empleado"});
+            this.cbbEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstado.FormattingEnabled = true;
+            this.cbbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cbbEstado.Location = new System.Drawing.Point(53, 136);
+            this.cbbEstado.Name = "cbbEstado";
+            this.cbbEstado.Size = new System.Drawing.Size(97, 21);
+            this.cbbEstado.TabIndex = 97;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(12, 140);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(72, 23);
+            this.label22.TabIndex = 96;
+            this.label22.Text = "Estado";
+            // 
             // FormAdminNominaActualizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 209);
+            this.Controls.Add(this.cbbEstado);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.cbbCiudades);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbbTipoCuenta);
@@ -512,7 +549,6 @@
             this.Controls.Add(this.cbbTipoDoc);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnGuardarCambios);
-            this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtDocumento);
@@ -585,7 +621,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtDocumento;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btnGuardarCambios;
         private System.Windows.Forms.TextBox txtUsuario;
@@ -596,5 +631,8 @@
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cbbCiudades;
+        private System.Windows.Forms.ComboBox cbbEstado;
+        private System.Windows.Forms.Label label22;
     }
 }

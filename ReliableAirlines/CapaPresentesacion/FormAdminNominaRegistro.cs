@@ -16,6 +16,13 @@ namespace CapaPresentesacion
         public FormAdminNominaRegistro()
         {
             InitializeComponent();
+            DataTable ciudades = new DataTable();
+            CnAdministracionUsuarios cargar = new CnAdministracionUsuarios();
+            ciudades = cargar.CargarCiudades();
+            cbbCiudades.DataSource = ciudades;
+            cbbCiudades.ValueMember = "id";
+            cbbCiudades.DisplayMember = "nombre";
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -26,7 +33,8 @@ namespace CapaPresentesacion
                 registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text,
                 cbbTipoUsuario.Text, txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
                 txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
-                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfoAdicional.Text,txtSueldo.Text);
+                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfoAdicional.Text,
+                txtSueldo.Text, cbbEstado.Text);
 
                 MessageBox.Show("Se ha creado el nuevo usuario correctamente");
             }

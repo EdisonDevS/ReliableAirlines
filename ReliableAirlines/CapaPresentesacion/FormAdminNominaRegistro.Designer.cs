@@ -64,13 +64,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtVerificaContraseña = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.cbbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.cbbTipoDoc = new System.Windows.Forms.ComboBox();
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.cbbBanco = new System.Windows.Forms.ComboBox();
             this.cbbTipoContra = new System.Windows.Forms.ComboBox();
+            this.cbbCiudades = new System.Windows.Forms.ComboBox();
+            this.cbbEstado = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -421,13 +423,6 @@
             this.label20.TabIndex = 52;
             this.label20.Text = "Ciudad:";
             // 
-            // txtCiudad
-            // 
-            this.txtCiudad.Location = new System.Drawing.Point(245, 82);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(97, 20);
-            this.txtCiudad.TabIndex = 53;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -446,6 +441,8 @@
             "Caja",
             "Tripulación",
             "Empleado"});
+            this.cbbTipoUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbTipoUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbTipoUsuario.FormattingEnabled = true;
             this.cbbTipoUsuario.Items.AddRange(new object[] {
             "Admin",
@@ -504,19 +501,65 @@
             this.cbbTipoContra.Size = new System.Drawing.Size(58, 21);
             this.cbbTipoContra.TabIndex = 59;
             // 
+            // cbbCiudades
+            // 
+            this.cbbCiudades.AutoCompleteCustomSource.AddRange(new string[] {
+            "Administrador",
+            "Caja",
+            "Tripulación",
+            "Empleado"});
+            this.cbbCiudades.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbCiudades.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudades.FormattingEnabled = true;
+            this.cbbCiudades.Location = new System.Drawing.Point(245, 82);
+            this.cbbCiudades.Name = "cbbCiudades";
+            this.cbbCiudades.Size = new System.Drawing.Size(97, 21);
+            this.cbbCiudades.TabIndex = 60;
+            // 
+            // cbbEstado
+            // 
+            this.cbbEstado.AutoCompleteCustomSource.AddRange(new string[] {
+            "Administrador",
+            "Caja",
+            "Tripulación",
+            "Empleado"});
+            this.cbbEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstado.FormattingEnabled = true;
+            this.cbbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cbbEstado.Location = new System.Drawing.Point(388, 136);
+            this.cbbEstado.Name = "cbbEstado";
+            this.cbbEstado.Size = new System.Drawing.Size(97, 21);
+            this.cbbEstado.TabIndex = 62;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(347, 140);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(72, 23);
+            this.label22.TabIndex = 61;
+            this.label22.Text = "Estado";
+            // 
             // FormAdminNominaRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 209);
+            this.Controls.Add(this.cbbEstado);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.cbbCiudades);
             this.Controls.Add(this.cbbTipoContra);
             this.Controls.Add(this.cbbBanco);
             this.Controls.Add(this.cbbTipoCuenta);
             this.Controls.Add(this.cbbTipoDoc);
             this.Controls.Add(this.cbbTipoUsuario);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtVerificaContraseña);
             this.Controls.Add(this.label19);
@@ -600,12 +643,14 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtVerificaContraseña;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cbbTipoUsuario;
         private System.Windows.Forms.ComboBox cbbTipoDoc;
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
         private System.Windows.Forms.ComboBox cbbBanco;
         private System.Windows.Forms.ComboBox cbbTipoContra;
+        private System.Windows.Forms.ComboBox cbbCiudades;
+        private System.Windows.Forms.ComboBox cbbEstado;
+        private System.Windows.Forms.Label label22;
     }
 }

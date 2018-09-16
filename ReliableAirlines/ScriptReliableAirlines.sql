@@ -43,22 +43,24 @@ CREATE TABLE EMPLEADO
 	direccion VARCHAR(30) NOT NULL,
 	ciudad VARCHAR(30) NOT NULL,
 	infoAdicional VARCHAR(250),
-	sueldo VARCHAR(10)
+	sueldo VARCHAR(10),
+	estado VARCHAR(15)
 	
 	CONSTRAINT RELACION_A_USER FOREIGN KEY (documentoUsuario) REFERENCES USUARIO (documento) 
 	ON UPDATE CASCADE,
 )
 GO
 
-CREATE TABLE AERONAVE
+CREATE TABLE AERONAVES
 (
-	idAeronave VARCHAR(7) PRIMARY KEY NOT NULL,
+	idAeronave VARCHAR(15) PRIMARY KEY NOT NULL,
 	tipo VARCHAR(20) NOT NULL,
 	capacidadPrimeraClase INT NOT NULL,
 	capacidadClaseTurista INT NOT NULL,
 	proveedor VARCHAR(20) NOT NULL,
 	capacidadEquipaje INT NOT NULL,
-	fechaAdquisicion DATE NOT NULL
+	fechaAdquisicion DATE NOT NULL,
+	estadoActual VARCHAR(20)
 )
 
 GO
@@ -119,7 +121,7 @@ CREATE TABLE VUELOS
 (
 	numVuelo BIGINT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	idRuta BIGINT NOT NULL,
-	idAeronave VARCHAR(7),
+	idAeronave VARCHAR(15),
 	pClase INT,
 	tClase INT,
 	salida DATETIME NOT NULL,
@@ -127,7 +129,7 @@ CREATE TABLE VUELOS
 	vlrPrimeraClase VARCHAR(10),
 	vlrClaseTurista VARCHAR(10),
 
-	CONSTRAINT RELACION_A_AERONAVE FOREIGN KEY (idAeronave) REFERENCES AERONAVE(idAeronave),
+	CONSTRAINT RELACION_A_AERONAVE FOREIGN KEY (idAeronave) REFERENCES AERONAVES(idAeronave),
 	CONSTRAINT RELACION_A_RUTA FOREIGN KEY (idRuta) REFERENCES RUTAS(idRuta)
 )
 
@@ -167,12 +169,13 @@ CREATE PROC REGISTRO_EMPLEADO
 	@direccion VARCHAR(30),
 	@ciudad VARCHAR(30),
 	@infoAdicional VARCHAR(250),
-	@sueldo VARCHAR(10)
+	@sueldo VARCHAR(10),
+	@estado VARCHAR(15)
 AS
 INSERT INTO USUARIO VALUES(@documento,@tipoDocumento,@usuario,@contraseña,@permisos,
 							@nombres,@apellidos,@fechaNacimiento,@email,@telefono)
 INSERT INTO EMPLEADO VALUES(@documento,@tipoContrato,@puesto,@cuenta,@tipoCuenta,@banco,
-							@EPS,@direccion,@ciudad,@infoAdicional,@sueldo)
+							@EPS,@direccion,@ciudad,@infoAdicional,@sueldo,@estado)
 GO
 
 CREATE PROC INICIAR_SESION
@@ -250,7 +253,8 @@ CREATE PROC ACTUALIZAR_DATOS_EMPLEADO
 	@direccion VARCHAR(30),
 	@ciudad VARCHAR(30),
 	@infoAdicional VARCHAR(250),
-	@sueldo VARCHAR(10)
+	@sueldo VARCHAR(10),
+	@estado VARCHAR(15)
 AS
 UPDATE USUARIO SET
 	tipoDocumento=@tipoDocumento,
@@ -272,7 +276,8 @@ UPDATE EMPLEADO SET
 	direccion=@direccion,
 	ciudad=@ciudad,
 	infoAdicional=@infoAdicional,
-	sueldo=@sueldo
+	sueldo=@sueldo,
+	estado=@estado
 WHERE documentoUsuario=@documento
 
 GO
@@ -360,3 +365,63 @@ CREATE PROC ACTUALIZAR_ESTADO_RUTA
 AS
 UPDATE RUTAS SET estado = @estado WHERE RUTAS.idRuta = @idRuta
 GO
+
+CREATE PROC CREAR_AERONAVE
+	@id VARCHAR(15),
+	@tipo VARCHAR(20),
+	@capPclase INT,
+	@capCturista INT,
+	@proveedor VARCHAR(20),
+	@equipaje INT,
+	@adquisicion DATE,
+	@estado VARCHAR(20)
+AS
+INSERT INTO AERONAVES VALUES(@id, @tipo,@capPclase,@capCturista,@proveedor,@equipaje,@adquisicion,@estado)
+GO
+
+CREATE PROC CONSULTA_MATRICULAS
+AS
+SELECT idAeronave FROM AERONAVES
+GO
+
+CREATE PROC CONSULTA_AERONAVE_MATRICULA
+	@matricula VARCHAR(15)
+AS
+SELECT * FROM AERONAVES WHERE idAeronave=@matricula
+GO
+
+CREATE PROC ACTUALIZAR_DATOS_AERONAVE
+	@id VARCHAR(15),
+	@tipo VARCHAR(20),
+	@capPclase INT,
+	@capCturista INT,
+	@proveedor VARCHAR(20),
+	@equipaje INT,
+	@adquisicion DATE,
+	@estado VARCHAR(20)
+AS
+UPDATE AERONAVES SET tipo=@tipo,capacidadPrimeraClase=@capPclase, capacidadClaseTurista=@capCturista, proveedor=@proveedor,
+capacidadEquipaje=@equipaje, fechaAdquisicion=@adquisicion, estadoActual=@estado WHERE idAeronave=@id
+GO
+
+CREATE PROC CREAR_VUELO
+	@idRuta BIGINT,
+	@idAeronave VARCHAR(15),
+	@pClase INT,
+	@tClase INT,
+	@salida DATETIME,
+	@llegada DATETIME,
+	@vlrPrimeraClase VARCHAR(10),
+	@vlrClaseTurista VARCHAR(10)
+AS
+INSERT INTO VUELOS VALUES(@idRuta,@idAeronave,@pClase,@tClase,@salida,@llegada,@vlrPrimeraClase,@vlrClaseTurista)
+GO
+
+CREATE PROC CONSULTA_TRIPULANTE
+	@documento VARCHAR(11)
+AS 
+SELECT EMPLEADO.puesto, EMPLEADO.ciudad, USUARIO.nombres, USUARIO.apellidos, EMPLEADO. FROM 
+
+select * from RUTAS
+
+

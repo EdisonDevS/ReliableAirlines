@@ -38,11 +38,23 @@ namespace CapaDatos
 
         }
 
+        public DataTable CargarCiudades()
+        {
+            DataTable resultado = new DataTable();
+            consulta.Connection = conexion.AbrirConexion();
+            consulta.CommandType = CommandType.StoredProcedure;
+            consulta.CommandText = "CONSULTAR_CIUDADES";
+            fila = consulta.ExecuteReader();
+            resultado.Load(fila);
+            fila.Close();
+            return resultado;
+        }
+
         //sobrecarga para el empleado
         public void registro (string documento, string tipoDoc, string usuario,
             string contraseña, string permisos, string nombres, string apellidos, string nacimiento,
             string email, string telefono,string tipoContra, string puesto,string cuenta,
-            string tipoCuenta,string banco,string eps, string direccion,string ciudad,string info, string sueldo)
+            string tipoCuenta,string banco,string eps, string direccion,int ciudad,string info, string sueldo, string estado)
         {
             consulta.Connection = conexion.AbrirConexion();
             
@@ -68,6 +80,7 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@ciudad", ciudad);
             consulta.Parameters.AddWithValue("@infoAdicional", info);
             consulta.Parameters.AddWithValue("@sueldo",sueldo);
+            consulta.Parameters.AddWithValue("@estado", estado);
 
             consulta.ExecuteNonQuery();
             consulta.Parameters.Clear();
@@ -95,7 +108,7 @@ namespace CapaDatos
             string nombres, string apellidos, string nacimiento, string email,
             string telefono, string tipoContra, string puesto, string cuenta,
             string tipoCuenta, string banco, string eps, string direccion,
-            string ciudad, string info, string sueldo)
+            int ciudad, string info, string sueldo, string estado)
         {
             consulta.Connection = conexion.AbrirConexion();
 
@@ -119,6 +132,7 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@ciudad", ciudad);
             consulta.Parameters.AddWithValue("@infoAdicional", info);
             consulta.Parameters.AddWithValue("@sueldo", sueldo);
+            consulta.Parameters.AddWithValue("@estado", estado);
 
             consulta.ExecuteNonQuery();
             consulta.Parameters.Clear();

@@ -32,14 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraLlegada = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,17 +47,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -75,6 +68,26 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.cbbNombreRuta = new System.Windows.Forms.ComboBox();
+            this.cbbMatriculaAeronave = new System.Windows.Forms.ComboBox();
+            this.dtpHoraSalida = new System.Windows.Forms.DateTimePicker();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.lblCiuOri = new System.Windows.Forms.Label();
+            this.lblCiuDes = new System.Windows.Forms.Label();
+            this.lblAerOri = new System.Windows.Forms.Label();
+            this.lblAerDes = new System.Windows.Forms.Label();
+            this.lblCapPclas = new System.Windows.Forms.Label();
+            this.lblCapCtur = new System.Windows.Forms.Label();
+            this.lblEstAct = new System.Windows.Forms.Label();
+            this.lblNomTrip = new System.Windows.Forms.Label();
+            this.lblEstTrip = new System.Windows.Forms.Label();
+            this.lblPuestoTrip = new System.Windows.Forms.Label();
+            this.lblEmailTrip = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblTipoAer = new System.Windows.Forms.Label();
+            this.lblCiuEmp = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -125,36 +138,6 @@
             this.label4.Text = "ID Aeropueto de destino:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(155, 6);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(114, 31);
-            this.textBox5.TabIndex = 9;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 25);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "N° de vuelo:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(288, 175);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 31);
-            this.textBox6.TabIndex = 11;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -189,25 +172,15 @@
             this.dateTimePicker1.TabIndex = 13;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // dateTimePicker2
+            // dtpHoraLlegada
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(212, 296);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(131, 27);
-            this.dateTimePicker2.TabIndex = 14;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(725, 296);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(131, 27);
-            this.dateTimePicker3.TabIndex = 17;
-            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
+            this.dtpHoraLlegada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHoraLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpHoraLlegada.Location = new System.Drawing.Point(725, 296);
+            this.dtpHoraLlegada.Name = "dtpHoraLlegada";
+            this.dtpHoraLlegada.Size = new System.Drawing.Size(62, 27);
+            this.dtpHoraLlegada.TabIndex = 17;
+            this.dtpHoraLlegada.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
             // 
             // dateTimePicker4
             // 
@@ -336,21 +309,6 @@
             this.label12.Text = "Añadir como:";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 22;
-            this.listBox1.Items.AddRange(new object[] {
-            "Piloto",
-            "Copiloto",
-            "Auxiliar de vuelo"});
-            this.listBox1.Location = new System.Drawing.Point(169, 565);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(178, 26);
-            this.listBox1.TabIndex = 27;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
@@ -383,17 +341,9 @@
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(11, 63);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(226, 25);
+            this.label14.Size = new System.Drawing.Size(180, 25);
             this.label14.TabIndex = 30;
-            this.label14.Text = "Identificador de ruta:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(233, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 31);
-            this.textBox1.TabIndex = 31;
+            this.label14.Text = "Nombre de ruta:";
             // 
             // label15
             // 
@@ -450,17 +400,6 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Puesto:";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(13, 521);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 24);
-            this.label20.TabIndex = 37;
-            this.label20.Text = "Edad:";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -488,7 +427,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(546, 521);
+            this.label23.Location = new System.Drawing.Point(13, 521);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(104, 24);
             this.label23.TabIndex = 40;
@@ -553,9 +492,9 @@
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(515, 175);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(237, 24);
+            this.label25.Size = new System.Drawing.Size(196, 24);
             this.label25.TabIndex = 44;
-            this.label25.Text = "Modelo de aeronave:";
+            this.label25.Text = "Tipo de aeronave:";
             // 
             // label26
             // 
@@ -591,12 +530,240 @@
             this.label28.TabIndex = 47;
             this.label28.Text = "Estado actual:";
             // 
-            // nuevoVuelo
+            // cbbNombreRuta
+            // 
+            this.cbbNombreRuta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbNombreRuta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbNombreRuta.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbNombreRuta.FormattingEnabled = true;
+            this.cbbNombreRuta.Location = new System.Drawing.Point(197, 62);
+            this.cbbNombreRuta.Name = "cbbNombreRuta";
+            this.cbbNombreRuta.Size = new System.Drawing.Size(254, 30);
+            this.cbbNombreRuta.TabIndex = 48;
+            this.cbbNombreRuta.SelectedIndexChanged += new System.EventHandler(this.cbbNombreRuta_SelectedIndexChanged);
+            // 
+            // cbbMatriculaAeronave
+            // 
+            this.cbbMatriculaAeronave.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbMatriculaAeronave.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbMatriculaAeronave.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbMatriculaAeronave.FormattingEnabled = true;
+            this.cbbMatriculaAeronave.Location = new System.Drawing.Point(295, 175);
+            this.cbbMatriculaAeronave.Name = "cbbMatriculaAeronave";
+            this.cbbMatriculaAeronave.Size = new System.Drawing.Size(156, 30);
+            this.cbbMatriculaAeronave.TabIndex = 49;
+            this.cbbMatriculaAeronave.SelectedIndexChanged += new System.EventHandler(this.cbbMatriculaAeronave_SelectedIndexChanged);
+            // 
+            // dtpHoraSalida
+            // 
+            this.dtpHoraSalida.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpHoraSalida.Location = new System.Drawing.Point(212, 296);
+            this.dtpHoraSalida.Name = "dtpHoraSalida";
+            this.dtpHoraSalida.Size = new System.Drawing.Size(64, 27);
+            this.dtpHoraSalida.TabIndex = 14;
+            this.dtpHoraSalida.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Piloto",
+            "Auxiliar"});
+            this.comboBox3.Location = new System.Drawing.Point(170, 564);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(204, 30);
+            this.comboBox3.TabIndex = 50;
+            // 
+            // lblCiuOri
+            // 
+            this.lblCiuOri.AutoSize = true;
+            this.lblCiuOri.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiuOri.ForeColor = System.Drawing.Color.White;
+            this.lblCiuOri.Location = new System.Drawing.Point(212, 98);
+            this.lblCiuOri.Name = "lblCiuOri";
+            this.lblCiuOri.Size = new System.Drawing.Size(0, 24);
+            this.lblCiuOri.TabIndex = 51;
+            // 
+            // lblCiuDes
+            // 
+            this.lblCiuDes.AutoSize = true;
+            this.lblCiuDes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiuDes.ForeColor = System.Drawing.Color.White;
+            this.lblCiuDes.Location = new System.Drawing.Point(722, 100);
+            this.lblCiuDes.Name = "lblCiuDes";
+            this.lblCiuDes.Size = new System.Drawing.Size(0, 24);
+            this.lblCiuDes.TabIndex = 52;
+            // 
+            // lblAerOri
+            // 
+            this.lblAerOri.AutoSize = true;
+            this.lblAerOri.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAerOri.ForeColor = System.Drawing.Color.White;
+            this.lblAerOri.Location = new System.Drawing.Point(275, 122);
+            this.lblAerOri.Name = "lblAerOri";
+            this.lblAerOri.Size = new System.Drawing.Size(0, 24);
+            this.lblAerOri.TabIndex = 53;
+            // 
+            // lblAerDes
+            // 
+            this.lblAerDes.AutoSize = true;
+            this.lblAerDes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAerDes.ForeColor = System.Drawing.Color.White;
+            this.lblAerDes.Location = new System.Drawing.Point(780, 125);
+            this.lblAerDes.Name = "lblAerDes";
+            this.lblAerDes.Size = new System.Drawing.Size(0, 24);
+            this.lblAerDes.TabIndex = 54;
+            // 
+            // lblCapPclas
+            // 
+            this.lblCapPclas.AutoSize = true;
+            this.lblCapPclas.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapPclas.ForeColor = System.Drawing.Color.White;
+            this.lblCapPclas.Location = new System.Drawing.Point(291, 209);
+            this.lblCapPclas.Name = "lblCapPclas";
+            this.lblCapPclas.Size = new System.Drawing.Size(0, 24);
+            this.lblCapPclas.TabIndex = 55;
+            // 
+            // lblCapCtur
+            // 
+            this.lblCapCtur.AutoSize = true;
+            this.lblCapCtur.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapCtur.ForeColor = System.Drawing.Color.White;
+            this.lblCapCtur.Location = new System.Drawing.Point(771, 209);
+            this.lblCapCtur.Name = "lblCapCtur";
+            this.lblCapCtur.Size = new System.Drawing.Size(0, 24);
+            this.lblCapCtur.TabIndex = 56;
+            // 
+            // lblEstAct
+            // 
+            this.lblEstAct.AutoSize = true;
+            this.lblEstAct.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstAct.ForeColor = System.Drawing.Color.White;
+            this.lblEstAct.Location = new System.Drawing.Point(175, 233);
+            this.lblEstAct.Name = "lblEstAct";
+            this.lblEstAct.Size = new System.Drawing.Size(0, 24);
+            this.lblEstAct.TabIndex = 57;
+            // 
+            // lblNomTrip
+            // 
+            this.lblNomTrip.AutoSize = true;
+            this.lblNomTrip.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomTrip.ForeColor = System.Drawing.Color.White;
+            this.lblNomTrip.Location = new System.Drawing.Point(241, 451);
+            this.lblNomTrip.Name = "lblNomTrip";
+            this.lblNomTrip.Size = new System.Drawing.Size(0, 24);
+            this.lblNomTrip.TabIndex = 58;
+            // 
+            // lblEstTrip
+            // 
+            this.lblEstTrip.AutoSize = true;
+            this.lblEstTrip.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstTrip.ForeColor = System.Drawing.Color.White;
+            this.lblEstTrip.Location = new System.Drawing.Point(635, 451);
+            this.lblEstTrip.Name = "lblEstTrip";
+            this.lblEstTrip.Size = new System.Drawing.Size(0, 24);
+            this.lblEstTrip.TabIndex = 59;
+            // 
+            // lblPuestoTrip
+            // 
+            this.lblPuestoTrip.AutoSize = true;
+            this.lblPuestoTrip.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuestoTrip.ForeColor = System.Drawing.Color.White;
+            this.lblPuestoTrip.Location = new System.Drawing.Point(102, 488);
+            this.lblPuestoTrip.Name = "lblPuestoTrip";
+            this.lblPuestoTrip.Size = new System.Drawing.Size(0, 24);
+            this.lblPuestoTrip.TabIndex = 60;
+            // 
+            // lblEmailTrip
+            // 
+            this.lblEmailTrip.AutoSize = true;
+            this.lblEmailTrip.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailTrip.ForeColor = System.Drawing.Color.White;
+            this.lblEmailTrip.Location = new System.Drawing.Point(628, 488);
+            this.lblEmailTrip.Name = "lblEmailTrip";
+            this.lblEmailTrip.Size = new System.Drawing.Size(0, 24);
+            this.lblEmailTrip.TabIndex = 61;
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.ForeColor = System.Drawing.Color.White;
+            this.lblEdad.Location = new System.Drawing.Point(87, 521);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(0, 24);
+            this.lblEdad.TabIndex = 62;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.Color.White;
+            this.lblTelefono.Location = new System.Drawing.Point(123, 521);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(0, 24);
+            this.lblTelefono.TabIndex = 63;
+            // 
+            // lblTipoAer
+            // 
+            this.lblTipoAer.AutoSize = true;
+            this.lblTipoAer.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoAer.ForeColor = System.Drawing.Color.White;
+            this.lblTipoAer.Location = new System.Drawing.Point(717, 175);
+            this.lblTipoAer.Name = "lblTipoAer";
+            this.lblTipoAer.Size = new System.Drawing.Size(0, 24);
+            this.lblTipoAer.TabIndex = 64;
+            // 
+            // lblCiuEmp
+            // 
+            this.lblCiuEmp.AutoSize = true;
+            this.lblCiuEmp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiuEmp.ForeColor = System.Drawing.Color.White;
+            this.lblCiuEmp.Location = new System.Drawing.Point(641, 521);
+            this.lblCiuEmp.Name = "lblCiuEmp";
+            this.lblCiuEmp.Size = new System.Drawing.Size(0, 24);
+            this.lblCiuEmp.TabIndex = 66;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(546, 521);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(90, 24);
+            this.label20.TabIndex = 65;
+            this.label20.Text = "Ciudad:";
+            // 
+            // FormAdminVuelosGestionNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(984, 655);
+            this.Controls.Add(this.lblCiuEmp);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.lblTipoAer);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblEdad);
+            this.Controls.Add(this.lblEmailTrip);
+            this.Controls.Add(this.lblPuestoTrip);
+            this.Controls.Add(this.lblEstTrip);
+            this.Controls.Add(this.lblNomTrip);
+            this.Controls.Add(this.lblEstAct);
+            this.Controls.Add(this.lblCapCtur);
+            this.Controls.Add(this.lblCapPclas);
+            this.Controls.Add(this.lblAerDes);
+            this.Controls.Add(this.lblAerOri);
+            this.Controls.Add(this.lblCiuDes);
+            this.Controls.Add(this.lblCiuOri);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbbMatriculaAeronave);
+            this.Controls.Add(this.cbbNombreRuta);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
@@ -610,17 +777,14 @@
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -630,23 +794,19 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dtpHoraLlegada);
             this.Controls.Add(this.dateTimePicker4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpHoraSalida);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "nuevoVuelo";
-            this.Text = "nuevoVuelo";
+            this.Name = "FormAdminVuelosGestionNuevo";
             this.Load += new System.EventHandler(this.nuevoVuelo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -659,14 +819,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpHoraLlegada;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -678,17 +834,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -702,5 +855,25 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.ComboBox cbbNombreRuta;
+        private System.Windows.Forms.ComboBox cbbMatriculaAeronave;
+        private System.Windows.Forms.DateTimePicker dtpHoraSalida;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label lblCiuOri;
+        private System.Windows.Forms.Label lblCiuDes;
+        private System.Windows.Forms.Label lblAerOri;
+        private System.Windows.Forms.Label lblAerDes;
+        private System.Windows.Forms.Label lblCapPclas;
+        private System.Windows.Forms.Label lblCapCtur;
+        private System.Windows.Forms.Label lblEstAct;
+        private System.Windows.Forms.Label lblNomTrip;
+        private System.Windows.Forms.Label lblEstTrip;
+        private System.Windows.Forms.Label lblPuestoTrip;
+        private System.Windows.Forms.Label lblEmailTrip;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblTipoAer;
+        private System.Windows.Forms.Label lblCiuEmp;
+        private System.Windows.Forms.Label label20;
     }
 }

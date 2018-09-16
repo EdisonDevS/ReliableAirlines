@@ -23,7 +23,7 @@ namespace CapaPresentesacion
         {
             aeronave.CrearAeronave(txtMatricula.Text, txtTipo.Text, Convert.ToInt32(txtPclase.Text),
                                    Convert.ToInt32(txtCturista.Text), txtProv.Text, Convert.ToInt32(txtEqui.Text),
-                                   dtpAdqui.Text);
+                                   dtpAdqui.Text, cbbEstadoActual.Text);
             MessageBox.Show("Se ha registrado la nueva aeronave correctamente");
         }
         

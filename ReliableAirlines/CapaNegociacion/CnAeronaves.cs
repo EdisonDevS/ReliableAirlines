@@ -12,11 +12,11 @@ namespace CapaNegociacion
     {
         CdAeronaves aeronave = new CdAeronaves();
 
-        public void CrearAeronave(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion)
+        public void CrearAeronave(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion, string estado)
         {
             CnFechas fecha = new CnFechas();
             adquisicion = fecha.convertirAFormatoSQL(adquisicion);
-            aeronave.CrearAeronaves(id, tipo, pclase, claset, prov, equi, adquisicion);
+            aeronave.CrearAeronaves(id, tipo, pclase, claset, prov, equi, adquisicion, estado);
         }
 
         public DataTable ConsultarMatriculas()
@@ -29,11 +29,11 @@ namespace CapaNegociacion
             return aeronave.ConsultaPorMatricula(matricula);
         }
 
-        public void ActualizarDatos(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion)
+        public void ActualizarDatos(string id, string tipo, int pclase, int claset, string prov, int equi, string adquisicion, string estado)
         {
             CnFechas fecha = new CnFechas();
             adquisicion = fecha.convertirAFormatoSQL(adquisicion);
-            aeronave.ActualizarDatos(id, tipo, pclase, claset, prov, equi, adquisicion);
+            aeronave.ActualizarDatos(id, tipo, pclase, claset, prov, equi, adquisicion, estado);
         }
     }
 }

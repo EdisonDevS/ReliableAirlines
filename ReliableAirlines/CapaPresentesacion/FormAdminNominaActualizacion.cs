@@ -18,6 +18,12 @@ namespace CapaPresentesacion
         public FormAdminNominaActualizacion()
         {
             InitializeComponent();
+            DataTable ciudades = new DataTable();
+            CnAdministracionUsuarios ciudad = new CnAdministracionUsuarios();
+            ciudades = ciudad.CargarCiudades();
+            cbbCiudades.DataSource = ciudades;
+            cbbCiudades.DisplayMember = "nombre";
+            cbbCiudades.ValueMember = "id";
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -41,9 +47,10 @@ namespace CapaPresentesacion
                 txtDireccion.Text = informacion.Rows[0]["direccion"].ToString();
                 txtEmail.Text = informacion.Rows[0]["email"].ToString();
                 txtTelefono.Text = informacion.Rows[0]["telefono"].ToString();
-                txtCiudad.Text = informacion.Rows[0]["ciudad"].ToString();
+                cbbCiudades.SelectedValue = informacion.Rows[0]["ciudad"];
                 txtInfo.Text = informacion.Rows[0]["infoAdicional"].ToString();
                 txtUsuario.Text = informacion.Rows[0]["usuario"].ToString();
+                cbbEstado.Text = informacion.Rows[0]["estado"].ToString();
             }
             else
             {
@@ -58,7 +65,8 @@ namespace CapaPresentesacion
             modificarUsuario.realizarCambios(txtDoc.Text, cbbTipoDoc.Text, txtUsuario.Text,
                 txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
                 txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
-                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, txtCiudad.Text, txtInfo.Text, txtSueldo.Text);
+                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfo.Text,
+                txtSueldo.Text, cbbEstado.Text);
             
             MessageBox.Show("Se han modificado los \n" +
                             "datos correctamente.");

@@ -44,6 +44,8 @@
             this.dtpAdqui = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbbEstadoActual = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -190,7 +192,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(363, 139);
+            this.btnGuardar.Location = new System.Drawing.Point(378, 157);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(90, 33);
             this.btnGuardar.TabIndex = 27;
@@ -206,12 +208,42 @@
             this.txtMatricula.Size = new System.Drawing.Size(101, 31);
             this.txtMatricula.TabIndex = 28;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(218, 119);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 22);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Estado actual";
+            // 
+            // cbbEstadoActual
+            // 
+            this.cbbEstadoActual.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstadoActual.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoActual.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbEstadoActual.FormattingEnabled = true;
+            this.cbbEstadoActual.Items.AddRange(new object[] {
+            "Activo",
+            "Mantenimiento",
+            "Revisión",
+            "Reparaciónes",
+            "Suspendido"});
+            this.cbbEstadoActual.Location = new System.Drawing.Point(337, 116);
+            this.cbbEstadoActual.Name = "cbbEstadoActual";
+            this.cbbEstadoActual.Size = new System.Drawing.Size(92, 30);
+            this.cbbEstadoActual.TabIndex = 30;
+            // 
             // FormAdminAeronavesRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 202);
+            this.Controls.Add(this.cbbEstadoActual);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dtpAdqui);
@@ -254,5 +286,7 @@
         private System.Windows.Forms.DateTimePicker dtpAdqui;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbbEstadoActual;
     }
 }

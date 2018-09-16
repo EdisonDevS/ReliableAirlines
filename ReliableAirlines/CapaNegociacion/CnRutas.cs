@@ -27,7 +27,6 @@ namespace CapaNegociacion
             tabla.Columns[3].ColumnName = "Destino";
             return tabla;
         }
-
         public DataTable ConsultaEspecificaRutas(int ruta)
         {
             DataTable tabla = consulta.ConsultaEspecificaRutas(ruta);

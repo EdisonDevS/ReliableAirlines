@@ -44,6 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbMatricula = new System.Windows.Forms.ComboBox();
+            this.cbbEstadoActual = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGuardarCambios
@@ -54,7 +56,7 @@
             this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambios.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(371, 140);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(380, 153);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(90, 33);
             this.btnGuardarCambios.TabIndex = 45;
@@ -67,7 +69,7 @@
             this.dtpAdqui.Enabled = false;
             this.dtpAdqui.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpAdqui.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAdqui.Location = new System.Drawing.Point(353, 114);
+            this.dtpAdqui.Location = new System.Drawing.Point(353, 83);
             this.dtpAdqui.Name = "dtpAdqui";
             this.dtpAdqui.Size = new System.Drawing.Size(70, 31);
             this.dtpAdqui.TabIndex = 44;
@@ -77,7 +79,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(235, 120);
+            this.label9.Location = new System.Drawing.Point(235, 89);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(211, 22);
             this.label9.TabIndex = 43;
@@ -87,7 +89,7 @@
             // 
             this.txtCturista.Enabled = false;
             this.txtCturista.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCturista.Location = new System.Drawing.Point(354, 86);
+            this.txtCturista.Location = new System.Drawing.Point(354, 55);
             this.txtCturista.Name = "txtCturista";
             this.txtCturista.Size = new System.Drawing.Size(41, 31);
             this.txtCturista.TabIndex = 42;
@@ -97,7 +99,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(235, 89);
+            this.label8.Location = new System.Drawing.Point(235, 58);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(235, 22);
             this.label8.TabIndex = 41;
@@ -107,7 +109,7 @@
             // 
             this.txtPclase.Enabled = false;
             this.txtPclase.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPclase.Location = new System.Drawing.Point(354, 55);
+            this.txtPclase.Location = new System.Drawing.Point(354, 24);
             this.txtPclase.Name = "txtPclase";
             this.txtPclase.Size = new System.Drawing.Size(41, 31);
             this.txtPclase.TabIndex = 40;
@@ -117,7 +119,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(235, 58);
+            this.label7.Location = new System.Drawing.Point(235, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(250, 22);
             this.label7.TabIndex = 39;
@@ -217,12 +219,43 @@
             this.cbbMatricula.TabIndex = 46;
             this.cbbMatricula.SelectedIndexChanged += new System.EventHandler(this.cbbMatricula_SelectedIndexChanged);
             // 
+            // cbbEstadoActual
+            // 
+            this.cbbEstadoActual.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstadoActual.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoActual.Enabled = false;
+            this.cbbEstadoActual.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbEstadoActual.FormattingEnabled = true;
+            this.cbbEstadoActual.Items.AddRange(new object[] {
+            "Activo",
+            "Mantenimiento",
+            "Revisión",
+            "Reparaciónes",
+            "Suspendido"});
+            this.cbbEstadoActual.Location = new System.Drawing.Point(354, 117);
+            this.cbbEstadoActual.Name = "cbbEstadoActual";
+            this.cbbEstadoActual.Size = new System.Drawing.Size(92, 30);
+            this.cbbEstadoActual.TabIndex = 48;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(235, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 22);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Estado actual";
+            // 
             // FormAdminAeronavesAeronave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(497, 202);
+            this.Controls.Add(this.cbbEstadoActual);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cbbMatricula);
             this.Controls.Add(this.btnGuardarCambios);
             this.Controls.Add(this.dtpAdqui);
@@ -265,5 +298,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbMatricula;
+        private System.Windows.Forms.ComboBox cbbEstadoActual;
+        private System.Windows.Forms.Label label5;
     }
 }
