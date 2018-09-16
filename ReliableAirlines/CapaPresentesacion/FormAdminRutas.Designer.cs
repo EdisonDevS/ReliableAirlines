@@ -312,6 +312,7 @@
             this.btnVerRutas.TabIndex = 35;
             this.btnVerRutas.Text = "Ver rutas";
             this.btnVerRutas.UseVisualStyleBackColor = false;
+            this.btnVerRutas.Click += new System.EventHandler(this.btnVerRutas_Click);
             // 
             // FormCrearRuta
             // 

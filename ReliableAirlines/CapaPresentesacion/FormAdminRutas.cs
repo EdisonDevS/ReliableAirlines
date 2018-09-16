@@ -206,5 +206,11 @@ namespace CapaPresentesacion
             }
             
         }
+
+        private void btnVerRutas_Click(object sender, EventArgs e)
+        {
+            FormAdminRutasVerRutas ver = new FormAdminRutasVerRutas();
+            ver.Show();
+        }
     }
 }

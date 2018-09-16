@@ -27,5 +27,45 @@ namespace CapaDatos
             consultas.Parameters.Clear();
             conexion.CerrarConexion();
         }
+
+        public DataTable ConsultaGralRutas()
+        {
+            DataTable tabla = new DataTable();
+            consultas.Connection = conexion.AbrirConexion();
+            consultas.CommandType = CommandType.StoredProcedure;
+            consultas.CommandText = "CONSULTA_GENERAL_RUTAS";
+            filas = consultas.ExecuteReader();
+            tabla.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
+        public DataTable ConsultaEspecificaRutas(int ruta)
+        {
+            DataTable tabla = new DataTable();
+            consultas.Connection = conexion.AbrirConexion();
+            consultas.CommandType = CommandType.StoredProcedure;
+            consultas.CommandText = "CONSULTA_ESPECIFICA_RUTAS";
+            consultas.Parameters.AddWithValue("@id", ruta);
+            filas = consultas.ExecuteReader();
+            tabla.Load(filas);
+            filas.Close();
+            consultas.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
+        public void ActualizarEstadoRuta(int ruta, string estado)
+        {
+            consultas.Connection = conexion.AbrirConexion();
+            consultas.CommandType = CommandType.StoredProcedure;
+            consultas.CommandText = "ACTUALIZAR_ESTADO_RUTA";
+            consultas.Parameters.AddWithValue("@idRuta", ruta);
+            consultas.Parameters.AddWithValue("@estado", estado);
+            consultas.ExecuteNonQuery();
+            consultas.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
     }
 }
