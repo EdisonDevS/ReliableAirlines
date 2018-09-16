@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CdAeronaves.cs" />
     <Compile Include="CdLocaciones.cs" />
     <Compile Include="CdConexion.cs" />
     <Compile Include="CdAdministracionUsuarios.cs" />

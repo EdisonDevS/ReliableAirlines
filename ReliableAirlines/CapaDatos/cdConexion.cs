@@ -26,7 +26,7 @@ namespace CapaDatos
                 catch (Exception ex)
                 {
                     MessageBox.Show("No se ha podido conectar con la base de datos\n" +
-                        "Por favor verifique su conección e intentelo nuevamente\n");
+                        "Por favor verifique su conexión e intentelo nuevamente\n");
                 }
 
             return Conexion;

@@ -7,39 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormAdminAeronavesRegistro : Form
     {
+        CnAeronaves aeronave = new CnAeronaves();
         public FormAdminAeronavesRegistro()
         {
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            aeronave.CrearAeronave(txtMatricula.Text, txtTipo.Text, Convert.ToInt32(txtPclase.Text),
+                                   Convert.ToInt32(txtCturista.Text), txtProv.Text, Convert.ToInt32(txtEqui.Text),
+                                   dtpAdqui.Text);
+            MessageBox.Show("Se ha registrado la nueva aeronave correctamente");
         }
-
-        private void registroAeronave_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
