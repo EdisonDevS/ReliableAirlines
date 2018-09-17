@@ -12,6 +12,7 @@ namespace CapaDatos
     {
         CdConexion conexion = new CdConexion();
         SqlCommand comando = new SqlCommand();
+        SqlDataReader filas;
 
         public void CrearVuelo(int numVuelo, int idRuta, string idAeronave, string salida, string llegada, 
                                string vlrPclase, string vlrCturista)
@@ -32,6 +33,21 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
 
+        }
+
+        public DataTable CargarDatos(int numVuelo)
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CARGAR_DATOS_VUELO";
+            comando.Parameters.AddWithValue("@vuelo", numVuelo);
+            filas = comando.ExecuteReader();
+            resultado.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return resultado;
         }
     }
 }

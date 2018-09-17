@@ -22,5 +22,10 @@ namespace CapaNegociacion
 
             vuelo.CrearVuelo(numVuelo, idRuta, idAeronave, salida, llegada, vlrPclase, vlrCturista);
         }
+
+        public DataTable CargarDatos(int numVuelo)
+        {
+            return vuelo.CargarDatos(numVuelo);
+        }
     }
 }

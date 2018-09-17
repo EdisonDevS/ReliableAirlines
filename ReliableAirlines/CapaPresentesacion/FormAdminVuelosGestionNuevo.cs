@@ -100,7 +100,7 @@ namespace CapaPresentesacion
             {
                 DataTable infoTrip = new DataTable();
                 infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
-                lblNomTrip.Text = infoTrip.Rows[0][0].ToString() + infoTrip.Rows[0][1].ToString();
+                lblNomTrip.Text = infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
                 lblEstTrip.Text = infoTrip.Rows[0][2].ToString();
                 lblPuestoTrip.Text = infoTrip.Rows[0][3].ToString();
                 lblTelefono.Text = infoTrip.Rows[0][5].ToString();
@@ -117,6 +117,7 @@ namespace CapaPresentesacion
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
             trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text));
+            MessageBox.Show("Se ha agregado el tripulante correctamente");
         }
 
         private void label1_Click(object sender, EventArgs e)
