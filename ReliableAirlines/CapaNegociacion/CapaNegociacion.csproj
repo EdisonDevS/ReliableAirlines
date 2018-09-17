@@ -48,6 +48,8 @@
     <Compile Include="CnSesion.cs" />
     <Compile Include="CnPermisos.cs" />
     <Compile Include="CnAdministracionUsuarios.cs" />
+    <Compile Include="CnTripulacion.cs" />
+    <Compile Include="CnVuelos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

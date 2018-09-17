@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class CdTripulacion
+    public class CdTripulacion
     {
 
         CdConexion conexion = new CdConexion();
@@ -29,5 +29,33 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return resultado;
         }
+
+        public void AgregarTripulanteAvuelo(string doc, int vuelo)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "INGRESO_TRIPULANTE";
+            comando.Parameters.AddWithValue("@documento", doc);
+            comando.Parameters.AddWithValue("@vuelo", vuelo);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
+
+        public DataTable CargarTripulante(string doc)
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CARGAR_TRIPULANTE";
+            comando.Parameters.AddWithValue("@doc", doc);
+            fila = comando.ExecuteReader();
+            resultado.Load(fila);
+            fila.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return resultado;
+        }
+        
     }
 }

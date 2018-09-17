@@ -31,24 +31,6 @@ CREATE TABLE CLIENTE
 
 GO
 
-CREATE TABLE EMPLEADO
-(
-	documentoUsuario VARCHAR(11) PRIMARY KEY,
-	tipoContrato VARCHAR(20) NOT NULL,
-	puesto VARCHAR(20) NOT NULL,
-	cuenta VARCHAR(30) NOT NULL,
-	tipoCuenta VARCHAR(10) NOT NULL,
-	banco VARCHAR(30) NOT NULL,
-	EPS VARCHAR(30) NOT NULL,
-	direccion VARCHAR(30) NOT NULL,
-	ciudad VARCHAR(30) NOT NULL,
-	infoAdicional VARCHAR(250),
-	sueldo VARCHAR(10),
-	estado VARCHAR(15)
-	
-	CONSTRAINT RELACION_A_USER FOREIGN KEY (documentoUsuario) REFERENCES USUARIO (documento) 
-	ON UPDATE CASCADE,
-)
 GO
 
 CREATE TABLE AERONAVES
@@ -91,6 +73,26 @@ CREATE TABLE CIUDADES
 )
 
 GO
+
+CREATE TABLE EMPLEADO
+(
+	documentoUsuario VARCHAR(11) PRIMARY KEY,
+	tipoContrato VARCHAR(20) NOT NULL,
+	puesto VARCHAR(20) NOT NULL,
+	cuenta VARCHAR(30) NOT NULL,
+	tipoCuenta VARCHAR(10) NOT NULL,
+	banco VARCHAR(30) NOT NULL,
+	EPS VARCHAR(30) NOT NULL,
+	direccion VARCHAR(30) NOT NULL,
+	ciudad INT NOT NULL,
+	infoAdicional VARCHAR(250),
+	sueldo VARCHAR(10),
+	estado VARCHAR(15)
+	
+	CONSTRAINT RELACION_A_CIUDADES FOREIGN KEY (ciudad) REFERENCES CIUDADES(id),
+	CONSTRAINT RELACION_A_USER FOREIGN KEY (documentoUsuario) REFERENCES USUARIO (documento) 
+	ON UPDATE CASCADE,
+)
 
 CREATE TABLE AEROPUERTOS
 (
@@ -176,6 +178,11 @@ INSERT INTO USUARIO VALUES(@documento,@tipoDocumento,@usuario,@contraseña,@permi
 							@nombres,@apellidos,@fechaNacimiento,@email,@telefono)
 INSERT INTO EMPLEADO VALUES(@documento,@tipoContrato,@puesto,@cuenta,@tipoCuenta,@banco,
 							@EPS,@direccion,@ciudad,@infoAdicional,@sueldo,@estado)
+GO
+
+CREATE PROC CONSULTAR_CIUDADES
+AS
+SELECT CIUDADES.id, CIUDADES.nombre FROM CIUDADES
 GO
 
 CREATE PROC INICIAR_SESION
@@ -420,8 +427,7 @@ GO
 CREATE PROC CONSULTA_TRIPULANTE
 	@documento VARCHAR(11)
 AS 
-SELECT EMPLEADO.puesto, EMPLEADO.ciudad, USUARIO.nombres, USUARIO.apellidos, EMPLEADO. FROM 
-
-select * from RUTAS
-
-
+SELECT EMPLEADO.puesto, EMPLEADO.ciudad, USUARIO.nombres, USUARIO.apellidos, EMPLEADO.estado FROM EMPLEADO INNER JOIN USUARIO ON 
+EMPLEADO.documentoUsuario=USUARIO.documento AND USUARIO.documento=@documento
+GO
+select * from EMPLEADO

@@ -48,6 +48,7 @@
     <Compile Include="CdRutas.cs" />
     <Compile Include="CdSesion.cs" />
     <Compile Include="CdTripulacion.cs" />
+    <Compile Include="CdVuelos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
