@@ -519,6 +519,7 @@
             this.btnCrearVuelo.TabIndex = 89;
             this.btnCrearVuelo.Text = "Guardar cambios en el vuelo";
             this.btnCrearVuelo.UseVisualStyleBackColor = false;
+            this.btnCrearVuelo.Click += new System.EventHandler(this.btnCrearVuelo_Click);
             // 
             // label12
             // 
@@ -544,6 +545,7 @@
             this.btnAgregarTripu.TabIndex = 87;
             this.btnAgregarTripu.Text = "Añadir a la tripulación";
             this.btnAgregarTripu.UseVisualStyleBackColor = false;
+            this.btnAgregarTripu.Click += new System.EventHandler(this.btnAgregarTripu_Click);
             // 
             // btnVerTripulante
             // 
@@ -558,6 +560,7 @@
             this.btnVerTripulante.TabIndex = 86;
             this.btnVerTripulante.Text = "Ver";
             this.btnVerTripulante.UseVisualStyleBackColor = false;
+            this.btnVerTripulante.Click += new System.EventHandler(this.btnVerTripulante_Click);
             // 
             // txtDocTripulante
             // 

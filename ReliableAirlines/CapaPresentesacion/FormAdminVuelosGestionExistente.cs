@@ -13,12 +13,16 @@ namespace CapaPresentesacion
 {
     public partial class FormAdminVuelosGestionExistente : Form
     {
-
         CnRutas ruta = new CnRutas();
         CnAeronaves aer = new CnAeronaves();
+        CnVuelos vuelo = new CnVuelos();
+        CnTripulacion trip = new CnTripulacion();
         public FormAdminVuelosGestionExistente()
         {
             InitializeComponent();
+
+            dtpHoraSalida.CustomFormat = "HH:mm";
+            dtpHoraLlegada.CustomFormat = "HH:mm";
         }
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
@@ -38,10 +42,16 @@ namespace CapaPresentesacion
             cbbMatriculaAeronave.DataSource = aeronave;
             cbbMatriculaAeronave.DisplayMember = "idAeronave";
 
-            cbbNombreRuta.Text = datosPrimarios.Rows[0][10].ToString();
+            cbbNombreRuta.SelectedValue = datosPrimarios.Rows[0][1];
             cbbMatriculaAeronave.Text = datosPrimarios.Rows[0][2].ToString();
-            
-            
+
+            txtVlrPclase.Text = datosPrimarios.Rows[0][7].ToString();
+            txtVlrCturista.Text = datosPrimarios.Rows[0][8].ToString();
+
+            dtpLlegada.Text = datosPrimarios.Rows[0][6].ToString();
+            dtpSalida.Text = datosPrimarios.Rows[0][5].ToString();
+            dtpHoraLlegada.Text = datosPrimarios.Rows[0][6].ToString();
+            dtpHoraSalida.Text = datosPrimarios.Rows[0][5].ToString();
         }
 
         private void cbbNombreRuta_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,6 +86,48 @@ namespace CapaPresentesacion
             {
 
             }
+        }
+
+        private void btnCrearVuelo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
+                int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
+
+                vuelo.ActualizarVuelos(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
+                                dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
+                MessageBox.Show("Vuelo actualizado correctamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error actualizando los datos:\n"+ex);
+            }
+        }
+
+        private void btnVerTripulante_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable infoTrip = new DataTable();
+                infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
+                lblNomTrip.Text = infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
+                lblEstTrip.Text = infoTrip.Rows[0][2].ToString();
+                lblPuestoTrip.Text = infoTrip.Rows[0][3].ToString();
+                lblTelefono.Text = infoTrip.Rows[0][5].ToString();
+                lblEmailTrip.Text = infoTrip.Rows[0][4].ToString();
+                lblCiuEmp.Text = infoTrip.Rows[0][6].ToString();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnAgregarTripu_Click(object sender, EventArgs e)
+        {
+            trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text));
+            MessageBox.Show("Se ha agregado el tripulante correctamente");
         }
     }
 }

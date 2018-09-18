@@ -27,5 +27,16 @@ namespace CapaNegociacion
         {
             return vuelo.CargarDatos(numVuelo);
         }
+
+        public void ActualizarVuelos(int numVuelo, int idRuta, string idAeronave, string salida, string hsalida,
+                                     string llegada, string hllegada, string vlrPclase, string vlrCturista)
+        {
+            CnFechas fecha = new CnFechas();
+
+            salida = fecha.convertirAFormatoSQL(salida, hsalida);
+            llegada = fecha.convertirAFormatoSQL(llegada, hllegada);
+
+            vuelo.ActualizarVuelo(numVuelo, idRuta, idAeronave, salida, llegada, vlrPclase, vlrCturista);
+        }
     }
 }

@@ -121,11 +121,11 @@ GO
 
 CREATE TABLE VUELOS
 (
-	numVuelo BIGINT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	numVuelo BIGINT PRIMARY KEY NOT NULL,
 	idRuta BIGINT NOT NULL,
 	idAeronave VARCHAR(15),
-	pClase INT,
-	tClase INT,
+	pClase INT, --ASIENTOS OCUPADOS PRIMERA CLASE
+	tClase INT,	--ASIENTOS OCUPADOS CLASE TURISTA
 	salida DATETIME NOT NULL,
 	llegada DATETIME NOT NULL,
 	vlrPrimeraClase VARCHAR(10),
@@ -149,6 +149,15 @@ CREATE TABLE TIQUETE
 
 GO
 
+CREATE TABLE TRIPULACION
+(
+	tripulante VARCHAR(11),
+	vuelo BIGINT
+	
+	CONSTRAINT RELACION_AL_TRIPULANTE FOREIGN KEY(tripulante) REFERENCES EMPLEADO(documentoUsuario),
+	CONSTRAINT RELACION_AL_VUELO FOREIGN KEY(vuelo) REFERENCES VUELOS(numVuelo)
+)
+GO
 -----------------------------------------PROCEDIMIENTOS ALMACENADOS--------------------------------
 
 CREATE PROC REGISTRO_EMPLEADO
@@ -412,6 +421,7 @@ capacidadEquipaje=@equipaje, fechaAdquisicion=@adquisicion, estadoActual=@estado
 GO
 
 CREATE PROC CREAR_VUELO
+	@numVuelo BIGINT,
 	@idRuta BIGINT,
 	@idAeronave VARCHAR(15),
 	@pClase INT,
@@ -421,7 +431,7 @@ CREATE PROC CREAR_VUELO
 	@vlrPrimeraClase VARCHAR(10),
 	@vlrClaseTurista VARCHAR(10)
 AS
-INSERT INTO VUELOS VALUES(@idRuta,@idAeronave,@pClase,@tClase,@salida,@llegada,@vlrPrimeraClase,@vlrClaseTurista)
+INSERT INTO VUELOS VALUES(@numVuelo,@idRuta,@idAeronave,@pClase,@tClase,@salida,@llegada,@vlrPrimeraClase,@vlrClaseTurista)
 GO
 
 CREATE PROC CONSULTA_TRIPULANTE
@@ -430,4 +440,40 @@ AS
 SELECT EMPLEADO.puesto, EMPLEADO.ciudad, USUARIO.nombres, USUARIO.apellidos, EMPLEADO.estado FROM EMPLEADO INNER JOIN USUARIO ON 
 EMPLEADO.documentoUsuario=USUARIO.documento AND USUARIO.documento=@documento
 GO
-select * from EMPLEADO
+
+CREATE PROC INGRESO_TRIPULANTE
+	@documento VARCHAR(11),
+	@vuelo BIGINT
+AS
+INSERT INTO TRIPULACION VALUES(@documento, @vuelo)
+GO
+
+CREATE PROC CARGAR_TRIPULANTE
+	@doc VARCHAR(11)
+AS 
+SELECT USUARIO.nombres, USUARIO.apellidos, EMPLEADO.estado, EMPLEADO.puesto, USUARIO.email, USUARIO.telefono, EMPLEADO.ciudad FROM
+EMPLEADO INNER JOIN USUARIO ON USUARIO.documento=EMPLEADO.documentoUsuario AND USUARIO.documento=@doc
+GO
+
+CREATE PROC CARGAR_DATOS_VUELO
+	@vuelo BIGINT
+AS
+SELECT * FROM VUELOS WHERE VUELOS.numVuelo=@vuelo
+GO
+
+CREATE PROC ACTUALIZAR_DATOS_VUELO
+	@vuelo BIGINT,
+	@idRuta BIGINT,
+	@idAer VARCHAR(15),
+	@pClase INT,
+	@tClase INT,
+	@salida DATETIME,
+	@llegada DATETIME,
+	@vlrPrimeraClase VARCHAR(10),
+	@vlrClaseTurista VARCHAR(10)
+AS
+UPDATE VUELOS SET VUELOS.idRuta=@idRuta, VUELOS.pClase=@pClase, VUELOS.tClase=@tClase, VUELOS.salida=@salida,
+VUELOS.llegada=@llegada, VUELOS.vlrPrimeraClase=@vlrPrimeraClase, VUELOS.vlrClaseTurista=@vlrClaseTurista WHERE VUELOS.numVuelo=@vuelo
+GO 
+
+select * from VUELOS
