@@ -28,32 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNumVuelo = new System.Windows.Forms.TextBox();
-            this.txtIDSalida = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtIDDestino = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
             this.rbRuta = new System.Windows.Forms.RadioButton();
             this.rbNumeroVuelo = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cbbEstadoDestino = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbbPaisDestino = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cbbAerDestino = new System.Windows.Forms.ComboBox();
+            this.cbbCiudadDestino = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cbbEstadoOrigen = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cbbPaisOrigen = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cbbAerOrigen = new System.Windows.Forms.ComboBox();
+            this.cbbCiudadOrigen = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnVer = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvVuelos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,211 +77,6 @@
             this.txtNumVuelo.Name = "txtNumVuelo";
             this.txtNumVuelo.Size = new System.Drawing.Size(162, 31);
             this.txtNumVuelo.TabIndex = 2;
-            // 
-            // txtIDSalida
-            // 
-            this.txtIDSalida.Enabled = false;
-            this.txtIDSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtIDSalida.Location = new System.Drawing.Point(247, 110);
-            this.txtIDSalida.Name = "txtIDSalida";
-            this.txtIDSalida.Size = new System.Drawing.Size(162, 31);
-            this.txtIDSalida.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "ID Aeropuerto de salida:";
-            // 
-            // txtIDDestino
-            // 
-            this.txtIDDestino.Enabled = false;
-            this.txtIDDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtIDDestino.Location = new System.Drawing.Point(790, 113);
-            this.txtIDDestino.Name = "txtIDDestino";
-            this.txtIDDestino.Size = new System.Drawing.Size(162, 31);
-            this.txtIDDestino.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(539, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(247, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "ID Aeropuerto de destino:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 22);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Ciudad de salida:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(539, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 22);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Ciudad de destino:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(13, 242);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(315, 22);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Capacidad actual primera clase:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(539, 242);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(300, 22);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "Capacidad actual clase turista:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(88, 284);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 31);
-            this.dateTimePicker1.TabIndex = 47;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(13, 290);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 22);
-            this.label8.TabIndex = 48;
-            this.label8.Text = "Salida:";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(223, 284);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(151, 31);
-            this.dateTimePicker2.TabIndex = 49;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(767, 284);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(151, 31);
-            this.dateTimePicker3.TabIndex = 52;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(539, 290);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 22);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "Llegada:";
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(632, 284);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(129, 31);
-            this.dateTimePicker4.TabIndex = 50;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(13, 208);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(237, 24);
-            this.label25.TabIndex = 53;
-            this.label25.Text = "Modelo de aeronave:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(13, 333);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(214, 24);
-            this.label10.TabIndex = 54;
-            this.label10.Text = "Valor primera clase:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(539, 333);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 24);
-            this.label11.TabIndex = 55;
-            this.label11.Text = "Valor clase turista:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(13, 373);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 21);
-            this.label12.TabIndex = 56;
-            this.label12.Text = "Tripulación:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 412);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(935, 227);
-            this.dataGridView1.TabIndex = 57;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(539, 208);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(335, 24);
-            this.label13.TabIndex = 59;
-            this.label13.Text = "Capacidad de equipaje actual:";
             // 
             // rbRuta
             // 
@@ -308,50 +106,309 @@
             this.rbNumeroVuelo.UseVisualStyleBackColor = true;
             this.rbNumeroVuelo.CheckedChanged += new System.EventHandler(this.rbNumeroVuelo_CheckedChanged);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(12, 150);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(960, 1);
-            this.panel1.TabIndex = 42;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.panel2.Location = new System.Drawing.Point(12, 678);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1345, 1);
+            this.panel2.TabIndex = 43;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(884, 138);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(178, 22);
+            this.label12.TabIndex = 76;
+            this.label12.Text = "Estado de destino:";
+            // 
+            // cbbEstadoDestino
+            // 
+            this.cbbEstadoDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstadoDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoDestino.Enabled = false;
+            this.cbbEstadoDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbEstadoDestino.FormattingEnabled = true;
+            this.cbbEstadoDestino.Location = new System.Drawing.Point(1075, 136);
+            this.cbbEstadoDestino.Name = "cbbEstadoDestino";
+            this.cbbEstadoDestino.Size = new System.Drawing.Size(222, 30);
+            this.cbbEstadoDestino.TabIndex = 77;
+            this.cbbEstadoDestino.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoDestino_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(884, 111);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 22);
+            this.label14.TabIndex = 74;
+            this.label14.Text = "Pais de destino:";
+            // 
+            // cbbPaisDestino
+            // 
+            this.cbbPaisDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbPaisDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbPaisDestino.Enabled = false;
+            this.cbbPaisDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbPaisDestino.FormattingEnabled = true;
+            this.cbbPaisDestino.Location = new System.Drawing.Point(1075, 103);
+            this.cbbPaisDestino.Name = "cbbPaisDestino";
+            this.cbbPaisDestino.Size = new System.Drawing.Size(222, 30);
+            this.cbbPaisDestino.TabIndex = 75;
+            this.cbbPaisDestino.SelectedIndexChanged += new System.EventHandler(this.cbbPaisDestino_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(884, 205);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(223, 22);
+            this.label15.TabIndex = 71;
+            this.label15.Text = "Aeropuerto de destino:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(884, 171);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(185, 22);
+            this.label16.TabIndex = 70;
+            this.label16.Text = "Ciudad de destino:";
+            // 
+            // cbbAerDestino
+            // 
+            this.cbbAerDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbAerDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbAerDestino.Enabled = false;
+            this.cbbAerDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbAerDestino.FormattingEnabled = true;
+            this.cbbAerDestino.Location = new System.Drawing.Point(1113, 202);
+            this.cbbAerDestino.Name = "cbbAerDestino";
+            this.cbbAerDestino.Size = new System.Drawing.Size(184, 30);
+            this.cbbAerDestino.TabIndex = 72;
+            this.cbbAerDestino.SelectedIndexChanged += new System.EventHandler(this.cbbAerDestino_SelectedIndexChanged);
+            // 
+            // cbbCiudadDestino
+            // 
+            this.cbbCiudadDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbCiudadDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudadDestino.Enabled = false;
+            this.cbbCiudadDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbCiudadDestino.FormattingEnabled = true;
+            this.cbbCiudadDestino.Location = new System.Drawing.Point(1075, 169);
+            this.cbbCiudadDestino.Name = "cbbCiudadDestino";
+            this.cbbCiudadDestino.Size = new System.Drawing.Size(222, 30);
+            this.cbbCiudadDestino.TabIndex = 73;
+            this.cbbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cbbCiudadDestino_SelectedIndexChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(28, 146);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(170, 22);
+            this.label17.TabIndex = 68;
+            this.label17.Text = "Estado de origen:";
+            // 
+            // cbbEstadoOrigen
+            // 
+            this.cbbEstadoOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbEstadoOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoOrigen.Enabled = false;
+            this.cbbEstadoOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbEstadoOrigen.FormattingEnabled = true;
+            this.cbbEstadoOrigen.Location = new System.Drawing.Point(209, 144);
+            this.cbbEstadoOrigen.Name = "cbbEstadoOrigen";
+            this.cbbEstadoOrigen.Size = new System.Drawing.Size(215, 30);
+            this.cbbEstadoOrigen.TabIndex = 69;
+            this.cbbEstadoOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoOrigen_SelectedIndexChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(28, 114);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(142, 22);
+            this.label18.TabIndex = 66;
+            this.label18.Text = "Pais de origen:";
+            // 
+            // cbbPaisOrigen
+            // 
+            this.cbbPaisOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbPaisOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbPaisOrigen.Enabled = false;
+            this.cbbPaisOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbPaisOrigen.FormattingEnabled = true;
+            this.cbbPaisOrigen.Location = new System.Drawing.Point(209, 111);
+            this.cbbPaisOrigen.Name = "cbbPaisOrigen";
+            this.cbbPaisOrigen.Size = new System.Drawing.Size(215, 30);
+            this.cbbPaisOrigen.TabIndex = 67;
+            this.cbbPaisOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbPaisOrigen_SelectedIndexChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(28, 213);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(215, 22);
+            this.label19.TabIndex = 63;
+            this.label19.Text = "Aeropuerto de origen:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(28, 179);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(177, 22);
+            this.label20.TabIndex = 62;
+            this.label20.Text = "Ciudad de origen:";
+            // 
+            // cbbAerOrigen
+            // 
+            this.cbbAerOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbAerOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbAerOrigen.Enabled = false;
+            this.cbbAerOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbAerOrigen.FormattingEnabled = true;
+            this.cbbAerOrigen.Location = new System.Drawing.Point(243, 210);
+            this.cbbAerOrigen.Name = "cbbAerOrigen";
+            this.cbbAerOrigen.Size = new System.Drawing.Size(181, 30);
+            this.cbbAerOrigen.TabIndex = 64;
+            this.cbbAerOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbAerOrigen_SelectedIndexChanged);
+            // 
+            // cbbCiudadOrigen
+            // 
+            this.cbbCiudadOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbCiudadOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudadOrigen.Enabled = false;
+            this.cbbCiudadOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbCiudadOrigen.FormattingEnabled = true;
+            this.cbbCiudadOrigen.Location = new System.Drawing.Point(209, 177);
+            this.cbbCiudadOrigen.Name = "cbbCiudadOrigen";
+            this.cbbCiudadOrigen.Size = new System.Drawing.Size(215, 30);
+            this.cbbCiudadOrigen.TabIndex = 65;
+            this.cbbCiudadOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbCiudadOrigen_SelectedIndexChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.panel3.Location = new System.Drawing.Point(12, 80);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1344, 1);
+            this.panel3.TabIndex = 78;
+            // 
+            // btnVer
+            // 
+            this.btnVer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVer.FlatAppearance.BorderSize = 0;
+            this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVer.ForeColor = System.Drawing.Color.White;
+            this.btnVer.Location = new System.Drawing.Point(356, 43);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(87, 31);
+            this.btnVer.TabIndex = 79;
+            this.btnVer.Text = "Ver";
+            this.btnVer.UseVisualStyleBackColor = false;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
+            this.panel4.Location = new System.Drawing.Point(12, 246);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1345, 1);
+            this.panel4.TabIndex = 80;
+            // 
+            // dgvVuelos
+            // 
+            this.dgvVuelos.AllowUserToAddRows = false;
+            this.dgvVuelos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvVuelos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVuelos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvVuelos.Location = new System.Drawing.Point(12, 254);
+            this.dgvVuelos.Name = "dgvVuelos";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvVuelos.Size = new System.Drawing.Size(1346, 418);
+            this.dgvVuelos.TabIndex = 81;
             // 
             // FormAdminVuelosConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(984, 691);
+            this.ClientSize = new System.Drawing.Size(1370, 691);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.dgvVuelos);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.btnVer);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.cbbEstadoDestino);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.cbbPaisDestino);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.cbbAerDestino);
+            this.Controls.Add(this.cbbCiudadDestino);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.cbbEstadoOrigen);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.cbbPaisOrigen);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.cbbAerOrigen);
+            this.Controls.Add(this.cbbCiudadOrigen);
             this.Controls.Add(this.rbNumeroVuelo);
             this.Controls.Add(this.rbRuta);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtIDDestino);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtIDSalida);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNumVuelo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormAdminVuelosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "consultarVuelo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,28 +417,28 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNumVuelo;
-        private System.Windows.Forms.TextBox txtIDSalida;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIDDestino;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton rbRuta;
         private System.Windows.Forms.RadioButton rbNumeroVuelo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cbbEstadoDestino;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cbbPaisDestino;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox cbbAerDestino;
+        private System.Windows.Forms.ComboBox cbbCiudadDestino;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cbbEstadoOrigen;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cbbPaisOrigen;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox cbbAerOrigen;
+        private System.Windows.Forms.ComboBox cbbCiudadOrigen;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnVer;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dgvVuelos;
     }
 }

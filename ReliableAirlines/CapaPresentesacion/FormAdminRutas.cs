@@ -212,5 +212,10 @@ namespace CapaPresentesacion
             FormAdminRutasVerRutas ver = new FormAdminRutasVerRutas();
             ver.Show();
         }
+
+        private void cbbAerOrigen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

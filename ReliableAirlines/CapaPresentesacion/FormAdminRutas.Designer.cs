@@ -143,6 +143,7 @@
             this.cbbAerOrigen.Name = "cbbAerOrigen";
             this.cbbAerOrigen.Size = new System.Drawing.Size(92, 21);
             this.cbbAerOrigen.TabIndex = 16;
+            this.cbbAerOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbAerOrigen_SelectedIndexChanged);
             // 
             // cbbCiudadOrigen
             // 
