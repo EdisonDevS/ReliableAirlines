@@ -24,8 +24,8 @@ namespace CapaPresentesacion
         {
             foreach (DataGridViewRow fila in dgvVuelos.Rows)
             {
-                fila.Cells["Valor primera clase"].Value = Int32.Parse(fila.Cells["Valor primera clase"].Value.ToString()).ToString("c", cop);
-                fila.Cells["Valor clase turista"].Value = Int32.Parse(fila.Cells["Valor clase turista"].Value.ToString()).ToString("c", cop);
+                fila.Cells[8].Value = Int32.Parse(fila.Cells[8].Value.ToString()).ToString("c", cop);
+                fila.Cells[9].Value = Int32.Parse(fila.Cells[9].Value.ToString()).ToString("c", cop);
             }
         }
         public FormAdminVuelosConsulta()
@@ -124,11 +124,6 @@ namespace CapaPresentesacion
             }
         }
 
-        private void cbbAerOrigen_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void cbbPaisDestino_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -182,22 +177,73 @@ namespace CapaPresentesacion
             DataTable tabla = new DataTable();
             tabla = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
             tabla.Columns[0].ColumnName = "Número de vuelo";
-            tabla.Columns[1].ColumnName = "Ruta";
-            tabla.Columns[2].ColumnName = "Aeronave";
-            tabla.Columns[3].ColumnName = "Puestos primera clase";
-            tabla.Columns[4].ColumnName = "Puestos clase turista";
-            tabla.Columns[5].ColumnName = "Salida";
-            tabla.Columns[6].ColumnName = "Llegada";
-            tabla.Columns[7].ColumnName = "Valor primera clase";
-            tabla.Columns[8].ColumnName = "Valor clase turista";
+            tabla.Columns[1].ColumnName = "Origen";
+            tabla.Columns[2].ColumnName = "Destino";
+            tabla.Columns[3].ColumnName = "Aeronave";
+            tabla.Columns[4].ColumnName = "Puestos primera clase";
+            tabla.Columns[5].ColumnName = "Puestos clase turista";
+            tabla.Columns[6].ColumnName = "Salida";
+            tabla.Columns[7].ColumnName = "Llegada";
+            tabla.Columns[8].ColumnName = "Valor primera clase";
+            tabla.Columns[9].ColumnName = "Valor clase turista";
             dgvVuelos.DataSource = tabla;
 
             corregirDvg();
         }
 
+        private void cbbAerOrigen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable tabla = new DataTable();
+                tabla = vuelo.CargarDatosPorAeropuerto(Convert.ToInt32(cbbAerOrigen.SelectedValue), 
+                                                        Convert.ToInt32(cbbAerDestino.SelectedValue));
+                tabla.Columns[0].ColumnName = "Número de vuelo";
+                tabla.Columns[1].ColumnName = "Origen";
+                tabla.Columns[2].ColumnName = "Destino";
+                tabla.Columns[3].ColumnName = "Aeronave";
+                tabla.Columns[4].ColumnName = "Puestos primera clase";
+                tabla.Columns[5].ColumnName = "Puestos clase turista";
+                tabla.Columns[6].ColumnName = "Salida";
+                tabla.Columns[7].ColumnName = "Llegada";
+                tabla.Columns[8].ColumnName = "Valor primera clase";
+                tabla.Columns[9].ColumnName = "Valor clase turista";
+                dgvVuelos.DataSource = tabla;
+
+                
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
         private void cbbAerDestino_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                DataTable tabla = new DataTable();
+                tabla = vuelo.CargarDatosPorAeropuerto(Convert.ToInt32(cbbAerOrigen.SelectedValue),
+                                                        Convert.ToInt32(cbbAerDestino.SelectedValue));
+                tabla.Columns[0].ColumnName = "Número de vuelo";
+                tabla.Columns[1].ColumnName = "Origen";
+                tabla.Columns[2].ColumnName = "Destino";
+                tabla.Columns[3].ColumnName = "Aeronave";
+                tabla.Columns[4].ColumnName = "Puestos primera clase";
+                tabla.Columns[5].ColumnName = "Puestos clase turista";
+                tabla.Columns[6].ColumnName = "Salida";
+                tabla.Columns[7].ColumnName = "Llegada";
+                tabla.Columns[8].ColumnName = "Valor primera clase";
+                tabla.Columns[9].ColumnName = "Valor clase turista";
+                dgvVuelos.DataSource = tabla;
 
+
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
         

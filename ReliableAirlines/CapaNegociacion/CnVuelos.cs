@@ -28,6 +28,11 @@ namespace CapaNegociacion
             return vuelo.CargarDatos(numVuelo);
         }
 
+        public DataTable CargarDatosPorAeropuerto(int aerOrigen, int aerDestino)
+        {
+            return vuelo.CargarDatosPorAeropuerto(aerOrigen, aerDestino);
+        }
+
         public void ActualizarVuelos(int numVuelo, int idRuta, string idAeronave, string salida, string hsalida,
                                      string llegada, string hllegada, string vlrPclase, string vlrCturista)
         {

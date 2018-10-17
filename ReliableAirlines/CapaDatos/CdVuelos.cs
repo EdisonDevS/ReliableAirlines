@@ -70,5 +70,21 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return resultado;
         }
+
+        public DataTable CargarDatosPorAeropuerto(int aerOrigen, int aerDestino)
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CARGAR_DATOS_VUELO_AERO";
+            comando.Parameters.AddWithValue("@origen", aerOrigen);
+            comando.Parameters.AddWithValue("@destino", aerDestino);
+            filas = comando.ExecuteReader();
+            resultado.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return resultado;
+        }
     }
 }

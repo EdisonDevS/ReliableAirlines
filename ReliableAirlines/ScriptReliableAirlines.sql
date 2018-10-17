@@ -461,6 +461,15 @@ AS
 SELECT * FROM VUELOS WHERE VUELOS.numVuelo=@vuelo
 GO
 
+CREATE PROC CARGAR_DATOS_VUELO_AERO
+	@origen BIGINT,
+	@destino BIGINT
+AS
+SELECT VUELOS.numVuelo, ORI.nombre, DEST.nombre, VUELOS.idAeronave, VUELOS.pClase, VUELOS.tClase, VUELOS.salida, VUELOS.llegada,
+VUELOS.vlrPrimeraClase, VUELOS.vlrClaseTurista FROM VUELOS, RUTAS, AEROPUERTOS AS ORI, AEROPUERTOS AS DEST WHERE RUTAS.aerOrigen=@origen
+AND RUTAS.aerDestino=@destino AND ORI.idAeropuerto=RUTAS.aerOrigen AND DEST.idAeropuerto=RUTAS.aerDestino AND VUELOS.idRuta=RUTAS.idRuta 
+GO
+
 CREATE PROC ACTUALIZAR_DATOS_VUELO
 	@vuelo BIGINT,
 	@idRuta BIGINT,
