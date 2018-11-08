@@ -458,7 +458,9 @@ GO
 CREATE PROC CARGAR_DATOS_VUELO
 	@vuelo BIGINT
 AS
-SELECT * FROM VUELOS WHERE VUELOS.numVuelo=@vuelo
+SELECT VUELOS.numVuelo, ORI.nombre, DEST.nombre, VUELOS.idAeronave, VUELOS.pClase, VUELOS.tClase, VUELOS.salida, VUELOS.llegada,
+VUELOS.vlrPrimeraClase, VUELOS.vlrClaseTurista FROM VUELOS, RUTAS, AEROPUERTOS AS ORI, AEROPUERTOS AS DEST WHERE VUELOS.numVuelo=@vuelo 
+AND ORI.idAeropuerto=RUTAS.aerOrigen AND DEST.idAeropuerto=RUTAS.aerDestino AND VUELOS.idRuta=RUTAS.idRuta 
 GO
 
 CREATE PROC CARGAR_DATOS_VUELO_AERO
@@ -485,4 +487,14 @@ UPDATE VUELOS SET VUELOS.idRuta=@idRuta, VUELOS.pClase=@pClase, VUELOS.tClase=@t
 VUELOS.llegada=@llegada, VUELOS.vlrPrimeraClase=@vlrPrimeraClase, VUELOS.vlrClaseTurista=@vlrClaseTurista WHERE VUELOS.numVuelo=@vuelo
 GO 
 
-select * from VUELOS
+CREATE PROC CONSULTA_VUELO_FECHA
+	@fecha DATETIME,
+	@aerSalida INT,
+	@aerLlegada INT
+AS
+SELECT numVuelo, pClase, tClase, salida, llegada, vlrPrimeraClase, vlrClaseTurista FROM VUELOS INNER JOIN RUTAS ON 
+VUELOS.idRuta=RUTAS.idRuta WHERE VUELOS.
+
+SELECT VUELOS.numVuelo, ORI.nombre, DEST.nombre, VUELOS.idAeronave, VUELOS.pClase, VUELOS.tClase, VUELOS.salida, VUELOS.llegada,
+VUELOS.vlrPrimeraClase, VUELOS.vlrClaseTurista FROM VUELOS, RUTAS, AEROPUERTOS AS ORI, AEROPUERTOS AS DEST WHERE VUELOS.numVuelo=3942 
+AND ORI.idAeropuerto=RUTAS.aerOrigen AND DEST.idAeropuerto=RUTAS.aerDestino AND VUELOS.idRuta=RUTAS.idRuta 
