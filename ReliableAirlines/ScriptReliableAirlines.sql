@@ -142,6 +142,8 @@ CREATE TABLE TIQUETE
 	idTiquete BIGINT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	numVuelo BIGINT NOT NULL,
 	docCliente VARCHAR(11) NOT NULL,
+	fechaReserva DATETIME NOT NULL,
+	estadoDeReserva INT NOT NULL
 
 	CONSTRAINT RELACION_A_CLIENTE FOREIGN KEY (docCliente) REFERENCES CLIENTE(documentoUsuario),
 	CONSTRAINT RELACION_A_VUELO FOREIGN KEY (numVuelo) REFERENCES VUELOS(numVuelo)
@@ -488,13 +490,29 @@ VUELOS.llegada=@llegada, VUELOS.vlrPrimeraClase=@vlrPrimeraClase, VUELOS.vlrClas
 GO 
 
 CREATE PROC CONSULTA_VUELO_FECHA
-	@fecha DATETIME,
+	@fecha DATE,
 	@aerSalida INT,
 	@aerLlegada INT
 AS
 SELECT numVuelo, pClase, tClase, salida, llegada, vlrPrimeraClase, vlrClaseTurista FROM VUELOS INNER JOIN RUTAS ON 
-VUELOS.idRuta=RUTAS.idRuta WHERE VUELOS.
+VUELOS.idRuta=RUTAS.idRuta WHERE RUTAS.aerOrigen=@aerSalida AND RUTAS.aerDestino=@aerLlegada AND MONTH(@fecha)=MONTH(VUELOS.salida
+) AND DAY(@fecha)=DAY(VUELOS.salida) AND YEAR(@fecha)=YEAR(VUELOS.salida)
+GO
 
-SELECT VUELOS.numVuelo, ORI.nombre, DEST.nombre, VUELOS.idAeronave, VUELOS.pClase, VUELOS.tClase, VUELOS.salida, VUELOS.llegada,
-VUELOS.vlrPrimeraClase, VUELOS.vlrClaseTurista FROM VUELOS, RUTAS, AEROPUERTOS AS ORI, AEROPUERTOS AS DEST WHERE VUELOS.numVuelo=3942 
-AND ORI.idAeropuerto=RUTAS.aerOrigen AND DEST.idAeropuerto=RUTAS.aerDestino AND VUELOS.idRuta=RUTAS.idRuta 
+CREATE PROC CONSULTA_USUARIO
+	@doc VARCHAR(11)
+AS
+SELECT * FROM USUARIO WHERE USUARIO.documento=@doc
+GO
+
+
+CREATE PROC NUEVO_TIQUETE
+	@doc VARCHAR(11),
+	@estado INT,
+	@numVuelo BIGINT
+AS
+INSERT INTO TIQUETE VALUES(@numVuelo, @doc, GETDATE(), @estado)
+GO
+
+
+SELECT * FROM TIQUETE

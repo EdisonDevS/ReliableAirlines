@@ -74,5 +74,10 @@ namespace CapaNegociacion
                 email, telefono, tipoContra, puesto, cuenta, tipoCuenta, banco, eps, direccion, ciudad, info, sueldo, estado);
 
         }
+
+        public DataTable validarUsuario(string doc)
+        {
+            return registrar.validarUsuario(doc);
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace CapaNegociacion
     public class CnVuelos
     {
         CdVuelos vuelo = new CdVuelos();
+        CnFechas Fechas = new CnFechas();
         public void CrearVuelo(int numVuelo, int idRuta, string idAeronave, string salida, string hsalida, 
                                 string llegada, string hllegada, string vlrPclase, string vlrCturista)
         {
@@ -42,6 +43,21 @@ namespace CapaNegociacion
             llegada = fecha.convertirAFormatoSQL(llegada, hllegada);
 
             vuelo.ActualizarVuelo(numVuelo, idRuta, idAeronave, salida, llegada, vlrPclase, vlrCturista);
+        }
+        public DataTable CargarVuelosFecha(string fecha, int salida, int llegada)
+        {
+            fecha = Fechas.convertirAFormatoSQL(fecha);
+            DataTable datos = vuelo.CargarVuelosFecha(fecha, salida, llegada);
+
+            datos.Columns[0].ColumnName = "Vuelo";
+            datos.Columns[1].ColumnName = "Cupos primera clase";
+            datos.Columns[2].ColumnName = "Cupos clase turista";
+            datos.Columns[3].ColumnName = "Salida";
+            datos.Columns[4].ColumnName = "Llegada";
+            datos.Columns[5].ColumnName = "Valor primera clase";
+            datos.Columns[6].ColumnName = "Valor clase turista";
+
+            return datos;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace CapaPresentesacion
     public partial class FormCajaVentasVenta : Form
     {
         CnLocaciones locaciones = new CnLocaciones();
+        CnVuelos Vuelo = new CnVuelos();
         public FormCajaVentasVenta()
         {
             InitializeComponent();
@@ -132,6 +133,64 @@ namespace CapaPresentesacion
             catch (Exception)
             {
 
+            }
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            dgvVuelos.DataSource = Vuelo.CargarVuelosFecha(dtpSalida.Text, Convert.ToInt32(cbbAerOrigen.SelectedValue),
+                Convert.ToInt32(cbbAerDes.SelectedValue));
+
+        }
+
+        private void btnValidarUsuario_Click(object sender, EventArgs e)
+        {
+            CnAdministracionUsuarios usuario = new CnAdministracionUsuarios();
+            DataTable usuarios = new DataTable();
+            usuarios = usuario.validarUsuario(txtDocumento.Text);
+
+            if (usuarios.Rows.Count > 0)
+            {
+                lblNombre.Text = lblNombre.Text + usuarios.Rows[0][5].ToString();
+                lblApellido.Text = lblApellido.Text + usuarios.Rows[0][6].ToString();
+            }
+            else
+            {
+                FormRegistroCliente registro = new FormRegistroCliente();
+                registro.Show();
+            }
+        }
+
+        private void btnGenerarVenta_Click(object sender, EventArgs e)
+        {
+            CnAdministracionUsuarios usuario = new CnAdministracionUsuarios();
+            DataTable usuarios = new DataTable();
+            usuarios = usuario.validarUsuario(txtDocumento.Text);
+
+            if (usuarios.Rows.Count > 0)
+            {
+                try
+                {
+                    CnVentas venta = new CnVentas();
+                    if (dgvVuelos.SelectedRows.Count == 1)
+                    {
+                        venta.nuevoTiquete(txtDocumento.Text, 2, Convert.ToInt32(dgvVuelos.CurrentRow.Cells[0].Value.ToString()));
+                        MessageBox.Show("Se ha realizado la reserva con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Debe seleccionar un vuelo de la lista");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha ocurrido un error intentando hacer la operación"+ex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("El usuario debe de estar registrado primero!");
             }
         }
     }

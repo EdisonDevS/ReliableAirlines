@@ -13,7 +13,7 @@ namespace CapaDatos
     class CdConexion
     {
 
-        SqlConnection Conexion = new SqlConnection("Data Source = DESKTOP-EMQ2NTE\\SQLEXPRESS;" +
+        SqlConnection Conexion = new SqlConnection("Data Source = DESKTOP-LJH40M2\\SQLEXPRESS;" +
             " Initial catalog = ReliableAirlines; Integrated Security = True");
 
         public SqlConnection AbrirConexion()

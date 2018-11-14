@@ -140,5 +140,19 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
+        public DataTable validarUsuario(string doc)
+        {
+            DataTable info = new DataTable();
+            consulta.CommandType = CommandType.StoredProcedure;
+            consulta.CommandText = "CONSULTA_USUARIO";
+            consulta.Connection = conexion.AbrirConexion();
+            consulta.Parameters.AddWithValue("@doc", doc);
+            fila = consulta.ExecuteReader();
+            info.Load(fila);
+            fila.Close();
+            consulta.Parameters.Clear();
+            conexion.CerrarConexion();
+            return info;
+        }
     }
 }

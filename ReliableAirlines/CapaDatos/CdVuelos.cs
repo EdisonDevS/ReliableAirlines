@@ -86,5 +86,22 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return resultado;
         }
+
+        public DataTable CargarVuelosFecha(string fecha, int salida, int llegada)
+        {
+            DataTable datos = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CONSULTA_VUELO_FECHA";
+            comando.Parameters.AddWithValue("@fecha", fecha);
+            comando.Parameters.AddWithValue("@aerSalida", salida);
+            comando.Parameters.AddWithValue("@aerLlegada", llegada);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return datos;
+        }
     }
 }
