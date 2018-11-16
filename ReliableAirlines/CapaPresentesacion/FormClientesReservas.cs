@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormClientesReservas : Form
     {
-        public FormClientesReservas()
+        CnSesion sesion;
+        public FormClientesReservas(CnSesion datos)
         {
+            this.sesion = datos;
             InitializeComponent();
         }
         private void abrirFormularioHijo(object formulario)
@@ -31,7 +34,7 @@ namespace CapaPresentesacion
 
         private void btnReservar_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormClientesReservasReservar());
+            abrirFormularioHijo(new FormClientesReservasReservar(sesion));
             btnReservar.BackColor = Color.FromArgb(23, 185, 120);
             btnMisVuelos.BackColor = Color.FromArgb(44, 61, 79);
             btnHistorial.BackColor = Color.FromArgb(44, 61, 79);

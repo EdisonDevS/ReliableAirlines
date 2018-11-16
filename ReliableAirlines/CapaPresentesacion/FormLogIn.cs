@@ -48,7 +48,7 @@ namespace CapaPresentesacion
                         break;
                     case '5':
                         this.Hide();
-                        FormVistaPrincipalCliente clien = new FormVistaPrincipalCliente();
+                        FormVistaPrincipalCliente clien = new FormVistaPrincipalCliente(autorizacion);
                         clien.Show();
                         break;
                 }

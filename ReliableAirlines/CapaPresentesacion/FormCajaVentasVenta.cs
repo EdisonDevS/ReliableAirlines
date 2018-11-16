@@ -174,7 +174,13 @@ namespace CapaPresentesacion
                     CnVentas venta = new CnVentas();
                     if (dgvVuelos.SelectedRows.Count == 1)
                     {
-                        venta.nuevoTiquete(txtDocumento.Text, 2, Convert.ToInt32(dgvVuelos.CurrentRow.Cells[0].Value.ToString()));
+                        int clase=2;
+                        if (rbCturista.Checked == false)
+                        {
+                            clase = 1;
+                        }
+                        
+                        venta.nuevoTiquete(txtDocumento.Text, 2, Convert.ToInt32(dgvVuelos.CurrentRow.Cells[0].Value.ToString()), clase);
                         MessageBox.Show("Se ha realizado la reserva con exito");
                     }
                     else

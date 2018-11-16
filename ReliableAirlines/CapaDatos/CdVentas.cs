@@ -14,7 +14,7 @@ namespace CapaDatos
         SqlCommand comando = new SqlCommand();
         SqlDataReader filas;
 
-        public void nuevoTiquete(string doc, int estado, int numVuelo)
+        public void nuevoTiquete(string doc, int estado, int numVuelo, int clase)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
@@ -22,6 +22,7 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@doc", doc);
             comando.Parameters.AddWithValue("@estado", estado);
             comando.Parameters.AddWithValue("@numVuelo", numVuelo);
+            comando.Parameters.AddWithValue("@clase", clase);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
