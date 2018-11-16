@@ -41,17 +41,16 @@ namespace CapaPresentesacion
             aeronave = aer.ConsultarMatriculas();
             cbbMatriculaAeronave.DataSource = aeronave;
             cbbMatriculaAeronave.DisplayMember = "idAeronave";
+            
+            cbbMatriculaAeronave.Text = datosPrimarios.Rows[0][3].ToString();
 
-            cbbNombreRuta.SelectedValue = datosPrimarios.Rows[0][1];
-            cbbMatriculaAeronave.Text = datosPrimarios.Rows[0][2].ToString();
+            txtVlrPclase.Text = datosPrimarios.Rows[0][8].ToString();
+            txtVlrCturista.Text = datosPrimarios.Rows[0][9].ToString();
 
-            txtVlrPclase.Text = datosPrimarios.Rows[0][7].ToString();
-            txtVlrCturista.Text = datosPrimarios.Rows[0][8].ToString();
-
-            dtpLlegada.Text = datosPrimarios.Rows[0][6].ToString();
-            dtpSalida.Text = datosPrimarios.Rows[0][5].ToString();
-            dtpHoraLlegada.Text = datosPrimarios.Rows[0][6].ToString();
-            dtpHoraSalida.Text = datosPrimarios.Rows[0][5].ToString();
+            dtpLlegada.Text = datosPrimarios.Rows[0][7].ToString();
+            dtpSalida.Text = datosPrimarios.Rows[0][6].ToString();
+            dtpHoraLlegada.Text = datosPrimarios.Rows[0][7].ToString();
+            dtpHoraSalida.Text = datosPrimarios.Rows[0][6].ToString();
         }
 
         private void cbbNombreRuta_SelectedIndexChanged(object sender, EventArgs e)
