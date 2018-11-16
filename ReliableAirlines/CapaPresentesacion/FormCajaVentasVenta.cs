@@ -190,7 +190,7 @@ namespace CapaPresentesacion
             }
             else
             {
-                MessageBox.Show("El usuario debe de estar registrado primero!");
+                MessageBox.Show("El usuario debe de estar registrado primero! ");
             }
         }
     }
