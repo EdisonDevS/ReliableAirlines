@@ -20,5 +20,18 @@ namespace CapaNegociacion
         {
             venta.cancelacionDeTiquete(documento, vuelo);
         }
+
+        public DataTable obtenerInfoVenta(string reserva)
+        {
+            DataTable resultados = new DataTable();
+            resultados = venta.obtenerInfoVenta(Int32.Parse(reserva));
+
+            return resultados;
+        }
+
+        public void validarReserva(string reserva)
+        {
+            venta.validarReserva(Int32.Parse(reserva));
+        }
     }
 }

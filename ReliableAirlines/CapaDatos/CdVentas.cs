@@ -41,7 +41,8 @@ namespace CapaDatos
                 comando.Parameters.Clear();
                 conexion.CerrarConexion();
 
-                MessageBox.Show("La reserva se ha realizado de forma exitosa");
+                MessageBox.Show("La reserva se ha realizado de forma exitosa\n" + "Su código único de reserva es: " +
+                    Int32.Parse(prueba.Rows[0]["idTiquete"].ToString()) + 1);
             }
         }
 
@@ -55,6 +56,35 @@ namespace CapaDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
+        }
+
+        public DataTable obtenerInfoVenta(int reserva)
+        {
+            DataTable resultados = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "INFO_VENTA";
+            comando.Parameters.AddWithValue("@id", reserva);
+            filas = comando.ExecuteReader();
+            resultados.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+
+            return resultados;
+        }
+        public void validarReserva(int reserva)
+        {
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VALIDAR_TIQUETE";
+            comando.Parameters.AddWithValue("@id", reserva);
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+
+            MessageBox.Show("Reserva validada exitosamente!!!");
+            
         }
     }
 }
