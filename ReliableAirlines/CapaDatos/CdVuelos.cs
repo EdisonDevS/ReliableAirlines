@@ -103,5 +103,35 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return datos;
         }
+
+        public DataTable ConsultaVuelosPendientes(string documento)
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "VUELOS_PENDIENTES";
+            comando.Parameters.AddWithValue("@doc", documento);
+            filas = comando.ExecuteReader();
+            resultado.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+
+            return resultado;
+        }
+
+        public DataTable ConsultaHistorialVuelos(string documento)
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "HISTORIAL_VUELOS";
+            comando.Parameters.AddWithValue("@doc", documento);
+            filas = comando.ExecuteReader();
+            resultado.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+
+            return resultado;
+        }
     }
 }

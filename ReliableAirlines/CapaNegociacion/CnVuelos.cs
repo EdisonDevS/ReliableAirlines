@@ -59,5 +59,31 @@ namespace CapaNegociacion
 
             return datos;
         }
+
+        public DataTable ConsultaVuelosPendientes(string documento)
+        {
+            DataTable resultado = new DataTable();
+            resultado = vuelo.ConsultaVuelosPendientes(documento);
+            resultado.Columns[0].ColumnName = "Numero de vuelo";
+            resultado.Columns[1].ColumnName = "Lugar de salida";
+            resultado.Columns[2].ColumnName = "Lugar de llegada";
+            resultado.Columns[3].ColumnName = "Hora de salida";
+            resultado.Columns[4].ColumnName = "Hora de llegada";
+            resultado.Columns[5].ColumnName = "Estado";
+            return resultado;
+        }
+
+        public DataTable ConsultaHistorialVuelos(string documento)
+        {
+            DataTable resultado = new DataTable();
+            resultado = vuelo.ConsultaHistorialVuelos(documento);
+            resultado.Columns[0].ColumnName = "Numero de vuelo";
+            resultado.Columns[1].ColumnName = "Lugar de salida";
+            resultado.Columns[2].ColumnName = "Lugar de llegada";
+            resultado.Columns[3].ColumnName = "Hora de salida";
+            resultado.Columns[4].ColumnName = "Hora de llegada";
+            resultado.Columns[5].ColumnName = "Estado";
+            return resultado;
+        }
     }
 }

@@ -10,10 +10,15 @@ namespace CapaNegociacion
 {
     public class CnVentas
     {
+        CdVentas venta = new CdVentas();
         public void nuevoTiquete(string doc, int estado, int numVuelo, int clase)
         {
-            CdVentas venta = new CdVentas();
             venta.nuevoTiquete(doc, estado, numVuelo, clase);
+        }
+
+        public void cancelacionDeTiquete(string documento, int vuelo)
+        {
+            venta.cancelacionDeTiquete(documento, vuelo);
         }
     }
 }

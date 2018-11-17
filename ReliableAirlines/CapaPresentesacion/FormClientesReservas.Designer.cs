@@ -42,8 +42,9 @@
             this.btnReservar.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.btnReservar.ForeColor = System.Drawing.Color.White;
             this.btnReservar.Location = new System.Drawing.Point(0, 0);
+            this.btnReservar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReservar.Name = "btnReservar";
-            this.btnReservar.Size = new System.Drawing.Size(173, 31);
+            this.btnReservar.Size = new System.Drawing.Size(231, 38);
             this.btnReservar.TabIndex = 0;
             this.btnReservar.Text = "Reservar vuelo";
             this.btnReservar.UseVisualStyleBackColor = false;
@@ -56,11 +57,12 @@
             this.btnMisVuelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMisVuelos.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.btnMisVuelos.ForeColor = System.Drawing.Color.White;
-            this.btnMisVuelos.Location = new System.Drawing.Point(173, 0);
+            this.btnMisVuelos.Location = new System.Drawing.Point(231, 0);
+            this.btnMisVuelos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMisVuelos.Name = "btnMisVuelos";
-            this.btnMisVuelos.Size = new System.Drawing.Size(173, 31);
+            this.btnMisVuelos.Size = new System.Drawing.Size(231, 38);
             this.btnMisVuelos.TabIndex = 1;
-            this.btnMisVuelos.Text = "Mis vuelos";
+            this.btnMisVuelos.Text = "Vuelos pendientes";
             this.btnMisVuelos.UseVisualStyleBackColor = false;
             this.btnMisVuelos.Click += new System.EventHandler(this.btnMisVuelos_Click);
             // 
@@ -71,9 +73,10 @@
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.btnHistorial.ForeColor = System.Drawing.Color.White;
-            this.btnHistorial.Location = new System.Drawing.Point(346, 0);
+            this.btnHistorial.Location = new System.Drawing.Point(461, 0);
+            this.btnHistorial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(173, 31);
+            this.btnHistorial.Size = new System.Drawing.Size(231, 38);
             this.btnHistorial.TabIndex = 2;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = false;
@@ -82,22 +85,24 @@
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.panelContainer.Location = new System.Drawing.Point(0, 30);
+            this.panelContainer.Location = new System.Drawing.Point(0, 37);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(519, 317);
+            this.panelContainer.Size = new System.Drawing.Size(692, 390);
             this.panelContainer.TabIndex = 3;
             // 
             // FormClientesReservas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(528, 357);
+            this.ClientSize = new System.Drawing.Size(704, 439);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnMisVuelos);
             this.Controls.Add(this.btnReservar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormClientesReservas";
             this.Text = "FormClientesReservasMisReservas";
             this.ResumeLayout(false);

@@ -181,7 +181,7 @@ namespace CapaPresentesacion
                         }
                         
                         venta.nuevoTiquete(txtDocumento.Text, 2, Convert.ToInt32(dgvVuelos.CurrentRow.Cells[0].Value.ToString()), clase);
-                        MessageBox.Show("Se ha realizado la reserva con exito");
+
                     }
                     else
                     {

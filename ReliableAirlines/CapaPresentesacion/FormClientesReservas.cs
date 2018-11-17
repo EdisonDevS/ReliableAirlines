@@ -41,14 +41,14 @@ namespace CapaPresentesacion
         }
         private void btnMisVuelos_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormClientesReservasMisReservas());
+            abrirFormularioHijo(new FormClientesReservasMisReservas(sesion));
             btnReservar.BackColor = Color.FromArgb(44, 61, 79);
             btnMisVuelos.BackColor = Color.FromArgb(23, 185, 120);
             btnHistorial.BackColor = Color.FromArgb(44, 61, 79);
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormClientesReservasHistorial());
+            abrirFormularioHijo(new FormClientesReservasHistorial(sesion));
             btnReservar.BackColor = Color.FromArgb(44, 61, 79);
             btnMisVuelos.BackColor = Color.FromArgb(44, 61, 79);
             btnHistorial.BackColor = Color.FromArgb(23, 185, 120);
