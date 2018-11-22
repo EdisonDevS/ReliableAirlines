@@ -36,6 +36,7 @@ namespace CapaPresentesacion
             pnlActivoGeneral.Visible = true;
             pnlActivoGastos.Visible = false;
             pnlActivoIngresos.Visible = false;
+            pnlActivoContactos.Visible = false;
         }
 
         private void btnGastos_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace CapaPresentesacion
             pnlActivoGeneral.Visible = false;
             pnlActivoGastos.Visible = true;
             pnlActivoIngresos.Visible = false;
+            pnlActivoContactos.Visible = false;
         }
 
         private void btnIngresos_Click(object sender, EventArgs e)
@@ -52,6 +54,16 @@ namespace CapaPresentesacion
             pnlActivoGeneral.Visible = false;
             pnlActivoGastos.Visible = false;
             pnlActivoIngresos.Visible = true;
+            pnlActivoContactos.Visible = false;
+        }
+
+        private void btnContactos_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormContabilidadContactos());
+            pnlActivoGeneral.Visible = false;
+            pnlActivoGastos.Visible = false;
+            pnlActivoIngresos.Visible = false;
+            pnlActivoContactos.Visible = true;
         }
     }
 }

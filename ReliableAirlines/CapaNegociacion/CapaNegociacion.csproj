@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CnAeronaves.cs" />
+    <Compile Include="CnContacto.cs" />
     <Compile Include="CnLocaciones.cs" />
     <Compile Include="CnFechas.cs" />
     <Compile Include="CnRutas.cs" />

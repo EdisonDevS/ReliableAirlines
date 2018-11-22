@@ -161,6 +161,24 @@
     <Compile Include="FormContabilidad.Designer.cs">
       <DependentUpon>FormContabilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContabilidadContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadContactos.Designer.cs">
+      <DependentUpon>FormContabilidadContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContabilidadContactosCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadContactosCrear.Designer.cs">
+      <DependentUpon>FormContabilidadContactosCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContabilidadContactosModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadContactosModificar.Designer.cs">
+      <DependentUpon>FormContabilidadContactosModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContabilidadGastos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -562,6 +580,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidad.resx">
       <DependentUpon>FormContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadContactos.resx">
+      <DependentUpon>FormContabilidadContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadContactosCrear.resx">
+      <DependentUpon>FormContabilidadContactosCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadContactosModificar.resx">
+      <DependentUpon>FormContabilidadContactosModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastos.resx">
       <DependentUpon>FormContabilidadGastos.cs</DependentUpon>
