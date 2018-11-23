@@ -48,5 +48,13 @@ namespace CapaNegociacion
         {
             contacto.modificarContacto(nit, nombre, direccion, correo);
         }
+
+        public DataTable consultaGralContactos()
+        {
+            DataTable datos = contacto.consultaGralContactos();
+
+            return datos;
+        }
+
     }
 }

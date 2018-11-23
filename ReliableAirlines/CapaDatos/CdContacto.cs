@@ -102,5 +102,18 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
+
+        public DataTable consultaGralContactos()
+        {
+            DataTable datos = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CONSULTA_GRAL_CONTACTO";
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+
+            return datos;
+        }
     }
 }

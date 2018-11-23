@@ -45,6 +45,7 @@
     <Compile Include="CnContacto.cs" />
     <Compile Include="CnLocaciones.cs" />
     <Compile Include="CnFechas.cs" />
+    <Compile Include="CnMovimientosFinancieros.cs" />
     <Compile Include="CnRutas.cs" />
     <Compile Include="CnSesion.cs" />
     <Compile Include="CnPermisos.cs" />

@@ -33,10 +33,10 @@
             this.txtValorGasto = new System.Windows.Forms.TextBox();
             this.dtpFechaGasto = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGenerarGasto = new System.Windows.Forms.Button();
             this.txtDescripcionGasto = new System.Windows.Forms.RichTextBox();
+            this.cbbReceptor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,22 +67,20 @@
             // 
             this.txtValorGasto.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.txtValorGasto.Location = new System.Drawing.Point(132, 361);
-            this.txtValorGasto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtValorGasto.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorGasto.Name = "txtValorGasto";
             this.txtValorGasto.Size = new System.Drawing.Size(267, 40);
             this.txtValorGasto.TabIndex = 49;
-            this.txtValorGasto.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // dtpFechaGasto
             // 
             this.dtpFechaGasto.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpFechaGasto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaGasto.Location = new System.Drawing.Point(132, 446);
-            this.dtpFechaGasto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaGasto.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaGasto.Name = "dtpFechaGasto";
             this.dtpFechaGasto.Size = new System.Drawing.Size(201, 40);
             this.dtpFechaGasto.TabIndex = 50;
-            this.dtpFechaGasto.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label3
             // 
@@ -95,15 +93,6 @@
             this.label3.Size = new System.Drawing.Size(104, 32);
             this.label3.TabIndex = 51;
             this.label3.Text = "Fecha:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(169, 543);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(937, 40);
-            this.textBox1.TabIndex = 53;
             // 
             // label4
             // 
@@ -125,12 +114,13 @@
             this.btnGenerarGasto.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarGasto.ForeColor = System.Drawing.Color.White;
             this.btnGenerarGasto.Location = new System.Drawing.Point(1129, 724);
-            this.btnGenerarGasto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGenerarGasto.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerarGasto.Name = "btnGenerarGasto";
             this.btnGenerarGasto.Size = new System.Drawing.Size(167, 68);
             this.btnGenerarGasto.TabIndex = 54;
             this.btnGenerarGasto.Text = "Generar gasto";
             this.btnGenerarGasto.UseVisualStyleBackColor = false;
+            this.btnGenerarGasto.Click += new System.EventHandler(this.btnGenerarGasto_Click);
             // 
             // txtDescripcionGasto
             // 
@@ -140,15 +130,27 @@
             this.txtDescripcionGasto.TabIndex = 55;
             this.txtDescripcionGasto.Text = "";
             // 
+            // cbbReceptor
+            // 
+            this.cbbReceptor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbReceptor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbReceptor.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbReceptor.FormattingEnabled = true;
+            this.cbbReceptor.Location = new System.Drawing.Point(166, 543);
+            this.cbbReceptor.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbReceptor.Name = "cbbReceptor";
+            this.cbbReceptor.Size = new System.Drawing.Size(940, 38);
+            this.cbbReceptor.TabIndex = 156;
+            // 
             // FormContabilidadGastosGenerarOtros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.Controls.Add(this.cbbReceptor);
             this.Controls.Add(this.txtDescripcionGasto);
             this.Controls.Add(this.btnGenerarGasto);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpFechaGasto);
@@ -156,7 +158,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadGastosGenerarOtros";
             this.Text = "FormContabilidadGastosGenerarOtros";
             this.ResumeLayout(false);
@@ -170,9 +172,9 @@
         private System.Windows.Forms.TextBox txtValorGasto;
         private System.Windows.Forms.DateTimePicker dtpFechaGasto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGenerarGasto;
         private System.Windows.Forms.RichTextBox txtDescripcionGasto;
+        private System.Windows.Forms.ComboBox cbbReceptor;
     }
 }
