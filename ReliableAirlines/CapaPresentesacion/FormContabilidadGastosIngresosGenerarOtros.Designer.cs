@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormContabilidadGastosGenerarOtros
+    partial class FormContabilidadGastosIngresosGenerarOtros
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,8 @@
             this.txtValorGasto = new System.Windows.Forms.TextBox();
             this.dtpFechaGasto = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnGenerarGasto = new System.Windows.Forms.Button();
+            this.lblFuente = new System.Windows.Forms.Label();
+            this.btnGenerar = new System.Windows.Forms.Button();
             this.txtDescripcionGasto = new System.Windows.Forms.RichTextBox();
             this.cbbReceptor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -94,33 +94,33 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Fecha:";
             // 
-            // label4
+            // lblFuente
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(16, 546);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 32);
-            this.label4.TabIndex = 52;
-            this.label4.Text = "Receptor:";
+            this.lblFuente.AutoSize = true;
+            this.lblFuente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFuente.ForeColor = System.Drawing.Color.White;
+            this.lblFuente.Location = new System.Drawing.Point(16, 546);
+            this.lblFuente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFuente.Name = "lblFuente";
+            this.lblFuente.Size = new System.Drawing.Size(142, 32);
+            this.lblFuente.TabIndex = 52;
+            this.lblFuente.Text = "Receptor:";
             // 
-            // btnGenerarGasto
+            // btnGenerar
             // 
-            this.btnGenerarGasto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.btnGenerarGasto.FlatAppearance.BorderSize = 0;
-            this.btnGenerarGasto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarGasto.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarGasto.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarGasto.Location = new System.Drawing.Point(1129, 724);
-            this.btnGenerarGasto.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGenerarGasto.Name = "btnGenerarGasto";
-            this.btnGenerarGasto.Size = new System.Drawing.Size(167, 68);
-            this.btnGenerarGasto.TabIndex = 54;
-            this.btnGenerarGasto.Text = "Generar gasto";
-            this.btnGenerarGasto.UseVisualStyleBackColor = false;
-            this.btnGenerarGasto.Click += new System.EventHandler(this.btnGenerarGasto_Click);
+            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerar.ForeColor = System.Drawing.Color.White;
+            this.btnGenerar.Location = new System.Drawing.Point(1129, 724);
+            this.btnGenerar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(167, 68);
+            this.btnGenerar.TabIndex = 54;
+            this.btnGenerar.Text = "Generar gasto";
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerarGasto_Click);
             // 
             // txtDescripcionGasto
             // 
@@ -142,7 +142,7 @@
             this.cbbReceptor.Size = new System.Drawing.Size(940, 38);
             this.cbbReceptor.TabIndex = 156;
             // 
-            // FormContabilidadGastosGenerarOtros
+            // FormContabilidadGastosIngresosGenerarOtros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,8 +150,8 @@
             this.ClientSize = new System.Drawing.Size(1312, 806);
             this.Controls.Add(this.cbbReceptor);
             this.Controls.Add(this.txtDescripcionGasto);
-            this.Controls.Add(this.btnGenerarGasto);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnGenerar);
+            this.Controls.Add(this.lblFuente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpFechaGasto);
             this.Controls.Add(this.txtValorGasto);
@@ -159,7 +159,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormContabilidadGastosGenerarOtros";
+            this.Name = "FormContabilidadGastosIngresosGenerarOtros";
             this.Text = "FormContabilidadGastosGenerarOtros";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,8 +172,8 @@
         private System.Windows.Forms.TextBox txtValorGasto;
         private System.Windows.Forms.DateTimePicker dtpFechaGasto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnGenerarGasto;
+        private System.Windows.Forms.Label lblFuente;
+        private System.Windows.Forms.Button btnGenerar;
         private System.Windows.Forms.RichTextBox txtDescripcionGasto;
         private System.Windows.Forms.ComboBox cbbReceptor;
     }

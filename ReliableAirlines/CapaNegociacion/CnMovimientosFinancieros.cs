@@ -10,9 +10,11 @@ namespace CapaNegociacion
     public class CnMovimientosFinancieros
     {
         CdMovimientosFinancieros mov = new CdMovimientosFinancieros();
-        public void nuevoMovimiento(string descripcion, string valor, string destino, int tipo)
+        public void nuevoMovimiento(string descripcion, string valor, string destino, int tipo, string fecha)
         {
-            mov.nuevoMovimiento(descripcion, valor, destino, tipo);
+            CnFechas conversor = new CnFechas();
+            fecha = conversor.convertirAFormatoSQL(fecha);
+            mov.nuevoMovimiento(descripcion, valor, destino, tipo, fecha);
         }
     }
 }

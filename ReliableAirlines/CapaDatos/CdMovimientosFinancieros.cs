@@ -12,7 +12,7 @@ namespace CapaDatos
     {
         SqlCommand comando = new SqlCommand();
         CdConexion conexion = new CdConexion();
-        public void nuevoMovimiento(string descripcion, string valor, string destino, int tipo)
+        public void nuevoMovimiento(string descripcion, string valor, string destino, int tipo, string fecha)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
@@ -21,6 +21,7 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@valor", valor);
             comando.Parameters.AddWithValue("@destino", destino);
             comando.Parameters.AddWithValue("@tipo", tipo);
+            comando.Parameters.AddWithValue("@fecha", fecha);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();

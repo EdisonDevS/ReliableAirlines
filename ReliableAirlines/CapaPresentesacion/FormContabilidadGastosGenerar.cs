@@ -41,7 +41,7 @@ namespace CapaPresentesacion
         {
             btnOtros.BackColor = Color.FromArgb(23, 185, 120);
             btnNomina.BackColor = Color.FromArgb(44, 61, 79);
-            abrirFormularioHijo(new FormContabilidadGastosGenerarOtros());
+            abrirFormularioHijo(new FormContabilidadGastosIngresosGenerarOtros(2));
         }
     }
 }

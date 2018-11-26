@@ -40,7 +40,7 @@ namespace CapaPresentesacion
         {
             btnVentas.BackColor = Color.FromArgb(44, 61, 79);
             btnExternos.BackColor = Color.FromArgb(23, 185, 120);
-            abrirFormularioHijo(new FormContabilidadIngresosGenerarExternos());
+            abrirFormularioHijo(new FormContabilidadGastosIngresosGenerarOtros(1));
         }
 
         private void panelGenerarIngreso_Paint(object sender, PaintEventArgs e)
