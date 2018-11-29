@@ -28,6 +28,8 @@ namespace CapaPresentesacion
                 {
                     case '1':
                         this.Hide();
+                        CnMovimientosFinancieros pagos = new CnMovimientosFinancieros();
+                        pagos.generarPagosPendientes();
                         FormVistaPrincipalAdmin admin = new FormVistaPrincipalAdmin();
                         admin.Show();
                         break;

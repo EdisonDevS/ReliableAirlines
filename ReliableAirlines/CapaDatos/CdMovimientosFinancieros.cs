@@ -26,5 +26,15 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
+
+        public void generarPagosPendientes()
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "GENERAR_PAGOS";
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+
+        }
     }
 }

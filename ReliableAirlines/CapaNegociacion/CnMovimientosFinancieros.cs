@@ -16,5 +16,10 @@ namespace CapaNegociacion
             fecha = conversor.convertirAFormatoSQL(fecha);
             mov.nuevoMovimiento(descripcion, valor, destino, tipo, fecha);
         }
+
+        public void generarPagosPendientes()
+        {
+            mov.generarPagosPendientes();
+        }
     }
 }
