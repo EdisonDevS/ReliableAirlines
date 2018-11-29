@@ -37,12 +37,6 @@ namespace CapaPresentesacion
                 txtDoc.Text = informacion.Rows[0]["documento"].ToString();
                 cbbTipoDoc.Text = informacion.Rows[0]["tipoDocumento"].ToString();
                 dtpNacimiento.Text = informacion.Rows[0]["fechaNacimiento"].ToString();
-                cbbTipoContra.Text = informacion.Rows[0]["tipoContrato"].ToString();
-                txtPuesto.Text = informacion.Rows[0]["puesto"].ToString();
-                txtSueldo.Text = informacion.Rows[0]["sueldo"].ToString();
-                txtCuenta.Text = informacion.Rows[0]["cuenta"].ToString();
-                cbbTipoCuenta.Text = informacion.Rows[0]["tipoCuenta"].ToString();
-                cbbBanco.Text = informacion.Rows[0]["banco"].ToString();
                 txtEPS.Text = informacion.Rows[0]["EPS"].ToString();
                 txtDireccion.Text = informacion.Rows[0]["direccion"].ToString();
                 txtEmail.Text = informacion.Rows[0]["email"].ToString();
@@ -64,94 +58,12 @@ namespace CapaPresentesacion
             CnAdministracionUsuarios modificarUsuario = new CnAdministracionUsuarios();
             modificarUsuario.realizarCambios(txtDoc.Text, cbbTipoDoc.Text, txtUsuario.Text,
                 txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
-                txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
-                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfo.Text,
-                txtSueldo.Text, cbbEstado.Text);
+                txtTelefono.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfo.Text,
+                cbbEstado.Text);
             
             MessageBox.Show("Se han modificado los \n" +
                             "datos correctamente.");
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

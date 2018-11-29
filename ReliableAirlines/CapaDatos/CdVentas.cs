@@ -86,5 +86,23 @@ namespace CapaDatos
             MessageBox.Show("Reserva validada exitosamente!!!");
             
         }
+
+        public DataTable consultarVentas(string inicio, string final)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTAR_VENTAS";
+            comando.Parameters.AddWithValue("@inicio", inicio);
+            comando.Parameters.AddWithValue("@final", final);
+
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+
+            return datos;
+        }
     }
 }

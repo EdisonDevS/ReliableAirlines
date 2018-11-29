@@ -7,24 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
+using System.Data;
 
 namespace CapaPresentesacion
 {
     public partial class FormContabilidadIngresosConsultarVentas : Form
     {
+        CnVentas venta = new CnVentas();
         public FormContabilidadIngresosConsultarVentas()
         {
             InitializeComponent();
+            this.dgvVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnCargar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FormContabilidadIngresosConsultarVentas_Load(object sender, EventArgs e)
-        {
-
+            try
+            {
+                DataTable datos = new DataTable();
+                datos = venta.consultarVentas(dtpInicio.Text, dtpFinal.Text);
+                dgvVentas.DataSource = datos;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ha ocurrido unerror al inentar conectar con la base de datos");
+            }
+            
         }
     }
 }

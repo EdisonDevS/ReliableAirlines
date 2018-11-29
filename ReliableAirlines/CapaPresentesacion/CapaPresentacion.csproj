@@ -89,6 +89,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdminNominaRegistroContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminNominaRegistroContrato.Designer.cs">
+      <DependentUpon>FormAdminNominaRegistroContrato.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdminRutasVerRutas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -535,6 +541,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminNominaRegistroContrato.resx">
+      <DependentUpon>FormAdminNominaRegistroContrato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminRutas.resx">
       <DependentUpon>FormAdminRutas.cs</DependentUpon>

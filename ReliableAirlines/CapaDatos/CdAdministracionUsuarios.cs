@@ -53,8 +53,7 @@ namespace CapaDatos
         //sobrecarga para el empleado
         public void registro (string documento, string tipoDoc, string usuario,
             string contraseña, string permisos, string nombres, string apellidos, string nacimiento,
-            string email, string telefono,string tipoContra, string puesto,string cuenta,
-            string tipoCuenta,string banco,string eps, string direccion,int ciudad,string info, string sueldo, string estado)
+            string email, string telefono,string eps, string direccion,int ciudad,string info, string estado)
         {
             consulta.Connection = conexion.AbrirConexion();
             
@@ -70,22 +69,39 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@fechaNacimiento", nacimiento);
             consulta.Parameters.AddWithValue("@email", email);
             consulta.Parameters.AddWithValue("@telefono", telefono);
-            consulta.Parameters.AddWithValue("@tipoContrato", tipoContra);
-            consulta.Parameters.AddWithValue("@puesto", puesto);
-            consulta.Parameters.AddWithValue("@cuenta", cuenta);
-            consulta.Parameters.AddWithValue("@tipoCuenta", tipoCuenta);
-            consulta.Parameters.AddWithValue("@banco", banco);
             consulta.Parameters.AddWithValue("@EPS", eps);
             consulta.Parameters.AddWithValue("@direccion", direccion);
             consulta.Parameters.AddWithValue("@ciudad", ciudad);
             consulta.Parameters.AddWithValue("@infoAdicional", info);
-            consulta.Parameters.AddWithValue("@sueldo",sueldo);
             consulta.Parameters.AddWithValue("@estado", estado);
 
             consulta.ExecuteNonQuery();
             consulta.Parameters.Clear();
 
             conexion.CerrarConexion();
+        }
+
+        public void contratoEmpleado(string documento, string tipo, string puesto, string sueldo, int periodo, string inicio, string final, string numcuenta, string tipocuenta, string banco)
+        {
+            consulta.Connection = conexion.AbrirConexion();
+            consulta.CommandType = CommandType.StoredProcedure;
+
+            consulta.CommandText = "CREAR_CNTRATO";
+            consulta.Parameters.AddWithValue("@documento", documento);
+            consulta.Parameters.AddWithValue("@tipo", tipo);
+            consulta.Parameters.AddWithValue("@puesto", puesto);
+            consulta.Parameters.AddWithValue("@sueldo", sueldo);
+            consulta.Parameters.AddWithValue("@periodoPago", periodo);
+            consulta.Parameters.AddWithValue("@inicio", inicio);
+            consulta.Parameters.AddWithValue("@fin", final);
+            consulta.Parameters.AddWithValue("@numCuenta", numcuenta);
+            consulta.Parameters.AddWithValue("@tipoCuenta", tipocuenta);
+            consulta.Parameters.AddWithValue("@banco", banco);
+
+            consulta.ExecuteNonQuery();
+            consulta.Parameters.Clear();
+            conexion.CerrarConexion();
+
         }
 
         public DataTable cargaDatos(string documento)
@@ -106,9 +122,8 @@ namespace CapaDatos
 
         public void modificar(string documento, string tipoDoc, string usuario,
             string nombres, string apellidos, string nacimiento, string email,
-            string telefono, string tipoContra, string puesto, string cuenta,
-            string tipoCuenta, string banco, string eps, string direccion,
-            int ciudad, string info, string sueldo, string estado)
+            string telefono, string eps, string direccion,
+            int ciudad, string info, string estado)
         {
             consulta.Connection = conexion.AbrirConexion();
 
@@ -122,16 +137,10 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@fechaNacimiento", nacimiento);
             consulta.Parameters.AddWithValue("@email", email);
             consulta.Parameters.AddWithValue("@telefono", telefono);
-            consulta.Parameters.AddWithValue("@tipoContrato", tipoContra);
-            consulta.Parameters.AddWithValue("@puesto", puesto);
-            consulta.Parameters.AddWithValue("@cuenta", cuenta);
-            consulta.Parameters.AddWithValue("@tipoCuenta", tipoCuenta);
-            consulta.Parameters.AddWithValue("@banco", banco);
             consulta.Parameters.AddWithValue("@EPS", eps);
             consulta.Parameters.AddWithValue("@direccion", direccion);
             consulta.Parameters.AddWithValue("@ciudad", ciudad);
             consulta.Parameters.AddWithValue("@infoAdicional", info);
-            consulta.Parameters.AddWithValue("@sueldo", sueldo);
             consulta.Parameters.AddWithValue("@estado", estado);
 
             consulta.ExecuteNonQuery();

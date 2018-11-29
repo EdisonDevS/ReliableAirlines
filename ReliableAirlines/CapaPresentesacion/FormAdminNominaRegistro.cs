@@ -25,6 +25,19 @@ namespace CapaPresentesacion
 
         }
 
+        private void ReemplazarForm(object formulario)
+        {
+            if (this.Controls.Count > 0)
+                this.Controls.RemoveAt(0);
+
+            Form hijo = formulario as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.Controls.Add(hijo);
+            this.Tag = hijo;
+            hijo.Show();
+        }
+
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             CnAdministracionUsuarios registrar = new CnAdministracionUsuarios();
@@ -32,11 +45,45 @@ namespace CapaPresentesacion
             {
                 registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text,
                 cbbTipoUsuario.Text, txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
-                txtTelefono.Text, cbbTipoContra.Text, txtPuesto.Text, txtCuenta.Text, cbbTipoCuenta.Text,
-                cbbBanco.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfoAdicional.Text,
-                txtSueldo.Text, cbbEstado.Text);
+                txtTelefono.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfoAdicional.Text,
+                cbbEstado.Text);
 
-                MessageBox.Show("Se ha creado el nuevo usuario correctamente");
+                MessageBox.Show("Se ha creado el nuevo usuario correctamente\nPuede proceder a establecer los terminos del contrato");
+
+                label1.Hide();
+                label11.Hide();
+                label12.Hide();
+                label13.Hide();
+                label14.Hide();
+                label15.Hide();
+                label16.Hide();
+                label17.Hide();
+                label18.Hide();
+                label19.Hide();
+                label2.Hide();
+                label20.Hide();
+                label21.Hide();
+                label22.Hide();
+                label3.Hide();
+                label4.Hide();
+                txtApellidos.Hide();
+                txtContraseña.Hide();
+                txtDireccion.Hide();
+                txtDocumento.Hide();
+                txtEmail.Hide();
+                txtEPS.Hide();
+                txtInfoAdicional.Hide();
+                txtNombres.Hide();
+                txtTelefono.Hide();
+                txtUsuario.Hide();
+                txtVerificaContraseña.Hide();
+                dtpNacimiento.Hide();
+                btnRegistrar.Hide();
+                cbbCiudades.Hide();
+                cbbEstado.Hide();
+                cbbTipoDoc.Hide();
+                cbbTipoUsuario.Hide();
+                ReemplazarForm(new FormAdminNominaRegistroContrato(txtDocumento.Text));
             }
             else
             {
@@ -45,22 +92,8 @@ namespace CapaPresentesacion
             
         }
 
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void registroEmpleado_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
