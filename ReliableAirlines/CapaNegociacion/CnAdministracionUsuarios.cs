@@ -78,12 +78,12 @@ namespace CapaNegociacion
             return registrar.validarUsuario(doc);
         }
 
-        public void contratoEmpleado(string documento, string tipo, string puesto, string sueldo, int periodo, string inicio, string final, string numcuenta, string tipocuenta, string banco)
+        public void contratoEmpleado(string documento, string tipo, string puesto, string sueldo, string inicio, string final, string numcuenta, string tipocuenta, string banco)
         {
             inicio = conversorFecha.convertirAFormatoSQL(inicio);
             final = conversorFecha.convertirAFormatoSQL(final);
 
-            registrar.contratoEmpleado(documento, tipo, puesto, sueldo, periodo, inicio, final, numcuenta, tipocuenta, banco);
+            registrar.contratoEmpleado(documento, tipo, puesto, sueldo,inicio, final, numcuenta, tipocuenta, banco);
         }
     }
 }

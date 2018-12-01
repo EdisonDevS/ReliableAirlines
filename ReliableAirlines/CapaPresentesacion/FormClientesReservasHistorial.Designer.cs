@@ -86,9 +86,10 @@
             this.ClientSize = new System.Drawing.Size(689, 407);
             this.Controls.Add(this.dgvVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormClientesReservasHistorial";
             this.Text = "FormClientesReservasHistorial";
+            this.Load += new System.EventHandler(this.FormClientesReservasHistorial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).EndInit();
             this.ResumeLayout(false);
 

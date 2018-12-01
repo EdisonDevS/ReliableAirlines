@@ -12,6 +12,7 @@ namespace CapaDatos
     {
         SqlCommand comando = new SqlCommand();
         CdConexion conexion = new CdConexion();
+        SqlDataReader filas;
         public void nuevoMovimiento(string descripcion, string valor, string destino, int tipo, string fecha)
         {
             comando.Connection = conexion.AbrirConexion();
@@ -27,14 +28,55 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
-        public void generarPagosPendientes()
+        public void generarPago()
         {
-            comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
-            comando.CommandText = "GENERAR_PAGOS";
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "GENERAR_PAGO";
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();
+        }
 
+        public DataTable consultarPagosPendientes()
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_PAGOS_PENDIENTES";
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            return datos;
+        }
+
+        public DataTable consultarDatosPago(string doc)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_DATOS_DE_PAGO";
+            comando.Parameters.AddWithValue("@doc", doc);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return datos;
+        }
+
+        public void validarPago(int id, int dias, int horas, string total)
+        {
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "VALIDAR_PAGO";
+            comando.Connection = conexion.AbrirConexion();
+            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@dias", dias);
+            comando.Parameters.AddWithValue("@horas", horas);
+            comando.Parameters.AddWithValue("@total", total);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
         }
     }
 }

@@ -81,7 +81,7 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
-        public void contratoEmpleado(string documento, string tipo, string puesto, string sueldo, int periodo, string inicio, string final, string numcuenta, string tipocuenta, string banco)
+        public void contratoEmpleado(string documento, string tipo, string puesto, string sueldo, string inicio, string final, string numcuenta, string tipocuenta, string banco)
         {
             consulta.Connection = conexion.AbrirConexion();
             consulta.CommandType = CommandType.StoredProcedure;
@@ -91,7 +91,6 @@ namespace CapaDatos
             consulta.Parameters.AddWithValue("@tipo", tipo);
             consulta.Parameters.AddWithValue("@puesto", puesto);
             consulta.Parameters.AddWithValue("@sueldo", sueldo);
-            consulta.Parameters.AddWithValue("@periodoPago", periodo);
             consulta.Parameters.AddWithValue("@inicio", inicio);
             consulta.Parameters.AddWithValue("@fin", final);
             consulta.Parameters.AddWithValue("@numCuenta", numcuenta);

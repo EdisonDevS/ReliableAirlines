@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label15 = new System.Windows.Forms.Label();
-            this.cbbPeriodo = new System.Windows.Forms.ComboBox();
             this.cbbBanco = new System.Windows.Forms.ComboBox();
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -41,8 +40,6 @@
             this.txtPuesto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnCrearContrato = new System.Windows.Forms.Button();
             this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,18 +59,6 @@
             this.label15.Size = new System.Drawing.Size(301, 28);
             this.label15.TabIndex = 44;
             this.label15.Text = "Información de contrato:";
-            // 
-            // cbbPeriodo
-            // 
-            this.cbbPeriodo.FormattingEnabled = true;
-            this.cbbPeriodo.Items.AddRange(new object[] {
-            "15",
-            "30"});
-            this.cbbPeriodo.Location = new System.Drawing.Point(77, 150);
-            this.cbbPeriodo.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbPeriodo.Name = "cbbPeriodo";
-            this.cbbPeriodo.Size = new System.Drawing.Size(44, 24);
-            this.cbbPeriodo.TabIndex = 71;
             // 
             // cbbBanco
             // 
@@ -196,30 +181,6 @@
             this.label5.TabIndex = 60;
             this.label5.Text = "Tipo de contrato:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 154);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 28);
-            this.label1.TabIndex = 72;
-            this.label1.Text = "Periodo:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(124, 154);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 28);
-            this.label2.TabIndex = 74;
-            this.label2.Text = "Días";
-            // 
             // btnCrearContrato
             // 
             this.btnCrearContrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
@@ -289,7 +250,7 @@
             "Planta",
             "Transitorio",
             "Pasante"});
-            this.cbbTipo.Location = new System.Drawing.Point(129, 53);
+            this.cbbTipo.Location = new System.Drawing.Point(129, 45);
             this.cbbTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cbbTipo.Name = "cbbTipo";
             this.cbbTipo.Size = new System.Drawing.Size(99, 24);
@@ -307,9 +268,6 @@
             this.Controls.Add(this.dtpInicio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCrearContrato);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbbPeriodo);
             this.Controls.Add(this.cbbBanco);
             this.Controls.Add(this.cbbTipoCuenta);
             this.Controls.Add(this.label10);
@@ -333,7 +291,6 @@
         #endregion
 
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox cbbPeriodo;
         private System.Windows.Forms.ComboBox cbbBanco;
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
         private System.Windows.Forms.Label label10;
@@ -345,8 +302,6 @@
         private System.Windows.Forms.TextBox txtPuesto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCrearContrato;
         private System.Windows.Forms.DateTimePicker dtpFinal;
         private System.Windows.Forms.Label label3;

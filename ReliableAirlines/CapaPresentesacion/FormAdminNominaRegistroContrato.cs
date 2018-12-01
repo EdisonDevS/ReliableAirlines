@@ -25,7 +25,7 @@ namespace CapaPresentesacion
         {
             try
             {
-                contrato.contratoEmpleado(documentoEmpleado, cbbTipo.Text, txtPuesto.Text, txtSueldo.Text, Int32.Parse(cbbPeriodo.Text), dtpInicio.Text,
+                contrato.contratoEmpleado(documentoEmpleado, cbbTipo.Text, txtPuesto.Text, txtSueldo.Text, dtpInicio.Text,
                 dtpFinal.Text, txtCuenta.Text, cbbTipoCuenta.Text, cbbBanco.Text);
 
                 MessageBox.Show("Contrato creado exitosamente");

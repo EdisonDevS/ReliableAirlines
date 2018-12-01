@@ -59,7 +59,7 @@
             this.dtpInicio.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpInicio.Location = new System.Drawing.Point(132, 26);
-            this.dtpInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(201, 40);
             this.dtpInicio.TabIndex = 48;
@@ -70,7 +70,7 @@
             this.dtpFinal.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFinal.Location = new System.Drawing.Point(132, 74);
-            this.dtpFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(201, 40);
             this.dtpFinal.TabIndex = 50;
@@ -95,7 +95,7 @@
             this.btnCargar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
             this.btnCargar.Location = new System.Drawing.Point(24, 126);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(159, 58);
             this.btnCargar.TabIndex = 52;
@@ -111,12 +111,13 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1137, 734);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 58);
             this.button3.TabIndex = 55;
             this.button3.Text = "Informe";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dgvVentas
             // 
@@ -168,7 +169,7 @@
             this.Controls.Add(this.dtpInicio);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadIngresosConsultarVentas";
             this.Text = "FormContabilidadIngresosConsultarVentas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();

@@ -58,5 +58,10 @@ namespace CapaPresentesacion
         {
 
         }
+
+        private void FormClientesReservasHistorial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
