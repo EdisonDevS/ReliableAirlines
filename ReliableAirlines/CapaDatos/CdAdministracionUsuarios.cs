@@ -162,5 +162,21 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return info;
         }
+
+        public DataTable verificarDocumento(string doc)
+        {
+            DataTable usuario = new DataTable();
+            consulta.CommandType = CommandType.StoredProcedure;
+            consulta.CommandText = "VERIFICAR_DOCUMENTO";
+            consulta.Connection = conexion.AbrirConexion();
+            consulta.Parameters.AddWithValue("@doc", doc);
+            fila = consulta.ExecuteReader();
+            usuario.Load(fila);
+            fila.Close();
+            conexion.CerrarConexion();
+            consulta.Parameters.Clear();
+
+            return usuario;
+        }
     }
 }

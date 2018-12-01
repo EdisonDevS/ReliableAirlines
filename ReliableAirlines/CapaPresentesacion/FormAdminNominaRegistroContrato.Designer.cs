@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.cbbBanco = new System.Windows.Forms.ComboBox();
             this.cbbTipoCuenta = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -48,17 +48,17 @@
             this.cbbTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label15
+            // lblInfo
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(13, 9);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(301, 28);
-            this.label15.TabIndex = 44;
-            this.label15.Text = "Información de contrato:";
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.ForeColor = System.Drawing.Color.White;
+            this.lblInfo.Location = new System.Drawing.Point(13, 9);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(308, 28);
+            this.lblInfo.TabIndex = 44;
+            this.lblInfo.Text = "Información de contrato: ";
             // 
             // cbbBanco
             // 
@@ -131,7 +131,7 @@
             // 
             // txtSueldo
             // 
-            this.txtSueldo.Location = new System.Drawing.Point(77, 126);
+            this.txtSueldo.Location = new System.Drawing.Point(77, 109);
             this.txtSueldo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSueldo.Name = "txtSueldo";
             this.txtSueldo.Size = new System.Drawing.Size(151, 22);
@@ -142,7 +142,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 128);
+            this.label7.Location = new System.Drawing.Point(13, 111);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 28);
@@ -188,7 +188,7 @@
             this.btnCrearContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearContrato.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearContrato.ForeColor = System.Drawing.Color.White;
-            this.btnCrearContrato.Location = new System.Drawing.Point(499, 210);
+            this.btnCrearContrato.Location = new System.Drawing.Point(499, 168);
             this.btnCrearContrato.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearContrato.Name = "btnCrearContrato";
             this.btnCrearContrato.Size = new System.Drawing.Size(117, 34);
@@ -202,7 +202,7 @@
             this.dtpFinal.CalendarFont = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpFinal.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFinal.Location = new System.Drawing.Point(60, 210);
+            this.dtpFinal.Location = new System.Drawing.Point(60, 168);
             this.dtpFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(93, 37);
@@ -213,7 +213,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 216);
+            this.label3.Location = new System.Drawing.Point(13, 174);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 28);
@@ -225,7 +225,7 @@
             this.dtpInicio.CalendarFont = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpInicio.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpInicio.Location = new System.Drawing.Point(60, 192);
+            this.dtpInicio.Location = new System.Drawing.Point(60, 150);
             this.dtpInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(93, 37);
@@ -236,7 +236,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 199);
+            this.label4.Location = new System.Drawing.Point(13, 157);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 28);
@@ -279,7 +279,7 @@
             this.Controls.Add(this.txtPuesto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdminNominaRegistroContrato";
             this.Text = "FormAdminNominaRegistroContacto";
@@ -290,7 +290,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.ComboBox cbbBanco;
         private System.Windows.Forms.ComboBox cbbTipoCuenta;
         private System.Windows.Forms.Label label10;

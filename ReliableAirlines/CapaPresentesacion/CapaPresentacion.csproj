@@ -203,12 +203,6 @@
     <Compile Include="FormContabilidadGastosConsultarNomina.Designer.cs">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormContabilidadGastosConsultarOtros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormContabilidadGastosConsultarOtros.Designer.cs">
-      <DependentUpon>FormContabilidadGastosConsultarOtros.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormContabilidadGastosGenerar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,11 +257,11 @@
     <Compile Include="FormContabilidadIngresosConsultar.Designer.cs">
       <DependentUpon>FormContabilidadIngresosConsultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormContabilidadIngresosConsultarExternos.cs">
+    <Compile Include="FormContabilidadGastosIngresosConsultarExternos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormContabilidadIngresosConsultarExternos.Designer.cs">
-      <DependentUpon>FormContabilidadIngresosConsultarExternos.cs</DependentUpon>
+    <Compile Include="FormContabilidadGastosIngresosConsultarExternos.Designer.cs">
+      <DependentUpon>FormContabilidadGastosIngresosConsultarExternos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormContabilidadIngresosConsultarVentas.cs">
       <SubType>Form</SubType>
@@ -608,9 +602,6 @@
     <EmbeddedResource Include="FormContabilidadGastosConsultarNomina.resx">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormContabilidadGastosConsultarOtros.resx">
-      <DependentUpon>FormContabilidadGastosConsultarOtros.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastosGenerar.resx">
       <DependentUpon>FormContabilidadGastosGenerar.cs</DependentUpon>
     </EmbeddedResource>
@@ -638,8 +629,8 @@
     <EmbeddedResource Include="FormContabilidadIngresosConsultar.resx">
       <DependentUpon>FormContabilidadIngresosConsultar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormContabilidadIngresosConsultarExternos.resx">
-      <DependentUpon>FormContabilidadIngresosConsultarExternos.cs</DependentUpon>
+    <EmbeddedResource Include="FormContabilidadGastosIngresosConsultarExternos.resx">
+      <DependentUpon>FormContabilidadGastosIngresosConsultarExternos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadIngresosConsultarVentas.resx">
       <DependentUpon>FormContabilidadIngresosConsultarVentas.cs</DependentUpon>

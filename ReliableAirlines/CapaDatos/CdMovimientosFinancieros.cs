@@ -28,6 +28,23 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
+        public DataTable consultarMovimientosExternos(int tipo, string inicio, string fin)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_MOVIMIENTOS_EXTERNOS";
+            comando.Parameters.AddWithValue("@tipo", tipo);
+            comando.Parameters.AddWithValue("@inicio", inicio);
+            comando.Parameters.AddWithValue("@fin", fin);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return datos;
+        }
+
         public void generarPago()
         {
             comando.CommandType = CommandType.StoredProcedure;
@@ -49,6 +66,33 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return datos;
         }
+        public DataTable consultarPagosRealizados()
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_PAGOS_REALIZADOS";
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            return datos;
+        }
+
+        public DataTable consultarPagosRealizados(string doc)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_PERSONAL_PAGOS";
+            comando.Parameters.AddWithValue("@doc", doc);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return datos;
+        }
 
         public DataTable consultarDatosPago(string doc)
         {
@@ -57,6 +101,21 @@ namespace CapaDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "CONSULTA_DATOS_DE_PAGO";
             comando.Parameters.AddWithValue("@doc", doc);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return datos;
+        }
+
+        public DataTable consultarDatosPagoRealizado(int id)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_DATOS_DE_PAGO_REALIZADO";
+            comando.Parameters.AddWithValue("@id", id);
             filas = comando.ExecuteReader();
             datos.Load(filas);
             filas.Close();

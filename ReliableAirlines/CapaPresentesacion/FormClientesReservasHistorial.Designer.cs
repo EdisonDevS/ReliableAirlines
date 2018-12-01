@@ -76,7 +76,6 @@
             this.dgvVuelos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvVuelos.Size = new System.Drawing.Size(660, 219);
             this.dgvVuelos.TabIndex = 144;
-            this.dgvVuelos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVuelos_CellContentClick);
             // 
             // FormClientesReservasHistorial
             // 

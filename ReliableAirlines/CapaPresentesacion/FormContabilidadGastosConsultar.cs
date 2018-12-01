@@ -34,14 +34,14 @@ namespace CapaPresentesacion
         {
             btnNomina.BackColor = Color.FromArgb(23, 185, 120);
             btnOtros.BackColor = Color.FromArgb(44, 61, 79);
-            abrirFormularioHijo(new FormContabilidadGastosConsultarNomina());
+            abrirFormularioHijo(new lbl());
         }
 
         private void btnOtros_Click(object sender, EventArgs e)
         {
             btnNomina.BackColor = Color.FromArgb(44, 61, 79);
             btnOtros.BackColor = Color.FromArgb(23, 185, 120);
-            abrirFormularioHijo(new FormContabilidadGastosConsultarOtros());
+            abrirFormularioHijo(new FormContabilidadGastosIngresosConsultarExternos(2));
         }
     }
 }

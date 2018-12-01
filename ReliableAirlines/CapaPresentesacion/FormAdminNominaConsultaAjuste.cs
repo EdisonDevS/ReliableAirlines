@@ -7,33 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
+using System.Data;
 
 namespace CapaPresentesacion
 {
     public partial class FormAdminNominaConsultaAjuste : Form
     {
+        CnAdministracionUsuarios empleado = new CnAdministracionUsuarios();
         public FormAdminNominaConsultaAjuste()
         {
             InitializeComponent();
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void reemplazarFormulario(object formulario)
         {
+            if (this.Controls.Count > 0)
+                this.Controls.RemoveAt(0);
 
+            Form hijo = formulario as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.Controls.Add(hijo);
+            this.Tag = hijo;
+            hijo.Show();
         }
 
-        private void btnConsultaPersona_Click(object sender, EventArgs e)
+        private void btnVer_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            if(empleado.verificarDocumento(txtDocumento.Text))
+            {
+                btnVer.Hide();
+                txtDocumento.Hide();
+                label16.Hide();
+                reemplazarFormulario(new FormAdminNominaRegistroContrato(txtDocumento.Text));
+            }
+            else
+            {
+                MessageBox.Show("Este documento no se encuentra registrado en la base de datos como un usuario");
+            }
 
         }
     }

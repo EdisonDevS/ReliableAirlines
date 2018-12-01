@@ -19,6 +19,7 @@ namespace CapaPresentesacion
         {
             this.documentoEmpleado = doc;
             InitializeComponent();
+            lblInfo.Text += documentoEmpleado;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)

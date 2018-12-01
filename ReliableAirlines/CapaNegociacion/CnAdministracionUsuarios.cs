@@ -85,5 +85,22 @@ namespace CapaNegociacion
 
             registrar.contratoEmpleado(documento, tipo, puesto, sueldo,inicio, final, numcuenta, tipocuenta, banco);
         }
+
+        public bool verificarDocumento(string doc)
+        {
+            DataTable usuario = new DataTable();
+            usuario = registrar.verificarDocumento(doc);
+
+            if (usuario.Rows.Count>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+        
     }
 }
