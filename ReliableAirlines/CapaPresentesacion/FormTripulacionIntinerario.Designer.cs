@@ -28,20 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnProximos = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnVerInfo = new System.Windows.Forms.Button();
+            this.dgvVuelos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(497, 227);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btnProximos
             // 
@@ -51,9 +47,10 @@
             this.btnProximos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProximos.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProximos.ForeColor = System.Drawing.Color.White;
-            this.btnProximos.Location = new System.Drawing.Point(12, 17);
+            this.btnProximos.Location = new System.Drawing.Point(16, 21);
+            this.btnProximos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProximos.Name = "btnProximos";
-            this.btnProximos.Size = new System.Drawing.Size(248, 27);
+            this.btnProximos.Size = new System.Drawing.Size(331, 33);
             this.btnProximos.TabIndex = 15;
             this.btnProximos.Text = "Próximos vuelos";
             this.btnProximos.UseVisualStyleBackColor = false;
@@ -67,52 +64,92 @@
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistorial.ForeColor = System.Drawing.Color.White;
-            this.btnHistorial.Location = new System.Drawing.Point(260, 17);
+            this.btnHistorial.Location = new System.Drawing.Point(347, 21);
+            this.btnHistorial.Margin = new System.Windows.Forms.Padding(4);
             this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(249, 27);
+            this.btnHistorial.Size = new System.Drawing.Size(332, 33);
             this.btnHistorial.TabIndex = 14;
             this.btnHistorial.Text = "Historial de vuelos";
             this.btnHistorial.UseVisualStyleBackColor = false;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
-            // button1
+            // btnVerInfo
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(419, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 33);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Ver \r\nseleccionado";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnVerInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVerInfo.FlatAppearance.BorderSize = 0;
+            this.btnVerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerInfo.ForeColor = System.Drawing.Color.White;
+            this.btnVerInfo.Location = new System.Drawing.Point(559, 348);
+            this.btnVerInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerInfo.Name = "btnVerInfo";
+            this.btnVerInfo.Size = new System.Drawing.Size(120, 41);
+            this.btnVerInfo.TabIndex = 28;
+            this.btnVerInfo.Text = "Ver \r\nseleccionado";
+            this.btnVerInfo.UseVisualStyleBackColor = false;
+            this.btnVerInfo.Click += new System.EventHandler(this.btnVerInfo_Click);
+            // 
+            // dgvVuelos
+            // 
+            this.dgvVuelos.AllowUserToAddRows = false;
+            this.dgvVuelos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvVuelos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVuelos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvVuelos.Location = new System.Drawing.Point(16, 62);
+            this.dgvVuelos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvVuelos.Name = "dgvVuelos";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgvVuelos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvVuelos.Size = new System.Drawing.Size(663, 278);
+            this.dgvVuelos.TabIndex = 132;
             // 
             // FormTripulacionIntinerario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(729, 485);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(972, 597);
+            this.Controls.Add(this.dgvVuelos);
+            this.Controls.Add(this.btnVerInfo);
             this.Controls.Add(this.btnProximos);
             this.Controls.Add(this.btnHistorial);
-            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTripulacionIntinerario";
             this.Text = "FormTripulacion";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnProximos;
         private System.Windows.Forms.Button btnHistorial;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVerInfo;
+        private System.Windows.Forms.DataGridView dgvVuelos;
     }
 }

@@ -36,23 +36,14 @@ namespace CapaPresentesacion
         {
             abrirFormularioHijo(new FormClientesReservas(sesion));
             btnReservas.BackColor = Color.FromArgb(23, 185, 120);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
         }
 
-        private void btnBuzon_Click(object sender, EventArgs e)
-        {
-            abrirFormularioHijo(new FormGeneralBuzon());
-            btnReservas.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(23, 185, 120);
-            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
-        }
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FormMiCuenta(sesion));
             btnReservas.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);
         }
     }

@@ -15,28 +15,29 @@ namespace CapaDatos
         SqlDataReader fila;
         SqlCommand comando = new SqlCommand();
 
-        public DataTable ConsultarTripulante(string documento)
+        public DataTable ConsultarTripulantes(int vuelo)
         {
-            DataTable resultado = new DataTable();
-            comando.Connection = conexion.AbrirConexion();
+            DataTable datos = new DataTable();
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "CONSULTA_TRIPULANTE";
-            comando.Parameters.AddWithValue("@documento", documento);
+            comando.Parameters.AddWithValue("@vuelo", vuelo);
+            comando.Connection = conexion.AbrirConexion();
             fila = comando.ExecuteReader();
-            resultado.Load(fila);
+            datos.Load(fila);
             fila.Close();
-            comando.Parameters.Clear();
             conexion.CerrarConexion();
-            return resultado;
+            comando.Parameters.Clear();
+            return datos;
         }
 
-        public void AgregarTripulanteAvuelo(string doc, int vuelo)
+        public void AgregarTripulanteAvuelo(string doc, int vuelo, string rol)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "INGRESO_TRIPULANTE";
             comando.Parameters.AddWithValue("@documento", doc);
             comando.Parameters.AddWithValue("@vuelo", vuelo);
+            comando.Parameters.AddWithValue("@rol", rol);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();

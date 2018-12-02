@@ -34,10 +34,9 @@ namespace CapaPresentesacion
 
         private void btnIntinerario_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormTripulacionIntinerario());
+            abrirFormularioHijo(new FormTripulacionIntinerario(sesion));
             btnIntinerario.BackColor = Color.FromArgb(23,185,120);
             btnInformes.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
         }
 
@@ -46,16 +45,6 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormTripulacionInformes());
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(23, 185, 120);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
-            btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
-        }
-
-        private void btnBuzon_Click(object sender, EventArgs e)
-        {
-            abrirFormularioHijo(new FormGeneralBuzon());
-            btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
-            btnInformes.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(23, 185, 120);
             btnMiCuenta.BackColor = Color.FromArgb(44, 61, 79);
         }
 
@@ -64,7 +53,6 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormMiCuenta(sesion));
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(44, 61, 79);
-            btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);
         }
     }

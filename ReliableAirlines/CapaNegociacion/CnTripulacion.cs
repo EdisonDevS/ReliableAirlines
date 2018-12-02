@@ -12,9 +12,9 @@ namespace CapaNegociacion
     {
         CdTripulacion trip = new CdTripulacion();
 
-        public void AgregarTripulanteAvuelo(string doc, int vuelo)
+        public void AgregarTripulanteAvuelo(string doc, int vuelo, string rol)
         {
-            trip.AgregarTripulanteAvuelo(doc, vuelo);
+            trip.AgregarTripulanteAvuelo(doc, vuelo, rol);
         }
 
         public DataTable CargarTripulante(string doc)
@@ -22,6 +22,15 @@ namespace CapaNegociacion
             DataTable tabla = new DataTable();
             tabla = trip.CargarTripulante(doc);
             return tabla;
+        }
+
+        public DataTable ConsultarTripulantes(int vuelo)
+        {
+            DataTable datos = new DataTable();
+            datos = trip.ConsultarTripulantes(vuelo);
+            datos.Columns[0].ColumnName = "Documento";
+            datos.Columns[1].ColumnName = "Rol";
+            return datos;
         }
     }
 }

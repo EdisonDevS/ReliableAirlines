@@ -20,6 +20,7 @@ namespace CapaPresentesacion
         public FormAdminVuelosGestionExistente()
         {
             InitializeComponent();
+            this.dgvTripulacion.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             dtpHoraSalida.CustomFormat = "HH:mm";
             dtpHoraLlegada.CustomFormat = "HH:mm";
@@ -27,6 +28,8 @@ namespace CapaPresentesacion
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
+            dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+
             CnVuelos vuelo = new CnVuelos();
             DataTable datosPrimarios = new DataTable();
             datosPrimarios = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
@@ -110,12 +113,8 @@ namespace CapaPresentesacion
             {
                 DataTable infoTrip = new DataTable();
                 infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
-                lblNomTrip.Text = infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
-                lblEstTrip.Text = infoTrip.Rows[0][2].ToString();
-                lblPuestoTrip.Text = infoTrip.Rows[0][3].ToString();
-                lblTelefono.Text = infoTrip.Rows[0][5].ToString();
-                lblEmailTrip.Text = infoTrip.Rows[0][4].ToString();
-                lblCiuEmp.Text = infoTrip.Rows[0][6].ToString();
+                lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
+                lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
             }
             catch (Exception)
             {
@@ -125,8 +124,19 @@ namespace CapaPresentesacion
 
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
-            trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text));
-            MessageBox.Show("Se ha agregado el tripulante correctamente");
+            try
+            {
+                trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                MessageBox.Show("Se ha agregado el tripulante correctamente");
+                dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error, intente de nuevo mas tarde");
+            }
+            
+
+            
         }
     }
 }

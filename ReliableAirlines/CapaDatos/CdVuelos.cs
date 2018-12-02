@@ -133,5 +133,61 @@ namespace CapaDatos
 
             return resultado;
         }
+
+        public DataTable cargarVuelosTripulante(string doc, int caso)
+        {
+            DataTable datos = new DataTable();
+
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+
+            if(caso==1)
+            {
+                comando.CommandText = "CONSULTA_VUELOS_PASADOS_TRIPULANTE";
+            }
+            else
+            {
+                comando.CommandText = "CONSULTA_VUELOS_FUTUROS_TRIPULANTE";
+            }
+            comando.Parameters.AddWithValue("@doc", doc);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return datos;
+        }
+
+        public DataTable cargarVuelosTripulanteInfo(int vuelo)
+        {
+            DataTable datos = new DataTable();
+
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_ESPECIFICA_VUELO_TRIPULANTE";
+            comando.Parameters.AddWithValue("@vuelo", vuelo);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return datos;
+        }
+
+        public DataTable datosPersonalesTripulacion(int vuelo)
+        {
+            DataTable datos = new DataTable();
+
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_ESPECIFICA_VUELO_TRIPULACION";
+            comando.Parameters.AddWithValue("@vuelo", vuelo);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return datos;
+        }
     }
 }

@@ -85,5 +85,36 @@ namespace CapaNegociacion
             resultado.Columns[5].ColumnName = "Estado";
             return resultado;
         }
+
+        public DataTable cargarVuelosTripulante(string doc, int caso)
+        {
+            DataTable datos = new DataTable();
+            datos = vuelo.cargarVuelosTripulante(doc, caso);
+            datos.Columns[0].ColumnName = "Vuelo";
+            datos.Columns[1].ColumnName = "Salida";
+            datos.Columns[2].ColumnName = "Llegada";
+            datos.Columns[3].ColumnName = "Ruta";
+            return datos;
+        }
+
+        public DataTable cargarVuelosTripulanteInfo(int numVuelo)
+        {
+            DataTable datos = new DataTable();
+            datos = vuelo.cargarVuelosTripulanteInfo(numVuelo);
+
+            return datos;
+        }
+
+        public DataTable datosPersonalesTripulacion(int numVuelo)
+        {
+            DataTable datos = new DataTable();
+            datos = vuelo.datosPersonalesTripulacion(numVuelo);
+            datos.Columns[0].ColumnName = "Documento";
+            datos.Columns[1].ColumnName = "Nombres";
+            datos.Columns[2].ColumnName = "Apellidos";
+            datos.Columns[3].ColumnName = "Rol";
+
+            return datos;
+        }
     }
 }

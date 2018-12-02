@@ -28,243 +28,229 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.lblVlrClaseT = new System.Windows.Forms.Label();
+            this.lblVlrPclase = new System.Windows.Forms.Label();
+            this.dtpHoraLlegada = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaLlegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraSalida = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.lblClaseT = new System.Windows.Forms.Label();
+            this.lblPclase = new System.Windows.Forms.Label();
+            this.dgvTripulacion = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTripulacion)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(549, 147);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(335, 24);
-            this.label13.TabIndex = 75;
-            this.label13.Text = "Capacidad de equipaje actual:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 351);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(935, 227);
-            this.dataGridView1.TabIndex = 74;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(23, 312);
+            this.label12.Location = new System.Drawing.Point(31, 214);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 21);
+            this.label12.Size = new System.Drawing.Size(150, 30);
             this.label12.TabIndex = 73;
             this.label12.Text = "Tripulación:";
             // 
-            // label11
+            // lblVlrClaseT
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(549, 272);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 24);
-            this.label11.TabIndex = 72;
-            this.label11.Text = "Valor clase turista:";
+            this.lblVlrClaseT.AutoSize = true;
+            this.lblVlrClaseT.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVlrClaseT.ForeColor = System.Drawing.Color.White;
+            this.lblVlrClaseT.Location = new System.Drawing.Point(732, 165);
+            this.lblVlrClaseT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVlrClaseT.Name = "lblVlrClaseT";
+            this.lblVlrClaseT.Size = new System.Drawing.Size(259, 33);
+            this.lblVlrClaseT.TabIndex = 72;
+            this.lblVlrClaseT.Text = "Valor clase turista: ";
             // 
-            // label10
+            // lblVlrPclase
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(23, 272);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(214, 24);
-            this.label10.TabIndex = 71;
-            this.label10.Text = "Valor primera clase:";
+            this.lblVlrPclase.AutoSize = true;
+            this.lblVlrPclase.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVlrPclase.ForeColor = System.Drawing.Color.White;
+            this.lblVlrPclase.Location = new System.Drawing.Point(31, 165);
+            this.lblVlrPclase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVlrPclase.Name = "lblVlrPclase";
+            this.lblVlrPclase.Size = new System.Drawing.Size(283, 33);
+            this.lblVlrPclase.TabIndex = 71;
+            this.lblVlrPclase.Text = "Valor primera clase: ";
             // 
-            // label25
+            // dtpHoraLlegada
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(23, 147);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(237, 24);
-            this.label25.TabIndex = 70;
-            this.label25.Text = "Modelo de aeronave:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(777, 223);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(151, 31);
-            this.dateTimePicker3.TabIndex = 69;
+            this.dtpHoraLlegada.Enabled = false;
+            this.dtpHoraLlegada.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.dtpHoraLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraLlegada.Location = new System.Drawing.Point(1036, 104);
+            this.dtpHoraLlegada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpHoraLlegada.Name = "dtpHoraLlegada";
+            this.dtpHoraLlegada.Size = new System.Drawing.Size(200, 37);
+            this.dtpHoraLlegada.TabIndex = 69;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(549, 229);
+            this.label9.Location = new System.Drawing.Point(732, 112);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 22);
+            this.label9.Size = new System.Drawing.Size(117, 30);
             this.label9.TabIndex = 68;
             this.label9.Text = "Llegada:";
             // 
-            // dateTimePicker4
+            // dtpFechaLlegada
             // 
-            this.dateTimePicker4.Enabled = false;
-            this.dateTimePicker4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(642, 223);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(129, 31);
-            this.dateTimePicker4.TabIndex = 67;
+            this.dtpFechaLlegada.Enabled = false;
+            this.dtpFechaLlegada.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.dtpFechaLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaLlegada.Location = new System.Drawing.Point(856, 104);
+            this.dtpFechaLlegada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaLlegada.Name = "dtpFechaLlegada";
+            this.dtpFechaLlegada.Size = new System.Drawing.Size(171, 37);
+            this.dtpFechaLlegada.TabIndex = 67;
             // 
-            // dateTimePicker2
+            // dtpHoraSalida
             // 
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(233, 223);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(151, 31);
-            this.dateTimePicker2.TabIndex = 66;
+            this.dtpHoraSalida.Enabled = false;
+            this.dtpHoraSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.dtpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraSalida.Location = new System.Drawing.Point(311, 104);
+            this.dtpHoraSalida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpHoraSalida.Name = "dtpHoraSalida";
+            this.dtpHoraSalida.Size = new System.Drawing.Size(200, 37);
+            this.dtpHoraSalida.TabIndex = 66;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(23, 229);
+            this.label8.Location = new System.Drawing.Point(31, 112);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 22);
+            this.label8.Size = new System.Drawing.Size(92, 30);
             this.label8.TabIndex = 65;
             this.label8.Text = "Salida:";
             // 
-            // dateTimePicker1
+            // dtpFechaSalida
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(98, 223);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 31);
-            this.dateTimePicker1.TabIndex = 64;
+            this.dtpFechaSalida.Enabled = false;
+            this.dtpFechaSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.dtpFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaSalida.Location = new System.Drawing.Point(131, 104);
+            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaSalida.Name = "dtpFechaSalida";
+            this.dtpFechaSalida.Size = new System.Drawing.Size(171, 37);
+            this.dtpFechaSalida.TabIndex = 64;
             // 
-            // label7
+            // lblClaseT
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(549, 181);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(300, 22);
-            this.label7.TabIndex = 63;
-            this.label7.Text = "Capacidad actual clase turista:";
+            this.lblClaseT.AutoSize = true;
+            this.lblClaseT.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblClaseT.ForeColor = System.Drawing.Color.White;
+            this.lblClaseT.Location = new System.Drawing.Point(732, 53);
+            this.lblClaseT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClaseT.Name = "lblClaseT";
+            this.lblClaseT.Size = new System.Drawing.Size(397, 30);
+            this.lblClaseT.TabIndex = 63;
+            this.lblClaseT.Text = "Capacidad actual clase turista: ";
             // 
-            // label6
+            // lblPclase
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(23, 181);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(315, 22);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "Capacidad actual primera clase:";
+            this.lblPclase.AutoSize = true;
+            this.lblPclase.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblPclase.ForeColor = System.Drawing.Color.White;
+            this.lblPclase.Location = new System.Drawing.Point(31, 53);
+            this.lblPclase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPclase.Name = "lblPclase";
+            this.lblPclase.Size = new System.Drawing.Size(419, 30);
+            this.lblPclase.TabIndex = 62;
+            this.lblPclase.Text = "Capacidad actual primera clase: ";
             // 
-            // label5
+            // dgvTripulacion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(549, 113);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 22);
-            this.label5.TabIndex = 61;
-            this.label5.Text = "Ciudad de destino:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(23, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 22);
-            this.label4.TabIndex = 60;
-            this.label4.Text = "Ciudad de salida:";
+            this.dgvTripulacion.AllowUserToAddRows = false;
+            this.dgvTripulacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvTripulacion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTripulacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTripulacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTripulacion.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTripulacion.Location = new System.Drawing.Point(37, 257);
+            this.dgvTripulacion.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTripulacion.Name = "dgvTripulacion";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTripulacion.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvTripulacion.Size = new System.Drawing.Size(1199, 300);
+            this.dgvTripulacion.TabIndex = 132;
             // 
             // FormTripulacionIntinerarioInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(984, 691);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1267, 578);
+            this.Controls.Add(this.dgvTripulacion);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.lblVlrClaseT);
+            this.Controls.Add(this.lblVlrPclase);
+            this.Controls.Add(this.dtpHoraLlegada);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpFechaLlegada);
+            this.Controls.Add(this.dtpHoraSalida);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dtpFechaSalida);
+            this.Controls.Add(this.lblClaseT);
+            this.Controls.Add(this.lblPclase);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormTripulacionIntinerarioInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTripulacionIntinerarioInfo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTripulacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label lblVlrClaseT;
+        private System.Windows.Forms.Label lblVlrPclase;
+        private System.Windows.Forms.DateTimePicker dtpHoraLlegada;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFechaLlegada;
+        private System.Windows.Forms.DateTimePicker dtpHoraSalida;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpFechaSalida;
+        private System.Windows.Forms.Label lblClaseT;
+        private System.Windows.Forms.Label lblPclase;
+        private System.Windows.Forms.DataGridView dgvTripulacion;
     }
 }
