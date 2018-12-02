@@ -50,7 +50,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormMiCuenta());
+            abrirFormularioHijo(new FormMiCuenta(sesion));
             btnReservas.BackColor = Color.FromArgb(44, 61, 79);
             btnBuzon.BackColor = Color.FromArgb(44, 61, 79);
             btnMiCuenta.BackColor = Color.FromArgb(23, 185, 120);

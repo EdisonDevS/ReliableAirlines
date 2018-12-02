@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormVistaPrincipalAdmin : Form
     {
-        public FormVistaPrincipalAdmin()
+        CnSesion sesion = new CnSesion();
+        public FormVistaPrincipalAdmin(CnSesion datos)
         {
             InitializeComponent();
+            this.sesion = datos;
             abrirFormularioHijo(new FormInicio());
         }
 
@@ -63,7 +66,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormMiCuenta());
+            abrirFormularioHijo(new FormMiCuenta(sesion));
             btnContabilidad.BackColor = Color.FromArgb(44, 61, 79);
             btnAdministración.BackColor = Color.FromArgb(44, 61, 79);
             btnEstadistica.BackColor = Color.FromArgb(44, 61, 79);

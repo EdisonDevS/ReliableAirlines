@@ -28,65 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVer = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.btnRegistrarCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnVer
+            // btnRegistrarCliente
             // 
-            this.btnVer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.btnVer.FlatAppearance.BorderSize = 0;
-            this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVer.ForeColor = System.Drawing.Color.White;
-            this.btnVer.Location = new System.Drawing.Point(198, 111);
-            this.btnVer.Name = "btnVer";
-            this.btnVer.Size = new System.Drawing.Size(88, 28);
-            this.btnVer.TabIndex = 52;
-            this.btnVer.Text = "Ver";
-            this.btnVer.UseVisualStyleBackColor = false;
-            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(156, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 51;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(186, 63);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(225, 23);
-            this.label16.TabIndex = 50;
-            this.label16.Text = "Documento del cliente:";
+            this.btnRegistrarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnRegistrarCliente.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarCliente.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCliente.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarCliente.Location = new System.Drawing.Point(14, 48);
+            this.btnRegistrarCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarCliente.Name = "btnRegistrarCliente";
+            this.btnRegistrarCliente.Size = new System.Drawing.Size(634, 154);
+            this.btnRegistrarCliente.TabIndex = 75;
+            this.btnRegistrarCliente.Text = "Registrar nuevo cliente";
+            this.btnRegistrarCliente.UseVisualStyleBackColor = false;
+            this.btnRegistrarCliente.Click += new System.EventHandler(this.btnRegistrarCliente_Click);
             // 
             // FormAdminClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 203);
-            this.Controls.Add(this.btnVer);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label16);
+            this.ClientSize = new System.Drawing.Size(663, 250);
+            this.Controls.Add(this.btnRegistrarCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAdminClientes";
             this.Text = "FormAdminClientes";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnVer;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnRegistrarCliente;
     }
 }

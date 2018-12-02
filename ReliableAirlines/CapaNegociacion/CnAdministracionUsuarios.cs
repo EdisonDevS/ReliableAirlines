@@ -60,6 +60,15 @@ namespace CapaNegociacion
             return tabla;
         }
 
+        public DataTable cargarDatosUsuario(string document)
+        {
+            CdAdministracionUsuarios cargar = new CdAdministracionUsuarios();
+            DataTable tabla = new DataTable();
+            tabla = cargar.cargarDatosUsuario(document);
+
+            return tabla;
+        }
+
         public void realizarCambios(string documento, string tipoDoc, string usuario,
             string nombres, string apellidos, string nacimiento,
             string email, string telefono, string eps, string direccion, int ciudad, string info, string estado)

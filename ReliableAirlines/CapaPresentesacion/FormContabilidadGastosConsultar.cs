@@ -34,7 +34,7 @@ namespace CapaPresentesacion
         {
             btnNomina.BackColor = Color.FromArgb(23, 185, 120);
             btnOtros.BackColor = Color.FromArgb(44, 61, 79);
-            abrirFormularioHijo(new lbl());
+            abrirFormularioHijo(new FormContabilidadGastosConsultarNomina());
         }
 
         private void btnOtros_Click(object sender, EventArgs e)

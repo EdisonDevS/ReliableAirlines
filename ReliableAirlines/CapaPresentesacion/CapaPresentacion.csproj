@@ -71,12 +71,6 @@
     <Compile Include="FormAdminClientes.Designer.cs">
       <DependentUpon>FormAdminClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdminClientesInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdminClientesInfo.Designer.cs">
-      <DependentUpon>FormAdminClientesInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAdminNominaActualizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,9 +526,6 @@
     </Compile>
     <EmbeddedResource Include="FormAdminClientes.resx">
       <DependentUpon>FormAdminClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAdminClientesInfo.resx">
-      <DependentUpon>FormAdminClientesInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaActualizacion.resx">
       <DependentUpon>FormAdminNominaActualizacion.cs</DependentUpon>

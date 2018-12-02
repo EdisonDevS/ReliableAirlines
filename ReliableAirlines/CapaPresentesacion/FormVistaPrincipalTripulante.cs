@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormVistaPrincipalTripulante : Form
     {
-        public FormVistaPrincipalTripulante()
+        CnSesion sesion = new CnSesion();
+        public FormVistaPrincipalTripulante(CnSesion datos)
         {
             InitializeComponent();
+            this.sesion = datos;
         }
         private void abrirFormularioHijo(object formulario)
         {
@@ -58,7 +61,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormMiCuenta());
+            abrirFormularioHijo(new FormMiCuenta(sesion));
             btnIntinerario.BackColor = Color.FromArgb(44, 61, 79);
             btnInformes.BackColor = Color.FromArgb(44, 61, 79);
             btnBuzon.BackColor = Color.FromArgb(44, 61, 79);

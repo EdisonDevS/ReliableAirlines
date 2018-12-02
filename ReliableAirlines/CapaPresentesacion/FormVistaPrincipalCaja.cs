@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormVistaPrincipalCaja : Form
     {
-        public FormVistaPrincipalCaja()
+        CnSesion sesion = new CnSesion();
+        public FormVistaPrincipalCaja(CnSesion datos)
         {
             InitializeComponent();
+            this.sesion = datos;
             abrirFormularioHijo(new FormInicio());
         }
 
@@ -50,7 +53,7 @@ namespace CapaPresentesacion
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new FormMiCuenta());
+            abrirFormularioHijo(new FormMiCuenta(sesion));
         }
     }
 }

@@ -178,5 +178,22 @@ namespace CapaDatos
 
             return usuario;
         }
+
+        public DataTable cargarDatosUsuario(string doc)
+        {
+            DataTable usuario = new DataTable();
+            consulta.CommandType = CommandType.StoredProcedure;
+            consulta.CommandText = "CARGAR_DATOS_USUARIO";
+            consulta.Connection = conexion.AbrirConexion();
+            consulta.Parameters.AddWithValue("@doc", doc);
+            fila = consulta.ExecuteReader();
+            usuario.Load(fila);
+            fila.Close();
+            conexion.CerrarConexion();
+            consulta.Parameters.Clear();
+
+            return usuario;
+        }
+
     }
 }

@@ -17,10 +17,10 @@ namespace CapaPresentesacion
             InitializeComponent();
         }
 
-        private void btnVer_Click(object sender, EventArgs e)
+        private void btnRegistrarCliente_Click(object sender, EventArgs e)
         {
-            FormAdminClientesInfo info = new FormAdminClientesInfo();
-            info.Show();
+            FormRegistroCliente registro = new FormRegistroCliente();
+            registro.Show();
         }
     }
 }

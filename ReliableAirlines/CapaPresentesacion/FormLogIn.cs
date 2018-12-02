@@ -28,22 +28,22 @@ namespace CapaPresentesacion
                 {
                     case '1':
                         this.Hide();
-                        FormVistaPrincipalAdmin admin = new FormVistaPrincipalAdmin();
+                        FormVistaPrincipalAdmin admin = new FormVistaPrincipalAdmin(autorizacion);
                         admin.Show();
                         break;
                     case '2':
                         this.Hide();
-                        FormVistaPrincipalCaja caja = new FormVistaPrincipalCaja();
+                        FormVistaPrincipalCaja caja = new FormVistaPrincipalCaja(autorizacion);
                         caja.Show();
                         break;
                     case '3':
                         this.Hide();
-                        FormVistaPrincipalTripulante tripu = new FormVistaPrincipalTripulante();
+                        FormVistaPrincipalTripulante tripu = new FormVistaPrincipalTripulante(autorizacion);
                         tripu.Show();
                         break;
                     case '4':
                         this.Hide();
-                        FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados();
+                        FormVistaPrincipalEmpleados emple = new FormVistaPrincipalEmpleados(autorizacion);
                         emple.Show();
                         break;
                     case '5':

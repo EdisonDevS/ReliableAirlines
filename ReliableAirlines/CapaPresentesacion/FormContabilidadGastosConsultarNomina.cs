@@ -12,12 +12,12 @@ using System.Data;
 
 namespace CapaPresentesacion
 {
-    public partial class lbl : Form
+    public partial class FormContabilidadGastosConsultarNomina : Form
     {
         CnMovimientosFinancieros mov = new CnMovimientosFinancieros();
         DataTable datos = new DataTable();
 
-        public lbl()
+        public FormContabilidadGastosConsultarNomina()
         {
             InitializeComponent();
             this.dgvPagosRealizados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
