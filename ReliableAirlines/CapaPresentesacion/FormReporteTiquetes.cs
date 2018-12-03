@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace CapaPresentesacion
 {
     public partial class FormReporteTiquetes : Form
     {
+        public List<DatosTiquete> Tiquete = new List<DatosTiquete>();
         public FormReporteTiquetes()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace CapaPresentesacion
         {
 
             this.ReporteTiquete.RefreshReport();
+            ReporteTiquete.LocalReport.DataSources.Clear();
+            ReporteTiquete.LocalReport.DataSources.Add(new ReportDataSource("DatosTiquete", Tiquete));
+            ReporteTiquete.RefreshReport();
         }
 
         private void ReporteTiquete_Load(object sender, EventArgs e)

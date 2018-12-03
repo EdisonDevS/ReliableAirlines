@@ -118,5 +118,10 @@ namespace CapaNegociacion
 
             return datos;
         }
+
+        public DataTable buscarCiudadesTiquete(int id)
+        {
+            return vuelo.buscarCiudadesTiquete(id);
+        }
     }
 }

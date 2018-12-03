@@ -40,7 +40,7 @@
             this.ReporteTiquete.Name = "ReporteTiquete";
             this.ReporteTiquete.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ReporteTiquete.ServerReport.BearerToken = null;
-            this.ReporteTiquete.Size = new System.Drawing.Size(862, 469);
+            this.ReporteTiquete.Size = new System.Drawing.Size(910, 369);
             this.ReporteTiquete.TabIndex = 0;
             this.ReporteTiquete.Load += new System.EventHandler(this.ReporteTiquete_Load);
             // 
@@ -48,7 +48,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 469);
+            this.ClientSize = new System.Drawing.Size(910, 369);
             this.Controls.Add(this.ReporteTiquete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormReporteTiquetes";

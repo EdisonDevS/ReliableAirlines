@@ -115,7 +115,7 @@ namespace CapaDatos
             resultado.Load(filas);
             filas.Close();
             conexion.CerrarConexion();
-
+            comando.Parameters.Clear();
             return resultado;
         }
 
@@ -130,7 +130,7 @@ namespace CapaDatos
             resultado.Load(filas);
             filas.Close();
             conexion.CerrarConexion();
-
+            comando.Parameters.Clear();
             return resultado;
         }
 
@@ -182,6 +182,22 @@ namespace CapaDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "CONSULTA_ESPECIFICA_VUELO_TRIPULACION";
             comando.Parameters.AddWithValue("@vuelo", vuelo);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return datos;
+        }
+
+        public DataTable buscarCiudadesTiquete(int id)
+        {
+            DataTable datos = new DataTable();
+
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_CIUDADES_TIQUETE";
+            comando.Parameters.AddWithValue("@id", id);
             filas = comando.ExecuteReader();
             datos.Load(filas);
             filas.Close();

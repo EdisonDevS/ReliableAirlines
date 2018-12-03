@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosTiquete.cs" />
     <Compile Include="FormAdminClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -710,6 +711,7 @@
       <DependentUpon>FormReporteTiquetes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DatosTiquete.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

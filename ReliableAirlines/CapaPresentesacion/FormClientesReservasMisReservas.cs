@@ -65,10 +65,35 @@ namespace CapaPresentesacion
 
         private void btnVerTiquete_Click(object sender, EventArgs e)
         {
-            FormReporteTiquetes report = new FormReporteTiquetes();
+            if(dgvVuelos.CurrentRow.Cells["Estado"].Value.ToString()=="Pagado")
+            {
+                DataTable ciudades = new DataTable();
+                ciudades = vuelos.buscarCiudadesTiquete(Int32.Parse(dgvVuelos.CurrentRow.Cells[6].Value.ToString()));
+                DatosTiquete datos = new DatosTiquete();
 
+                datos.ID = dgvVuelos.CurrentRow.Cells[6].Value.ToString();
+                datos.Salida = dgvVuelos.CurrentRow.Cells[3].Value.ToString();
+                datos.Llegada = dgvVuelos.CurrentRow.Cells[4].Value.ToString();
+                datos.Nombre = ciudades.Rows[0][3].ToString() + " " + ciudades.Rows[0][4].ToString();
+                datos.Origen = ciudades.Rows[0][0].ToString();
+                datos.Destino = ciudades.Rows[0][1].ToString();
+                datos.Documento = sesion.documento;
+                datos.Vuelo = dgvVuelos.CurrentRow.Cells[0].Value.ToString();
 
-            report.ShowDialog();
+                if (Int32.Parse(ciudades.Rows[0][2].ToString()) == 1)
+                    datos.Clase = "Primera";
+                else
+                    datos.Clase = "Turista";
+
+                FormReporteTiquetes reporte = new FormReporteTiquetes();
+                reporte.Tiquete.Add(datos);
+                reporte.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No se ha generado un tiquete para este vuelo\nVerifique que el tiquete haya sido pagado");
+            }
+            
         }
     }
 }
