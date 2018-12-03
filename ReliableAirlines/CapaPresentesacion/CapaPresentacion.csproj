@@ -475,6 +475,12 @@
     <Compile Include="FormAdminVuelosGestionExistente.Designer.cs">
       <DependentUpon>FormAdminVuelosGestionExistente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteTiquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteTiquetes.Designer.cs">
+      <DependentUpon>FormReporteTiquetes.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="FormVistaPrincipalEmpleados.cs">
       <SubType>Form</SubType>
@@ -698,6 +704,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalEmpleados.resx">
       <DependentUpon>FormVistaPrincipalEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTiquete.rdlc" />
+    <EmbeddedResource Include="FormReporteTiquetes.resx">
+      <DependentUpon>FormReporteTiquetes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

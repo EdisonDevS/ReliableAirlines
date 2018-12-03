@@ -65,7 +65,10 @@ namespace CapaPresentesacion
 
         private void btnVerTiquete_Click(object sender, EventArgs e)
         {
+            FormReporteTiquetes report = new FormReporteTiquetes();
 
+
+            report.ShowDialog();
         }
     }
 }
