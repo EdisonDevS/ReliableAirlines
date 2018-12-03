@@ -195,5 +195,20 @@ namespace CapaDatos
             return usuario;
         }
 
+        public void cambiarContraseña(string nueva, string doc)
+        {
+            consulta.Connection = conexion.AbrirConexion();
+
+            consulta.CommandText = "CAMBIAR_CONTRASEÑA";
+            consulta.CommandType = CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@doc", doc);
+            consulta.Parameters.AddWithValue("@nueva", nueva);
+
+            consulta.ExecuteNonQuery();
+            consulta.Parameters.Clear();
+
+            conexion.CerrarConexion();
+        }
+
     }
 }

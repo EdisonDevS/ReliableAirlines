@@ -34,6 +34,7 @@ namespace CapaPresentesacion
         {
             btnNomina.BackColor = Color.FromArgb(23, 185, 120);
             btnOtros.BackColor = Color.FromArgb(44, 61, 79);
+            btnReembolsos.BackColor = Color.FromArgb(44, 61, 79);
             abrirFormularioHijo(new FormContabilidadGastosConsultarNomina());
         }
 
@@ -41,7 +42,16 @@ namespace CapaPresentesacion
         {
             btnNomina.BackColor = Color.FromArgb(44, 61, 79);
             btnOtros.BackColor = Color.FromArgb(23, 185, 120);
+            btnReembolsos.BackColor = Color.FromArgb(44, 61, 79);
             abrirFormularioHijo(new FormContabilidadGastosIngresosConsultarExternos(2));
+        }
+
+        private void btnReembolsos_Click(object sender, EventArgs e)
+        {
+            btnNomina.BackColor = Color.FromArgb(44, 61, 79);
+            btnOtros.BackColor = Color.FromArgb(44, 61, 79);
+            btnReembolsos.BackColor = Color.FromArgb(23, 185, 120);
+            abrirFormularioHijo(new FormContabilidadGastosConsultarReembolsos());
         }
     }
 }

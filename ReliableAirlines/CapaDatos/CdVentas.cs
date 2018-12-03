@@ -73,6 +73,23 @@ namespace CapaDatos
 
             return resultados;
         }
+
+        public DataTable obtenerInfoVentaReembolso(int reserva)
+        {
+            DataTable resultados = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_TIQUETE_REEMBOLSO";
+            comando.Parameters.AddWithValue("@id", reserva);
+            filas = comando.ExecuteReader();
+            resultados.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+
+            return resultados;
+        }
+
         public void validarReserva(int reserva)
         {
             comando.CommandType = CommandType.StoredProcedure;
@@ -96,6 +113,53 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@inicio", inicio);
             comando.Parameters.AddWithValue("@final", final);
 
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+
+            return datos;
+        }
+
+        public void gererarReembolso(string aut, string justifica, int tiquete)
+        {
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "GENERAR_REEMBOLSO";
+            comando.Parameters.AddWithValue("@autoriza", aut);
+            comando.Parameters.AddWithValue("@justificacion", justifica);
+            comando.Parameters.AddWithValue("@tiquete", tiquete);
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+        }
+
+        public DataTable consultarReembolsos(string inicio, string final)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTAR_REEMBOLSOS";
+            comando.Parameters.AddWithValue("@inicio", inicio);
+            comando.Parameters.AddWithValue("@final", final);
+
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+
+            return datos;
+        }
+
+        public DataTable consultaJustificacion(int tiquete)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_JUSTIFICACION_REEMBOLSO";
+            comando.Parameters.AddWithValue("@id", tiquete);
             filas = comando.ExecuteReader();
             datos.Load(filas);
             filas.Close();

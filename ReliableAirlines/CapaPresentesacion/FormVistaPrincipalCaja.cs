@@ -41,14 +41,7 @@ namespace CapaPresentesacion
 
         private void btnReembolso_Click(object sender, EventArgs e)
         {
-            FormGeneralBuzonRedactar redactar = new FormGeneralBuzonRedactar();
-            redactar.Show();
-        }
-
-        private void btnBuzon_Click_1(object sender, EventArgs e)
-        {
-            FormGeneralBuzonRecibidos recibidos = new FormGeneralBuzonRecibidos();
-            recibidos.Show();
+            abrirFormularioHijo(new FormCajaReembolsos(sesion));
         }
 
         private void btnMiCuenta_Click(object sender, EventArgs e)

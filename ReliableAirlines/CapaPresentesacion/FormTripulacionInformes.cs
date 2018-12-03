@@ -7,14 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormTripulacionInformes : Form
     {
-        public FormTripulacionInformes()
+        CnRegistros registro = new CnRegistros();
+        CnSesion sesion = new CnSesion();
+        public FormTripulacionInformes(CnSesion usuario)
         {
             InitializeComponent();
+            this.sesion = usuario;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string calificacion = "";
+
+            if (rbNormal.Checked)
+                calificacion = "Normal";
+            else
+                calificacion = "Anormal";
+
+            try
+            {
+                registro.generarRegistroTripulacion(Int32.Parse(txtVuelo.Text), calificacion, txtComentarios.Text, sesion.documento);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error durante el guardado del registro");
+            }
         }
     }
 }

@@ -30,11 +30,19 @@ namespace CapaNegociacion
             return resultados;
         }
 
+        public DataTable obtenerInfoVentaReembolso(int reserva)
+        {
+            DataTable resultados = new DataTable();
+            resultados = venta.obtenerInfoVentaReembolso(reserva);
+
+            return resultados;
+        }
+
         public void validarReserva(string reserva)
         {
             venta.validarReserva(Int32.Parse(reserva));
         }
-
+        
         public DataTable consultarVentas(string inicio, string final)
         {
             DataTable datos = new DataTable();
@@ -51,6 +59,37 @@ namespace CapaNegociacion
             datos.Columns[4].ColumnName = "Apellidos";
             datos.Columns[5].ColumnName = "Documento";
 
+            return datos;
+        }
+
+        public void gererarReembolso(string aut, string justifica, int tiquete)
+        {
+            venta.gererarReembolso(aut, justifica, tiquete);
+        }
+
+        public DataTable consultarReembolsos(string inicio, string final)
+        {
+            DataTable datos = new DataTable();
+
+            inicio = conversor.convertirAFormatoSQL(inicio);
+            final = conversor.convertirAFormatoSQL(final);
+
+            datos = venta.consultarReembolsos(inicio, final);
+
+            datos.Columns[0].ColumnName = "Tiquete";
+            datos.Columns[1].ColumnName = "Vuelo";
+            datos.Columns[2].ColumnName = "Reserva";
+            datos.Columns[3].ColumnName = "Nombres";
+            datos.Columns[4].ColumnName = "Apellidos";
+            datos.Columns[5].ColumnName = "Documento";
+
+            return datos;
+        }
+
+        public DataTable consultaJustificacion(int tiquete)
+        {
+            DataTable datos = new DataTable();
+            datos = venta.consultaJustificacion(tiquete);
             return datos;
         }
     }

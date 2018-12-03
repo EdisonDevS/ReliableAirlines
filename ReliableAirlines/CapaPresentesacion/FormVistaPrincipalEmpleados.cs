@@ -36,7 +36,7 @@ namespace CapaPresentesacion
         {
             btnInformes.BackColor = Color.FromArgb(23, 185, 120);
             btnMiCuenta.BackColor=Color.FromArgb(44, 61, 79);
-            abrirFormularioHijo(new FormEmpleadosInformes());
+            abrirFormularioHijo(new FormEmpleadosInformes(sesion));
         }
 
         private void btnMiCuenta_Click(object sender, EventArgs e)

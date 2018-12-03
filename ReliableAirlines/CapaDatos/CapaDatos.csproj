@@ -47,6 +47,7 @@
     <Compile Include="CdConexion.cs" />
     <Compile Include="CdAdministracionUsuarios.cs" />
     <Compile Include="CdMovimientosFinancieros.cs" />
+    <Compile Include="CdRegistros.cs" />
     <Compile Include="CdRutas.cs" />
     <Compile Include="CdSesion.cs" />
     <Compile Include="CdTripulacion.cs" />

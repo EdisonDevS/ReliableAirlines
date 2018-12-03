@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegociacion;
 
 namespace CapaPresentesacion
 {
     public partial class FormEmpleadosInformes : Form
     {
-        public FormEmpleadosInformes()
+        CnSesion sesion = new CnSesion();
+        CnRegistros registro = new CnRegistros();
+        public FormEmpleadosInformes(CnSesion usuario)
         {
             InitializeComponent();
+            this.sesion = usuario;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            registro.generarRegistroEmpleado(txtComentarios.Text, sesion.documento);
         }
     }
 }

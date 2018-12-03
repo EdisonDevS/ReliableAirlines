@@ -31,8 +31,13 @@ namespace CapaPresentesacion
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
-            
-
+            if (txtContraseña.Text == txtVerificar.Text)
+            {
+                usuarios.cambiarContraseña(txtContraseña.Text, sesion.documento);
+                MessageBox.Show("Contraseña actualizada correctamente");
+            }
+            else
+                MessageBox.Show("Las contraseñas no coinciden");
 
         }
     }

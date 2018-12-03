@@ -36,7 +36,6 @@
             this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.SuspendLayout();
@@ -103,22 +102,6 @@
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1137, 734);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 58);
-            this.button3.TabIndex = 55;
-            this.button3.Text = "Informe";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // dgvVentas
             // 
             this.dgvVentas.AllowUserToAddRows = false;
@@ -152,7 +135,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvVentas.Size = new System.Drawing.Size(1274, 534);
+            this.dgvVentas.Size = new System.Drawing.Size(1274, 253);
             this.dgvVentas.TabIndex = 82;
             // 
             // FormContabilidadIngresosConsultarVentas
@@ -162,7 +145,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1312, 806);
             this.Controls.Add(this.dgvVentas);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.dtpFinal);
             this.Controls.Add(this.label1);
@@ -185,7 +167,6 @@
         private System.Windows.Forms.DateTimePicker dtpFinal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCargar;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dgvVentas;
     }
 }

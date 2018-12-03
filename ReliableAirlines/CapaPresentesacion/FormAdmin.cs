@@ -35,36 +35,11 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormAdminNomina());
             this.pnlActivoNomina.Visible = true;
             this.pnlActivoClientes.Visible = false;
-            this.pnlActivoBuzon.Visible = false;
+            this.pnlActivoInformes.Visible = false;
             this.pnlActivoRuta.Visible = false;
             this.pnlActivoAeronave.Visible = false;
         }
         private void Administracion_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAeronaves_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRutas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuzon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlActivoBuzón_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -74,17 +49,7 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormAdminClientes());
             this.pnlActivoNomina.Visible = false;
             this.pnlActivoClientes.Visible = true;
-            this.pnlActivoBuzon.Visible = false;
-            this.pnlActivoRuta.Visible = false;
-            this.pnlActivoAeronave.Visible = false;
-        }
-
-        private void btnBuzon_Click_1(object sender, EventArgs e)
-        {
-            abrirFormularioHijo(new FormGeneralBuzon());
-            this.pnlActivoNomina.Visible = false;
-            this.pnlActivoClientes.Visible = false;
-            this.pnlActivoBuzon.Visible = true;
+            this.pnlActivoInformes.Visible = false;
             this.pnlActivoRuta.Visible = false;
             this.pnlActivoAeronave.Visible = false;
         }
@@ -94,7 +59,7 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormAdminRutasVuelos());
             this.pnlActivoNomina.Visible = false;
             this.pnlActivoClientes.Visible = false;
-            this.pnlActivoBuzon.Visible = false;
+            this.pnlActivoInformes.Visible = false;
             this.pnlActivoRuta.Visible = true;
             this.pnlActivoAeronave.Visible = false;
         }
@@ -104,10 +69,20 @@ namespace CapaPresentesacion
             abrirFormularioHijo(new FormAdminAeronaves());
             this.pnlActivoNomina.Visible = false;
             this.pnlActivoClientes.Visible = false;
-            this.pnlActivoBuzon.Visible = false;
+            this.pnlActivoInformes.Visible = false;
             this.pnlActivoRuta.Visible = false;
             this.pnlActivoAeronave.Visible = true;
         
+        }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormAdminInformes());
+            this.pnlActivoNomina.Visible = false;
+            this.pnlActivoClientes.Visible = false;
+            this.pnlActivoInformes.Visible = true;
+            this.pnlActivoRuta.Visible = false;
+            this.pnlActivoAeronave.Visible = false;
         }
     }
 }

@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVuelos = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,5 +99,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvVuelos;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

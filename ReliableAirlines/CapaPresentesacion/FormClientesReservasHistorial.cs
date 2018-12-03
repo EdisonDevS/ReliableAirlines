@@ -47,6 +47,9 @@ namespace CapaPresentesacion
                     case "5":
                         fila.Cells["Estado"].Value = "No pagado";
                         break;
+                    case "6":
+                        fila.Cells["Estado"].Value = "Reembolsado";
+                        break;
                     default:
                         break;
                 }

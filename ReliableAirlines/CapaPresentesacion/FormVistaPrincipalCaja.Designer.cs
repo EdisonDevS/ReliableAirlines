@@ -59,7 +59,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 101);
             this.pictureBox1.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.panelContainer.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.panelContainer.ForeColor = System.Drawing.Color.White;
             this.panelContainer.Location = new System.Drawing.Point(327, 44);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(972, 757);
             this.panelContainer.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.panelSuperior.Controls.Add(this.lblRuta);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(327, 0);
-            this.panelSuperior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSuperior.Margin = new System.Windows.Forms.Padding(4);
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(972, 44);
             this.panelSuperior.TabIndex = 2;
@@ -165,7 +165,7 @@
             this.btnReembolso.Name = "btnReembolso";
             this.btnReembolso.Size = new System.Drawing.Size(371, 68);
             this.btnReembolso.TabIndex = 2;
-            this.btnReembolso.Text = "Solicitudes";
+            this.btnReembolso.Text = "Reembolso";
             this.btnReembolso.UseVisualStyleBackColor = true;
             this.btnReembolso.Click += new System.EventHandler(this.btnReembolso_Click);
             // 
@@ -178,7 +178,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormVistaPrincipalCaja";
             this.Text = "FormVistaPrincipalVentas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

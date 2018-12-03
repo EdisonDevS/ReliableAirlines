@@ -110,6 +110,11 @@ namespace CapaNegociacion
             }
             
         }
-        
+
+        public void cambiarContraseña(string nueva, string doc)
+        {
+            registrar.cambiarContraseña(nueva, doc);
+        }
+
     }
 }

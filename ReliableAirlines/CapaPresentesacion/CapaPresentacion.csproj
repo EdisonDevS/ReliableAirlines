@@ -71,6 +71,24 @@
     <Compile Include="FormAdminClientes.Designer.cs">
       <DependentUpon>FormAdminClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdminInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminInformes.Designer.cs">
+      <DependentUpon>FormAdminInformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminInformesEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminInformesEmpleados.Designer.cs">
+      <DependentUpon>FormAdminInformesEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminInformesVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminInformesVuelos.Designer.cs">
+      <DependentUpon>FormAdminInformesVuelos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdminNominaActualizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,12 @@
     </Compile>
     <Compile Include="FormAdminNominaConsultaAjuste.Designer.cs">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCajaReembolsos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajaReembolsos.Designer.cs">
+      <DependentUpon>FormCajaReembolsos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCajaVentasValidacion.cs">
       <SubType>Form</SubType>
@@ -196,6 +220,12 @@
     </Compile>
     <Compile Include="FormContabilidadGastosConsultarNomina.Designer.cs">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContabilidadGastosConsultarReembolsos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContabilidadGastosConsultarReembolsos.Designer.cs">
+      <DependentUpon>FormContabilidadGastosConsultarReembolsos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormContabilidadGastosGenerar.cs">
       <SubType>Form</SubType>
@@ -305,42 +335,6 @@
     <Compile Include="FormEstadisticaAfluenciaGrafica.Designer.cs">
       <DependentUpon>FormEstadisticaAfluenciaGrafica.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosMensajes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosMensajes.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidosMensajes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudes.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudesGargar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudesGargar.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudesGargar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarOtras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarOtras.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarOtras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarMensaje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarMensaje.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRedactarMensaje.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAdminNominaConsultaGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -365,24 +359,6 @@
     <Compile Include="FormAdminRutas.Designer.cs">
       <DependentUpon>FormAdminRutas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitud.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitud.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitudOtra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitudOtra.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitudOtra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitudReembolso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactarSolicitudReembolso.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitudReembolso.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -394,12 +370,6 @@
     </Compile>
     <Compile Include="FormAdminAeronaves.Designer.cs">
       <DependentUpon>FormAdminAeronaves.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzon.Designer.cs">
-      <DependentUpon>FormGeneralBuzon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAdminNomina.cs">
       <SubType>Form</SubType>
@@ -493,18 +463,6 @@
     <Compile Include="FormAdminNominaRegistro.Designer.cs">
       <DependentUpon>FormAdminNominaRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGeneralBuzonRecibidos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRecibidos.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRecibidos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGeneralBuzonRedactar.Designer.cs">
-      <DependentUpon>FormGeneralBuzonRedactar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormVistaPrincipalAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -526,6 +484,15 @@
     </Compile>
     <EmbeddedResource Include="FormAdminClientes.resx">
       <DependentUpon>FormAdminClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminInformes.resx">
+      <DependentUpon>FormAdminInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminInformesEmpleados.resx">
+      <DependentUpon>FormAdminInformesEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminInformesVuelos.resx">
+      <DependentUpon>FormAdminInformesVuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaActualizacion.resx">
       <DependentUpon>FormAdminNominaActualizacion.cs</DependentUpon>
@@ -553,6 +520,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaConsultaAjuste.resx">
       <DependentUpon>FormAdminNominaConsultaAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCajaReembolsos.resx">
+      <DependentUpon>FormCajaReembolsos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCajaVentasValidacion.resx">
       <DependentUpon>FormCajaVentasValidacion.cs</DependentUpon>
@@ -592,6 +562,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastosConsultarNomina.resx">
       <DependentUpon>FormContabilidadGastosConsultarNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContabilidadGastosConsultarReembolsos.resx">
+      <DependentUpon>FormContabilidadGastosConsultarReembolsos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGastosGenerar.resx">
       <DependentUpon>FormContabilidadGastosGenerar.cs</DependentUpon>
@@ -647,24 +620,6 @@
     <EmbeddedResource Include="FormEstadisticaAfluenciaGrafica.resx">
       <DependentUpon>FormEstadisticaAfluenciaGrafica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidosMensajes.resx">
-      <DependentUpon>FormGeneralBuzonRecibidosMensajes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudes.resx">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudesGargar.resx">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudesGargar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudGargarOtras.resx">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarOtras.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidosSolicitudGargarReembolso.resx">
-      <DependentUpon>FormGeneralBuzonRecibidosSolicitudGargarReembolso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRedactarMensaje.resx">
-      <DependentUpon>FormGeneralBuzonRedactarMensaje.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaConsultaGeneral.resx">
       <DependentUpon>FormAdminNominaConsultaGeneral.cs</DependentUpon>
     </EmbeddedResource>
@@ -674,23 +629,11 @@
     <EmbeddedResource Include="FormAdminVuelosConsulta.resx">
       <DependentUpon>FormAdminVuelosConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitud.resx">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitud.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitudOtra.resx">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitudOtra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRedactarSolicitudReembolso.resx">
-      <DependentUpon>FormGeneralBuzonRedactarSolicitudReembolso.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminAeronaves.resx">
       <DependentUpon>FormAdminAeronaves.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzon.resx">
-      <DependentUpon>FormGeneralBuzon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNomina.resx">
       <DependentUpon>FormAdminNomina.cs</DependentUpon>
@@ -746,12 +689,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdminNominaRegistro.resx">
       <DependentUpon>FormAdminNominaRegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRecibidos.resx">
-      <DependentUpon>FormGeneralBuzonRecibidos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGeneralBuzonRedactar.resx">
-      <DependentUpon>FormGeneralBuzonRedactar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaPrincipalAdmin.resx">
       <DependentUpon>FormVistaPrincipalAdmin.cs</DependentUpon>
