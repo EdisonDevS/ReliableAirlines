@@ -70,6 +70,7 @@ namespace CapaNegociacion
             resultado.Columns[3].ColumnName = "Hora de salida";
             resultado.Columns[4].ColumnName = "Hora de llegada";
             resultado.Columns[5].ColumnName = "Estado";
+            resultado.Columns[6].ColumnName = "ID reserva";
             return resultado;
         }
 
@@ -83,6 +84,7 @@ namespace CapaNegociacion
             resultado.Columns[3].ColumnName = "Hora de salida";
             resultado.Columns[4].ColumnName = "Hora de llegada";
             resultado.Columns[5].ColumnName = "Estado";
+            resultado.Columns[6].ColumnName = "ID reserva";
             return resultado;
         }
 

@@ -62,5 +62,10 @@ namespace CapaPresentesacion
             int vuelo = Int32.Parse(dgvVuelos.CurrentRow.Cells[0].Value.ToString());
             tiquete.cancelacionDeTiquete(sesion.documento, vuelo);
         }
+
+        private void btnVerTiquete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
