@@ -168,5 +168,22 @@ namespace CapaDatos
 
             return datos;
         }
+
+        public DataTable consultaIDTiquete(int vuelo, string doc)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_ID_TIQUETE";
+            comando.Parameters.AddWithValue("@vuelo", vuelo);
+            comando.Parameters.AddWithValue("@doc", doc);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+
+            return datos;
+        }
     }
 }

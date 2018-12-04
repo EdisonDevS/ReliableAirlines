@@ -42,7 +42,7 @@ namespace CapaNegociacion
         {
             venta.validarReserva(Int32.Parse(reserva));
         }
-        
+
         public DataTable consultarVentas(string inicio, string final)
         {
             DataTable datos = new DataTable();
@@ -91,6 +91,12 @@ namespace CapaNegociacion
             DataTable datos = new DataTable();
             datos = venta.consultaJustificacion(tiquete);
             return datos;
+        }
+
+        public int consultaIDTiquete(int vuelo, string doc)
+        {
+            int id = Int32.Parse(venta.consultaIDTiquete(vuelo, doc).Rows[0][0].ToString());  
+            return id;
         }
     }
 }

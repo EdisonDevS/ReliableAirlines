@@ -85,7 +85,7 @@ namespace CapaPresentesacion
                 else
                     datos.Clase = "Turista";
 
-                FormReporteTiquetes reporte = new FormReporteTiquetes();
+                ReporteTiquetes reporte = new ReporteTiquetes();
                 reporte.Tiquete.Add(datos);
                 reporte.ShowDialog();
             }

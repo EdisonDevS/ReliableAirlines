@@ -45,6 +45,7 @@
             this.dtpHoraLlegada = new System.Windows.Forms.DateTimePicker();
             this.dtpLlegada = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.lblClase = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -217,7 +218,7 @@
             // 
             this.dtpHoraLlegada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHoraLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHoraLlegada.Location = new System.Drawing.Point(215, 234);
+            this.dtpHoraLlegada.Location = new System.Drawing.Point(215, 233);
             this.dtpHoraLlegada.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHoraLlegada.Name = "dtpHoraLlegada";
             this.dtpHoraLlegada.Size = new System.Drawing.Size(43, 32);
@@ -245,12 +246,25 @@
             this.label8.TabIndex = 107;
             this.label8.Text = "Llegada:";
             // 
+            // lblClase
+            // 
+            this.lblClase.AutoSize = true;
+            this.lblClase.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClase.ForeColor = System.Drawing.Color.White;
+            this.lblClase.Location = new System.Drawing.Point(452, 151);
+            this.lblClase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClase.Name = "lblClase";
+            this.lblClase.Size = new System.Drawing.Size(103, 33);
+            this.lblClase.TabIndex = 110;
+            this.lblClase.Text = "Clase: ";
+            // 
             // FormCajaVentasValidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(717, 315);
+            this.Controls.Add(this.lblClase);
             this.Controls.Add(this.dtpHoraLlegada);
             this.Controls.Add(this.dtpLlegada);
             this.Controls.Add(this.label8);
@@ -296,5 +310,6 @@
         private System.Windows.Forms.DateTimePicker dtpHoraLlegada;
         private System.Windows.Forms.DateTimePicker dtpLlegada;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblClase;
     }
 }

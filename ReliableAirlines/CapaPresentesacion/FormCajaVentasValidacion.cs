@@ -15,6 +15,7 @@ namespace CapaPresentesacion
     public partial class FormCajaVentasValidacion : Form
     {
         CnVentas venta = new CnVentas();
+        DataTable datos = new DataTable();
         public FormCajaVentasValidacion()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace CapaPresentesacion
         {
             try
             {
-                DataTable datos = new DataTable();
+                
                 datos = venta.obtenerInfoVenta(txtReserva.Text);
                 lblNombres.Text = lblNombres.Text + datos.Rows[0][0].ToString();
                 lblApellidos.Text = lblApellidos.Text + datos.Rows[0][1].ToString();
@@ -37,6 +38,11 @@ namespace CapaPresentesacion
                 dtpLlegada.Text = datos.Rows[0][4].ToString();
                 dtpHoraSalida.Text = datos.Rows[0][3].ToString();
                 dtpHoraLlegada.Text = datos.Rows[0][4].ToString();
+                if (Int32.Parse(datos.Rows[0][7].ToString()) == 1)
+                    lblClase.Text += " Primera";
+                else
+                    lblClase.Text += " Turista";
+
             }
             catch(Exception)
             {
@@ -47,7 +53,35 @@ namespace CapaPresentesacion
 
         private void btnGenerarGasto_Click(object sender, EventArgs e)
         {
-            venta.validarReserva(txtReserva.Text);
+            try
+            {
+                venta.validarReserva(txtReserva.Text);
+
+                DatosTiquete tiquete = new DatosTiquete();
+                ReporteTiquetes reporteTiquete = new ReporteTiquetes();
+
+                if (Int32.Parse(datos.Rows[0][7].ToString()) == 1)
+                    tiquete.Clase = "Primera";
+                else
+                    tiquete.Clase = "Turista";
+
+                tiquete.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
+                tiquete.Documento = datos.Rows[0][2].ToString();
+                tiquete.Origen = datos.Rows[0][5].ToString();
+                tiquete.Destino = datos.Rows[0][6].ToString();
+                tiquete.Salida = datos.Rows[0][3].ToString();
+                tiquete.Llegada = datos.Rows[0][4].ToString();
+                tiquete.Vuelo = datos.Rows[0][8].ToString();
+                tiquete.ID = txtReserva.Text;
+
+                reporteTiquete.Tiquete.Add(tiquete);
+                reporteTiquete.ShowDialog();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error con la base de datos");
+            }
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormReporteTiquetes
+    partial class ReporteTiquetes
     {
         /// <summary>
         /// Required designer variable.
@@ -52,6 +52,7 @@
             this.Controls.Add(this.ReporteTiquete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormReporteTiquetes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporteTiquetes";
             this.Load += new System.EventHandler(this.ReporteTiquetes_Load);
             this.ResumeLayout(false);

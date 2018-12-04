@@ -11,10 +11,10 @@ using Microsoft.Reporting.WinForms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormReporteTiquetes : Form
+    public partial class ReporteTiquetes : Form
     {
         public List<DatosTiquete> Tiquete = new List<DatosTiquete>();
-        public FormReporteTiquetes()
+        public ReporteTiquetes()
         {
             InitializeComponent();
         }

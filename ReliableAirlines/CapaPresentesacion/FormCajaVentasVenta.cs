@@ -169,12 +169,15 @@ namespace CapaPresentesacion
 
             if (usuarios.Rows.Count > 0)
             {
+                int clase = 2;
+                CnVentas venta = new CnVentas();
                 try
                 {
-                    CnVentas venta = new CnVentas();
+                    
+                    
                     if (dgvVuelos.SelectedRows.Count == 1)
                     {
-                        int clase=2;
+                        
                         if (rbCturista.Checked == false)
                         {
                             clase = 1;
@@ -182,6 +185,25 @@ namespace CapaPresentesacion
                         
                         venta.nuevoTiquete(txtDocumento.Text, 2, Convert.ToInt32(dgvVuelos.CurrentRow.Cells[0].Value.ToString()), clase);
 
+                        DatosTiquete tiquete = new DatosTiquete();
+                        ReporteTiquetes reporteTiquete = new ReporteTiquetes();
+
+                        if (clase == 1)
+                            tiquete.Clase = "Primera";
+                        else
+                            tiquete.Clase = "Turista";
+
+                        tiquete.Vuelo = dgvVuelos.CurrentRow.Cells[0].Value.ToString();
+                        tiquete.ID = venta.consultaIDTiquete(Int32.Parse(tiquete.Vuelo), txtDocumento.Text).ToString();
+                        tiquete.Origen = cbbCiudadOrigen.Text;
+                        tiquete.Destino = cbbCiuDes.Text;
+                        tiquete.Llegada = dgvVuelos.CurrentRow.Cells[4].Value.ToString();
+                        tiquete.Salida = dgvVuelos.CurrentRow.Cells[3].Value.ToString();
+                        tiquete.Nombre = usuarios.Rows[0][5].ToString() + " " + usuarios.Rows[0][6].ToString();
+                        tiquete.Documento = txtDocumento.Text;
+
+                        reporteTiquete.Tiquete.Add(tiquete);
+                        reporteTiquete.ShowDialog();
                     }
                     else
                     {
@@ -191,7 +213,25 @@ namespace CapaPresentesacion
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ha ocurrido un error intentando hacer la operación"+ex);
+                    DatosTiquete tiquete = new DatosTiquete();
+                    ReporteTiquetes reporteTiquete = new ReporteTiquetes();
+
+                    if (clase == 1)
+                        tiquete.Clase = "Primera";
+                    else
+                        tiquete.Clase = "Turista";
+
+                    tiquete.Vuelo = dgvVuelos.CurrentRow.Cells[0].Value.ToString();
+                    tiquete.ID = venta.consultaIDTiquete(Int32.Parse(tiquete.Vuelo), txtDocumento.Text).ToString();
+                    tiquete.Origen = cbbCiudadOrigen.Text;
+                    tiquete.Destino = cbbCiuDes.Text;
+                    tiquete.Llegada = dgvVuelos.CurrentRow.Cells[4].Value.ToString();
+                    tiquete.Salida = dgvVuelos.CurrentRow.Cells[3].Value.ToString();
+                    tiquete.Nombre = usuarios.Rows[0][5].ToString() + " " + usuarios.Rows[0][6].ToString();
+                    tiquete.Documento = txtDocumento.Text;
+
+                    reporteTiquete.Tiquete.Add(tiquete);
+                    reporteTiquete.ShowDialog();
                 }
             }
             else
