@@ -74,5 +74,33 @@ namespace CapaPresentesacion
             lblHoras.Text += datos.Rows[0][6].ToString();
             lblTotal.Text += datos.Rows[0][7].ToString();
         }
+
+        private void btnVerFactura_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ReportePagoNomina recibo = new ReportePagoNomina();
+                DatosPagoNomina datosPago = new DatosPagoNomina();
+                datosPago.Dias = datos.Rows[0][5].ToString();
+                datosPago.Horas = datos.Rows[0][6].ToString();
+                datosPago.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
+                datosPago.IDContrato = datos.Rows[0][3].ToString();
+                datosPago.PagoDias = (Int32.Parse(datos.Rows[0][5].ToString()) * Int32.Parse(datos.Rows[0][4].ToString()) * 8).ToString();
+                datosPago.PagoHoras = (Int32.Parse(datos.Rows[0][6].ToString()) * Int32.Parse(datos.Rows[0][4].ToString())).ToString();
+                datosPago.Total = datos.Rows[0][7].ToString();
+                datosPago.Sueldo = datos.Rows[0][4].ToString();
+                datosPago.Fecha = dgvPagosRealizados.CurrentRow.Cells[5].Value.ToString().Substring(0,10);
+                datosPago.Documento = datos.Rows[0][2].ToString();
+
+                recibo.pago.Add(datosPago);
+
+                recibo.ShowDialog();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Seleccione una fila primero");
+            }
+            
+        }
     }
 }

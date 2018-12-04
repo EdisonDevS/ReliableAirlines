@@ -39,10 +39,31 @@ namespace CapaPresentesacion
 
             txtDescripcion.Text = dgvDatos.CurrentRow.Cells[0].Value.ToString();
             dtpFecha.Text = dgvDatos.CurrentRow.Cells[1].Value.ToString();
-            lblContacto.Text += dgvDatos.CurrentRow.Cells[2].Value.ToString();
-            lblNit.Text += dgvDatos.CurrentRow.Cells[3].Value.ToString();
-            lblValor.Text += dgvDatos.CurrentRow.Cells[4].Value.ToString();
+            lblContacto.Text += dgvDatos.CurrentRow.Cells[3].Value.ToString();
+            lblNit.Text += dgvDatos.CurrentRow.Cells[4].Value.ToString();
+            lblValor.Text += dgvDatos.CurrentRow.Cells[2].Value.ToString();
 
+        }
+
+        private void btnVerFactura_Click(object sender, EventArgs e)
+        {
+            DatosGastoIngresoExterno datos = new DatosGastoIngresoExterno();
+            ReporteGastoIngresoExterno reporte = new ReporteGastoIngresoExterno();
+
+            datos.Contacto = dgvDatos.CurrentRow.Cells[3].Value.ToString();
+            datos.NIT = dgvDatos.CurrentRow.Cells[4].Value.ToString();
+
+            if (tipoMovimiento == 1)
+                datos.Tipo = "Ingreso";
+            else
+                datos.Tipo = "Gasto";
+
+            datos.Fecha = dgvDatos.CurrentRow.Cells[1].Value.ToString().Substring(0,10);
+            datos.Descripcion = dgvDatos.CurrentRow.Cells[0].Value.ToString();
+            datos.Valor = dgvDatos.CurrentRow.Cells[2].Value.ToString();
+
+            reporte.gastoIngresoExternos.Add(datos);
+            reporte.ShowDialog();
         }
     }
 }

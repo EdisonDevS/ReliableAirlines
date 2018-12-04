@@ -65,6 +65,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosGastoIngresoExterno.cs" />
+    <Compile Include="DatosPagoNomina.cs" />
     <Compile Include="DatosTiquete.cs" />
     <Compile Include="FormAdminClientes.cs">
       <SubType>Form</SubType>
@@ -246,11 +248,11 @@
     <Compile Include="FormContabilidadGastosGenerarNominaGeneral.Designer.cs">
       <DependentUpon>FormContabilidadGastosGenerarNominaGeneral.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormContabilidadGastosIngresosGenerarOtros.cs">
+    <Compile Include="FormContabilidadGastosIngresosGenerarExternos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormContabilidadGastosIngresosGenerarOtros.Designer.cs">
-      <DependentUpon>FormContabilidadGastosIngresosGenerarOtros.cs</DependentUpon>
+    <Compile Include="FormContabilidadGastosIngresosGenerarExternos.Designer.cs">
+      <DependentUpon>FormContabilidadGastosIngresosGenerarExternos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormContabilidadGeneral.cs">
       <SubType>Form</SubType>
@@ -476,6 +478,18 @@
     <Compile Include="FormAdminVuelosGestionExistente.Designer.cs">
       <DependentUpon>FormAdminVuelosGestionExistente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteGastoIngresoExterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteGastoIngresoExterno.Designer.cs">
+      <DependentUpon>ReporteGastoIngresoExterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePagoNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePagoNomina.Designer.cs">
+      <DependentUpon>ReportePagoNomina.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteTiquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -582,8 +596,8 @@
     <EmbeddedResource Include="FormContabilidadGastosGenerarNominaGeneral.resx">
       <DependentUpon>FormContabilidadGastosGenerarNominaGeneral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormContabilidadGastosIngresosGenerarOtros.resx">
-      <DependentUpon>FormContabilidadGastosIngresosGenerarOtros.cs</DependentUpon>
+    <EmbeddedResource Include="FormContabilidadGastosIngresosGenerarExternos.resx">
+      <DependentUpon>FormContabilidadGastosIngresosGenerarExternos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContabilidadGeneral.resx">
       <DependentUpon>FormContabilidadGeneral.cs</DependentUpon>
@@ -681,6 +695,8 @@
     <EmbeddedResource Include="FormVistaPrincipalTripulante.resx">
       <DependentUpon>FormVistaPrincipalTripulante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InformeGastoIngresoExterno.rdlc" />
+    <EmbeddedResource Include="InformePagoNomina.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -706,11 +722,19 @@
     <EmbeddedResource Include="FormVistaPrincipalEmpleados.resx">
       <DependentUpon>FormVistaPrincipalEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteTiquete.rdlc" />
+    <EmbeddedResource Include="ReporteGastoIngresoExterno.resx">
+      <DependentUpon>ReporteGastoIngresoExterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePagoNomina.resx">
+      <DependentUpon>ReportePagoNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeTiquete.rdlc" />
     <EmbeddedResource Include="ReporteTiquetes.resx">
       <DependentUpon>ReporteTiquetes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DatosGastoIngresoExterno.datasource" />
+    <None Include="Properties\DataSources\DatosPagoNomina.datasource" />
     <None Include="Properties\DataSources\DatosTiquete.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

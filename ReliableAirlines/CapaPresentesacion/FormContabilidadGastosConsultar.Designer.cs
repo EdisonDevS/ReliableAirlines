@@ -38,7 +38,7 @@
             // 
             this.panelConsultarGasto.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelConsultarGasto.Location = new System.Drawing.Point(0, 44);
-            this.panelConsultarGasto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelConsultarGasto.Margin = new System.Windows.Forms.Padding(4);
             this.panelConsultarGasto.Name = "panelConsultarGasto";
             this.panelConsultarGasto.Size = new System.Drawing.Size(1312, 806);
             this.panelConsultarGasto.TabIndex = 8;
@@ -51,7 +51,7 @@
             this.btnOtros.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOtros.ForeColor = System.Drawing.Color.White;
             this.btnOtros.Location = new System.Drawing.Point(437, 0);
-            this.btnOtros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOtros.Margin = new System.Windows.Forms.Padding(4);
             this.btnOtros.Name = "btnOtros";
             this.btnOtros.Size = new System.Drawing.Size(437, 43);
             this.btnOtros.TabIndex = 7;
@@ -67,7 +67,7 @@
             this.btnNomina.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomina.ForeColor = System.Drawing.Color.White;
             this.btnNomina.Location = new System.Drawing.Point(0, 0);
-            this.btnNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNomina.Margin = new System.Windows.Forms.Padding(4);
             this.btnNomina.Name = "btnNomina";
             this.btnNomina.Size = new System.Drawing.Size(437, 43);
             this.btnNomina.TabIndex = 6;
@@ -97,12 +97,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1312, 850);
-            this.Controls.Add(this.btnReembolsos);
             this.Controls.Add(this.panelConsultarGasto);
             this.Controls.Add(this.btnOtros);
             this.Controls.Add(this.btnNomina);
+            this.Controls.Add(this.btnReembolsos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadGastosConsultar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormContabilidadGastosConsulta";

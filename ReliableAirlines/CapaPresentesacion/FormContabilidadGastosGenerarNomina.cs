@@ -89,9 +89,33 @@ namespace CapaPresentesacion
                 {
                     mov.validarPago(id, Int32.Parse(txtDias.Text), Int32.Parse(txtHora.Text), totalPago.ToString());
                     MessageBox.Show("Se ha validado el pago correctamente");
+
+
+                    //Impresion del recibo
+                    DataTable paga = new DataTable();
+                    paga = mov.consultarDatosPagoRealizado(Int32.Parse(dgvPagosPendientes.CurrentRow.Cells[4].Value.ToString()));
+                    ReportePagoNomina recibo = new ReportePagoNomina();
+                    DatosPagoNomina datosPago = new DatosPagoNomina();
+                    datosPago.Dias = paga.Rows[0][5].ToString();
+                    datosPago.Horas = paga.Rows[0][6].ToString();
+                    datosPago.Nombre = paga.Rows[0][0].ToString() + " " + paga.Rows[0][1].ToString();
+                    datosPago.IDContrato = paga.Rows[0][3].ToString();
+                    datosPago.PagoDias = (Int32.Parse(paga.Rows[0][5].ToString()) * Int32.Parse(paga.Rows[0][4].ToString()) * 8).ToString();
+                    datosPago.PagoHoras = (Int32.Parse(paga.Rows[0][6].ToString()) * Int32.Parse(paga.Rows[0][4].ToString())).ToString();
+                    datosPago.Total = paga.Rows[0][7].ToString();
+                    datosPago.Sueldo = paga.Rows[0][4].ToString();
+                    datosPago.Fecha = dgvPagosPendientes.CurrentRow.Cells[5].Value.ToString().Substring(0, 10);
+                    datosPago.Documento = paga.Rows[0][2].ToString();
+
+                    recibo.pago.Add(datosPago);
+
+                    recibo.ShowDialog();
+
+
                     DataTable data = new DataTable();
                     data = mov.consultarPagosPendientes();
                     dgvPagosPendientes.DataSource = data;
+
                 }
                 catch(Exception)
                 {

@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnVerFactura = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,20 +52,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagosRealizados)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
+            // btnVerFactura
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1129, 726);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 68);
-            this.button3.TabIndex = 57;
-            this.button3.Text = "Ver factura";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnVerFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnVerFactura.FlatAppearance.BorderSize = 0;
+            this.btnVerFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerFactura.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerFactura.ForeColor = System.Drawing.Color.White;
+            this.btnVerFactura.Location = new System.Drawing.Point(1129, 726);
+            this.btnVerFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerFactura.Name = "btnVerFactura";
+            this.btnVerFactura.Size = new System.Drawing.Size(167, 68);
+            this.btnVerFactura.TabIndex = 57;
+            this.btnVerFactura.Text = "Ver factura";
+            this.btnVerFactura.UseVisualStyleBackColor = false;
+            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
             // 
             // panel2
             // 
@@ -313,7 +314,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvPagosRealizados);
             this.Controls.Add(this.btnVerTodosLosPagos);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnVerFactura);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -332,7 +333,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnVerFactura;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

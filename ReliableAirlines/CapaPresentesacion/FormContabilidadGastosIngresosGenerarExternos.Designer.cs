@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormContabilidadGastosIngresosGenerarOtros
+    partial class FormContabilidadGastosIngresosGenerarExternos
     {
         /// <summary>
         /// Required designer variable.
