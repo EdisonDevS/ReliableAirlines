@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="DatosGastoIngresoExterno.cs" />
     <Compile Include="DatosPagoNomina.cs" />
+    <Compile Include="DatosReembolso.cs" />
     <Compile Include="DatosTiquete.cs" />
     <Compile Include="FormAdminClientes.cs">
       <SubType>Form</SubType>
@@ -490,6 +491,12 @@
     <Compile Include="ReportePagoNomina.Designer.cs">
       <DependentUpon>ReportePagoNomina.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteReembolso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteReembolso.Designer.cs">
+      <DependentUpon>ReporteReembolso.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteTiquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -697,6 +704,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformeGastoIngresoExterno.rdlc" />
     <EmbeddedResource Include="InformePagoNomina.rdlc" />
+    <EmbeddedResource Include="InformeReembolso.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -729,12 +737,16 @@
       <DependentUpon>ReportePagoNomina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformeTiquete.rdlc" />
+    <EmbeddedResource Include="ReporteReembolso.resx">
+      <DependentUpon>ReporteReembolso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteTiquetes.resx">
       <DependentUpon>ReporteTiquetes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DatosGastoIngresoExterno.datasource" />
     <None Include="Properties\DataSources\DatosPagoNomina.datasource" />
+    <None Include="Properties\DataSources\DatosReembolso.datasource" />
     <None Include="Properties\DataSources\DatosTiquete.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

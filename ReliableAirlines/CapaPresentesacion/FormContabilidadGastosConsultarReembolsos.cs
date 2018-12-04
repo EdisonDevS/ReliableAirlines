@@ -14,6 +14,8 @@ namespace CapaPresentesacion
     public partial class FormContabilidadGastosConsultarReembolsos : Form
     {
         CnVentas venta = new CnVentas();
+        DataTable datos = new DataTable();
+
         public FormContabilidadGastosConsultarReembolsos()
         {
             InitializeComponent();
@@ -38,7 +40,6 @@ namespace CapaPresentesacion
 
         private void dgvVentas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataTable datos = new DataTable();
 
             datos = venta.obtenerInfoVentaReembolso(Int32.Parse(dgvVentas.CurrentRow.Cells[0].Value.ToString()));
 
@@ -71,6 +72,38 @@ namespace CapaPresentesacion
 
             DataTable justificacion = venta.consultaJustificacion(Int32.Parse(dgvVentas.CurrentRow.Cells[0].Value.ToString()));
             txtJustificacion.Text = justificacion.Rows[0][0].ToString();
+
+        }
+
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+            DatosReembolso reemb = new DatosReembolso();
+            ReporteReembolso rep = new ReporteReembolso();
+
+            reemb.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
+            reemb.Identificacion = datos.Rows[0][2].ToString();
+            reemb.Salida = datos.Rows[0][3].ToString();
+            reemb.Llegada = datos.Rows[0][4].ToString();
+            reemb.Origen = datos.Rows[0][5].ToString();
+            reemb.Destino = datos.Rows[0][6].ToString();
+            if (datos.Rows[0][7].ToString() == "1")
+            {
+                reemb.Clase = "Primera clase";
+                reemb.Valor = datos.Rows[0][9].ToString();
+            }
+            else
+            {
+                reemb.Clase = "Clase turista";
+                reemb.Valor = datos.Rows[0][8].ToString();
+            }
+
+            DataTable justificacion = venta.consultaJustificacion(Int32.Parse(dgvVentas.CurrentRow.Cells[0].Value.ToString()));
+            reemb.Fecha = justificacion.Rows[0][1].ToString();
+            reemb.Justificacion = justificacion.Rows[0][0].ToString();
+            reemb.Tiquete = dgvVentas.CurrentRow.Cells[0].Value.ToString();
+
+            rep.reembolso.Add(reemb);
+            rep.ShowDialog();
         }
     }
 }

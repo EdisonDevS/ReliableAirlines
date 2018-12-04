@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Image Name="Image1">
+        <Source>Embedded</Source>
+        <Value>internationaldepartures</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.3533cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>2.262cm</Height>
+        <Width>2.24083cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Reliable</Value>
+                <Style>
+                  <FontFamily>Magneto</FontFamily>
+                  <FontSize>24pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Airlines</Value>
+                <Style>
+                  <FontFamily>Magneto</FontFamily>
+                  <FontSize>24pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.4913cm</Top>
+        <Left>2.70534cm</Left>
+        <Height>2.124cm</Height>
+        <Width>4.32033cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Recibo de reembolso</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>2.75642cm</Top>
+        <Left>5.59601cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>6.1195cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Justificación: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>7.62484cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>3.76999cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Justificacion.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>8.49294cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>16.51233cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Valor: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>10.70161cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>1.82266cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Valor.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>10.70161cm</Top>
+        <Left>2.35773cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>4.66794cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Fecha.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>0.4913cm</Top>
+        <Left>13.94767cm</Left>
+        <Height>0.87517cm</Height>
+        <Width>3.02917cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha:</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>0.4913cm</Top>
+        <Left>11.98389cm</Left>
+        <Height>0.87517cm</Height>
+        <Width>1.82267cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle2">
+        <ReportItems>
+          <Textbox Name="Textbox14">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Sello  </Value>
+                    <Style>
+                      <FontFamily>Century Gothic</FontFamily>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>LightGrey</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>1.36017cm</Top>
+            <Left>1.20179cm</Left>
+            <Height>0.87516cm</Height>
+            <Width>1.50516cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>9.50216cm</Top>
+        <Left>13.05634cm</Left>
+        <Height>3.50922cm</Height>
+        <Width>3.9205cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>Dashed</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nombre: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>3.76563cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>2.64816cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Nombre.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>3.76563cm</Top>
+        <Left>3.18322cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>13.79361cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Identificación: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>4.63374cm</Top>
+        <Left>0.46452cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>4.12983cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Identificacion.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>4.63374cm</Top>
+        <Left>4.59434cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>12.38249cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Destino: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>6.51107cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>2.38194cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Destino.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>6.51107cm</Top>
+        <Left>2.88172cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>4.14394cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Origen: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>5.57241cm</Top>
+        <Left>0.46451cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>2.24083cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Origen.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>5.57241cm</Top>
+        <Left>2.70534cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>4.32033cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Salida: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>5.64296cm</Top>
+        <Left>7.87426cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>2.59172cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Salida.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>5.64296cm</Top>
+        <Left>10.46597cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>6.51086cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Llegada: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>6.54635cm</Top>
+        <Left>7.87426cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>2.59171cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox22">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Llegada.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>6.54635cm</Top>
+        <Left>10.46598cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>6.51086cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Clase: </Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>9.86878cm</Top>
+        <Left>0.46452cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>1.96377cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox24">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Clase.Value, "DatosReembolso")</Value>
+                <Style>
+                  <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>9.86878cm</Top>
+        <Left>2.46357cm</Left>
+        <Height>0.83283cm</Height>
+        <Width>4.56211cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>6.40592in</Height>
+    <Style />
+  </Body>
+  <Width>6.86667in</Width>
+  <Page>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="CapaPresentesacion">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>0715151f-1cfc-4f94-a0e0-ed586f30885e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DatosReembolso">
+      <Query>
+        <DataSourceName>CapaPresentesacion</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Clase">
+          <DataField>Clase</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Destino">
+          <DataField>Destino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Identificacion">
+          <DataField>Identificacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Justificacion">
+          <DataField>Justificacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Llegada">
+          <DataField>Llegada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nombre">
+          <DataField>Nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Origen">
+          <DataField>Origen</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Salida">
+          <DataField>Salida</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tiquete">
+          <DataField>Tiquete</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Valor">
+          <DataField>Valor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>CapaPresentesacion</rd:DataSetName>
+        <rd:TableName>DatosReembolso</rd:TableName>
+        <rd:ObjectDataSourceType>CapaPresentesacion.DatosReembolso, CapaPresentesacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="internationaldepartures">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>e8d50b31-6ea9-4a32-9282-db2ccefb8238</rd:ReportID>
+</Report>
