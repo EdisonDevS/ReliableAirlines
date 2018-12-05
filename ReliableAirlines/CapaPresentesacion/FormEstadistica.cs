@@ -31,6 +31,24 @@ namespace CapaPresentesacion
         private void btnAfluencia_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FormEstadisticaAfluencia());
+            pnlActivoAfluencia.Visible = true;
+            pnlActivoCiudades.Visible = false;
+            pnlActivoOtro.Visible = false;
+        }
+
+        private void btnCiudad_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FormEstadisticaCiudad());
+            pnlActivoAfluencia.Visible = false;
+            pnlActivoCiudades.Visible = true;
+            pnlActivoOtro.Visible = false;
+        }
+
+        private void btnOtros_Click(object sender, EventArgs e)
+        {
+            pnlActivoAfluencia.Visible = false;
+            pnlActivoCiudades.Visible = false;
+            pnlActivoOtro.Visible = true;
         }
     }
 }

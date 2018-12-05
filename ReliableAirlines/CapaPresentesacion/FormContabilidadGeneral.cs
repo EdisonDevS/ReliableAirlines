@@ -22,11 +22,5 @@ namespace CapaPresentesacion
             FormContabilidadGeneralEstadistica estadistica = new FormContabilidadGeneralEstadistica();
             estadistica.Show();
         }
-
-        private void btnInformes_Click(object sender, EventArgs e)
-        {
-            FormContabilidadGeneralInforme informe = new FormContabilidadGeneralInforme();
-            informe.Show();
-        }
     }
 }

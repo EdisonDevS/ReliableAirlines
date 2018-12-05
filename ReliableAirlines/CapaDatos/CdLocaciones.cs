@@ -124,5 +124,41 @@ namespace CapaDatos
             return tabla;
         }
 
+        public DataTable consultaPasajerosSalientes(int mes, string año, int ciudad)
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CONSULTA_SUM_VUELOS_SALIDA_CIUDAD";
+            comando.Parameters.AddWithValue("@idCiudad", ciudad);
+            comando.Parameters.AddWithValue("@año", año);
+            comando.Parameters.AddWithValue("@mes", mes);
+
+            filas = comando.ExecuteReader();
+            tabla.Load(filas);
+
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
+        public DataTable consultaPasajerosEntrantes(int mes, string año, int ciudad)
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "CONSULTA_SUM_VUELOS_LLEGADA_CIUDAD";
+            comando.Parameters.AddWithValue("@idCiudad", ciudad);
+            comando.Parameters.AddWithValue("@año", año);
+            comando.Parameters.AddWithValue("@mes", mes);
+
+            filas = comando.ExecuteReader();
+            tabla.Load(filas);
+
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
     }
 }

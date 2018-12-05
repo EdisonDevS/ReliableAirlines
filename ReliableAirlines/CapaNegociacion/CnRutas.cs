@@ -37,5 +37,12 @@ namespace CapaNegociacion
         {
             consulta.ActualizarEstadoRuta(ruta, estado);
         }
+
+        public int consultaSumaPasajerosMes(int mes, string Año, int ruta)
+        {
+            DataTable suma = new DataTable();
+            suma = consulta.consultaSumaPasajerosMes(mes, Año, ruta);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
     }
 }

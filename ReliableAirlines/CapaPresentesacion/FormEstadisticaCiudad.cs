@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CapaPresentesacion
 {
-    public partial class FormContabilidadGeneralInforme : Form
+    public partial class FormEstadisticaCiudad : Form
     {
-        public FormContabilidadGeneralInforme()
+        public FormEstadisticaCiudad()
         {
             InitializeComponent();
+        }
+
+        private void btnGraficar_Click(object sender, EventArgs e)
+        {
+            FormEstadisticaCiudadGrafica grafica = new FormEstadisticaCiudadGrafica();
+            grafica.Show();
         }
     }
 }

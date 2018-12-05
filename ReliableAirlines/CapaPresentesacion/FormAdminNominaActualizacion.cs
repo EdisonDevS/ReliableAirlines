@@ -85,5 +85,17 @@ namespace CapaPresentesacion
             }
         }
 
+        private void btnReestablecerContraseña_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrWhiteSpace(txtDocumento.Text))
+            {
+                MessageBox.Show("Por favor llene primero el campo del documento");
+            }
+            else
+            {
+                FormCambioContraseña contra = new FormCambioContraseña(txtDocumento.Text);
+                contra.Show();
+            }  
+        }
     }
 }

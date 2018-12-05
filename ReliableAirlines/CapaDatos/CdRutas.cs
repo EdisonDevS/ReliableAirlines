@@ -67,5 +67,22 @@ namespace CapaDatos
             consultas.Parameters.Clear();
             conexion.CerrarConexion();
         }
+
+        public DataTable consultaSumaPasajerosMes(int mes, string Año, int ruta)
+        {
+            DataTable tabla = new DataTable();
+            consultas.Connection = conexion.AbrirConexion();
+            consultas.CommandType = CommandType.StoredProcedure;
+            consultas.CommandText = "CONSULTA_SUM_PASAJEROS_RUTA";
+            consultas.Parameters.AddWithValue("@idRuta", ruta);
+            consultas.Parameters.AddWithValue("@año", Año);
+            consultas.Parameters.AddWithValue("@mes", mes);
+            filas = consultas.ExecuteReader();
+            tabla.Load(filas);
+            filas.Close();
+            consultas.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
     }
 }

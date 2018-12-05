@@ -52,5 +52,21 @@ namespace CapaNegociacion
         {
             return consultas.ConsultaAeropuerto(ciudad);
         }
+
+        public int consultaPasajerosSalientes(int mes, string año, int ciudad)
+        {
+            DataTable pasajeros = new DataTable();
+            pasajeros = consultas.consultaPasajerosSalientes(mes, año, ciudad);
+
+            return Int32.Parse(pasajeros.Rows[0][0].ToString());
+        }
+
+        public int consultaPasajerosEntrantes(int mes, string año, int ciudad)
+        {
+            DataTable pasajeros = new DataTable();
+            pasajeros = consultas.consultaPasajerosEntrantes(mes, año, ciudad);
+
+            return Int32.Parse(pasajeros.Rows[0][0].ToString());
+        }
     }
 }

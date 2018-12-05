@@ -55,7 +55,7 @@
             this.cbbTipoDoc = new System.Windows.Forms.ComboBox();
             this.btnVer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReestablecerContraseña = new System.Windows.Forms.Button();
             this.cbbCiudades = new System.Windows.Forms.ComboBox();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             // txtInfo
             // 
             this.txtInfo.Location = new System.Drawing.Point(217, 177);
-            this.txtInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(189, 75);
             this.txtInfo.TabIndex = 75;
@@ -85,7 +85,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(513, 81);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(128, 22);
             this.txtTelefono.TabIndex = 73;
@@ -105,7 +105,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(491, 57);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(151, 22);
             this.txtEmail.TabIndex = 71;
@@ -125,7 +125,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(513, 32);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(128, 22);
             this.txtDireccion.TabIndex = 69;
@@ -145,7 +145,7 @@
             // txtEPS
             // 
             this.txtEPS.Location = new System.Drawing.Point(491, 7);
-            this.txtEPS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEPS.Margin = new System.Windows.Forms.Padding(4);
             this.txtEPS.Name = "txtEPS";
             this.txtEPS.Size = new System.Drawing.Size(151, 22);
             this.txtEPS.TabIndex = 67;
@@ -179,7 +179,7 @@
             this.dtpNacimiento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNacimiento.Location = new System.Drawing.Point(343, 81);
-            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNacimiento.Name = "dtpNacimiento";
             this.dtpNacimiento.Size = new System.Drawing.Size(84, 37);
             this.dtpNacimiento.TabIndex = 52;
@@ -188,7 +188,7 @@
             // 
             this.txtDoc.Enabled = false;
             this.txtDoc.Location = new System.Drawing.Point(340, 57);
-            this.txtDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDoc.Name = "txtDoc";
             this.txtDoc.Size = new System.Drawing.Size(87, 22);
             this.txtDoc.TabIndex = 51;
@@ -220,7 +220,7 @@
             // txtApellidos
             // 
             this.txtApellidos.Location = new System.Drawing.Point(276, 32);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(151, 22);
             this.txtApellidos.TabIndex = 47;
@@ -240,7 +240,7 @@
             // txtNombres
             // 
             this.txtNombres.Location = new System.Drawing.Point(276, 7);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(151, 22);
             this.txtNombres.TabIndex = 45;
@@ -260,7 +260,7 @@
             // txtDocumento
             // 
             this.txtDocumento.Location = new System.Drawing.Point(17, 34);
-            this.txtDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDocumento.Margin = new System.Windows.Forms.Padding(4);
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(165, 22);
             this.txtDocumento.TabIndex = 77;
@@ -297,7 +297,7 @@
             this.btnGuardarCambios.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
             this.btnGuardarCambios.Location = new System.Drawing.Point(17, 204);
-            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(107, 34);
             this.btnGuardarCambios.TabIndex = 86;
@@ -309,7 +309,7 @@
             // 
             this.txtUsuario.Enabled = false;
             this.txtUsuario.Location = new System.Drawing.Point(72, 96);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(128, 22);
             this.txtUsuario.TabIndex = 87;
@@ -322,7 +322,7 @@
             "TI",
             "CE"});
             this.cbbTipoDoc.Location = new System.Drawing.Point(288, 57);
-            this.cbbTipoDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbTipoDoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbTipoDoc.Name = "cbbTipoDoc";
             this.cbbTipoDoc.Size = new System.Drawing.Size(48, 24);
             this.cbbTipoDoc.TabIndex = 88;
@@ -335,7 +335,7 @@
             this.btnVer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVer.ForeColor = System.Drawing.Color.White;
             this.btnVer.Location = new System.Drawing.Point(17, 60);
-            this.btnVer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVer.Margin = new System.Windows.Forms.Padding(4);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(88, 28);
             this.btnVer.TabIndex = 91;
@@ -351,27 +351,28 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(128, 204);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 34);
             this.button1.TabIndex = 93;
             this.button1.Text = "Modificar\r\nPermisos";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnReestablecerContraseña
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(17, 128);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 34);
-            this.button2.TabIndex = 94;
-            this.button2.Text = "Resetear contraseña";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnReestablecerContraseña.BackColor = System.Drawing.Color.Maroon;
+            this.btnReestablecerContraseña.FlatAppearance.BorderSize = 0;
+            this.btnReestablecerContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReestablecerContraseña.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReestablecerContraseña.ForeColor = System.Drawing.Color.White;
+            this.btnReestablecerContraseña.Location = new System.Drawing.Point(17, 128);
+            this.btnReestablecerContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReestablecerContraseña.Name = "btnReestablecerContraseña";
+            this.btnReestablecerContraseña.Size = new System.Drawing.Size(107, 34);
+            this.btnReestablecerContraseña.TabIndex = 94;
+            this.btnReestablecerContraseña.Text = "Resetear contraseña";
+            this.btnReestablecerContraseña.UseVisualStyleBackColor = false;
+            this.btnReestablecerContraseña.Click += new System.EventHandler(this.btnReestablecerContraseña_Click);
             // 
             // cbbCiudades
             // 
@@ -379,7 +380,7 @@
             this.cbbCiudades.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbCiudades.FormattingEnabled = true;
             this.cbbCiudades.Location = new System.Drawing.Point(537, 106);
-            this.cbbCiudades.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbCiudades.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudades.Name = "cbbCiudades";
             this.cbbCiudades.Size = new System.Drawing.Size(104, 24);
             this.cbbCiudades.TabIndex = 95;
@@ -398,7 +399,7 @@
             "Activo",
             "Inactivo"});
             this.cbbEstado.Location = new System.Drawing.Point(71, 167);
-            this.cbbEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstado.Name = "cbbEstado";
             this.cbbEstado.Size = new System.Drawing.Size(128, 24);
             this.cbbEstado.TabIndex = 97;
@@ -424,7 +425,7 @@
             this.Controls.Add(this.cbbEstado);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.cbbCiudades);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnReestablecerContraseña);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.cbbTipoDoc);
@@ -454,7 +455,7 @@
             this.Controls.Add(this.txtNombres);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdminNominaActualizacion";
             this.Text = "actualizacionEmpleado";
             this.ResumeLayout(false);
@@ -491,7 +492,7 @@
         private System.Windows.Forms.ComboBox cbbTipoDoc;
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReestablecerContraseña;
         private System.Windows.Forms.ComboBox cbbCiudades;
         private System.Windows.Forms.ComboBox cbbEstado;
         private System.Windows.Forms.Label label22;

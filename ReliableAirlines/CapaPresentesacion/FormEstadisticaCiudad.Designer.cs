@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentesacion
 {
-    partial class FormEstadisticaAfluencia
+    partial class FormEstadisticaCiudad
     {
         /// <summary>
         /// Required designer variable.
@@ -39,15 +39,15 @@
             this.btnGraficar.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGraficar.ForeColor = System.Drawing.Color.White;
             this.btnGraficar.Location = new System.Drawing.Point(13, 13);
-            this.btnGraficar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGraficar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGraficar.Name = "btnGraficar";
             this.btnGraficar.Size = new System.Drawing.Size(637, 253);
-            this.btnGraficar.TabIndex = 74;
+            this.btnGraficar.TabIndex = 75;
             this.btnGraficar.Text = "Graficar";
             this.btnGraficar.UseVisualStyleBackColor = false;
-            this.btnGraficar.Click += new System.EventHandler(this.button1_Click);
+            this.btnGraficar.Click += new System.EventHandler(this.btnGraficar_Click);
             // 
-            // FormEstadisticaAfluencia
+            // FormEstadisticaCiudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -55,14 +55,14 @@
             this.ClientSize = new System.Drawing.Size(663, 279);
             this.Controls.Add(this.btnGraficar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FormEstadisticaAfluencia";
-            this.Text = "FormEstadisticaAfluencia";
+            this.Name = "FormEstadisticaCiudad";
+            this.Text = "FormEstadisticaCiudad";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private System.Windows.Forms.Button btnGraficar;
     }
 }
