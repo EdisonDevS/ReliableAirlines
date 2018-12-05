@@ -33,9 +33,11 @@ namespace CapaPresentesacion
 
             lblNombres.Text = "Nombres: ";
             lblApellidos.Text = "Apellidos: ";
-            lblIdentificación.Text = "Identificación";
-            lblOrigen.Text = "Origen";
-            lblDestino.Text = "Destino";
+            lblIdentificación.Text = "Identificación: ";
+            lblOrigen.Text = "Origen: ";
+            lblDestino.Text = "Destino: ";
+            lblClase.Text = "Clase: ";
+            lblValor.Text = "Valor: ";
 
             lblNombres.Text += datos.Rows[0][0].ToString();
             lblApellidos.Text += datos.Rows[0][1].ToString();
@@ -62,52 +64,89 @@ namespace CapaPresentesacion
 
         private void btnGenerarGasto_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtJustificacion.Text) || string.IsNullOrWhiteSpace(txtReserva.Text))
+            if(venta.verificarReembolso(Int32.Parse(txtReserva.Text)))
             {
-                MessageBox.Show("Por favor llene todos los campos");
+                MessageBox.Show("Este tiquete ya fue reembolsado anteriormente");
+
+                //Facturacion
+                DatosReembolso reemb = new DatosReembolso();
+                ReporteReembolso rep = new ReporteReembolso();
+
+                reemb.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
+                reemb.Identificacion = datos.Rows[0][2].ToString();
+                reemb.Salida = datos.Rows[0][3].ToString();
+                reemb.Llegada = datos.Rows[0][4].ToString();
+                reemb.Origen = datos.Rows[0][5].ToString();
+                reemb.Destino = datos.Rows[0][6].ToString();
+                if (datos.Rows[0][7].ToString() == "1")
+                {
+                    reemb.Clase = "Primera clase";
+                    reemb.Valor = datos.Rows[0][9].ToString();
+                }
+                else
+                {
+                    reemb.Clase = "Clase turista";
+                    reemb.Valor = datos.Rows[0][8].ToString();
+                }
+
+                DataTable justificacion = venta.consultaJustificacion(Int32.Parse(txtReserva.Text));
+                reemb.Fecha = justificacion.Rows[0][1].ToString();
+                reemb.Justificacion = justificacion.Rows[0][0].ToString();
+                reemb.Tiquete = txtReserva.Text;
+
+                rep.reembolso.Add(reemb);
+                rep.ShowDialog();
             }
             else
             {
-                try
+                if (string.IsNullOrWhiteSpace(txtJustificacion.Text) || string.IsNullOrWhiteSpace(txtReserva.Text))
                 {
-                    venta.gererarReembolso(sesion.documento, txtJustificacion.Text, Int32.Parse(txtReserva.Text));
-                    MessageBox.Show("Reembolso autorizado correctamente");
-
-                    //Facturación
-
-                    DatosReembolso reemb = new DatosReembolso();
-                    ReporteReembolso rep = new ReporteReembolso();
-
-                    reemb.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
-                    reemb.Identificacion = datos.Rows[0][2].ToString();
-                    reemb.Salida = datos.Rows[0][3].ToString();
-                    reemb.Llegada = datos.Rows[0][4].ToString();
-                    reemb.Origen = datos.Rows[0][5].ToString();
-                    reemb.Destino = datos.Rows[0][6].ToString();
-                    if (datos.Rows[0][7].ToString() == "1")
-                    {
-                        reemb.Clase = "Primera clase";
-                        reemb.Valor = datos.Rows[0][9].ToString();
-                    }
-                    else
-                    {
-                        reemb.Clase = "Clase turista";
-                        reemb.Valor = datos.Rows[0][8].ToString();
-                    }
-
-                    DataTable justificacion = venta.consultaJustificacion(Int32.Parse(txtReserva.Text));
-                    reemb.Fecha = justificacion.Rows[0][1].ToString();
-                    reemb.Justificacion = justificacion.Rows[0][0].ToString();
-                    reemb.Tiquete = txtReserva.Text;
-
-                    rep.reembolso.Add(reemb);
-                    rep.ShowDialog();
+                    MessageBox.Show("Por favor llene todos los campos");
                 }
-                catch (Exception)
+                else
                 {
-                    MessageBox.Show("Ha ocurrido un error generando el reembolso");
+                    try
+                    {
+                        venta.gererarReembolso(sesion.documento, txtJustificacion.Text, Int32.Parse(txtReserva.Text));
+                        MessageBox.Show("Reembolso autorizado correctamente");
+
+                        //Facturación
+
+                        DatosReembolso reemb = new DatosReembolso();
+                        ReporteReembolso rep = new ReporteReembolso();
+
+                        reemb.Nombre = datos.Rows[0][0].ToString() + " " + datos.Rows[0][1].ToString();
+                        reemb.Identificacion = datos.Rows[0][2].ToString();
+                        reemb.Salida = datos.Rows[0][3].ToString();
+                        reemb.Llegada = datos.Rows[0][4].ToString();
+                        reemb.Origen = datos.Rows[0][5].ToString();
+                        reemb.Destino = datos.Rows[0][6].ToString();
+                        if (datos.Rows[0][7].ToString() == "1")
+                        {
+                            reemb.Clase = "Primera clase";
+                            reemb.Valor = datos.Rows[0][9].ToString();
+                        }
+                        else
+                        {
+                            reemb.Clase = "Clase turista";
+                            reemb.Valor = datos.Rows[0][8].ToString();
+                        }
+
+                        DataTable justificacion = venta.consultaJustificacion(Int32.Parse(txtReserva.Text));
+                        reemb.Fecha = justificacion.Rows[0][1].ToString();
+                        reemb.Justificacion = justificacion.Rows[0][0].ToString();
+                        reemb.Tiquete = txtReserva.Text;
+
+                        rep.reembolso.Add(reemb);
+                        rep.ShowDialog();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ha ocurrido un error generando el reembolso");
+                    }
                 }
             }
+            
             
         }
     }

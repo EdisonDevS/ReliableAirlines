@@ -98,5 +98,21 @@ namespace CapaNegociacion
             int id = Int32.Parse(venta.consultaIDTiquete(vuelo, doc).Rows[0][0].ToString());  
             return id;
         }
+
+        public bool verificarReembolso(int tiquete)
+        {
+            DataTable reembolso = new DataTable();
+
+            reembolso = venta.verificarReembolso(tiquete);
+
+            if(Int32.Parse(reembolso.Rows[0][0].ToString())>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

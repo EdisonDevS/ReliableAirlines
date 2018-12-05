@@ -125,7 +125,7 @@
             this.btnOtros.Name = "btnOtros";
             this.btnOtros.Size = new System.Drawing.Size(107, 137);
             this.btnOtros.TabIndex = 21;
-            this.btnOtros.Text = "Pendiente";
+            this.btnOtros.Text = "Otros";
             this.btnOtros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnOtros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnOtros.UseVisualStyleBackColor = true;

@@ -46,6 +46,7 @@ namespace CapaPresentesacion
 
         private void btnOtros_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new FormEstadisticaOtros());
             pnlActivoAfluencia.Visible = false;
             pnlActivoCiudades.Visible = false;
             pnlActivoOtro.Visible = true;

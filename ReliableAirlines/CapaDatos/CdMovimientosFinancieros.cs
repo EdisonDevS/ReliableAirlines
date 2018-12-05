@@ -168,5 +168,66 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return suma;
         }
+
+        public DataTable consultaSumaVentasMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_VENTAS_MES";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
+        public DataTable consultaSumaReembolsosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_REEMBOLSOS_MES";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
+        public DataTable consultaSumaIngresosExternosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_EXTERNOS_MES_INGRESOS";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
+        public DataTable consultaSumaGastosExternosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_EXTERNOS_MES_GASTOS";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
     }
 }

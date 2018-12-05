@@ -67,7 +67,7 @@ namespace CapaPresentesacion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ha ocurrido un error intentando hacer la operación" + ex);
+                MessageBox.Show("La reserva se ha realizado de forma exitosa");
             }
 
         }

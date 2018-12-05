@@ -54,7 +54,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.cbbTipoDoc = new System.Windows.Forms.ComboBox();
             this.btnVer = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnReestablecerContraseña = new System.Windows.Forms.Button();
             this.cbbCiudades = new System.Windows.Forms.ComboBox();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
@@ -343,21 +342,6 @@
             this.btnVer.UseVisualStyleBackColor = false;
             this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(128, 204);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 34);
-            this.button1.TabIndex = 93;
-            this.button1.Text = "Modificar\r\nPermisos";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btnReestablecerContraseña
             // 
             this.btnReestablecerContraseña.BackColor = System.Drawing.Color.Maroon;
@@ -426,7 +410,6 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.cbbCiudades);
             this.Controls.Add(this.btnReestablecerContraseña);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.cbbTipoDoc);
             this.Controls.Add(this.txtUsuario);
@@ -491,7 +474,6 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.ComboBox cbbTipoDoc;
         private System.Windows.Forms.Button btnVer;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnReestablecerContraseña;
         private System.Windows.Forms.ComboBox cbbCiudades;
         private System.Windows.Forms.ComboBox cbbEstado;

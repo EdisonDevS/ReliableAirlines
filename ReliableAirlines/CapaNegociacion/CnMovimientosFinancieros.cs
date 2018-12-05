@@ -113,5 +113,30 @@ namespace CapaNegociacion
             suma = mov.consultaSumaIngresosMes(mes, Año);
             return Int32.Parse(suma.Rows[0][0].ToString());
         }
+
+        public int consultaSumaVentasMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaVentasMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
+        public int consultaSumaReembolsosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaReembolsosMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
+        public int consultaSumaIngresosExternosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaIngresosExternosMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
+        public int consultaSumaGastosExternosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaGastosExternosMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
     }
 }

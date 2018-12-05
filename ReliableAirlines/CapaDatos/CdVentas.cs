@@ -185,5 +185,21 @@ namespace CapaDatos
 
             return datos;
         }
+
+        public DataTable verificarReembolso(int tiquete)
+        {
+            DataTable datos = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VERIFICAR_REEMBOLSO";
+            comando.Parameters.AddWithValue("@id", tiquete);
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+
+            return datos;
+        }
     }
 }

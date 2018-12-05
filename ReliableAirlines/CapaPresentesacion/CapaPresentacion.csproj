@@ -375,6 +375,18 @@
     <Compile Include="FormEstadisticaCiudadGrafica.Designer.cs">
       <DependentUpon>FormEstadisticaCiudadGrafica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEstadisticaOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadisticaOtros.Designer.cs">
+      <DependentUpon>FormEstadisticaOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstadisticaOtrosGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadisticaOtrosGrafica.Designer.cs">
+      <DependentUpon>FormEstadisticaOtrosGrafica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -674,6 +686,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEstadisticaCiudadGrafica.resx">
       <DependentUpon>FormEstadisticaCiudadGrafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadisticaOtros.resx">
+      <DependentUpon>FormEstadisticaOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadisticaOtrosGrafica.resx">
+      <DependentUpon>FormEstadisticaOtrosGrafica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
