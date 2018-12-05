@@ -23,9 +23,19 @@ namespace CapaPresentesacion
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
-            aeronaves.ActualizarDatos(cbbMatricula.Text, txtTipo.Text, Convert.ToInt32(txtPclase.Text), Convert.ToInt32(txtCturista.Text),
+            if(string.IsNullOrWhiteSpace(txtCturista.Text) || string.IsNullOrWhiteSpace(txtEqui.Text) || string.IsNullOrWhiteSpace(txtPclase.Text) || 
+                string.IsNullOrWhiteSpace(txtProv.Text) || string.IsNullOrWhiteSpace(txtTipo.Text) || string.IsNullOrWhiteSpace(cbbEstadoActual.Text) || 
+                string.IsNullOrWhiteSpace(cbbMatricula.Text))
+            {
+                MessageBox.Show("Por favor complete todos los campos");
+            }
+            else
+            {
+                aeronaves.ActualizarDatos(cbbMatricula.Text, txtTipo.Text, Convert.ToInt32(txtPclase.Text), Convert.ToInt32(txtCturista.Text),
                                       txtProv.Text, Convert.ToInt32(txtEqui.Text), dtpAdqui.Text, cbbEstadoActual.Text);
-            MessageBox.Show("Se han guardado los cambios correctamente");
+                MessageBox.Show("Se han guardado los cambios correctamente");
+            }
+            
         }
 
         private void cbbMatricula_SelectedIndexChanged(object sender, EventArgs e)

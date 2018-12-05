@@ -42,16 +42,24 @@ namespace CapaPresentesacion
 
         private void btnVerPagosEmpleado_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtDocumento.Text))
             {
-                DataTable data = new DataTable();
-                data = mov.consultarPagosRealizados(txtDocumento.Text);
-                dgvPagosRealizados.DataSource = data;
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error cargando los datos");
+                try
+                {
+                    DataTable data = new DataTable();
+                    data = mov.consultarPagosRealizados(txtDocumento.Text);
+                    dgvPagosRealizados.DataSource = data;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error cargando los datos");
+                }
             }
+            
         }
 
         private void dgvPagosRealizados_CellClick(object sender, DataGridViewCellEventArgs e)

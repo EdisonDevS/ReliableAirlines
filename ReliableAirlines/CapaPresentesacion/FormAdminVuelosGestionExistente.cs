@@ -28,32 +28,48 @@ namespace CapaPresentesacion
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
-            dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text))
+            {
+                MessageBox.Show("Por favor digite un numero de vuelo valido");
+            }
+            else
+            {
+                try
+                {
+                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
 
-            CnVuelos vuelo = new CnVuelos();
-            DataTable datosPrimarios = new DataTable();
-            datosPrimarios = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
+                    CnVuelos vuelo = new CnVuelos();
+                    DataTable datosPrimarios = new DataTable();
+                    datosPrimarios = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
 
-            DataTable rutas = new DataTable();
-            rutas = ruta.ConsultaGralRutas();
-            cbbNombreRuta.DataSource = rutas;
-            cbbNombreRuta.DisplayMember = "Nombre Ruta";
-            cbbNombreRuta.ValueMember = "ID Ruta";
+                    DataTable rutas = new DataTable();
+                    rutas = ruta.ConsultaGralRutas();
+                    cbbNombreRuta.DataSource = rutas;
+                    cbbNombreRuta.DisplayMember = "Nombre Ruta";
+                    cbbNombreRuta.ValueMember = "ID Ruta";
 
-            DataTable aeronave = new DataTable();
-            aeronave = aer.ConsultarMatriculas();
-            cbbMatriculaAeronave.DataSource = aeronave;
-            cbbMatriculaAeronave.DisplayMember = "idAeronave";
+                    DataTable aeronave = new DataTable();
+                    aeronave = aer.ConsultarMatriculas();
+                    cbbMatriculaAeronave.DataSource = aeronave;
+                    cbbMatriculaAeronave.DisplayMember = "idAeronave";
+
+                    cbbMatriculaAeronave.Text = datosPrimarios.Rows[0][3].ToString();
+
+                    txtVlrPclase.Text = datosPrimarios.Rows[0][8].ToString();
+                    txtVlrCturista.Text = datosPrimarios.Rows[0][9].ToString();
+
+                    dtpLlegada.Text = datosPrimarios.Rows[0][7].ToString();
+                    dtpSalida.Text = datosPrimarios.Rows[0][6].ToString();
+                    dtpHoraLlegada.Text = datosPrimarios.Rows[0][7].ToString();
+                    dtpHoraSalida.Text = datosPrimarios.Rows[0][6].ToString();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error conectando con la base de datos");
+                }
+                
+            }
             
-            cbbMatriculaAeronave.Text = datosPrimarios.Rows[0][3].ToString();
-
-            txtVlrPclase.Text = datosPrimarios.Rows[0][8].ToString();
-            txtVlrCturista.Text = datosPrimarios.Rows[0][9].ToString();
-
-            dtpLlegada.Text = datosPrimarios.Rows[0][7].ToString();
-            dtpSalida.Text = datosPrimarios.Rows[0][6].ToString();
-            dtpHoraLlegada.Text = datosPrimarios.Rows[0][7].ToString();
-            dtpHoraSalida.Text = datosPrimarios.Rows[0][6].ToString();
         }
 
         private void cbbNombreRuta_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,50 +108,70 @@ namespace CapaPresentesacion
 
         private void btnCrearVuelo_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text) || string.IsNullOrWhiteSpace(txtVlrCturista.Text) || string.IsNullOrWhiteSpace(txtVlrPclase.Text) ||
+                string.IsNullOrWhiteSpace(cbbMatriculaAeronave.Text) || string.IsNullOrWhiteSpace(cbbNombreRuta.Text))
             {
-                int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
-                int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
-
-                vuelo.ActualizarVuelos(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
-                                dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
-                MessageBox.Show("Vuelo actualizado correctamente");
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error actualizando los datos:\n"+ex);
+                try
+                {
+                    int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
+                    int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
+
+                    vuelo.ActualizarVuelos(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
+                                    dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
+                    MessageBox.Show("Vuelo actualizado correctamente");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha ocurrido un error actualizando los datos:\n" + ex);
+                }
             }
         }
 
         private void btnVerTripulante_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtDocTripulante.Text))
             {
-                DataTable infoTrip = new DataTable();
-                infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
-                lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
-                lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
+                MessageBox.Show("Por favor ingrese un documento de tripulante");
             }
-            catch (Exception)
+            else
             {
-
+                try
+                {
+                    DataTable infoTrip = new DataTable();
+                    infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
+                    lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
+                    lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("No hemos encotrado este documento en nuestra base de datos de tripulantes");
+                }
             }
         }
 
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtDocTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
             {
-                trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
-                MessageBox.Show("Se ha agregado el tripulante correctamente");
-                dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error, intente de nuevo mas tarde");
+                try
+                {
+                    trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                    MessageBox.Show("Se ha agregado el tripulante correctamente");
+                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error, intente de nuevo mas tarde");
+                }
             }
-            
-
             
         }
     }

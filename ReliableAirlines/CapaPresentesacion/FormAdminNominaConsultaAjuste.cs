@@ -35,16 +35,23 @@ namespace CapaPresentesacion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            if(empleado.verificarDocumento(txtDocumento.Text))
+            if(string.IsNullOrWhiteSpace(txtDocumento.Text))
             {
-                btnVer.Hide();
-                txtDocumento.Hide();
-                label16.Hide();
-                reemplazarFormulario(new FormAdminNominaRegistroContrato(txtDocumento.Text));
+                MessageBox.Show("Por favor digite el documento a buscar");
             }
             else
             {
-                MessageBox.Show("Este documento no se encuentra registrado en la base de datos como un usuario");
+                if (empleado.verificarDocumento(txtDocumento.Text))
+                {
+                    btnVer.Hide();
+                    txtDocumento.Hide();
+                    label16.Hide();
+                    reemplazarFormulario(new FormAdminNominaRegistroContrato(txtDocumento.Text));
+                }
+                else
+                {
+                    MessageBox.Show("Este documento no se encuentra registrado en la base de datos como un usuario");
+                }
             }
 
         }

@@ -75,56 +75,80 @@ namespace CapaPresentesacion
 
         private void btnCrearVuelo_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtNumVuelo.Text) || string.IsNullOrWhiteSpace(txtVlrCturista.Text) || string.IsNullOrWhiteSpace(txtVlrPclase.Text) ||
+                string.IsNullOrWhiteSpace(cbbMatriculaAeronave.Text) || string.IsNullOrWhiteSpace(cbbNombreRuta.Text))
             {
-                int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
-                int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
-
-                vuelo.CrearVuelo(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
-                                dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
-                MessageBox.Show("Vuelo creado correctamente");
-
-                txtDocTripulante.Enabled = true;
-                btnVerTripulante.Enabled = true;
-                cbbAgregarComo.Enabled = true;
-                btnAgregarTripu.Enabled = true;
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("El numero de vuelo solo puede contener\n digitos numericos enteros");
+                try
+                {
+                    int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
+                    int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
+
+                    vuelo.CrearVuelo(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
+                                    dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
+                    MessageBox.Show("Vuelo creado correctamente");
+
+                    txtDocTripulante.Enabled = true;
+                    btnVerTripulante.Enabled = true;
+                    cbbAgregarComo.Enabled = true;
+                    btnAgregarTripu.Enabled = true;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("El numero de vuelo solo puede contener\n digitos numericos enteros");
+                }
             }
+            
             
         }
 
         private void btnVerTripulante_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtDocTripulante.Text))
             {
-                DataTable infoTrip = new DataTable();
-                infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
-                lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
-                lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
+                MessageBox.Show("Por favor ingrese un documento de tripulante");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Hubo un error cargando los datos");
+                try
+                {
+                    DataTable infoTrip = new DataTable();
+                    infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
+                    lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
+                    lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Hubo un error cargando los datos");
+                }
             }
-            
+ 
         }
 
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtDocTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
             {
-                trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
-                MessageBox.Show("Se ha agregado el tripulante correctamente");
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                try
+                {
+                    trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                    MessageBox.Show("Se ha agregado el tripulante correctamente");
 
-                dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error, intente de nuevo mas tarde");
+                }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Ha ocurrido un error, intente de nuevo mas tarde");
-            }
+            
 
         }
 

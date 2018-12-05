@@ -40,55 +40,68 @@ namespace CapaPresentesacion
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            CnAdministracionUsuarios registrar = new CnAdministracionUsuarios();
-            if(txtVerificaContraseña.Text==txtContraseña.Text)
+            if(string.IsNullOrWhiteSpace(txtApellidos.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text) || string.IsNullOrWhiteSpace(txtDireccion.Text) ||
+                string.IsNullOrWhiteSpace(txtDocumento.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtEPS.Text) ||
+                string.IsNullOrWhiteSpace(txtInfoAdicional.Text) || string.IsNullOrWhiteSpace(txtNombres.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+                string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtVerificaContraseña.Text) || string.IsNullOrWhiteSpace(dtpNacimiento.Text) ||
+                string.IsNullOrWhiteSpace(cbbCiudades.Text) || string.IsNullOrWhiteSpace(cbbEstado.Text) || string.IsNullOrWhiteSpace(cbbTipoDoc.Text) ||
+                string.IsNullOrWhiteSpace(cbbTipoUsuario.Text))
             {
-                registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text,
-                cbbTipoUsuario.Text, txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
-                txtTelefono.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfoAdicional.Text,
-                cbbEstado.Text);
-
-                MessageBox.Show("Se ha creado el nuevo usuario correctamente\nPuede proceder a establecer los terminos del contrato");
-
-                label1.Hide();
-                label11.Hide();
-                label12.Hide();
-                label13.Hide();
-                label14.Hide();
-                label15.Hide();
-                label16.Hide();
-                label17.Hide();
-                label18.Hide();
-                label19.Hide();
-                label2.Hide();
-                label20.Hide();
-                label21.Hide();
-                label22.Hide();
-                label3.Hide();
-                label4.Hide();
-                txtApellidos.Hide();
-                txtContraseña.Hide();
-                txtDireccion.Hide();
-                txtDocumento.Hide();
-                txtEmail.Hide();
-                txtEPS.Hide();
-                txtInfoAdicional.Hide();
-                txtNombres.Hide();
-                txtTelefono.Hide();
-                txtUsuario.Hide();
-                txtVerificaContraseña.Hide();
-                dtpNacimiento.Hide();
-                btnRegistrar.Hide();
-                cbbCiudades.Hide();
-                cbbEstado.Hide();
-                cbbTipoDoc.Hide();
-                cbbTipoUsuario.Hide();
-                ReemplazarForm(new FormAdminNominaRegistroContrato(txtDocumento.Text));
+                MessageBox.Show("Por favor llene todos los campos");
             }
             else
             {
-                MessageBox.Show("Las contraseñas no coinciden.");
+                CnAdministracionUsuarios registrar = new CnAdministracionUsuarios();
+                if (txtVerificaContraseña.Text == txtContraseña.Text)
+                {
+                    registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text,
+                    cbbTipoUsuario.Text, txtNombres.Text, txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text,
+                    txtTelefono.Text, txtEPS.Text, txtDireccion.Text, Convert.ToInt32(cbbCiudades.SelectedValue), txtInfoAdicional.Text,
+                    cbbEstado.Text);
+
+                    MessageBox.Show("Se ha creado el nuevo usuario correctamente\nPuede proceder a establecer los terminos del contrato");
+
+                    label1.Hide();
+                    label11.Hide();
+                    label12.Hide();
+                    label13.Hide();
+                    label14.Hide();
+                    label15.Hide();
+                    label16.Hide();
+                    label17.Hide();
+                    label18.Hide();
+                    label19.Hide();
+                    label2.Hide();
+                    label20.Hide();
+                    label21.Hide();
+                    label22.Hide();
+                    label3.Hide();
+                    label4.Hide();
+                    txtApellidos.Hide();
+                    txtContraseña.Hide();
+                    txtDireccion.Hide();
+                    txtDocumento.Hide();
+                    txtEmail.Hide();
+                    txtEPS.Hide();
+                    txtInfoAdicional.Hide();
+                    txtNombres.Hide();
+                    txtTelefono.Hide();
+                    txtUsuario.Hide();
+                    txtVerificaContraseña.Hide();
+                    dtpNacimiento.Hide();
+                    btnRegistrar.Hide();
+                    cbbCiudades.Hide();
+                    cbbEstado.Hide();
+                    cbbTipoDoc.Hide();
+                    cbbTipoUsuario.Hide();
+                    ReemplazarForm(new FormAdminNominaRegistroContrato(txtDocumento.Text));
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden.");
+                }
             }
+            
             
         }
 

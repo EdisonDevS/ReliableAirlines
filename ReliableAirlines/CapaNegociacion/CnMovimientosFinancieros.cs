@@ -99,5 +99,19 @@ namespace CapaNegociacion
         {
             mov.validarPago(id, dias, horas, total);
         }
+
+        public int consultaSumaGastosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaGastosMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
+
+        public int consultaSumaIngresosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            suma = mov.consultaSumaIngresosMes(mes, Año);
+            return Int32.Parse(suma.Rows[0][0].ToString());
+        }
     }
 }

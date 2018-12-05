@@ -23,34 +23,51 @@ namespace CapaPresentesacion
 
         private void btnCrearContacto_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtNIT.Text) || string.IsNullOrWhiteSpace(txtDireccion.Text) ||
+                string.IsNullOrWhiteSpace(txtCorreo.Text))
             {
-                contacto.crearContacto(txtNIT.Text, txtNombre.Text, txtDireccion.Text, txtCorreo.Text);
-                txtNumTelefono.Enabled = true;
-                txtContesta.Enabled = true;
-                btnTelefono.Enabled = true;
-                txtNIT.Enabled = false;
-                txtNombre.Enabled = false;
-                txtDireccion.Enabled = false;
-                txtCorreo.Enabled = false;
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error al intentar crear el contacto");
+                try
+                {
+                    contacto.crearContacto(txtNIT.Text, txtNombre.Text, txtDireccion.Text, txtCorreo.Text);
+                    txtNumTelefono.Enabled = true;
+                    txtContesta.Enabled = true;
+                    btnTelefono.Enabled = true;
+                    txtNIT.Enabled = false;
+                    txtNombre.Enabled = false;
+                    txtDireccion.Enabled = false;
+                    txtCorreo.Enabled = false;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error al intentar crear el contacto");
+                }
             }
+            
         }
 
         private void btnTelefono_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtNumTelefono.Text) || string.IsNullOrWhiteSpace(txtContesta.Text))
             {
-                contacto.añadirTelefono(txtNIT.Text, txtNumTelefono.Text, txtContesta.Text);
-                dgvNumeros.DataSource = contacto.consultaNumeros(txtNIT.Text);
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error al intentar añadir el numero");
+                try
+                {
+                    contacto.añadirTelefono(txtNIT.Text, txtNumTelefono.Text, txtContesta.Text);
+                    dgvNumeros.DataSource = contacto.consultaNumeros(txtNIT.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error al intentar añadir el numero");
+                }
             }
+            
         }
     }
 }

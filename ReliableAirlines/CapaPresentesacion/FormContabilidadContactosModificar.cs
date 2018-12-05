@@ -58,15 +58,23 @@ namespace CapaPresentesacion
 
         private void btnTelefono_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtNumTelefono.Text) || string.IsNullOrWhiteSpace(txtContesta.Text))
             {
-                contacto.añadirTelefono(txtNIT.Text, txtNumTelefono.Text, txtContesta.Text);
-                dgvNumeros.DataSource = contacto.consultaNumeros(txtNIT.Text);
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error al intentar añadir el numero");
+                try
+                {
+                    contacto.añadirTelefono(txtNIT.Text, txtNumTelefono.Text, txtContesta.Text);
+                    dgvNumeros.DataSource = contacto.consultaNumeros(txtNIT.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error al intentar añadir el numero");
+                }
             }
+            
         }
 
         private void btnVerSeleccionado_Click(object sender, EventArgs e)
@@ -91,15 +99,24 @@ namespace CapaPresentesacion
 
         private void btnModificarContacto_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtNIT.Text) || string.IsNullOrWhiteSpace(txtDireccion.Text) ||
+                string.IsNullOrWhiteSpace(txtCorreo.Text))
             {
-                contacto.modificarContacto(txtNIT.Text, txtNombre.Text, txtDireccion.Text, txtCorreo.Text);
-                MessageBox.Show("Se ha modificado el contacto correctamente");
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error al intentar modificar el contacto" + ex);
+                try
+                {
+                    contacto.modificarContacto(txtNIT.Text, txtNombre.Text, txtDireccion.Text, txtCorreo.Text);
+                    MessageBox.Show("Se ha modificado el contacto correctamente");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha ocurrido un error al intentar modificar el contacto" + ex);
+                }
             }
+            
         }
     }
 }

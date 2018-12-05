@@ -174,21 +174,29 @@ namespace CapaPresentesacion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            DataTable tabla = new DataTable();
-            tabla = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
-            tabla.Columns[0].ColumnName = "Número de vuelo";
-            tabla.Columns[1].ColumnName = "Origen";
-            tabla.Columns[2].ColumnName = "Destino";
-            tabla.Columns[3].ColumnName = "Aeronave";
-            tabla.Columns[4].ColumnName = "Puestos primera clase";
-            tabla.Columns[5].ColumnName = "Puestos clase turista";
-            tabla.Columns[6].ColumnName = "Salida";
-            tabla.Columns[7].ColumnName = "Llegada";
-            tabla.Columns[8].ColumnName = "Valor primera clase";
-            tabla.Columns[9].ColumnName = "Valor clase turista";
-            dgvVuelos.DataSource = tabla;
+            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text))
+            {
+                MessageBox.Show("Por favor digite el numero de vuelo");
+            }
+            else
+            {
+                DataTable tabla = new DataTable();
+                tabla = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
+                tabla.Columns[0].ColumnName = "Número de vuelo";
+                tabla.Columns[1].ColumnName = "Origen";
+                tabla.Columns[2].ColumnName = "Destino";
+                tabla.Columns[3].ColumnName = "Aeronave";
+                tabla.Columns[4].ColumnName = "Puestos primera clase";
+                tabla.Columns[5].ColumnName = "Puestos clase turista";
+                tabla.Columns[6].ColumnName = "Salida";
+                tabla.Columns[7].ColumnName = "Llegada";
+                tabla.Columns[8].ColumnName = "Valor primera clase";
+                tabla.Columns[9].ColumnName = "Valor clase turista";
+                dgvVuelos.DataSource = tabla;
 
-            corregirDvg();
+                corregirDvg();
+            }
+            
         }
 
         private void cbbAerOrigen_SelectedIndexChanged(object sender, EventArgs e)

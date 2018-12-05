@@ -28,23 +28,30 @@ namespace CapaPresentesacion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            try
+            if(string.IsNullOrWhiteSpace(txtReserva.Text))
             {
-                DataTable datos = new DataTable();
-                datos = venta.obtenerInfoVenta(txtReserva.Text);
-                lblNombres.Text = lblNombres.Text + datos.Rows[0][0].ToString();
-                lblApellidos.Text = lblApellidos.Text + datos.Rows[0][1].ToString();
-                lblIdentificación.Text = lblIdentificación.Text + datos.Rows[0][2].ToString();
-                lblOrigen.Text = lblOrigen.Text + datos.Rows[0][5].ToString();
-                lblDestino.Text = lblDestino.Text + datos.Rows[0][6].ToString();
-                dtpSalida.Text = datos.Rows[0][3].ToString();
-                dtpLlegada.Text = datos.Rows[0][4].ToString();
-                dtpHoraSalida.Text = datos.Rows[0][3].ToString();
-                dtpHoraLlegada.Text = datos.Rows[0][4].ToString();
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("No se ha encontrado ningún tiquete con este código");
+                try
+                {
+                    DataTable datos = new DataTable();
+                    datos = venta.obtenerInfoVenta(txtReserva.Text);
+                    lblNombres.Text = lblNombres.Text + datos.Rows[0][0].ToString();
+                    lblApellidos.Text = lblApellidos.Text + datos.Rows[0][1].ToString();
+                    lblIdentificación.Text = lblIdentificación.Text + datos.Rows[0][2].ToString();
+                    lblOrigen.Text = lblOrigen.Text + datos.Rows[0][5].ToString();
+                    lblDestino.Text = lblDestino.Text + datos.Rows[0][6].ToString();
+                    dtpSalida.Text = datos.Rows[0][3].ToString();
+                    dtpLlegada.Text = datos.Rows[0][4].ToString();
+                    dtpHoraSalida.Text = datos.Rows[0][3].ToString();
+                    dtpHoraLlegada.Text = datos.Rows[0][4].ToString();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("No se ha encontrado ningún tiquete con este código");
+                }
             }
 
         }

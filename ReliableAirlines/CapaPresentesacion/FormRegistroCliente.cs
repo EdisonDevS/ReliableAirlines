@@ -20,12 +20,21 @@ namespace CapaPresentesacion
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            CnAdministracionUsuarios registrar = new CnAdministracionUsuarios();
+            if(string.IsNullOrWhiteSpace(txtApellidos.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text) || string.IsNullOrWhiteSpace(txtDocumento.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtNombres.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+                string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(cbbTipoDoc.Text) || string.IsNullOrWhiteSpace(txtVerificaContraseña.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                CnAdministracionUsuarios registrar = new CnAdministracionUsuarios();
 
-            registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text, "5", txtNombres.Text,
-                txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text, txtTelefono.Text);
+                registrar.registro(txtDocumento.Text, cbbTipoDoc.Text, txtUsuario.Text, txtContraseña.Text, "5", txtNombres.Text,
+                    txtApellidos.Text, dtpNacimiento.Text, txtEmail.Text, txtTelefono.Text);
 
-            MessageBox.Show("Se ha añadido el nuevo usuario correctamente");
+                MessageBox.Show("Se ha añadido el nuevo usuario correctamente");
+            }
         }
 
         private void label20_Click(object sender, EventArgs e)

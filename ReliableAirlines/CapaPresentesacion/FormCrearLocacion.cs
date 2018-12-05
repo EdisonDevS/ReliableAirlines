@@ -24,33 +24,62 @@ namespace CapaPresentesacion
 
         private void btnCrearPais_Click(object sender, EventArgs e)
         {
-            consultas.CrearPais(txtPais.Text);
-            MessageBox.Show("Pais creado exitosamente");
-            txtPais.Clear();
+            if(string.IsNullOrWhiteSpace(txtPais.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                consultas.CrearPais(txtPais.Text);
+                MessageBox.Show("Pais creado exitosamente");
+                txtPais.Clear();
+            }
         }
 
         private void btnCrearEstado_Click(object sender, EventArgs e)
         {
-            int pais = Convert.ToInt32(cbbEstPais.SelectedValue);
-            consultas.CrearEstado(pais, txtEstado.Text);
-            MessageBox.Show("Estado creado exitosamente");
-            txtEstado.Clear();
+            if (string.IsNullOrWhiteSpace(txtEstado.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                int pais = Convert.ToInt32(cbbEstPais.SelectedValue);
+                consultas.CrearEstado(pais, txtEstado.Text);
+                MessageBox.Show("Estado creado exitosamente");
+                txtEstado.Clear();
+            }
+            
         }
 
         private void btnCrearCiudad_Click(object sender, EventArgs e)
         {
-            int estado = Convert.ToInt32(cbbCiuEstado.SelectedValue);
-            consultas.CrearCiudad(estado, txtCiudad.Text);
-            MessageBox.Show("Ciudad creada exitosamente");
-            txtCiudad.Clear();
+            if (string.IsNullOrWhiteSpace(txtCiudad.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                int estado = Convert.ToInt32(cbbCiuEstado.SelectedValue);
+                consultas.CrearCiudad(estado, txtCiudad.Text);
+                MessageBox.Show("Ciudad creada exitosamente");
+                txtCiudad.Clear();
+            }
         }
 
         private void btnCrearAeropuerto_Click(object sender, EventArgs e)
         {
-            int ciudad = Convert.ToInt32(cbbAerCiudad.SelectedValue);
-            consultas.CrearAeropuerto(ciudad, txtAeropuerto.Text);
-            MessageBox.Show("Aeropuerto creado exitosamente");
-            txtAeropuerto.Clear();
+            if (string.IsNullOrWhiteSpace(txtAeropuerto.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                int ciudad = Convert.ToInt32(cbbAerCiudad.SelectedValue);
+                consultas.CrearAeropuerto(ciudad, txtAeropuerto.Text);
+                MessageBox.Show("Aeropuerto creado exitosamente");
+                txtAeropuerto.Clear();
+            }
         }
 
         private void rbPais_CheckedChanged(object sender, EventArgs e)

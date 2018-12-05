@@ -23,21 +23,29 @@ namespace CapaPresentesacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            string calificacion = "";
-
-            if (rbNormal.Checked)
-                calificacion = "Normal";
+            if(string.IsNullOrWhiteSpace(txtComentarios.Text) || string.IsNullOrWhiteSpace(txtVuelo.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
             else
-                calificacion = "Anormal";
+            {
+                string calificacion = "";
 
-            try
-            {
-                registro.generarRegistroTripulacion(Int32.Parse(txtVuelo.Text), calificacion, txtComentarios.Text, sesion.documento);
+                if (rbNormal.Checked)
+                    calificacion = "Normal";
+                else
+                    calificacion = "Anormal";
+
+                try
+                {
+                    registro.generarRegistroTripulacion(Int32.Parse(txtVuelo.Text), calificacion, txtComentarios.Text, sesion.documento);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error durante el guardado del registro");
+                }
             }
-            catch(Exception)
-            {
-                MessageBox.Show("Ha ocurrido un error durante el guardado del registro");
-            }
+            
         }
     }
 }

@@ -193,17 +193,28 @@ namespace CapaPresentesacion
 
         private void btnCrearRuta_Click(object sender, EventArgs e)
         {
-            int origen = Convert.ToInt32(cbbAerOrigen.SelectedValue);
-            int destino = Convert.ToInt32(cbbAerDestino.SelectedValue);
-            try
+            if(string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(cbbAerDestino.Text) || string.IsNullOrWhiteSpace(cbbAerOrigen.Text) ||
+                string.IsNullOrWhiteSpace(cbbCiudadDestino.Text) || string.IsNullOrWhiteSpace(cbbCiudadOrigen.Text) || string.IsNullOrWhiteSpace(cbbEstado.Text) ||
+                string.IsNullOrWhiteSpace(cbbEstadoDestino.Text) || string.IsNullOrWhiteSpace(cbbEstadoOrigen.Text) || string.IsNullOrWhiteSpace(cbbPaisDestino.Text) ||
+                string.IsNullOrWhiteSpace(cbbPaisOrigen.Text))
             {
-                rutas.CrearRuta(txtNombre.Text, origen, destino, cbbEstado.Text);
-                MessageBox.Show("Se ha creado la ruta correctamente");
+                MessageBox.Show("Por favor llene todos los campos");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error creando la ruta");
+                int origen = Convert.ToInt32(cbbAerOrigen.SelectedValue);
+                int destino = Convert.ToInt32(cbbAerDestino.SelectedValue);
+                try
+                {
+                    rutas.CrearRuta(txtNombre.Text, origen, destino, cbbEstado.Text);
+                    MessageBox.Show("Se ha creado la ruta correctamente");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error creando la ruta");
+                }
             }
+            
             
         }
 

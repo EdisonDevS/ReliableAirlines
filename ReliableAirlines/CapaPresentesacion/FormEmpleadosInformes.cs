@@ -23,7 +23,15 @@ namespace CapaPresentesacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            registro.generarRegistroEmpleado(txtComentarios.Text, sesion.documento);
+            if(string.IsNullOrWhiteSpace(txtComentarios.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+            }
+            else
+            {
+                registro.generarRegistroEmpleado(txtComentarios.Text, sesion.documento);
+            }
+            
         }
     }
 }

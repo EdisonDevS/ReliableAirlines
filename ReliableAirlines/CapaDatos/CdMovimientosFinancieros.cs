@@ -137,5 +137,36 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
+        public DataTable consultaSumaGastosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_GRAL_MES_GASTOS";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
+
+        public DataTable consultaSumaIngresosMes(int mes, string Año)
+        {
+            DataTable suma = new DataTable();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "CONSULTA_SUM_GRAL_MES_INGRESOS";
+            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@año", Año);
+            filas = comando.ExecuteReader();
+            suma.Load(filas);
+            filas.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return suma;
+        }
     }
 }
