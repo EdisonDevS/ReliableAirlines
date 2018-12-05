@@ -13,8 +13,8 @@ namespace CapaDatos
     class CdConexion
     {
 
-        SqlConnection Conexion = new SqlConnection("Data Source = DESKTOP-LJH40M2\\SQLEXPRESS;" +
-            " Initial catalog = ReliableAirlines; Integrated Security = True");
+        SqlConnection Conexion = new SqlConnection("Data Source = den1.mssql8.gear.host;" +
+            " Initial catalog = reliableairlines; user id = reliableairlines; password = Oa7Ik4~~9FDv");
 
         public SqlConnection AbrirConexion()
         {
