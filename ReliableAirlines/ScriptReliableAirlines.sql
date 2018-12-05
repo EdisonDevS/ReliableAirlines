@@ -489,7 +489,6 @@ INSERT INTO USUARIO VALUES(@documento,@tipoDocumento,@usuario,@contraseña,@permi
 INSERT INTO CLIENTE VALUES (@documento)
 
 GO
-SELECT * FROM VUELOS
 
 CREATE PROC ACTUALIZAR_DATOS_CLIENTE
 	@documento VARCHAR(11),
@@ -742,9 +741,9 @@ CREATE PROC CONSULTA_VUELO_FECHA
 	@aerSalida INT,
 	@aerLlegada INT
 AS
-SELECT numVuelo, pClase, tClase, salida, llegada, vlrPrimeraClase, vlrClaseTurista FROM VUELOS INNER JOIN RUTAS ON 
-VUELOS.idRuta=RUTAS.idRuta WHERE RUTAS.aerOrigen=@aerSalida AND RUTAS.aerDestino=@aerLlegada AND MONTH(@fecha)=MONTH(VUELOS.salida
-) AND DAY(@fecha)=DAY(VUELOS.salida) AND YEAR(@fecha)=YEAR(VUELOS.salida)
+SELECT numVuelo, AERONAVES.capacidadPrimeraClase-VUELOS.pClase, AERONAVES.capacidadClaseTurista-VUELOS.tClase, salida, llegada, vlrPrimeraClase, vlrClaseTurista FROM 
+(VUELOS INNER JOIN RUTAS ON VUELOS.idRuta=RUTAS.idRuta) INNER JOIN AERONAVES ON AERONAVES.idAeronave=VUELOS.idAeronave 
+WHERE RUTAS.aerOrigen=@aerSalida AND RUTAS.aerDestino=@aerLlegada AND MONTH(@fecha)=MONTH(VUELOS.salida) AND DAY(@fecha)=DAY(VUELOS.salida) AND YEAR(@fecha)=YEAR(VUELOS.salida)
 GO
 
 CREATE PROC CONSULTA_USUARIO
@@ -761,6 +760,10 @@ CREATE PROC NUEVO_TIQUETE
 	@clase INT
 AS
 INSERT INTO TIQUETE VALUES(@numVuelo, @doc, GETDATE(), @estado, @clase)
+
+UPDATE VUELOS SET VUELOS.pClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=1 AND TIQUETE.estadoDeReserva=2 AND VUELOS.numVuelo=@numVuelo)
+
+UPDATE VUELOS SET VUELOS.tClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=2 AND TIQUETE.estadoDeReserva=2 AND VUELOS.numVuelo=@numVuelo)
 GO
 
 
@@ -816,12 +819,23 @@ CREATE PROC CANCELAR_TIQUETE
 	@vuelo BIGINT
 AS
 UPDATE TIQUETE SET estadoDeReserva=4 WHERE TIQUETE.docCliente=@doc AND TIQUETE.numVuelo=@vuelo
+
+UPDATE VUELOS SET VUELOS.pClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=1 AND TIQUETE.estadoDeReserva=2 AND VUELOS.numVuelo=@vuelo)
+
+UPDATE VUELOS SET VUELOS.tClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=2 AND TIQUETE.estadoDeReserva=2 AND VUELOS.numVuelo=@vuelo)
 GO
 
 CREATE PROC VALIDAR_TIQUETE
 	@id BIGINT
 AS
 UPDATE TIQUETE SET estadoDeReserva=2 WHERE TIQUETE.idTiquete=@id
+
+declare @numVuelo INT =(SELECT TIQUETE.numVuelo FROM TIQUETE WHERE TIQUETE.idTiquete=@id)
+
+UPDATE VUELOS SET VUELOS.pClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=1 AND TIQUETE.estadoDeReserva=2 AND TIQUETE.numVuelo=@numVuelo) 
+
+UPDATE VUELOS SET VUELOS.tClase=(SELECT COUNT(*) FROM TIQUETE WHERE TIQUETE.clase=2 AND TIQUETE.estadoDeReserva=2 AND TIQUETE.numVuelo=@numVuelo)  
+
 GO
 
 CREATE PROC INFO_VENTA
