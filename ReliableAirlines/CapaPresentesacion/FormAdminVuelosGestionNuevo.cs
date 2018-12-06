@@ -122,7 +122,7 @@ namespace CapaPresentesacion
                 try
                 {
                     DataTable infoTrip = new DataTable();
-                    infoTrip = trip.CargarTripulante(cbbTripulante.Text);
+                    infoTrip = trip.CargarTripulante(cbbTripulante.SelectedValue.ToString());
                     lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
                     lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
                 }
@@ -144,7 +144,7 @@ namespace CapaPresentesacion
             {
                 try
                 {
-                    trip.AgregarTripulanteAvuelo(cbbTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                    trip.AgregarTripulanteAvuelo(cbbTripulante.SelectedValue.ToString(), Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
                     MessageBox.Show("Se ha agregado el tripulante correctamente");
 
                     dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
