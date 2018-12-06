@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtNumVuelo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCiuEmp = new System.Windows.Forms.Label();
             this.lblTipoAer = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnAgregarTripu = new System.Windows.Forms.Button();
             this.btnVerTripulante = new System.Windows.Forms.Button();
-            this.txtDocTripulante = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtVlrCturista = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -86,17 +84,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCargarDatos = new System.Windows.Forms.Button();
             this.dgvTripulacion = new System.Windows.Forms.DataGridView();
+            this.cbbNumVuelo = new System.Windows.Forms.ComboBox();
+            this.cbbTripulante = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTripulacion)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtNumVuelo
-            // 
-            this.txtNumVuelo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumVuelo.Location = new System.Drawing.Point(205, 7);
-            this.txtNumVuelo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumVuelo.Name = "txtNumVuelo";
-            this.txtNumVuelo.Size = new System.Drawing.Size(151, 37);
-            this.txtNumVuelo.TabIndex = 129;
             // 
             // label5
             // 
@@ -502,7 +493,7 @@
             this.btnVerTripulante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerTripulante.ForeColor = System.Drawing.Color.White;
-            this.btnVerTripulante.Location = new System.Drawing.Point(837, 558);
+            this.btnVerTripulante.Location = new System.Drawing.Point(834, 619);
             this.btnVerTripulante.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerTripulante.Name = "btnVerTripulante";
             this.btnVerTripulante.Size = new System.Drawing.Size(120, 41);
@@ -510,15 +501,6 @@
             this.btnVerTripulante.Text = "Ver";
             this.btnVerTripulante.UseVisualStyleBackColor = false;
             this.btnVerTripulante.Click += new System.EventHandler(this.btnVerTripulante_Click);
-            // 
-            // txtDocTripulante
-            // 
-            this.txtDocTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocTripulante.Location = new System.Drawing.Point(524, 559);
-            this.txtDocTripulante.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDocTripulante.Name = "txtDocTripulante";
-            this.txtDocTripulante.Size = new System.Drawing.Size(291, 37);
-            this.txtDocTripulante.TabIndex = 85;
             // 
             // label11
             // 
@@ -750,16 +732,41 @@
             this.dgvTripulacion.Size = new System.Drawing.Size(337, 235);
             this.dgvTripulacion.TabIndex = 131;
             // 
+            // cbbNumVuelo
+            // 
+            this.cbbNumVuelo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbNumVuelo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbNumVuelo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbNumVuelo.FormattingEnabled = true;
+            this.cbbNumVuelo.Location = new System.Drawing.Point(186, 7);
+            this.cbbNumVuelo.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNumVuelo.Name = "cbbNumVuelo";
+            this.cbbNumVuelo.Size = new System.Drawing.Size(181, 38);
+            this.cbbNumVuelo.TabIndex = 132;
+            // 
+            // cbbTripulante
+            // 
+            this.cbbTripulante.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbTripulante.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbTripulante.FormattingEnabled = true;
+            this.cbbTripulante.Location = new System.Drawing.Point(498, 562);
+            this.cbbTripulante.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbTripulante.Name = "cbbTripulante";
+            this.cbbTripulante.Size = new System.Drawing.Size(456, 38);
+            this.cbbTripulante.TabIndex = 133;
+            // 
             // FormAdminVuelosGestionExistente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.Controls.Add(this.cbbTripulante);
+            this.Controls.Add(this.cbbNumVuelo);
             this.Controls.Add(this.dgvTripulacion);
             this.Controls.Add(this.lblAerOri);
             this.Controls.Add(this.btnCargarDatos);
-            this.Controls.Add(this.txtNumVuelo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblCiuEmp);
             this.Controls.Add(this.lblTipoAer);
@@ -794,7 +801,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAgregarTripu);
             this.Controls.Add(this.btnVerTripulante);
-            this.Controls.Add(this.txtDocTripulante);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtVlrCturista);
             this.Controls.Add(this.label10);
@@ -815,6 +821,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdminVuelosGestionExistente";
             this.Text = "vueloExistente";
+            this.Load += new System.EventHandler(this.FormAdminVuelosGestionExistente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTripulacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -822,8 +829,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtNumVuelo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCiuEmp;
         private System.Windows.Forms.Label lblTipoAer;
@@ -859,7 +864,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnAgregarTripu;
         private System.Windows.Forms.Button btnVerTripulante;
-        private System.Windows.Forms.TextBox txtDocTripulante;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtVlrCturista;
         private System.Windows.Forms.Label label10;
@@ -878,5 +882,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCargarDatos;
         private System.Windows.Forms.DataGridView dgvTripulacion;
+        private System.Windows.Forms.ComboBox cbbNumVuelo;
+        private System.Windows.Forms.ComboBox cbbTripulante;
     }
 }

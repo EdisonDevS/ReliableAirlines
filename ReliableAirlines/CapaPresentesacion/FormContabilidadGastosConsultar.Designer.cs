@@ -36,11 +36,12 @@
             // 
             // panelConsultarGasto
             // 
+            this.panelConsultarGasto.AutoScroll = true;
             this.panelConsultarGasto.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelConsultarGasto.Location = new System.Drawing.Point(0, 44);
+            this.panelConsultarGasto.Location = new System.Drawing.Point(0, 41);
             this.panelConsultarGasto.Margin = new System.Windows.Forms.Padding(4);
             this.panelConsultarGasto.Name = "panelConsultarGasto";
-            this.panelConsultarGasto.Size = new System.Drawing.Size(1312, 806);
+            this.panelConsultarGasto.Size = new System.Drawing.Size(1312, 809);
             this.panelConsultarGasto.TabIndex = 8;
             // 
             // btnOtros

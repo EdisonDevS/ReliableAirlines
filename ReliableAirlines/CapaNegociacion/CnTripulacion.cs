@@ -32,5 +32,12 @@ namespace CapaNegociacion
             datos.Columns[1].ColumnName = "Rol";
             return datos;
         }
+
+        public DataTable tripulantes()
+        {
+            DataTable datos = new DataTable();
+            datos = trip.tripulantes();
+            return datos;
+        }
     }
 }

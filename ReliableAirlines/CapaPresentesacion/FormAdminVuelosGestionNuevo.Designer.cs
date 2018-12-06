@@ -45,7 +45,6 @@
             this.txtVlrPclase = new System.Windows.Forms.TextBox();
             this.txtVlrCturista = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtDocTripulante = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnVerTripulante = new System.Windows.Forms.Button();
             this.btnAgregarTripu = new System.Windows.Forms.Button();
@@ -88,6 +87,7 @@
             this.txtNumVuelo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTripulacion = new System.Windows.Forms.DataGridView();
+            this.cbbTripulante = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTripulacion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -261,17 +261,6 @@
             this.label10.Text = "Valor clase turista:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // txtDocTripulante
-            // 
-            this.txtDocTripulante.Enabled = false;
-            this.txtDocTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocTripulante.Location = new System.Drawing.Point(524, 559);
-            this.txtDocTripulante.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDocTripulante.Name = "txtDocTripulante";
-            this.txtDocTripulante.Size = new System.Drawing.Size(291, 37);
-            this.txtDocTripulante.TabIndex = 23;
-            this.txtDocTripulante.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -293,7 +282,7 @@
             this.btnVerTripulante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerTripulante.ForeColor = System.Drawing.Color.White;
-            this.btnVerTripulante.Location = new System.Drawing.Point(837, 558);
+            this.btnVerTripulante.Location = new System.Drawing.Point(834, 606);
             this.btnVerTripulante.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerTripulante.Name = "btnVerTripulante";
             this.btnVerTripulante.Size = new System.Drawing.Size(120, 41);
@@ -793,12 +782,25 @@
             this.dgvTripulacion.Size = new System.Drawing.Size(337, 235);
             this.dgvTripulacion.TabIndex = 82;
             // 
+            // cbbTripulante
+            // 
+            this.cbbTripulante.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbTripulante.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbTripulante.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbTripulante.FormattingEnabled = true;
+            this.cbbTripulante.Location = new System.Drawing.Point(498, 558);
+            this.cbbTripulante.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbTripulante.Name = "cbbTripulante";
+            this.cbbTripulante.Size = new System.Drawing.Size(456, 38);
+            this.cbbTripulante.TabIndex = 134;
+            // 
             // FormAdminVuelosGestionNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.Controls.Add(this.cbbTripulante);
             this.Controls.Add(this.dgvTripulacion);
             this.Controls.Add(this.txtNumVuelo);
             this.Controls.Add(this.label5);
@@ -839,7 +841,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAgregarTripu);
             this.Controls.Add(this.btnVerTripulante);
-            this.Controls.Add(this.txtDocTripulante);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtVlrCturista);
             this.Controls.Add(this.label10);
@@ -882,7 +883,6 @@
         private System.Windows.Forms.TextBox txtVlrPclase;
         private System.Windows.Forms.TextBox txtVlrCturista;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtDocTripulante;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnVerTripulante;
         private System.Windows.Forms.Button btnAgregarTripu;
@@ -925,5 +925,6 @@
         private System.Windows.Forms.TextBox txtNumVuelo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvTripulacion;
+        private System.Windows.Forms.ComboBox cbbTripulante;
     }
 }

@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNumVuelo = new System.Windows.Forms.TextBox();
             this.rbRuta = new System.Windows.Forms.RadioButton();
             this.rbNumeroVuelo = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,6 +55,7 @@
             this.btnVer = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvVuelos = new System.Windows.Forms.DataGridView();
+            this.cbbNumVuelo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,22 +71,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Número de vuelo:";
             // 
-            // txtNumVuelo
-            // 
-            this.txtNumVuelo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtNumVuelo.Location = new System.Drawing.Point(247, 53);
-            this.txtNumVuelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNumVuelo.Name = "txtNumVuelo";
-            this.txtNumVuelo.Size = new System.Drawing.Size(215, 37);
-            this.txtNumVuelo.TabIndex = 2;
-            // 
             // rbRuta
             // 
             this.rbRuta.AutoSize = true;
             this.rbRuta.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.rbRuta.ForeColor = System.Drawing.Color.White;
             this.rbRuta.Location = new System.Drawing.Point(16, 105);
-            this.rbRuta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbRuta.Margin = new System.Windows.Forms.Padding(4);
             this.rbRuta.Name = "rbRuta";
             this.rbRuta.Size = new System.Drawing.Size(107, 27);
             this.rbRuta.TabIndex = 60;
@@ -101,7 +92,7 @@
             this.rbNumeroVuelo.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.rbNumeroVuelo.ForeColor = System.Drawing.Color.White;
             this.rbNumeroVuelo.Location = new System.Drawing.Point(16, 22);
-            this.rbNumeroVuelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbNumeroVuelo.Margin = new System.Windows.Forms.Padding(4);
             this.rbNumeroVuelo.Name = "rbNumeroVuelo";
             this.rbNumeroVuelo.Size = new System.Drawing.Size(238, 27);
             this.rbNumeroVuelo.TabIndex = 61;
@@ -114,7 +105,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
             this.panel2.Location = new System.Drawing.Point(16, 834);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1793, 1);
             this.panel2.TabIndex = 43;
@@ -139,7 +130,7 @@
             this.cbbEstadoDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbEstadoDestino.FormattingEnabled = true;
             this.cbbEstadoDestino.Location = new System.Drawing.Point(1433, 167);
-            this.cbbEstadoDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbEstadoDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstadoDestino.Name = "cbbEstadoDestino";
             this.cbbEstadoDestino.Size = new System.Drawing.Size(295, 38);
             this.cbbEstadoDestino.TabIndex = 77;
@@ -165,7 +156,7 @@
             this.cbbPaisDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbPaisDestino.FormattingEnabled = true;
             this.cbbPaisDestino.Location = new System.Drawing.Point(1433, 127);
-            this.cbbPaisDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbPaisDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPaisDestino.Name = "cbbPaisDestino";
             this.cbbPaisDestino.Size = new System.Drawing.Size(295, 38);
             this.cbbPaisDestino.TabIndex = 75;
@@ -203,7 +194,7 @@
             this.cbbAerDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbAerDestino.FormattingEnabled = true;
             this.cbbAerDestino.Location = new System.Drawing.Point(1484, 249);
-            this.cbbAerDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbAerDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbAerDestino.Name = "cbbAerDestino";
             this.cbbAerDestino.Size = new System.Drawing.Size(244, 38);
             this.cbbAerDestino.TabIndex = 72;
@@ -217,7 +208,7 @@
             this.cbbCiudadDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbCiudadDestino.FormattingEnabled = true;
             this.cbbCiudadDestino.Location = new System.Drawing.Point(1433, 208);
-            this.cbbCiudadDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbCiudadDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudadDestino.Name = "cbbCiudadDestino";
             this.cbbCiudadDestino.Size = new System.Drawing.Size(295, 38);
             this.cbbCiudadDestino.TabIndex = 73;
@@ -243,7 +234,7 @@
             this.cbbEstadoOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbEstadoOrigen.FormattingEnabled = true;
             this.cbbEstadoOrigen.Location = new System.Drawing.Point(279, 177);
-            this.cbbEstadoOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbEstadoOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstadoOrigen.Name = "cbbEstadoOrigen";
             this.cbbEstadoOrigen.Size = new System.Drawing.Size(285, 38);
             this.cbbEstadoOrigen.TabIndex = 69;
@@ -269,7 +260,7 @@
             this.cbbPaisOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbPaisOrigen.FormattingEnabled = true;
             this.cbbPaisOrigen.Location = new System.Drawing.Point(279, 137);
-            this.cbbPaisOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbPaisOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPaisOrigen.Name = "cbbPaisOrigen";
             this.cbbPaisOrigen.Size = new System.Drawing.Size(285, 38);
             this.cbbPaisOrigen.TabIndex = 67;
@@ -307,7 +298,7 @@
             this.cbbAerOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbAerOrigen.FormattingEnabled = true;
             this.cbbAerOrigen.Location = new System.Drawing.Point(324, 258);
-            this.cbbAerOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbAerOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbAerOrigen.Name = "cbbAerOrigen";
             this.cbbAerOrigen.Size = new System.Drawing.Size(240, 38);
             this.cbbAerOrigen.TabIndex = 64;
@@ -321,7 +312,7 @@
             this.cbbCiudadOrigen.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbCiudadOrigen.FormattingEnabled = true;
             this.cbbCiudadOrigen.Location = new System.Drawing.Point(279, 218);
-            this.cbbCiudadOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbCiudadOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudadOrigen.Name = "cbbCiudadOrigen";
             this.cbbCiudadOrigen.Size = new System.Drawing.Size(285, 38);
             this.cbbCiudadOrigen.TabIndex = 65;
@@ -331,7 +322,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
             this.panel3.Location = new System.Drawing.Point(16, 98);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1792, 1);
             this.panel3.TabIndex = 78;
@@ -344,7 +335,7 @@
             this.btnVer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVer.ForeColor = System.Drawing.Color.White;
             this.btnVer.Location = new System.Drawing.Point(475, 53);
-            this.btnVer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVer.Margin = new System.Windows.Forms.Padding(4);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(116, 38);
             this.btnVer.TabIndex = 79;
@@ -356,7 +347,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
             this.panel4.Location = new System.Drawing.Point(16, 303);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1793, 1);
             this.panel4.TabIndex = 80;
@@ -366,36 +357,48 @@
             this.dgvVuelos.AllowUserToAddRows = false;
             this.dgvVuelos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvVuelos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVuelos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVuelos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVuelos.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvVuelos.Location = new System.Drawing.Point(16, 313);
-            this.dgvVuelos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvVuelos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVuelos.Name = "dgvVuelos";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvVuelos.Size = new System.Drawing.Size(1795, 514);
             this.dgvVuelos.TabIndex = 81;
+            // 
+            // cbbNumVuelo
+            // 
+            this.cbbNumVuelo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbbNumVuelo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbNumVuelo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cbbNumVuelo.FormattingEnabled = true;
+            this.cbbNumVuelo.Location = new System.Drawing.Point(245, 54);
+            this.cbbNumVuelo.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNumVuelo.Name = "cbbNumVuelo";
+            this.cbbNumVuelo.Size = new System.Drawing.Size(181, 38);
+            this.cbbNumVuelo.TabIndex = 133;
             // 
             // FormAdminVuelosConsulta
             // 
@@ -403,6 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1827, 850);
+            this.Controls.Add(this.cbbNumVuelo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvVuelos);
             this.Controls.Add(this.panel4);
@@ -426,10 +430,9 @@
             this.Controls.Add(this.cbbCiudadOrigen);
             this.Controls.Add(this.rbNumeroVuelo);
             this.Controls.Add(this.rbRuta);
-            this.Controls.Add(this.txtNumVuelo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdminVuelosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "consultarVuelo";
@@ -442,7 +445,6 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNumVuelo;
         private System.Windows.Forms.RadioButton rbRuta;
         private System.Windows.Forms.RadioButton rbNumeroVuelo;
         private System.Windows.Forms.Label label12;
@@ -466,5 +468,6 @@
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dgvVuelos;
+        private System.Windows.Forms.ComboBox cbbNumVuelo;
     }
 }

@@ -24,11 +24,23 @@ namespace CapaPresentesacion
 
             dtpHoraSalida.CustomFormat = "HH:mm";
             dtpHoraLlegada.CustomFormat = "HH:mm";
+
+            DataTable numerosDeVuelo = new DataTable();
+            numerosDeVuelo = vuelo.consultaNumerosDeVuelo();
+            cbbNumVuelo.DataSource = numerosDeVuelo;
+            cbbNumVuelo.ValueMember = "numVuelo";
+            cbbNumVuelo.DisplayMember = "numVuelo";
+
+            DataTable tripulantes = new DataTable();
+            tripulantes = trip.tripulantes();
+            cbbTripulante.DataSource = tripulantes;
+            cbbTripulante.ValueMember = "documento";
+            cbbTripulante.DisplayMember = "inf";
         }
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text))
+            if(string.IsNullOrWhiteSpace(cbbNumVuelo.Text))
             {
                 MessageBox.Show("Por favor digite un numero de vuelo valido");
             }
@@ -36,11 +48,11 @@ namespace CapaPresentesacion
             {
                 try
                 {
-                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(cbbNumVuelo.Text));
 
                     CnVuelos vuelo = new CnVuelos();
                     DataTable datosPrimarios = new DataTable();
-                    datosPrimarios = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
+                    datosPrimarios = vuelo.CargarDatos(Convert.ToInt32(cbbNumVuelo.Text));
 
                     DataTable rutas = new DataTable();
                     rutas = ruta.ConsultaGralRutas();
@@ -108,7 +120,7 @@ namespace CapaPresentesacion
 
         private void btnCrearVuelo_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text) || string.IsNullOrWhiteSpace(txtVlrCturista.Text) || string.IsNullOrWhiteSpace(txtVlrPclase.Text) ||
+            if(string.IsNullOrWhiteSpace(cbbNumVuelo.Text) || string.IsNullOrWhiteSpace(txtVlrCturista.Text) || string.IsNullOrWhiteSpace(txtVlrPclase.Text) ||
                 string.IsNullOrWhiteSpace(cbbMatriculaAeronave.Text) || string.IsNullOrWhiteSpace(cbbNombreRuta.Text))
             {
                 MessageBox.Show("Por favor llene todos los campos");
@@ -117,7 +129,7 @@ namespace CapaPresentesacion
             {
                 try
                 {
-                    int numVuelo = Convert.ToInt32(txtNumVuelo.Text);
+                    int numVuelo = Convert.ToInt32(cbbNumVuelo.Text);
                     int idRuta = Convert.ToInt32(cbbNombreRuta.SelectedValue);
 
                     vuelo.ActualizarVuelos(numVuelo, idRuta, cbbMatriculaAeronave.Text, dtpSalida.Text, dtpHoraSalida.Text,
@@ -133,7 +145,7 @@ namespace CapaPresentesacion
 
         private void btnVerTripulante_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtDocTripulante.Text))
+            if(string.IsNullOrWhiteSpace(cbbTripulante.Text))
             {
                 MessageBox.Show("Por favor ingrese un documento de tripulante");
             }
@@ -142,7 +154,7 @@ namespace CapaPresentesacion
                 try
                 {
                     DataTable infoTrip = new DataTable();
-                    infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
+                    infoTrip = trip.CargarTripulante(cbbTripulante.Text);
                     lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
                     lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
                 }
@@ -155,7 +167,7 @@ namespace CapaPresentesacion
 
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtDocTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
+            if(string.IsNullOrWhiteSpace(cbbTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
             {
                 MessageBox.Show("Por favor llene todos los campos");
             }
@@ -163,9 +175,9 @@ namespace CapaPresentesacion
             {
                 try
                 {
-                    trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                    trip.AgregarTripulanteAvuelo(cbbTripulante.Text, Convert.ToInt32(cbbNumVuelo.Text), cbbAgregarComo.Text);
                     MessageBox.Show("Se ha agregado el tripulante correctamente");
-                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
+                    dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(cbbNumVuelo.Text));
                 }
                 catch (Exception)
                 {
@@ -173,6 +185,11 @@ namespace CapaPresentesacion
                 }
             }
             
+        }
+
+        private void FormAdminVuelosGestionExistente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

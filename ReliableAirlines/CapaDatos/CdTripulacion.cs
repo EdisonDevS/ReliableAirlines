@@ -57,6 +57,20 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return resultado;
         }
+
+        public DataTable tripulantes()
+        {
+            DataTable resultado = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "SOLICITAR_TRIPULANTES";
+            fila = comando.ExecuteReader();
+            resultado.Load(fila);
+            fila.Close();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return resultado;
+        }
         
     }
 }

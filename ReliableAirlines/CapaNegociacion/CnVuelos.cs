@@ -123,5 +123,12 @@ namespace CapaNegociacion
         {
             return vuelo.buscarCiudadesTiquete(id);
         }
+
+        public DataTable consultaNumerosDeVuelo()
+        {
+            DataTable datos = new DataTable();
+            datos = vuelo.consultaNumerosDeVuelo();
+            return datos;
+        }
     }
 }

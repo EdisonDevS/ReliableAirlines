@@ -33,11 +33,17 @@ namespace CapaPresentesacion
             InitializeComponent();
             rbNumeroVuelo.Checked = true;
             this.dgvVuelos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            DataTable numerosDeVuelo = new DataTable();
+            numerosDeVuelo = vuelo.consultaNumerosDeVuelo();
+            cbbNumVuelo.DataSource = numerosDeVuelo;
+            cbbNumVuelo.ValueMember = "numVuelo";
+            cbbNumVuelo.DisplayMember = "numVuelo";
         }
 
         private void rbNumeroVuelo_CheckedChanged(object sender, EventArgs e)
         {
-            txtNumVuelo.Enabled = true;
+            cbbNumVuelo.Enabled = true;
             cbbPaisOrigen.Enabled = false;
             cbbPaisDestino.Enabled = false;
             cbbEstadoOrigen.Enabled = false;
@@ -51,7 +57,7 @@ namespace CapaPresentesacion
 
         private void rbRuta_CheckedChanged(object sender, EventArgs e)
         {
-            txtNumVuelo.Enabled = false;
+            cbbNumVuelo.Enabled = false;
             btnVer.Enabled = false;
 
             cbbPaisOrigen.Enabled = true;
@@ -174,14 +180,14 @@ namespace CapaPresentesacion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtNumVuelo.Text))
+            if(string.IsNullOrWhiteSpace(cbbNumVuelo.Text))
             {
                 MessageBox.Show("Por favor digite el numero de vuelo");
             }
             else
             {
                 DataTable tabla = new DataTable();
-                tabla = vuelo.CargarDatos(Convert.ToInt32(txtNumVuelo.Text));
+                tabla = vuelo.CargarDatos(Convert.ToInt32(cbbNumVuelo.Text));
                 tabla.Columns[0].ColumnName = "Número de vuelo";
                 tabla.Columns[1].ColumnName = "Origen";
                 tabla.Columns[2].ColumnName = "Destino";

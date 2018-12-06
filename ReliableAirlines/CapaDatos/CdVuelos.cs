@@ -205,5 +205,18 @@ namespace CapaDatos
             comando.Parameters.Clear();
             return datos;
         }
+
+        public DataTable consultaNumerosDeVuelo()
+        {
+            DataTable datos = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VUELOS_FUTUROS";
+            filas = comando.ExecuteReader();
+            datos.Load(filas);
+            filas.Close();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return datos;
+        }
     }
 }

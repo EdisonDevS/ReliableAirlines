@@ -37,6 +37,12 @@ namespace CapaPresentesacion
             aeronave = aer.ConsultarMatriculas();
             cbbMatriculaAeronave.DataSource = aeronave;
             cbbMatriculaAeronave.DisplayMember = "idAeronave";
+
+            DataTable tripulantes = new DataTable();
+            tripulantes = trip.tripulantes();
+            cbbTripulante.DataSource = tripulantes;
+            cbbTripulante.ValueMember = "documento";
+            cbbTripulante.DisplayMember = "inf";
         }
 
         private void cbbNombreRuta_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,7 +97,7 @@ namespace CapaPresentesacion
                                     dtpLlegada.Text, dtpHoraLlegada.Text, txtVlrPclase.Text, txtVlrCturista.Text);
                     MessageBox.Show("Vuelo creado correctamente");
 
-                    txtDocTripulante.Enabled = true;
+                    cbbTripulante.Enabled = true;
                     btnVerTripulante.Enabled = true;
                     cbbAgregarComo.Enabled = true;
                     btnAgregarTripu.Enabled = true;
@@ -107,7 +113,7 @@ namespace CapaPresentesacion
 
         private void btnVerTripulante_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDocTripulante.Text))
+            if (string.IsNullOrWhiteSpace(cbbTripulante.Text))
             {
                 MessageBox.Show("Por favor ingrese un documento de tripulante");
             }
@@ -116,7 +122,7 @@ namespace CapaPresentesacion
                 try
                 {
                     DataTable infoTrip = new DataTable();
-                    infoTrip = trip.CargarTripulante(txtDocTripulante.Text);
+                    infoTrip = trip.CargarTripulante(cbbTripulante.Text);
                     lblNombreTrip.Text += infoTrip.Rows[0][0].ToString() + " " + infoTrip.Rows[0][1].ToString();
                     lblPuestoTip.Text += infoTrip.Rows[0][2].ToString();
                 }
@@ -130,7 +136,7 @@ namespace CapaPresentesacion
 
         private void btnAgregarTripu_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDocTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
+            if (string.IsNullOrWhiteSpace(cbbTripulante.Text) || string.IsNullOrWhiteSpace(cbbAgregarComo.Text))
             {
                 MessageBox.Show("Por favor llene todos los campos");
             }
@@ -138,7 +144,7 @@ namespace CapaPresentesacion
             {
                 try
                 {
-                    trip.AgregarTripulanteAvuelo(txtDocTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
+                    trip.AgregarTripulanteAvuelo(cbbTripulante.Text, Convert.ToInt32(txtNumVuelo.Text), cbbAgregarComo.Text);
                     MessageBox.Show("Se ha agregado el tripulante correctamente");
 
                     dgvTripulacion.DataSource = trip.ConsultarTripulantes(Int32.Parse(txtNumVuelo.Text));
