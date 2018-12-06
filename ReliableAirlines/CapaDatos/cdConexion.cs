@@ -14,7 +14,7 @@ namespace CapaDatos
     {
 
         SqlConnection Conexion = new SqlConnection("Data Source = den1.mssql8.gear.host;" +
-            " Initial catalog = reliableairlines; user id = reliableairlines; password = Wd8bU_vV5j~G");
+            " Initial catalog = reliableairlines; user id = reliableairlines; password = Hr39!?AY8P34");
 
         public SqlConnection AbrirConexion()
         {

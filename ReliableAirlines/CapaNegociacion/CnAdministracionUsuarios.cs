@@ -7,6 +7,8 @@ using CapaDatos;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+
 namespace CapaNegociacion
 {
     public class CnAdministracionUsuarios
@@ -15,6 +17,27 @@ namespace CapaNegociacion
         CnFechas conversorFecha = new CnFechas();
         CnPermisos permiso = new CnPermisos();
 
+        static string GetMd5Hash(MD5 md5Hash, string input)
+        {
+
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+            // Create a new Stringbuilder to collect the bytes
+            // and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data 
+            // and format each one as a hexadecimal string.
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
+        }
+
         //Registro para los clientes
         public void registro(string documento, string tipoDoc, string usuario,
             string contraseña, string tipoUsuario, string nombres, string apellidos, string nacimiento,
@@ -22,7 +45,12 @@ namespace CapaNegociacion
         {
             nacimiento = conversorFecha.convertirAFormatoSQL(nacimiento);
 
-            registrar.registro(documento, tipoDoc, usuario, contraseña, tipoUsuario, nombres, apellidos, nacimiento, email,
+            using (MD5 md5Hash = MD5.Create())
+            {
+                contraseña = GetMd5Hash(md5Hash, contraseña);
+            }
+
+                registrar.registro(documento, tipoDoc, usuario, contraseña, tipoUsuario, nombres, apellidos, nacimiento, email,
                 telefono);
         }
 
@@ -38,7 +66,10 @@ namespace CapaNegociacion
         {
             nacimiento = conversorFecha.convertirAFormatoSQL(nacimiento);
             string permisos = permiso.generarPermisos(tipoUsuario);
-
+            using (MD5 md5Hash = MD5.Create())
+            {
+                contraseña = GetMd5Hash(md5Hash, contraseña);
+            }
             try
             {
                 registrar.registro(documento, tipoDoc, usuario, contraseña, permisos, nombres, apellidos, nacimiento,

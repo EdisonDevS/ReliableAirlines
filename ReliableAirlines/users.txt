@@ -1,0 +1,19 @@
+Admin:
+user: root
+pass: toor
+
+Caja:
+user: cris
+pass: 123abc
+
+Empleado:
+user: edison
+pass: 123abc
+
+tripulante:
+user: esteban
+pass: 123abc
+
+cliente:
+user: karen
+pass: 123abc
