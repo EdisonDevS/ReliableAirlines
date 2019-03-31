@@ -36,11 +36,12 @@
             // panelAeronaves
             // 
             this.panelAeronaves.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelAeronaves.Location = new System.Drawing.Point(0, 30);
-            this.panelAeronaves.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAeronaves.Location = new System.Drawing.Point(0, 54);
+            this.panelAeronaves.Margin = new System.Windows.Forms.Padding(4);
             this.panelAeronaves.Name = "panelAeronaves";
-            this.panelAeronaves.Size = new System.Drawing.Size(663, 249);
+            this.panelAeronaves.Size = new System.Drawing.Size(1077, 386);
             this.panelAeronaves.TabIndex = 9;
+            this.panelAeronaves.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAeronaves_Paint);
             // 
             // btnRegistrarAeronave
             // 
@@ -51,9 +52,9 @@
             this.btnRegistrarAeronave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarAeronave.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarAeronave.Location = new System.Drawing.Point(0, 0);
-            this.btnRegistrarAeronave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrarAeronave.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarAeronave.Name = "btnRegistrarAeronave";
-            this.btnRegistrarAeronave.Size = new System.Drawing.Size(331, 33);
+            this.btnRegistrarAeronave.Size = new System.Drawing.Size(539, 50);
             this.btnRegistrarAeronave.TabIndex = 13;
             this.btnRegistrarAeronave.Text = "Registrar aeronave";
             this.btnRegistrarAeronave.UseVisualStyleBackColor = false;
@@ -67,10 +68,10 @@
             this.btnAdministrarAeronave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarAeronave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrarAeronave.ForeColor = System.Drawing.Color.White;
-            this.btnAdministrarAeronave.Location = new System.Drawing.Point(331, 0);
-            this.btnAdministrarAeronave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdministrarAeronave.Location = new System.Drawing.Point(539, 0);
+            this.btnAdministrarAeronave.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdministrarAeronave.Name = "btnAdministrarAeronave";
-            this.btnAdministrarAeronave.Size = new System.Drawing.Size(332, 33);
+            this.btnAdministrarAeronave.Size = new System.Drawing.Size(538, 50);
             this.btnAdministrarAeronave.TabIndex = 12;
             this.btnAdministrarAeronave.Text = "Administrar aeronave";
             this.btnAdministrarAeronave.UseVisualStyleBackColor = false;
@@ -78,15 +79,14 @@
             // 
             // FormAdminAeronaves
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(663, 279);
-            this.Controls.Add(this.btnRegistrarAeronave);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnAdministrarAeronave);
+            this.Controls.Add(this.btnRegistrarAeronave);
             this.Controls.Add(this.panelAeronaves);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdminAeronaves";
             this.Text = "menuAeronaves";
             this.ResumeLayout(false);

@@ -38,9 +38,10 @@
             // 
             this.panelEleccionNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelEleccionNomina.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEleccionNomina.Location = new System.Drawing.Point(0, 24);
+            this.panelEleccionNomina.Location = new System.Drawing.Point(0, 54);
+            this.panelEleccionNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEleccionNomina.Name = "panelEleccionNomina";
-            this.panelEleccionNomina.Size = new System.Drawing.Size(497, 203);
+            this.panelEleccionNomina.Size = new System.Drawing.Size(1077, 386);
             this.panelEleccionNomina.TabIndex = 0;
             // 
             // btnActualizarEmpleado
@@ -52,8 +53,9 @@
             this.btnActualizarEmpleado.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarEmpleado.ForeColor = System.Drawing.Color.White;
             this.btnActualizarEmpleado.Location = new System.Drawing.Point(0, 0);
+            this.btnActualizarEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizarEmpleado.Name = "btnActualizarEmpleado";
-            this.btnActualizarEmpleado.Size = new System.Drawing.Size(164, 27);
+            this.btnActualizarEmpleado.Size = new System.Drawing.Size(359, 50);
             this.btnActualizarEmpleado.TabIndex = 1;
             this.btnActualizarEmpleado.Text = "Actualizar datos";
             this.btnActualizarEmpleado.UseVisualStyleBackColor = false;
@@ -67,9 +69,10 @@
             this.btnRegistrarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarEmpleado.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarEmpleado.Location = new System.Drawing.Point(158, 0);
+            this.btnRegistrarEmpleado.Location = new System.Drawing.Point(359, 0);
+            this.btnRegistrarEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrarEmpleado.Name = "btnRegistrarEmpleado";
-            this.btnRegistrarEmpleado.Size = new System.Drawing.Size(181, 27);
+            this.btnRegistrarEmpleado.Size = new System.Drawing.Size(359, 50);
             this.btnRegistrarEmpleado.TabIndex = 2;
             this.btnRegistrarEmpleado.Text = "Registrar nuevo empleado";
             this.btnRegistrarEmpleado.UseVisualStyleBackColor = false;
@@ -83,26 +86,27 @@
             this.btnConultaNomina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConultaNomina.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConultaNomina.ForeColor = System.Drawing.Color.White;
-            this.btnConultaNomina.Location = new System.Drawing.Point(333, 0);
+            this.btnConultaNomina.Location = new System.Drawing.Point(718, 0);
+            this.btnConultaNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConultaNomina.Name = "btnConultaNomina";
-            this.btnConultaNomina.Size = new System.Drawing.Size(164, 27);
+            this.btnConultaNomina.Size = new System.Drawing.Size(359, 50);
             this.btnConultaNomina.TabIndex = 3;
             this.btnConultaNomina.Text = "Consultar nómina";
             this.btnConultaNomina.UseVisualStyleBackColor = false;
             this.btnConultaNomina.Click += new System.EventHandler(this.btnConultaNomina_Click);
             // 
-            // menuNomina
+            // FormAdminNomina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 227);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnConultaNomina);
             this.Controls.Add(this.btnRegistrarEmpleado);
             this.Controls.Add(this.btnActualizarEmpleado);
             this.Controls.Add(this.panelEleccionNomina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "menuNomina";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FormAdminNomina";
             this.Text = "menuNomina";
             this.Load += new System.EventHandler(this.menuNomina_Load);
             this.ResumeLayout(false);

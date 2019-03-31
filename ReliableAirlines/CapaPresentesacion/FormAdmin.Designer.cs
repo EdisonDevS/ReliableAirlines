@@ -49,10 +49,10 @@
             this.btnAeronaves.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAeronaves.ForeColor = System.Drawing.Color.White;
             this.btnAeronaves.Image = ((System.Drawing.Image)(resources.GetObject("btnAeronaves.Image")));
-            this.btnAeronaves.Location = new System.Drawing.Point(525, 4);
+            this.btnAeronaves.Location = new System.Drawing.Point(847, 13);
             this.btnAeronaves.Margin = new System.Windows.Forms.Padding(4);
             this.btnAeronaves.Name = "btnAeronaves";
-            this.btnAeronaves.Size = new System.Drawing.Size(107, 137);
+            this.btnAeronaves.Size = new System.Drawing.Size(182, 211);
             this.btnAeronaves.TabIndex = 14;
             this.btnAeronaves.Text = "Aeronaves";
             this.btnAeronaves.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -67,10 +67,10 @@
             this.btnRutas.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRutas.ForeColor = System.Drawing.Color.White;
             this.btnRutas.Image = ((System.Drawing.Image)(resources.GetObject("btnRutas.Image")));
-            this.btnRutas.Location = new System.Drawing.Point(412, 4);
+            this.btnRutas.Location = new System.Drawing.Point(657, 13);
             this.btnRutas.Margin = new System.Windows.Forms.Padding(4);
             this.btnRutas.Name = "btnRutas";
-            this.btnRutas.Size = new System.Drawing.Size(107, 137);
+            this.btnRutas.Size = new System.Drawing.Size(182, 211);
             this.btnRutas.TabIndex = 13;
             this.btnRutas.Text = "Rutas y vuelos";
             this.btnRutas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -85,10 +85,10 @@
             this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
-            this.btnClientes.Location = new System.Drawing.Point(181, 4);
+            this.btnClientes.Location = new System.Drawing.Point(277, 13);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(107, 137);
+            this.btnClientes.Size = new System.Drawing.Size(182, 211);
             this.btnClientes.TabIndex = 11;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -103,10 +103,10 @@
             this.btnNomina.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomina.ForeColor = System.Drawing.Color.White;
             this.btnNomina.Image = ((System.Drawing.Image)(resources.GetObject("btnNomina.Image")));
-            this.btnNomina.Location = new System.Drawing.Point(67, 4);
+            this.btnNomina.Location = new System.Drawing.Point(87, 13);
             this.btnNomina.Margin = new System.Windows.Forms.Padding(4);
             this.btnNomina.Name = "btnNomina";
-            this.btnNomina.Size = new System.Drawing.Size(107, 137);
+            this.btnNomina.Size = new System.Drawing.Size(182, 211);
             this.btnNomina.TabIndex = 10;
             this.btnNomina.Text = "Nómina";
             this.btnNomina.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -117,59 +117,59 @@
             // panelEleccionAdmin
             // 
             this.panelEleccionAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelEleccionAdmin.Location = new System.Drawing.Point(16, 148);
+            this.panelEleccionAdmin.Location = new System.Drawing.Point(13, 232);
             this.panelEleccionAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.panelEleccionAdmin.Name = "panelEleccionAdmin";
-            this.panelEleccionAdmin.Size = new System.Drawing.Size(663, 279);
+            this.panelEleccionAdmin.Size = new System.Drawing.Size(1077, 440);
             this.panelEleccionAdmin.TabIndex = 15;
             // 
             // pnlActivoNomina
             // 
             this.pnlActivoNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoNomina.Location = new System.Drawing.Point(67, 130);
+            this.pnlActivoNomina.Location = new System.Drawing.Point(87, 214);
             this.pnlActivoNomina.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoNomina.Name = "pnlActivoNomina";
-            this.pnlActivoNomina.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoNomina.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoNomina.TabIndex = 16;
             this.pnlActivoNomina.Visible = false;
             // 
             // pnlActivoClientes
             // 
             this.pnlActivoClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoClientes.Location = new System.Drawing.Point(181, 130);
+            this.pnlActivoClientes.Location = new System.Drawing.Point(277, 214);
             this.pnlActivoClientes.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoClientes.Name = "pnlActivoClientes";
-            this.pnlActivoClientes.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoClientes.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoClientes.TabIndex = 17;
             this.pnlActivoClientes.Visible = false;
             // 
             // pnlActivoRuta
             // 
             this.pnlActivoRuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoRuta.Location = new System.Drawing.Point(412, 130);
+            this.pnlActivoRuta.Location = new System.Drawing.Point(657, 214);
             this.pnlActivoRuta.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoRuta.Name = "pnlActivoRuta";
-            this.pnlActivoRuta.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoRuta.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoRuta.TabIndex = 17;
             this.pnlActivoRuta.Visible = false;
             // 
             // pnlActivoAeronave
             // 
             this.pnlActivoAeronave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoAeronave.Location = new System.Drawing.Point(525, 130);
+            this.pnlActivoAeronave.Location = new System.Drawing.Point(847, 214);
             this.pnlActivoAeronave.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoAeronave.Name = "pnlActivoAeronave";
-            this.pnlActivoAeronave.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoAeronave.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoAeronave.TabIndex = 17;
             this.pnlActivoAeronave.Visible = false;
             // 
             // pnlActivoInformes
             // 
             this.pnlActivoInformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoInformes.Location = new System.Drawing.Point(297, 130);
+            this.pnlActivoInformes.Location = new System.Drawing.Point(467, 214);
             this.pnlActivoInformes.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoInformes.Name = "pnlActivoInformes";
-            this.pnlActivoInformes.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoInformes.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoInformes.TabIndex = 19;
             this.pnlActivoInformes.Visible = false;
             // 
@@ -180,10 +180,10 @@
             this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformes.ForeColor = System.Drawing.Color.White;
             this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
-            this.btnInformes.Location = new System.Drawing.Point(297, 4);
+            this.btnInformes.Location = new System.Drawing.Point(467, 13);
             this.btnInformes.Margin = new System.Windows.Forms.Padding(4);
             this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Size = new System.Drawing.Size(107, 137);
+            this.btnInformes.Size = new System.Drawing.Size(182, 211);
             this.btnInformes.TabIndex = 18;
             this.btnInformes.Text = "Informes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -193,17 +193,16 @@
             // 
             // FormAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(972, 597);
+            this.ClientSize = new System.Drawing.Size(1103, 685);
+            this.Controls.Add(this.panelEleccionAdmin);
             this.Controls.Add(this.pnlActivoInformes);
             this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.pnlActivoAeronave);
             this.Controls.Add(this.pnlActivoRuta);
             this.Controls.Add(this.pnlActivoClientes);
             this.Controls.Add(this.pnlActivoNomina);
-            this.Controls.Add(this.panelEleccionAdmin);
             this.Controls.Add(this.btnAeronaves);
             this.Controls.Add(this.btnRutas);
             this.Controls.Add(this.btnClientes);

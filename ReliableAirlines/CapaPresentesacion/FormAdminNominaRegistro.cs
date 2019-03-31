@@ -121,6 +121,9 @@ namespace CapaPresentesacion
 
         }
 
-        
+        private void txtApellidos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

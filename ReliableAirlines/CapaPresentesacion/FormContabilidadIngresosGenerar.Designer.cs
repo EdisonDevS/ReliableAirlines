@@ -36,9 +36,10 @@
             // panelGenerarIngreso
             // 
             this.panelGenerarIngreso.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelGenerarIngreso.Location = new System.Drawing.Point(0, 36);
+            this.panelGenerarIngreso.Location = new System.Drawing.Point(0, 42);
+            this.panelGenerarIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.panelGenerarIngreso.Name = "panelGenerarIngreso";
-            this.panelGenerarIngreso.Size = new System.Drawing.Size(984, 655);
+            this.panelGenerarIngreso.Size = new System.Drawing.Size(1312, 679);
             this.panelGenerarIngreso.TabIndex = 8;
             this.panelGenerarIngreso.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGenerarIngreso_Paint);
             // 
@@ -49,9 +50,10 @@
             this.btnExternos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExternos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExternos.ForeColor = System.Drawing.Color.White;
-            this.btnExternos.Location = new System.Drawing.Point(484, 0);
+            this.btnExternos.Location = new System.Drawing.Point(645, 0);
+            this.btnExternos.Margin = new System.Windows.Forms.Padding(4);
             this.btnExternos.Name = "btnExternos";
-            this.btnExternos.Size = new System.Drawing.Size(500, 35);
+            this.btnExternos.Size = new System.Drawing.Size(667, 43);
             this.btnExternos.TabIndex = 7;
             this.btnExternos.Text = "Ingresos externos";
             this.btnExternos.UseVisualStyleBackColor = false;
@@ -65,8 +67,9 @@
             this.btnVentas.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.Location = new System.Drawing.Point(0, 0);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(4);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(500, 35);
+            this.btnVentas.Size = new System.Drawing.Size(667, 43);
             this.btnVentas.TabIndex = 6;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
@@ -74,14 +77,14 @@
             // 
             // FormContabilidadIngresosGenerar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(984, 691);
+            this.ClientSize = new System.Drawing.Size(1312, 721);
             this.Controls.Add(this.panelGenerarIngreso);
             this.Controls.Add(this.btnExternos);
             this.Controls.Add(this.btnVentas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadIngresosGenerar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormContabilidadIngresosGenerar";

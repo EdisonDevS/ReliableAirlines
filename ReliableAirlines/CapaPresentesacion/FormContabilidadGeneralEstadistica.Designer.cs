@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.graGeneral = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAño = new System.Windows.Forms.TextBox();
@@ -40,20 +40,20 @@
             // 
             // graGeneral
             // 
-            chartArea2.Name = "ChartArea1";
-            this.graGeneral.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.graGeneral.ChartAreas.Add(chartArea1);
             this.graGeneral.Cursor = System.Windows.Forms.Cursors.Default;
             this.graGeneral.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend2.Name = "Legend1";
-            this.graGeneral.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.graGeneral.Legends.Add(legend1);
             this.graGeneral.Location = new System.Drawing.Point(0, 77);
             this.graGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.graGeneral.Name = "graGeneral";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.graGeneral.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.graGeneral.Series.Add(series1);
             this.graGeneral.Size = new System.Drawing.Size(1252, 477);
             this.graGeneral.TabIndex = 0;
             this.graGeneral.Text = "chart1";
@@ -93,8 +93,7 @@
             // 
             // FormContabilidadGeneralEstadistica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1252, 554);
             this.Controls.Add(this.btnVer);

@@ -104,7 +104,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel2.Location = new System.Drawing.Point(16, 834);
+            this.panel2.Location = new System.Drawing.Point(15, 677);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1793, 1);
@@ -115,7 +115,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(1179, 170);
+            this.label12.Location = new System.Drawing.Point(736, 173);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(232, 30);
@@ -129,7 +129,7 @@
             this.cbbEstadoDestino.Enabled = false;
             this.cbbEstadoDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbEstadoDestino.FormattingEnabled = true;
-            this.cbbEstadoDestino.Location = new System.Drawing.Point(1433, 167);
+            this.cbbEstadoDestino.Location = new System.Drawing.Point(990, 170);
             this.cbbEstadoDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstadoDestino.Name = "cbbEstadoDestino";
             this.cbbEstadoDestino.Size = new System.Drawing.Size(295, 38);
@@ -141,7 +141,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1179, 137);
+            this.label14.Location = new System.Drawing.Point(736, 140);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(199, 30);
@@ -155,7 +155,7 @@
             this.cbbPaisDestino.Enabled = false;
             this.cbbPaisDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbPaisDestino.FormattingEnabled = true;
-            this.cbbPaisDestino.Location = new System.Drawing.Point(1433, 127);
+            this.cbbPaisDestino.Location = new System.Drawing.Point(990, 130);
             this.cbbPaisDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPaisDestino.Name = "cbbPaisDestino";
             this.cbbPaisDestino.Size = new System.Drawing.Size(295, 38);
@@ -167,7 +167,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1179, 252);
+            this.label15.Location = new System.Drawing.Point(736, 255);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(287, 30);
@@ -179,7 +179,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1179, 210);
+            this.label16.Location = new System.Drawing.Point(736, 213);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(242, 30);
@@ -193,7 +193,7 @@
             this.cbbAerDestino.Enabled = false;
             this.cbbAerDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbAerDestino.FormattingEnabled = true;
-            this.cbbAerDestino.Location = new System.Drawing.Point(1484, 249);
+            this.cbbAerDestino.Location = new System.Drawing.Point(1041, 252);
             this.cbbAerDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbAerDestino.Name = "cbbAerDestino";
             this.cbbAerDestino.Size = new System.Drawing.Size(244, 38);
@@ -207,7 +207,7 @@
             this.cbbCiudadDestino.Enabled = false;
             this.cbbCiudadDestino.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.cbbCiudadDestino.FormattingEnabled = true;
-            this.cbbCiudadDestino.Location = new System.Drawing.Point(1433, 208);
+            this.cbbCiudadDestino.Location = new System.Drawing.Point(990, 211);
             this.cbbCiudadDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudadDestino.Name = "cbbCiudadDestino";
             this.cbbCiudadDestino.Size = new System.Drawing.Size(295, 38);
@@ -385,7 +385,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvVuelos.Size = new System.Drawing.Size(1795, 514);
+            this.dgvVuelos.Size = new System.Drawing.Size(1274, 356);
             this.dgvVuelos.TabIndex = 81;
             // 
             // cbbNumVuelo
@@ -402,10 +402,9 @@
             // 
             // FormAdminVuelosConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1827, 850);
+            this.ClientSize = new System.Drawing.Size(1303, 693);
             this.Controls.Add(this.cbbNumVuelo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvVuelos);
@@ -436,7 +435,7 @@
             this.Name = "FormAdminVuelosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "consultarVuelo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormAdminVuelosConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

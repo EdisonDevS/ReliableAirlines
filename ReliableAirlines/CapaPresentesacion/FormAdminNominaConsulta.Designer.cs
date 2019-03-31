@@ -37,9 +37,10 @@
             // panelConsultaNomina
             // 
             this.panelConsultaNomina.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelConsultaNomina.Location = new System.Drawing.Point(0, 39);
+            this.panelConsultaNomina.Location = new System.Drawing.Point(0, 101);
+            this.panelConsultaNomina.Margin = new System.Windows.Forms.Padding(4);
             this.panelConsultaNomina.Name = "panelConsultaNomina";
-            this.panelConsultaNomina.Size = new System.Drawing.Size(497, 164);
+            this.panelConsultaNomina.Size = new System.Drawing.Size(1077, 285);
             this.panelConsultaNomina.TabIndex = 45;
             // 
             // btnConsultaPersona
@@ -49,9 +50,10 @@
             this.btnConsultaPersona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaPersona.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultaPersona.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaPersona.Location = new System.Drawing.Point(168, 12);
+            this.btnConsultaPersona.Location = new System.Drawing.Point(283, 15);
+            this.btnConsultaPersona.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaPersona.Name = "btnConsultaPersona";
-            this.btnConsultaPersona.Size = new System.Drawing.Size(80, 28);
+            this.btnConsultaPersona.Size = new System.Drawing.Size(260, 78);
             this.btnConsultaPersona.TabIndex = 47;
             this.btnConsultaPersona.Text = "Ajustes de nómina";
             this.btnConsultaPersona.UseVisualStyleBackColor = false;
@@ -64,9 +66,10 @@
             this.btnConsultaGenera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaGenera.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultaGenera.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaGenera.Location = new System.Drawing.Point(248, 12);
+            this.btnConsultaGenera.Location = new System.Drawing.Point(543, 15);
+            this.btnConsultaGenera.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaGenera.Name = "btnConsultaGenera";
-            this.btnConsultaGenera.Size = new System.Drawing.Size(80, 28);
+            this.btnConsultaGenera.Size = new System.Drawing.Size(260, 78);
             this.btnConsultaGenera.TabIndex = 46;
             this.btnConsultaGenera.Text = "Consultas generales";
             this.btnConsultaGenera.UseVisualStyleBackColor = false;
@@ -87,17 +90,17 @@
             this.btnConsultaGeneral.UseVisualStyleBackColor = false;
             this.btnConsultaGeneral.Click += new System.EventHandler(this.btnCon_Click);
             // 
-            // consultaNomina
+            // FormAdminNominaConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 203);
+            this.ClientSize = new System.Drawing.Size(1077, 386);
             this.Controls.Add(this.btnConsultaPersona);
             this.Controls.Add(this.btnConsultaGenera);
             this.Controls.Add(this.panelConsultaNomina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "consultaNomina";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FormAdminNominaConsulta";
             this.Text = "consultaNomina";
             this.Load += new System.EventHandler(this.consultaNomina_Load);
             this.ResumeLayout(false);

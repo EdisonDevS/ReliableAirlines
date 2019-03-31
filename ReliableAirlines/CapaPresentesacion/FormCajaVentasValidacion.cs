@@ -98,5 +98,10 @@ namespace CapaPresentesacion
             
             
         }
+
+        private void FormCajaVentasValidacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

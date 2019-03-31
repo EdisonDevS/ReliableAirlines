@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDocumento = new System.Windows.Forms.Label();
             this.txtVerificar = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.lblDocumento = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(597, 313);
             this.panel1.TabIndex = 75;
+            // 
+            // lblDocumento
+            // 
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumento.ForeColor = System.Drawing.Color.White;
+            this.lblDocumento.Location = new System.Drawing.Point(25, 26);
+            this.lblDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(161, 28);
+            this.lblDocumento.TabIndex = 78;
+            this.lblDocumento.Text = "Documento: ";
             // 
             // txtVerificar
             // 
@@ -114,22 +126,9 @@
             this.label17.TabIndex = 69;
             this.label17.Text = "Nueva contraseña:";
             // 
-            // lblDocumento
-            // 
-            this.lblDocumento.AutoSize = true;
-            this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDocumento.ForeColor = System.Drawing.Color.White;
-            this.lblDocumento.Location = new System.Drawing.Point(25, 26);
-            this.lblDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(161, 28);
-            this.lblDocumento.TabIndex = 78;
-            this.lblDocumento.Text = "Documento: ";
-            // 
             // FormCambioContraseña
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(597, 313);
             this.Controls.Add(this.panel1);

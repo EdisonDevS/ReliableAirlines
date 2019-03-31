@@ -41,7 +41,7 @@
             this.btnGraficar.Location = new System.Drawing.Point(13, 13);
             this.btnGraficar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGraficar.Name = "btnGraficar";
-            this.btnGraficar.Size = new System.Drawing.Size(637, 253);
+            this.btnGraficar.Size = new System.Drawing.Size(1051, 414);
             this.btnGraficar.TabIndex = 75;
             this.btnGraficar.Text = "Graficar";
             this.btnGraficar.UseVisualStyleBackColor = false;
@@ -49,10 +49,9 @@
             // 
             // FormEstadisticaCiudad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(663, 279);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnGraficar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEstadisticaCiudad";

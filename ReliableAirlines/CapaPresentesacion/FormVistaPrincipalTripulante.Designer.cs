@@ -33,11 +33,11 @@
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.lblRuta = new System.Windows.Forms.Label();
             this.panelLateral = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMiCuenta = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnIntinerario = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSuperior.SuspendLayout();
             this.panelLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,10 +48,10 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.panelContainer.ForeColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(327, 44);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContainer.Location = new System.Drawing.Point(245, 36);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(972, 757);
+            this.panelContainer.Size = new System.Drawing.Size(1103, 685);
             this.panelContainer.TabIndex = 7;
             // 
             // panelSuperior
@@ -59,10 +59,10 @@
             this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.panelSuperior.Controls.Add(this.lblRuta);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(327, 0);
-            this.panelSuperior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSuperior.Location = new System.Drawing.Point(245, 0);
+            this.panelSuperior.Margin = new System.Windows.Forms.Padding(4);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(972, 44);
+            this.panelSuperior.Size = new System.Drawing.Size(1103, 36);
             this.panelSuperior.TabIndex = 5;
             // 
             // lblRuta
@@ -90,30 +90,8 @@
             this.panelLateral.Location = new System.Drawing.Point(0, 0);
             this.panelLateral.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(327, 801);
+            this.panelLateral.Size = new System.Drawing.Size(245, 721);
             this.panelLateral.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(103, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 96);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Reliable\r\nAirlines\r\n";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 101);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnMiCuenta
             // 
@@ -124,10 +102,10 @@
             this.btnMiCuenta.ForeColor = System.Drawing.Color.White;
             this.btnMiCuenta.Image = ((System.Drawing.Image)(resources.GetObject("btnMiCuenta.Image")));
             this.btnMiCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMiCuenta.Location = new System.Drawing.Point(0, 681);
+            this.btnMiCuenta.Location = new System.Drawing.Point(0, 570);
             this.btnMiCuenta.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.btnMiCuenta.Name = "btnMiCuenta";
-            this.btnMiCuenta.Size = new System.Drawing.Size(371, 68);
+            this.btnMiCuenta.Size = new System.Drawing.Size(278, 55);
             this.btnMiCuenta.TabIndex = 4;
             this.btnMiCuenta.Text = "Mi cuenta";
             this.btnMiCuenta.UseVisualStyleBackColor = true;
@@ -142,10 +120,10 @@
             this.btnInformes.ForeColor = System.Drawing.Color.White;
             this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.Location = new System.Drawing.Point(0, 448);
+            this.btnInformes.Location = new System.Drawing.Point(0, 388);
             this.btnInformes.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Size = new System.Drawing.Size(371, 68);
+            this.btnInformes.Size = new System.Drawing.Size(278, 55);
             this.btnInformes.TabIndex = 2;
             this.btnInformes.Text = "Informes";
             this.btnInformes.UseVisualStyleBackColor = true;
@@ -163,22 +141,42 @@
             this.btnIntinerario.Location = new System.Drawing.Point(0, 206);
             this.btnIntinerario.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.btnIntinerario.Name = "btnIntinerario";
-            this.btnIntinerario.Size = new System.Drawing.Size(371, 68);
+            this.btnIntinerario.Size = new System.Drawing.Size(278, 55);
             this.btnIntinerario.TabIndex = 1;
             this.btnIntinerario.Text = "Intinerario";
             this.btnIntinerario.UseVisualStyleBackColor = true;
             this.btnIntinerario.Click += new System.EventHandler(this.btnIntinerario_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(77, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 144);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Reliable\r\nAirlines\r\n";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 82);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormVistaPrincipalTripulante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1299, 801);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormVistaPrincipalTripulante";
             this.Text = "FormVistaPrincipalTripulante";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -197,10 +195,10 @@
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Label lblRuta;
         private System.Windows.Forms.Panel panelLateral;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMiCuenta;
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Button btnIntinerario;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

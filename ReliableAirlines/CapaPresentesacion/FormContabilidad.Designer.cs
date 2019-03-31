@@ -43,10 +43,10 @@
             // pnlActivoGeneral
             // 
             this.pnlActivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoGeneral.Location = new System.Drawing.Point(16, 141);
+            this.pnlActivoGeneral.Location = new System.Drawing.Point(36, 215);
             this.pnlActivoGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoGeneral.Name = "pnlActivoGeneral";
-            this.pnlActivoGeneral.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoGeneral.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoGeneral.TabIndex = 18;
             this.pnlActivoGeneral.Visible = false;
             // 
@@ -57,10 +57,10 @@
             this.btnGeneral.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeneral.ForeColor = System.Drawing.Color.White;
             this.btnGeneral.Image = ((System.Drawing.Image)(resources.GetObject("btnGeneral.Image")));
-            this.btnGeneral.Location = new System.Drawing.Point(16, 14);
+            this.btnGeneral.Location = new System.Drawing.Point(36, 14);
             this.btnGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.btnGeneral.Name = "btnGeneral";
-            this.btnGeneral.Size = new System.Drawing.Size(107, 137);
+            this.btnGeneral.Size = new System.Drawing.Size(182, 211);
             this.btnGeneral.TabIndex = 17;
             this.btnGeneral.Text = "General";
             this.btnGeneral.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -71,10 +71,10 @@
             // pnlActivoGastos
             // 
             this.pnlActivoGastos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoGastos.Location = new System.Drawing.Point(204, 141);
+            this.pnlActivoGastos.Location = new System.Drawing.Point(320, 214);
             this.pnlActivoGastos.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoGastos.Name = "pnlActivoGastos";
-            this.pnlActivoGastos.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoGastos.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoGastos.TabIndex = 20;
             this.pnlActivoGastos.Visible = false;
             // 
@@ -85,10 +85,10 @@
             this.btnGastos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGastos.ForeColor = System.Drawing.Color.White;
             this.btnGastos.Image = ((System.Drawing.Image)(resources.GetObject("btnGastos.Image")));
-            this.btnGastos.Location = new System.Drawing.Point(204, 14);
+            this.btnGastos.Location = new System.Drawing.Point(320, 14);
             this.btnGastos.Margin = new System.Windows.Forms.Padding(4);
             this.btnGastos.Name = "btnGastos";
-            this.btnGastos.Size = new System.Drawing.Size(107, 137);
+            this.btnGastos.Size = new System.Drawing.Size(182, 211);
             this.btnGastos.TabIndex = 19;
             this.btnGastos.Text = "Gastos";
             this.btnGastos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -99,10 +99,10 @@
             // pnlActivoIngresos
             // 
             this.pnlActivoIngresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoIngresos.Location = new System.Drawing.Point(381, 141);
+            this.pnlActivoIngresos.Location = new System.Drawing.Point(605, 214);
             this.pnlActivoIngresos.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoIngresos.Name = "pnlActivoIngresos";
-            this.pnlActivoIngresos.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoIngresos.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoIngresos.TabIndex = 22;
             this.pnlActivoIngresos.Visible = false;
             // 
@@ -113,10 +113,10 @@
             this.btnIngresos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresos.ForeColor = System.Drawing.Color.White;
             this.btnIngresos.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresos.Image")));
-            this.btnIngresos.Location = new System.Drawing.Point(381, 14);
+            this.btnIngresos.Location = new System.Drawing.Point(605, 14);
             this.btnIngresos.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngresos.Name = "btnIngresos";
-            this.btnIngresos.Size = new System.Drawing.Size(107, 137);
+            this.btnIngresos.Size = new System.Drawing.Size(182, 211);
             this.btnIngresos.TabIndex = 21;
             this.btnIngresos.Text = "Ingresos";
             this.btnIngresos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -127,19 +127,19 @@
             // panelEleccionContabilidad
             // 
             this.panelEleccionContabilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelEleccionContabilidad.Location = new System.Drawing.Point(16, 159);
+            this.panelEleccionContabilidad.Location = new System.Drawing.Point(13, 232);
             this.panelEleccionContabilidad.Margin = new System.Windows.Forms.Padding(4);
             this.panelEleccionContabilidad.Name = "panelEleccionContabilidad";
-            this.panelEleccionContabilidad.Size = new System.Drawing.Size(663, 279);
+            this.panelEleccionContabilidad.Size = new System.Drawing.Size(1077, 440);
             this.panelEleccionContabilidad.TabIndex = 23;
             // 
             // pnlActivoContactos
             // 
             this.pnlActivoContactos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.pnlActivoContactos.Location = new System.Drawing.Point(572, 141);
+            this.pnlActivoContactos.Location = new System.Drawing.Point(888, 214);
             this.pnlActivoContactos.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActivoContactos.Name = "pnlActivoContactos";
-            this.pnlActivoContactos.Size = new System.Drawing.Size(107, 10);
+            this.pnlActivoContactos.Size = new System.Drawing.Size(182, 10);
             this.pnlActivoContactos.TabIndex = 25;
             this.pnlActivoContactos.Visible = false;
             // 
@@ -150,10 +150,10 @@
             this.btnContactos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContactos.ForeColor = System.Drawing.Color.White;
             this.btnContactos.Image = ((System.Drawing.Image)(resources.GetObject("btnContactos.Image")));
-            this.btnContactos.Location = new System.Drawing.Point(572, 14);
+            this.btnContactos.Location = new System.Drawing.Point(888, 13);
             this.btnContactos.Margin = new System.Windows.Forms.Padding(4);
             this.btnContactos.Name = "btnContactos";
-            this.btnContactos.Size = new System.Drawing.Size(107, 137);
+            this.btnContactos.Size = new System.Drawing.Size(182, 211);
             this.btnContactos.TabIndex = 24;
             this.btnContactos.Text = "Contactos";
             this.btnContactos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -163,10 +163,9 @@
             // 
             // FormContabilidad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(972, 597);
+            this.ClientSize = new System.Drawing.Size(1103, 685);
             this.Controls.Add(this.pnlActivoContactos);
             this.Controls.Add(this.btnContactos);
             this.Controls.Add(this.panelEleccionContabilidad);

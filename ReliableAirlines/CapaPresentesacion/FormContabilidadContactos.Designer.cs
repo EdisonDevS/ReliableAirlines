@@ -40,10 +40,10 @@
             this.btnCrearContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearContacto.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearContacto.ForeColor = System.Drawing.Color.White;
-            this.btnCrearContacto.Location = new System.Drawing.Point(16, 78);
+            this.btnCrearContacto.Location = new System.Drawing.Point(13, 13);
             this.btnCrearContacto.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearContacto.Name = "btnCrearContacto";
-            this.btnCrearContacto.Size = new System.Drawing.Size(305, 123);
+            this.btnCrearContacto.Size = new System.Drawing.Size(509, 414);
             this.btnCrearContacto.TabIndex = 86;
             this.btnCrearContacto.Text = "Crear contacto";
             this.btnCrearContacto.UseVisualStyleBackColor = false;
@@ -52,10 +52,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(329, 78);
+            this.panel1.Location = new System.Drawing.Point(530, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(4, 123);
+            this.panel1.Size = new System.Drawing.Size(2, 413);
             this.panel1.TabIndex = 85;
             // 
             // btnModificarContacto
@@ -65,10 +65,10 @@
             this.btnModificarContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarContacto.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarContacto.ForeColor = System.Drawing.Color.White;
-            this.btnModificarContacto.Location = new System.Drawing.Point(341, 78);
+            this.btnModificarContacto.Location = new System.Drawing.Point(540, 13);
             this.btnModificarContacto.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificarContacto.Name = "btnModificarContacto";
-            this.btnModificarContacto.Size = new System.Drawing.Size(305, 123);
+            this.btnModificarContacto.Size = new System.Drawing.Size(524, 414);
             this.btnModificarContacto.TabIndex = 84;
             this.btnModificarContacto.Text = "Modificar contacto";
             this.btnModificarContacto.UseVisualStyleBackColor = false;
@@ -76,10 +76,9 @@
             // 
             // FormContabilidadContactos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(663, 279);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnCrearContacto);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnModificarContacto);

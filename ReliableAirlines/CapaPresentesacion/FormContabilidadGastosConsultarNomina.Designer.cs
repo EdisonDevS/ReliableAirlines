@@ -59,7 +59,7 @@
             this.btnVerFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerFactura.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerFactura.ForeColor = System.Drawing.Color.White;
-            this.btnVerFactura.Location = new System.Drawing.Point(1129, 726);
+            this.btnVerFactura.Location = new System.Drawing.Point(1132, 598);
             this.btnVerFactura.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerFactura.Name = "btnVerFactura";
             this.btnVerFactura.Size = new System.Drawing.Size(167, 68);
@@ -193,7 +193,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
-            this.lblTotal.Location = new System.Drawing.Point(693, 602);
+            this.lblTotal.Location = new System.Drawing.Point(740, 537);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -206,7 +206,7 @@
             this.lblHoras.AutoSize = true;
             this.lblHoras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoras.ForeColor = System.Drawing.Color.White;
-            this.lblHoras.Location = new System.Drawing.Point(693, 537);
+            this.lblHoras.Location = new System.Drawing.Point(740, 490);
             this.lblHoras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoras.Name = "lblHoras";
             this.lblHoras.Size = new System.Drawing.Size(171, 33);
@@ -218,7 +218,7 @@
             this.lblDias.AutoSize = true;
             this.lblDias.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDias.ForeColor = System.Drawing.Color.White;
-            this.lblDias.Location = new System.Drawing.Point(693, 467);
+            this.lblDias.Location = new System.Drawing.Point(740, 441);
             this.lblDias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDias.Name = "lblDias";
             this.lblDias.Size = new System.Drawing.Size(223, 33);
@@ -230,7 +230,7 @@
             this.lblSueldo.AutoSize = true;
             this.lblSueldo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSueldo.ForeColor = System.Drawing.Color.White;
-            this.lblSueldo.Location = new System.Drawing.Point(16, 724);
+            this.lblSueldo.Location = new System.Drawing.Point(16, 598);
             this.lblSueldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSueldo.Name = "lblSueldo";
             this.lblSueldo.Size = new System.Drawing.Size(193, 33);
@@ -242,7 +242,7 @@
             this.lblNumeroContrato.AutoSize = true;
             this.lblNumeroContrato.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroContrato.ForeColor = System.Drawing.Color.White;
-            this.lblNumeroContrato.Location = new System.Drawing.Point(16, 665);
+            this.lblNumeroContrato.Location = new System.Drawing.Point(16, 560);
             this.lblNumeroContrato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumeroContrato.Name = "lblNumeroContrato";
             this.lblNumeroContrato.Size = new System.Drawing.Size(301, 33);
@@ -254,7 +254,7 @@
             this.lblDocumento.AutoSize = true;
             this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocumento.ForeColor = System.Drawing.Color.White;
-            this.lblDocumento.Location = new System.Drawing.Point(16, 602);
+            this.lblDocumento.Location = new System.Drawing.Point(16, 521);
             this.lblDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDocumento.Name = "lblDocumento";
             this.lblDocumento.Size = new System.Drawing.Size(188, 33);
@@ -266,7 +266,7 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidos.ForeColor = System.Drawing.Color.White;
-            this.lblApellidos.Location = new System.Drawing.Point(16, 537);
+            this.lblApellidos.Location = new System.Drawing.Point(16, 483);
             this.lblApellidos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(149, 33);
@@ -278,7 +278,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(16, 467);
+            this.lblNombre.Location = new System.Drawing.Point(16, 441);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(147, 33);
@@ -299,10 +299,9 @@
             // 
             // FormContabilidadGastosConsultarNomina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.ClientSize = new System.Drawing.Size(1312, 679);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblHoras);
             this.Controls.Add(this.lblDias);

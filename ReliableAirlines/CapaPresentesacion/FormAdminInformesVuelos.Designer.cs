@@ -46,19 +46,19 @@
             // dtpFecha
             // 
             this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(18, 152);
+            this.dtpFecha.Location = new System.Drawing.Point(13, 148);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(229, 32);
+            this.dtpFecha.Size = new System.Drawing.Size(431, 32);
             this.dtpFecha.TabIndex = 156;
             // 
             // txtInforme
             // 
             this.txtInforme.Enabled = false;
             this.txtInforme.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInforme.Location = new System.Drawing.Point(91, 172);
+            this.txtInforme.Location = new System.Drawing.Point(145, 262);
             this.txtInforme.Name = "txtInforme";
-            this.txtInforme.Size = new System.Drawing.Size(560, 67);
+            this.txtInforme.Size = new System.Drawing.Size(919, 70);
             this.txtInforme.TabIndex = 155;
             this.txtInforme.Text = "";
             // 
@@ -67,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 169);
+            this.label1.Location = new System.Drawing.Point(15, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 34);
             this.label1.TabIndex = 154;
@@ -78,7 +78,7 @@
             this.lblIdentificacion.AutoSize = true;
             this.lblIdentificacion.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdentificacion.ForeColor = System.Drawing.Color.White;
-            this.lblIdentificacion.Location = new System.Drawing.Point(392, 132);
+            this.lblIdentificacion.Location = new System.Drawing.Point(671, 200);
             this.lblIdentificacion.Name = "lblIdentificacion";
             this.lblIdentificacion.Size = new System.Drawing.Size(220, 34);
             this.lblIdentificacion.TabIndex = 153;
@@ -89,7 +89,7 @@
             this.lblNombres.AutoSize = true;
             this.lblNombres.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombres.ForeColor = System.Drawing.Color.White;
-            this.lblNombres.Location = new System.Drawing.Point(12, 132);
+            this.lblNombres.Location = new System.Drawing.Point(15, 200);
             this.lblNombres.Name = "lblNombres";
             this.lblNombres.Size = new System.Drawing.Size(305, 34);
             this.lblNombres.TabIndex = 152;
@@ -133,16 +133,17 @@
             this.dgvDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvDatos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDatos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvDatos.Size = new System.Drawing.Size(637, 119);
+            this.dgvDatos.Size = new System.Drawing.Size(1051, 131);
             this.dgvDatos.TabIndex = 151;
             this.dgvDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellClick);
+            this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 193);
+            this.label2.Location = new System.Drawing.Point(15, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 34);
             this.label2.TabIndex = 157;
@@ -153,17 +154,16 @@
             this.lblCalificación.AutoSize = true;
             this.lblCalificación.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalificación.ForeColor = System.Drawing.Color.White;
-            this.lblCalificación.Location = new System.Drawing.Point(9, 214);
+            this.lblCalificación.Location = new System.Drawing.Point(188, 340);
             this.lblCalificación.Name = "lblCalificación";
             this.lblCalificación.Size = new System.Drawing.Size(0, 34);
             this.lblCalificación.TabIndex = 158;
             // 
             // FormAdminInformesVuelos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(663, 249);
+            this.ClientSize = new System.Drawing.Size(1077, 386);
             this.Controls.Add(this.lblCalificación);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dtpFecha);

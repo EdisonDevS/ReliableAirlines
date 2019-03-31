@@ -260,6 +260,9 @@ namespace CapaPresentesacion
             }
         }
 
-        
+        private void FormAdminVuelosConsulta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

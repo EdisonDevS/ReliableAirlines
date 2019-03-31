@@ -57,7 +57,7 @@
             this.panelLateral.Location = new System.Drawing.Point(0, 0);
             this.panelLateral.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(245, 651);
+            this.panelLateral.Size = new System.Drawing.Size(245, 721);
             this.panelLateral.TabIndex = 0;
             // 
             // label1
@@ -67,7 +67,7 @@
             this.label1.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(77, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 96);
+            this.label1.Size = new System.Drawing.Size(207, 144);
             this.label1.TabIndex = 2;
             this.label1.Text = "Reliable\r\nAirlines\r\n";
             // 
@@ -169,7 +169,7 @@
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(245, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(729, 36);
+            this.panelSuperior.Size = new System.Drawing.Size(1103, 36);
             this.panelSuperior.TabIndex = 0;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
@@ -178,15 +178,14 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(245, 36);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(729, 615);
+            this.panelContainer.Size = new System.Drawing.Size(1103, 685);
             this.panelContainer.TabIndex = 1;
             // 
             // FormVistaPrincipalAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(974, 651);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.panelLateral);

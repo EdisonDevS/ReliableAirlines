@@ -40,9 +40,10 @@
             this.btnConsultaVuelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaVuelos.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultaVuelos.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaVuelos.Location = new System.Drawing.Point(12, 51);
+            this.btnConsultaVuelos.Location = new System.Drawing.Point(16, 13);
+            this.btnConsultaVuelos.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaVuelos.Name = "btnConsultaVuelos";
-            this.btnConsultaVuelos.Size = new System.Drawing.Size(229, 100);
+            this.btnConsultaVuelos.Size = new System.Drawing.Size(502, 366);
             this.btnConsultaVuelos.TabIndex = 77;
             this.btnConsultaVuelos.Text = "Consultar vuelos";
             this.btnConsultaVuelos.UseVisualStyleBackColor = false;
@@ -51,9 +52,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(247, 51);
+            this.panel1.Location = new System.Drawing.Point(526, 13);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 100);
+            this.panel1.Size = new System.Drawing.Size(5, 366);
             this.panel1.TabIndex = 76;
             // 
             // btnAdministrarVuelos
@@ -63,9 +65,10 @@
             this.btnAdministrarVuelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarVuelos.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrarVuelos.ForeColor = System.Drawing.Color.White;
-            this.btnAdministrarVuelos.Location = new System.Drawing.Point(256, 51);
+            this.btnAdministrarVuelos.Location = new System.Drawing.Point(538, 13);
+            this.btnAdministrarVuelos.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdministrarVuelos.Name = "btnAdministrarVuelos";
-            this.btnAdministrarVuelos.Size = new System.Drawing.Size(229, 100);
+            this.btnAdministrarVuelos.Size = new System.Drawing.Size(520, 366);
             this.btnAdministrarVuelos.TabIndex = 75;
             this.btnAdministrarVuelos.Text = "Gestionar vuelos";
             this.btnAdministrarVuelos.UseVisualStyleBackColor = false;
@@ -73,14 +76,14 @@
             // 
             // FormAdminVuelos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 202);
+            this.ClientSize = new System.Drawing.Size(1077, 392);
             this.Controls.Add(this.btnConsultaVuelos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdministrarVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdminVuelos";
             this.Text = "administrarRuta";
             this.ResumeLayout(false);

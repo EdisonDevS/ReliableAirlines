@@ -56,51 +56,57 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 47);
+            this.label1.Location = new System.Drawing.Point(24, 80);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 23);
+            this.label1.Size = new System.Drawing.Size(290, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de la ruta:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(129, 44);
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(265, 79);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(106, 20);
+            this.txtNombre.Size = new System.Drawing.Size(236, 44);
             this.txtNombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(41, 106);
+            this.label2.Location = new System.Drawing.Point(22, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 23);
+            this.label2.Size = new System.Drawing.Size(285, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ciudad de origen:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(41, 126);
+            this.label4.Location = new System.Drawing.Point(24, 287);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(213, 23);
+            this.label4.Size = new System.Drawing.Size(339, 37);
             this.label4.TabIndex = 6;
             this.label4.Text = "Aeropuerto de origen:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(41, 168);
+            this.label6.Location = new System.Drawing.Point(24, 342);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 23);
+            this.label6.Size = new System.Drawing.Size(271, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "Estado de la ruta:";
             // 
@@ -111,9 +117,10 @@
             this.btnCrearRuta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRuta.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearRuta.ForeColor = System.Drawing.Color.White;
-            this.btnCrearRuta.Location = new System.Drawing.Point(363, 158);
+            this.btnCrearRuta.Location = new System.Drawing.Point(888, 325);
+            this.btnCrearRuta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearRuta.Name = "btnCrearRuta";
-            this.btnCrearRuta.Size = new System.Drawing.Size(90, 33);
+            this.btnCrearRuta.Size = new System.Drawing.Size(176, 54);
             this.btnCrearRuta.TabIndex = 12;
             this.btnCrearRuta.Text = "Guardar ruta";
             this.btnCrearRuta.UseVisualStyleBackColor = false;
@@ -126,9 +133,10 @@
             this.btnAgragarCiudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgragarCiudad.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgragarCiudad.ForeColor = System.Drawing.Color.White;
-            this.btnAgragarCiudad.Location = new System.Drawing.Point(45, 8);
+            this.btnAgragarCiudad.Location = new System.Drawing.Point(13, 10);
+            this.btnAgragarCiudad.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgragarCiudad.Name = "btnAgragarCiudad";
-            this.btnAgragarCiudad.Size = new System.Drawing.Size(413, 33);
+            this.btnAgragarCiudad.Size = new System.Drawing.Size(1051, 59);
             this.btnAgragarCiudad.TabIndex = 15;
             this.btnAgragarCiudad.Text = "Agregar ciudad o aeropuerto";
             this.btnAgragarCiudad.UseVisualStyleBackColor = false;
@@ -138,10 +146,12 @@
             // 
             this.cbbAerOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbAerOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbAerOrigen.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAerOrigen.FormattingEnabled = true;
-            this.cbbAerOrigen.Location = new System.Drawing.Point(143, 123);
+            this.cbbAerOrigen.Location = new System.Drawing.Point(301, 283);
+            this.cbbAerOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbAerOrigen.Name = "cbbAerOrigen";
-            this.cbbAerOrigen.Size = new System.Drawing.Size(92, 21);
+            this.cbbAerOrigen.Size = new System.Drawing.Size(200, 45);
             this.cbbAerOrigen.TabIndex = 16;
             this.cbbAerOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbAerOrigen_SelectedIndexChanged);
             // 
@@ -149,21 +159,24 @@
             // 
             this.cbbCiudadOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbCiudadOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudadOrigen.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCiudadOrigen.FormattingEnabled = true;
-            this.cbbCiudadOrigen.Location = new System.Drawing.Point(129, 103);
+            this.cbbCiudadOrigen.Location = new System.Drawing.Point(257, 232);
+            this.cbbCiudadOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudadOrigen.Name = "cbbCiudadOrigen";
-            this.cbbCiudadOrigen.Size = new System.Drawing.Size(106, 21);
+            this.cbbCiudadOrigen.Size = new System.Drawing.Size(221, 45);
             this.cbbCiudadOrigen.TabIndex = 18;
             this.cbbCiudadOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbCiudadOrigen_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(41, 67);
+            this.label7.Location = new System.Drawing.Point(22, 133);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 23);
+            this.label7.Size = new System.Drawing.Size(231, 37);
             this.label7.TabIndex = 20;
             this.label7.Text = "Pais de origen:";
             // 
@@ -171,21 +184,24 @@
             // 
             this.cbbPaisOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbPaisOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbPaisOrigen.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbPaisOrigen.FormattingEnabled = true;
-            this.cbbPaisOrigen.Location = new System.Drawing.Point(129, 64);
+            this.cbbPaisOrigen.Location = new System.Drawing.Point(216, 130);
+            this.cbbPaisOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPaisOrigen.Name = "cbbPaisOrigen";
-            this.cbbPaisOrigen.Size = new System.Drawing.Size(106, 21);
+            this.cbbPaisOrigen.Size = new System.Drawing.Size(218, 45);
             this.cbbPaisOrigen.TabIndex = 21;
             this.cbbPaisOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbPaisOrigen_SelectedIndexChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(41, 86);
+            this.label8.Location = new System.Drawing.Point(22, 185);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 23);
+            this.label8.Size = new System.Drawing.Size(273, 37);
             this.label8.TabIndex = 22;
             this.label8.Text = "Estado de origen:";
             // 
@@ -193,21 +209,24 @@
             // 
             this.cbbEstadoOrigen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbEstadoOrigen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoOrigen.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEstadoOrigen.FormattingEnabled = true;
-            this.cbbEstadoOrigen.Location = new System.Drawing.Point(129, 83);
+            this.cbbEstadoOrigen.Location = new System.Drawing.Point(247, 182);
+            this.cbbEstadoOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstadoOrigen.Name = "cbbEstadoOrigen";
-            this.cbbEstadoOrigen.Size = new System.Drawing.Size(106, 21);
+            this.cbbEstadoOrigen.Size = new System.Drawing.Size(217, 45);
             this.cbbEstadoOrigen.TabIndex = 23;
             this.cbbEstadoOrigen.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoOrigen_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(259, 86);
+            this.label3.Location = new System.Drawing.Point(563, 185);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 23);
+            this.label3.Size = new System.Drawing.Size(287, 37);
             this.label3.TabIndex = 32;
             this.label3.Text = "Estado de destino:";
             // 
@@ -215,21 +234,24 @@
             // 
             this.cbbEstadoDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbEstadoDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstadoDestino.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEstadoDestino.FormattingEnabled = true;
-            this.cbbEstadoDestino.Location = new System.Drawing.Point(347, 83);
+            this.cbbEstadoDestino.Location = new System.Drawing.Point(823, 180);
+            this.cbbEstadoDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstadoDestino.Name = "cbbEstadoDestino";
-            this.cbbEstadoDestino.Size = new System.Drawing.Size(106, 21);
+            this.cbbEstadoDestino.Size = new System.Drawing.Size(195, 45);
             this.cbbEstadoDestino.TabIndex = 33;
             this.cbbEstadoDestino.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoDestino_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(259, 67);
+            this.label5.Location = new System.Drawing.Point(563, 133);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 23);
+            this.label5.Size = new System.Drawing.Size(245, 37);
             this.label5.TabIndex = 30;
             this.label5.Text = "Pais de destino:";
             // 
@@ -237,32 +259,36 @@
             // 
             this.cbbPaisDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbPaisDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbPaisDestino.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbPaisDestino.FormattingEnabled = true;
-            this.cbbPaisDestino.Location = new System.Drawing.Point(347, 64);
+            this.cbbPaisDestino.Location = new System.Drawing.Point(794, 128);
+            this.cbbPaisDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPaisDestino.Name = "cbbPaisDestino";
-            this.cbbPaisDestino.Size = new System.Drawing.Size(106, 21);
+            this.cbbPaisDestino.Size = new System.Drawing.Size(195, 45);
             this.cbbPaisDestino.TabIndex = 31;
             this.cbbPaisDestino.SelectedIndexChanged += new System.EventHandler(this.cbbPaisDestino_SelectedIndexChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(259, 126);
+            this.label9.Location = new System.Drawing.Point(563, 287);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(221, 23);
+            this.label9.Size = new System.Drawing.Size(353, 37);
             this.label9.TabIndex = 27;
             this.label9.Text = "Aeropuerto de destino:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(259, 106);
+            this.label10.Location = new System.Drawing.Point(563, 237);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(187, 23);
+            this.label10.Size = new System.Drawing.Size(299, 37);
             this.label10.TabIndex = 26;
             this.label10.Text = "Ciudad de destino:";
             // 
@@ -270,20 +296,24 @@
             // 
             this.cbbAerDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbAerDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbAerDestino.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAerDestino.FormattingEnabled = true;
-            this.cbbAerDestino.Location = new System.Drawing.Point(361, 123);
+            this.cbbAerDestino.Location = new System.Drawing.Point(879, 282);
+            this.cbbAerDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbAerDestino.Name = "cbbAerDestino";
-            this.cbbAerDestino.Size = new System.Drawing.Size(92, 21);
+            this.cbbAerDestino.Size = new System.Drawing.Size(176, 45);
             this.cbbAerDestino.TabIndex = 28;
             // 
             // cbbCiudadDestino
             // 
             this.cbbCiudadDestino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbCiudadDestino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbCiudadDestino.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCiudadDestino.FormattingEnabled = true;
-            this.cbbCiudadDestino.Location = new System.Drawing.Point(347, 103);
+            this.cbbCiudadDestino.Location = new System.Drawing.Point(835, 232);
+            this.cbbCiudadDestino.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCiudadDestino.Name = "cbbCiudadDestino";
-            this.cbbCiudadDestino.Size = new System.Drawing.Size(106, 21);
+            this.cbbCiudadDestino.Size = new System.Drawing.Size(195, 45);
             this.cbbCiudadDestino.TabIndex = 29;
             this.cbbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cbbCiudadDestino_SelectedIndexChanged);
             // 
@@ -291,13 +321,15 @@
             // 
             this.cbbEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbbEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbEstado.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEstado.FormattingEnabled = true;
             this.cbbEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cbbEstado.Location = new System.Drawing.Point(119, 164);
+            this.cbbEstado.Location = new System.Drawing.Point(247, 342);
+            this.cbbEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEstado.Name = "cbbEstado";
-            this.cbbEstado.Size = new System.Drawing.Size(93, 21);
+            this.cbbEstado.Size = new System.Drawing.Size(169, 45);
             this.cbbEstado.TabIndex = 34;
             // 
             // btnVerRutas
@@ -307,9 +339,10 @@
             this.btnVerRutas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerRutas.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerRutas.ForeColor = System.Drawing.Color.White;
-            this.btnVerRutas.Location = new System.Drawing.Point(267, 158);
+            this.btnVerRutas.Location = new System.Drawing.Point(704, 325);
+            this.btnVerRutas.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerRutas.Name = "btnVerRutas";
-            this.btnVerRutas.Size = new System.Drawing.Size(90, 33);
+            this.btnVerRutas.Size = new System.Drawing.Size(176, 54);
             this.btnVerRutas.TabIndex = 35;
             this.btnVerRutas.Text = "Ver rutas";
             this.btnVerRutas.UseVisualStyleBackColor = false;
@@ -317,10 +350,9 @@
             // 
             // FormCrearRuta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 202);
+            this.ClientSize = new System.Drawing.Size(1077, 392);
             this.Controls.Add(this.btnVerRutas);
             this.Controls.Add(this.cbbEstado);
             this.Controls.Add(this.label3);
@@ -345,6 +377,7 @@
             this.Controls.Add(this.cbbAerOrigen);
             this.Controls.Add(this.cbbCiudadOrigen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCrearRuta";
             this.Text = "crearRuta";
             this.Load += new System.EventHandler(this.FormCrearRuta_Load);

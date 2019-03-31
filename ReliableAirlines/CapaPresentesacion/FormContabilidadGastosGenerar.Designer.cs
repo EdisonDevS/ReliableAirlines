@@ -36,9 +36,10 @@
             // panelGenerarGasto
             // 
             this.panelGenerarGasto.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelGenerarGasto.Location = new System.Drawing.Point(0, 36);
+            this.panelGenerarGasto.Location = new System.Drawing.Point(0, 42);
+            this.panelGenerarGasto.Margin = new System.Windows.Forms.Padding(4);
             this.panelGenerarGasto.Name = "panelGenerarGasto";
-            this.panelGenerarGasto.Size = new System.Drawing.Size(984, 655);
+            this.panelGenerarGasto.Size = new System.Drawing.Size(1312, 679);
             this.panelGenerarGasto.TabIndex = 5;
             // 
             // btnOtros
@@ -48,9 +49,10 @@
             this.btnOtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOtros.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOtros.ForeColor = System.Drawing.Color.White;
-            this.btnOtros.Location = new System.Drawing.Point(484, 0);
+            this.btnOtros.Location = new System.Drawing.Point(645, 0);
+            this.btnOtros.Margin = new System.Windows.Forms.Padding(4);
             this.btnOtros.Name = "btnOtros";
-            this.btnOtros.Size = new System.Drawing.Size(500, 35);
+            this.btnOtros.Size = new System.Drawing.Size(667, 43);
             this.btnOtros.TabIndex = 4;
             this.btnOtros.Text = "Otros gastos";
             this.btnOtros.UseVisualStyleBackColor = false;
@@ -64,8 +66,9 @@
             this.btnNomina.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomina.ForeColor = System.Drawing.Color.White;
             this.btnNomina.Location = new System.Drawing.Point(0, 0);
+            this.btnNomina.Margin = new System.Windows.Forms.Padding(4);
             this.btnNomina.Name = "btnNomina";
-            this.btnNomina.Size = new System.Drawing.Size(500, 35);
+            this.btnNomina.Size = new System.Drawing.Size(667, 43);
             this.btnNomina.TabIndex = 3;
             this.btnNomina.Text = "Pago de nomina";
             this.btnNomina.UseVisualStyleBackColor = false;
@@ -73,14 +76,14 @@
             // 
             // FormContabilidadGastosGenerar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(984, 691);
+            this.ClientSize = new System.Drawing.Size(1312, 721);
             this.Controls.Add(this.panelGenerarGasto);
             this.Controls.Add(this.btnOtros);
             this.Controls.Add(this.btnNomina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadGastosGenerar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormContabilidadGastosGenerar";

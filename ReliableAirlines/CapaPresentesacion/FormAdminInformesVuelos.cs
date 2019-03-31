@@ -40,5 +40,10 @@ namespace CapaPresentesacion
             txtInforme.Text = dgvDatos.CurrentRow.Cells[3].Value.ToString();
             lblCalificación.Text = dgvDatos.CurrentRow.Cells[5].Value.ToString();
         }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

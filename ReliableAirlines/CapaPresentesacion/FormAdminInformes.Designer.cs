@@ -44,7 +44,7 @@
             this.btnInformeEmpleado.Location = new System.Drawing.Point(0, 0);
             this.btnInformeEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.btnInformeEmpleado.Name = "btnInformeEmpleado";
-            this.btnInformeEmpleado.Size = new System.Drawing.Size(331, 33);
+            this.btnInformeEmpleado.Size = new System.Drawing.Size(539, 50);
             this.btnInformeEmpleado.TabIndex = 16;
             this.btnInformeEmpleado.Text = "Informes de empleados";
             this.btnInformeEmpleado.UseVisualStyleBackColor = false;
@@ -58,10 +58,10 @@
             this.btnInformeVuelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformeVuelos.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformeVuelos.ForeColor = System.Drawing.Color.White;
-            this.btnInformeVuelos.Location = new System.Drawing.Point(331, 0);
+            this.btnInformeVuelos.Location = new System.Drawing.Point(539, 0);
             this.btnInformeVuelos.Margin = new System.Windows.Forms.Padding(4);
             this.btnInformeVuelos.Name = "btnInformeVuelos";
-            this.btnInformeVuelos.Size = new System.Drawing.Size(332, 33);
+            this.btnInformeVuelos.Size = new System.Drawing.Size(538, 50);
             this.btnInformeVuelos.TabIndex = 15;
             this.btnInformeVuelos.Text = "Informes de vuelos";
             this.btnInformeVuelos.UseVisualStyleBackColor = false;
@@ -70,20 +70,19 @@
             // panelInformes
             // 
             this.panelInformes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInformes.Location = new System.Drawing.Point(0, 30);
+            this.panelInformes.Location = new System.Drawing.Point(0, 54);
             this.panelInformes.Margin = new System.Windows.Forms.Padding(4);
             this.panelInformes.Name = "panelInformes";
-            this.panelInformes.Size = new System.Drawing.Size(663, 249);
+            this.panelInformes.Size = new System.Drawing.Size(1077, 386);
             this.panelInformes.TabIndex = 14;
             // 
             // FormAdminInformes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(663, 279);
-            this.Controls.Add(this.btnInformeEmpleado);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnInformeVuelos);
+            this.Controls.Add(this.btnInformeEmpleado);
             this.Controls.Add(this.panelInformes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdminInformes";

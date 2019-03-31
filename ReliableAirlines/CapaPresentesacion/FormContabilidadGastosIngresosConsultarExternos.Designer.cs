@@ -53,7 +53,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel2.Location = new System.Drawing.Point(16, 446);
+            this.panel2.Location = new System.Drawing.Point(16, 374);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1280, 1);
@@ -64,7 +64,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(16, 454);
+            this.label3.Location = new System.Drawing.Point(16, 382);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(330, 33);
@@ -119,7 +119,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDatos.Size = new System.Drawing.Size(1272, 241);
+            this.dgvDatos.Size = new System.Drawing.Size(1272, 180);
             this.dgvDatos.TabIndex = 73;
             this.dgvDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellClick);
             // 
@@ -176,7 +176,7 @@
             this.btnVerFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerFactura.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerFactura.ForeColor = System.Drawing.Color.White;
-            this.btnVerFactura.Location = new System.Drawing.Point(1129, 725);
+            this.btnVerFactura.Location = new System.Drawing.Point(1132, 602);
             this.btnVerFactura.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerFactura.Name = "btnVerFactura";
             this.btnVerFactura.Size = new System.Drawing.Size(167, 68);
@@ -190,7 +190,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(18, 499);
+            this.label4.Location = new System.Drawing.Point(18, 417);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(176, 33);
@@ -201,9 +201,9 @@
             // 
             this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(24, 535);
+            this.txtDescripcion.Location = new System.Drawing.Point(24, 453);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(711, 249);
+            this.txtDescripcion.Size = new System.Drawing.Size(711, 214);
             this.txtDescripcion.TabIndex = 81;
             this.txtDescripcion.Text = "";
             // 
@@ -213,7 +213,7 @@
             this.dtpFecha.Enabled = false;
             this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(854, 542);
+            this.dtpFecha.Location = new System.Drawing.Point(854, 460);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(201, 40);
@@ -224,7 +224,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(742, 542);
+            this.label5.Location = new System.Drawing.Point(742, 460);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 33);
@@ -236,7 +236,7 @@
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.ForeColor = System.Drawing.Color.White;
-            this.lblValor.Location = new System.Drawing.Point(742, 603);
+            this.lblValor.Location = new System.Drawing.Point(742, 521);
             this.lblValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(98, 33);
@@ -248,7 +248,7 @@
             this.lblContacto.AutoSize = true;
             this.lblContacto.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContacto.ForeColor = System.Drawing.Color.White;
-            this.lblContacto.Location = new System.Drawing.Point(742, 651);
+            this.lblContacto.Location = new System.Drawing.Point(742, 569);
             this.lblContacto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContacto.Name = "lblContacto";
             this.lblContacto.Size = new System.Drawing.Size(158, 33);
@@ -260,7 +260,7 @@
             this.lblNit.AutoSize = true;
             this.lblNit.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNit.ForeColor = System.Drawing.Color.White;
-            this.lblNit.Location = new System.Drawing.Point(742, 700);
+            this.lblNit.Location = new System.Drawing.Point(742, 618);
             this.lblNit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNit.Name = "lblNit";
             this.lblNit.Size = new System.Drawing.Size(65, 33);
@@ -269,10 +269,9 @@
             // 
             // FormContabilidadGastosIngresosConsultarExternos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.ClientSize = new System.Drawing.Size(1312, 679);
             this.Controls.Add(this.lblNit);
             this.Controls.Add(this.lblContacto);
             this.Controls.Add(this.lblValor);

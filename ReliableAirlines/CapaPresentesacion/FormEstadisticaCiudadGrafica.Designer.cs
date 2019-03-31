@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnVer = new System.Windows.Forms.Button();
             this.txtAño = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,19 +74,19 @@
             // 
             // graCiudades
             // 
-            chartArea3.Name = "ChartArea1";
-            this.graCiudades.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.graCiudades.ChartAreas.Add(chartArea1);
             this.graCiudades.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend3.Name = "Legend1";
-            this.graCiudades.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.graCiudades.Legends.Add(legend1);
             this.graCiudades.Location = new System.Drawing.Point(0, 77);
             this.graCiudades.Margin = new System.Windows.Forms.Padding(4);
             this.graCiudades.Name = "graCiudades";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.graCiudades.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.graCiudades.Series.Add(series1);
             this.graCiudades.Size = new System.Drawing.Size(1252, 477);
             this.graCiudades.TabIndex = 50;
             this.graCiudades.Text = "chart1";
@@ -105,8 +105,7 @@
             // 
             // FormEstadisticaCiudadGrafica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1252, 554);
             this.Controls.Add(this.cbbCiudades);

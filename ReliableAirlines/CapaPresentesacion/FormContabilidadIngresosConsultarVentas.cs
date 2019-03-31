@@ -71,5 +71,10 @@ namespace CapaPresentesacion
                 lblValor.Text += datos.Rows[0][8].ToString();
             }
         }
+
+        private void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

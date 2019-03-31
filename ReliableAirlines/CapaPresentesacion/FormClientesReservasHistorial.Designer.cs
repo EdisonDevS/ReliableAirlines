@@ -75,16 +75,15 @@
             this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvVuelos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvVuelos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvVuelos.Size = new System.Drawing.Size(660, 219);
+            this.dgvVuelos.Size = new System.Drawing.Size(1048, 588);
             this.dgvVuelos.TabIndex = 144;
             this.dgvVuelos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVuelos_CellContentClick);
             // 
             // FormClientesReservasHistorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(689, 407);
+            this.ClientSize = new System.Drawing.Size(1077, 614);
             this.Controls.Add(this.dgvVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

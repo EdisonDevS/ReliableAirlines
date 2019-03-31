@@ -113,7 +113,7 @@
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerar.ForeColor = System.Drawing.Color.White;
-            this.btnGenerar.Location = new System.Drawing.Point(1129, 724);
+            this.btnGenerar.Location = new System.Drawing.Point(1132, 598);
             this.btnGenerar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(167, 68);
@@ -143,12 +143,11 @@
             this.cbbReceptor.Size = new System.Drawing.Size(940, 38);
             this.cbbReceptor.TabIndex = 156;
             // 
-            // FormContabilidadGastosIngresosGenerarOtros
+            // FormContabilidadGastosIngresosGenerarExternos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.ClientSize = new System.Drawing.Size(1312, 679);
             this.Controls.Add(this.cbbReceptor);
             this.Controls.Add(this.txtDescripcionGasto);
             this.Controls.Add(this.btnGenerar);
@@ -160,7 +159,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormContabilidadGastosIngresosGenerarOtros";
+            this.Name = "FormContabilidadGastosIngresosGenerarExternos";
             this.Text = "FormContabilidadGastosGenerarOtros";
             this.ResumeLayout(false);
             this.PerformLayout();

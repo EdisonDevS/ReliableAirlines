@@ -39,5 +39,10 @@ namespace CapaPresentesacion
         {
 
         }
+
+        private void dtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

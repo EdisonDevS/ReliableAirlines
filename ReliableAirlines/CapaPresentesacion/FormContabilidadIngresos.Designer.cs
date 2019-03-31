@@ -40,9 +40,10 @@
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerar.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerar.ForeColor = System.Drawing.Color.White;
-            this.btnGenerar.Location = new System.Drawing.Point(12, 63);
+            this.btnGenerar.Location = new System.Drawing.Point(13, 13);
+            this.btnGenerar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(229, 100);
+            this.btnGenerar.Size = new System.Drawing.Size(511, 414);
             this.btnGenerar.TabIndex = 89;
             this.btnGenerar.Text = "Generar ingreso";
             this.btnGenerar.UseVisualStyleBackColor = false;
@@ -51,9 +52,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(185)))), ((int)(((byte)(120)))));
-            this.panel1.Location = new System.Drawing.Point(247, 63);
+            this.panel1.Location = new System.Drawing.Point(532, 13);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 100);
+            this.panel1.Size = new System.Drawing.Size(2, 412);
             this.panel1.TabIndex = 88;
             // 
             // btnConsultar
@@ -63,9 +65,10 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(256, 63);
+            this.btnConsultar.Location = new System.Drawing.Point(542, 13);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(229, 100);
+            this.btnConsultar.Size = new System.Drawing.Size(522, 414);
             this.btnConsultar.TabIndex = 87;
             this.btnConsultar.Text = "Consultar ingreso";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -73,14 +76,14 @@
             // 
             // FormContabilidadIngresos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(497, 227);
+            this.ClientSize = new System.Drawing.Size(1077, 440);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnConsultar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContabilidadIngresos";
             this.Text = "FormContabilidadIngresos";
             this.ResumeLayout(false);

@@ -38,10 +38,10 @@
             // 
             this.panelConsultarGasto.AutoScroll = true;
             this.panelConsultarGasto.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelConsultarGasto.Location = new System.Drawing.Point(0, 41);
+            this.panelConsultarGasto.Location = new System.Drawing.Point(0, 42);
             this.panelConsultarGasto.Margin = new System.Windows.Forms.Padding(4);
             this.panelConsultarGasto.Name = "panelConsultarGasto";
-            this.panelConsultarGasto.Size = new System.Drawing.Size(1312, 809);
+            this.panelConsultarGasto.Size = new System.Drawing.Size(1312, 679);
             this.panelConsultarGasto.TabIndex = 8;
             // 
             // btnOtros
@@ -94,10 +94,9 @@
             // 
             // FormContabilidadGastosConsultar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1312, 850);
+            this.ClientSize = new System.Drawing.Size(1312, 721);
             this.Controls.Add(this.panelConsultarGasto);
             this.Controls.Add(this.btnOtros);
             this.Controls.Add(this.btnNomina);

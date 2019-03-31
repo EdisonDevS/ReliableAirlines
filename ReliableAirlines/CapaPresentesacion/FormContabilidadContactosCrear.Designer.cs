@@ -161,7 +161,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvNumeros.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvNumeros.Location = new System.Drawing.Point(19, 317);
+            this.dgvNumeros.Location = new System.Drawing.Point(19, 275);
             this.dgvNumeros.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNumeros.Name = "dgvNumeros";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -179,7 +179,7 @@
             // 
             this.txtNumTelefono.Enabled = false;
             this.txtNumTelefono.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.txtNumTelefono.Location = new System.Drawing.Point(321, 535);
+            this.txtNumTelefono.Location = new System.Drawing.Point(321, 493);
             this.txtNumTelefono.Name = "txtNumTelefono";
             this.txtNumTelefono.Size = new System.Drawing.Size(185, 40);
             this.txtNumTelefono.TabIndex = 168;
@@ -189,7 +189,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 538);
+            this.label4.Location = new System.Drawing.Point(13, 496);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(291, 33);
@@ -216,7 +216,7 @@
             // 
             this.txtContesta.Enabled = false;
             this.txtContesta.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.txtContesta.Location = new System.Drawing.Point(678, 538);
+            this.txtContesta.Location = new System.Drawing.Point(678, 496);
             this.txtContesta.Name = "txtContesta";
             this.txtContesta.Size = new System.Drawing.Size(424, 40);
             this.txtContesta.TabIndex = 171;
@@ -226,7 +226,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(523, 538);
+            this.label5.Location = new System.Drawing.Point(523, 496);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 33);
@@ -241,7 +241,7 @@
             this.btnTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTelefono.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTelefono.ForeColor = System.Drawing.Color.White;
-            this.btnTelefono.Location = new System.Drawing.Point(19, 614);
+            this.btnTelefono.Location = new System.Drawing.Point(19, 572);
             this.btnTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.btnTelefono.Name = "btnTelefono";
             this.btnTelefono.Size = new System.Drawing.Size(216, 67);
@@ -252,10 +252,9 @@
             // 
             // FormContabilidadContactosCrear
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(1140, 738);
+            this.ClientSize = new System.Drawing.Size(1140, 668);
             this.Controls.Add(this.btnTelefono);
             this.Controls.Add(this.txtContesta);
             this.Controls.Add(this.label5);

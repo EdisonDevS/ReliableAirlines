@@ -46,10 +46,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(553, 343);
+            this.btnCancelar.Location = new System.Drawing.Point(835, 533);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(120, 41);
+            this.btnCancelar.Size = new System.Drawing.Size(229, 68);
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "Cancelar reserva";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@
             this.dgvVuelos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvVuelos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvVuelos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvVuelos.Size = new System.Drawing.Size(660, 186);
+            this.dgvVuelos.Size = new System.Drawing.Size(1051, 466);
             this.dgvVuelos.TabIndex = 143;
             // 
             // label1
@@ -101,7 +101,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 231);
+            this.label1.Location = new System.Drawing.Point(9, 483);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(903, 46);
             this.label1.TabIndex = 144;
@@ -115,10 +115,10 @@
             this.btnVerTiquete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTiquete.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerTiquete.ForeColor = System.Drawing.Color.White;
-            this.btnVerTiquete.Location = new System.Drawing.Point(385, 343);
+            this.btnVerTiquete.Location = new System.Drawing.Point(623, 533);
             this.btnVerTiquete.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerTiquete.Name = "btnVerTiquete";
-            this.btnVerTiquete.Size = new System.Drawing.Size(136, 41);
+            this.btnVerTiquete.Size = new System.Drawing.Size(204, 68);
             this.btnVerTiquete.TabIndex = 145;
             this.btnVerTiquete.Text = "Ver tiquete";
             this.btnVerTiquete.UseVisualStyleBackColor = false;
@@ -126,10 +126,9 @@
             // 
             // FormClientesReservasMisReservas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(689, 407);
+            this.ClientSize = new System.Drawing.Size(1077, 614);
             this.Controls.Add(this.btnVerTiquete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVuelos);

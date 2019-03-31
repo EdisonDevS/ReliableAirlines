@@ -40,10 +40,10 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(537, 305);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Location = new System.Drawing.Point(871, 604);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(147, 49);
+            this.btnGuardar.Size = new System.Drawing.Size(219, 68);
             this.btnGuardar.TabIndex = 72;
             this.btnGuardar.Text = "Guardar informe";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -65,23 +65,22 @@
             // 
             this.txtComentarios.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.txtComentarios.Location = new System.Drawing.Point(21, 68);
-            this.txtComentarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtComentarios.Margin = new System.Windows.Forms.Padding(4);
             this.txtComentarios.Name = "txtComentarios";
-            this.txtComentarios.Size = new System.Drawing.Size(661, 229);
+            this.txtComentarios.Size = new System.Drawing.Size(1069, 528);
             this.txtComentarios.TabIndex = 70;
             this.txtComentarios.Text = "";
             // 
             // FormEmpleadosInformes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(972, 597);
+            this.ClientSize = new System.Drawing.Size(1103, 685);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtComentarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEmpleadosInformes";
             this.Text = "FormEmpleadosInformes";
             this.ResumeLayout(false);

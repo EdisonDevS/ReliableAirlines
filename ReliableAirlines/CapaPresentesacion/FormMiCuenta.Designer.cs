@@ -61,7 +61,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(53, 11);
+            this.lblUsuario.Location = new System.Drawing.Point(53, 50);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(111, 28);
@@ -73,7 +73,7 @@
             this.lblNacimiento.AutoSize = true;
             this.lblNacimiento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNacimiento.ForeColor = System.Drawing.Color.White;
-            this.lblNacimiento.Location = new System.Drawing.Point(53, 131);
+            this.lblNacimiento.Location = new System.Drawing.Point(53, 221);
             this.lblNacimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNacimiento.Name = "lblNacimiento";
             this.lblNacimiento.Size = new System.Drawing.Size(274, 28);
@@ -85,7 +85,7 @@
             this.lblDocumento.AutoSize = true;
             this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocumento.ForeColor = System.Drawing.Color.White;
-            this.lblDocumento.Location = new System.Drawing.Point(53, 102);
+            this.lblDocumento.Location = new System.Drawing.Point(53, 174);
             this.lblDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDocumento.Name = "lblDocumento";
             this.lblDocumento.Size = new System.Drawing.Size(161, 28);
@@ -97,7 +97,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(53, 46);
+            this.lblNombre.Location = new System.Drawing.Point(53, 92);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(132, 28);
@@ -109,7 +109,7 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.White;
-            this.lblApellido.Location = new System.Drawing.Point(53, 74);
+            this.lblApellido.Location = new System.Drawing.Point(50, 134);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(135, 28);
@@ -121,7 +121,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(53, 190);
+            this.label18.Location = new System.Drawing.Point(53, 382);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(279, 30);
@@ -136,30 +136,30 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.btnGuardarCambios);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Location = new System.Drawing.Point(54, 211);
+            this.panel1.Location = new System.Drawing.Point(58, 416);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 156);
+            this.panel1.Size = new System.Drawing.Size(551, 221);
             this.panel1.TabIndex = 74;
             // 
             // txtVerificar
             // 
             this.txtVerificar.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtVerificar.Location = new System.Drawing.Point(167, 50);
+            this.txtVerificar.Location = new System.Drawing.Point(261, 56);
             this.txtVerificar.Margin = new System.Windows.Forms.Padding(4);
             this.txtVerificar.Name = "txtVerificar";
             this.txtVerificar.PasswordChar = '*';
-            this.txtVerificar.Size = new System.Drawing.Size(152, 37);
+            this.txtVerificar.Size = new System.Drawing.Size(286, 37);
             this.txtVerificar.TabIndex = 77;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtContraseña.Location = new System.Drawing.Point(167, 11);
+            this.txtContraseña.Location = new System.Drawing.Point(261, 14);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(152, 37);
+            this.txtContraseña.Size = new System.Drawing.Size(286, 37);
             this.txtContraseña.TabIndex = 76;
             // 
             // label19
@@ -181,10 +181,10 @@
             this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambios.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(167, 96);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(357, 147);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(153, 54);
+            this.btnGuardarCambios.Size = new System.Drawing.Size(190, 70);
             this.btnGuardarCambios.TabIndex = 74;
             this.btnGuardarCambios.Text = "Guardar cambios";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
@@ -195,7 +195,7 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.White;
-            this.lblTelefono.Location = new System.Drawing.Point(53, 162);
+            this.lblTelefono.Location = new System.Drawing.Point(53, 268);
             this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(123, 28);
@@ -204,10 +204,9 @@
             // 
             // FormMiCuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(972, 597);
+            this.ClientSize = new System.Drawing.Size(1103, 685);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label18);

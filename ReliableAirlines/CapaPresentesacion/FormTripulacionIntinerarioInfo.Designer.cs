@@ -88,7 +88,7 @@
             this.dtpHoraLlegada.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpHoraLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHoraLlegada.Location = new System.Drawing.Point(1036, 104);
-            this.dtpHoraLlegada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpHoraLlegada.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHoraLlegada.Name = "dtpHoraLlegada";
             this.dtpHoraLlegada.Size = new System.Drawing.Size(200, 37);
             this.dtpHoraLlegada.TabIndex = 69;
@@ -111,7 +111,7 @@
             this.dtpFechaLlegada.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpFechaLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaLlegada.Location = new System.Drawing.Point(856, 104);
-            this.dtpFechaLlegada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaLlegada.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaLlegada.Name = "dtpFechaLlegada";
             this.dtpFechaLlegada.Size = new System.Drawing.Size(171, 37);
             this.dtpFechaLlegada.TabIndex = 67;
@@ -122,7 +122,7 @@
             this.dtpHoraSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHoraSalida.Location = new System.Drawing.Point(311, 104);
-            this.dtpHoraSalida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpHoraSalida.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHoraSalida.Name = "dtpHoraSalida";
             this.dtpHoraSalida.Size = new System.Drawing.Size(200, 37);
             this.dtpHoraSalida.TabIndex = 66;
@@ -145,7 +145,7 @@
             this.dtpFechaSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.dtpFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaSalida.Location = new System.Drawing.Point(131, 104);
-            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaSalida.Name = "dtpFechaSalida";
             this.dtpFechaSalida.Size = new System.Drawing.Size(171, 37);
             this.dtpFechaSalida.TabIndex = 64;
@@ -212,8 +212,7 @@
             // 
             // FormTripulacionIntinerarioInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1267, 578);
             this.Controls.Add(this.dgvTripulacion);
@@ -229,7 +228,7 @@
             this.Controls.Add(this.lblClaseT);
             this.Controls.Add(this.lblPclase);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTripulacionIntinerarioInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTripulacionIntinerarioInfo";

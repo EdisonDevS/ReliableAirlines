@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.graAfluencia = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnVer = new System.Windows.Forms.Button();
             this.txtAño = new System.Windows.Forms.TextBox();
@@ -41,19 +41,19 @@
             // 
             // graAfluencia
             // 
-            chartArea2.Name = "ChartArea1";
-            this.graAfluencia.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.graAfluencia.ChartAreas.Add(chartArea1);
             this.graAfluencia.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend2.Name = "Legend1";
-            this.graAfluencia.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.graAfluencia.Legends.Add(legend1);
             this.graAfluencia.Location = new System.Drawing.Point(0, 77);
             this.graAfluencia.Margin = new System.Windows.Forms.Padding(4);
             this.graAfluencia.Name = "graAfluencia";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.graAfluencia.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.graAfluencia.Series.Add(series1);
             this.graAfluencia.Size = new System.Drawing.Size(1252, 477);
             this.graAfluencia.TabIndex = 0;
             this.graAfluencia.Text = "chart1";
@@ -105,8 +105,7 @@
             // 
             // FormEstadisticaAfluenciaGrafica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1252, 554);
             this.Controls.Add(this.cbbNombreRuta);

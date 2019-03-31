@@ -154,7 +154,7 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidos.ForeColor = System.Drawing.Color.White;
-            this.lblApellidos.Location = new System.Drawing.Point(7, 517);
+            this.lblApellidos.Location = new System.Drawing.Point(7, 493);
             this.lblApellidos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(149, 33);
@@ -166,7 +166,7 @@
             this.lblDocumento.AutoSize = true;
             this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocumento.ForeColor = System.Drawing.Color.White;
-            this.lblDocumento.Location = new System.Drawing.Point(7, 582);
+            this.lblDocumento.Location = new System.Drawing.Point(7, 538);
             this.lblDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDocumento.Name = "lblDocumento";
             this.lblDocumento.Size = new System.Drawing.Size(188, 33);
@@ -178,7 +178,7 @@
             this.lblNumeroContrato.AutoSize = true;
             this.lblNumeroContrato.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroContrato.ForeColor = System.Drawing.Color.White;
-            this.lblNumeroContrato.Location = new System.Drawing.Point(7, 645);
+            this.lblNumeroContrato.Location = new System.Drawing.Point(7, 578);
             this.lblNumeroContrato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumeroContrato.Name = "lblNumeroContrato";
             this.lblNumeroContrato.Size = new System.Drawing.Size(301, 33);
@@ -190,7 +190,7 @@
             this.lblSueldo.AutoSize = true;
             this.lblSueldo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSueldo.ForeColor = System.Drawing.Color.White;
-            this.lblSueldo.Location = new System.Drawing.Point(7, 704);
+            this.lblSueldo.Location = new System.Drawing.Point(7, 619);
             this.lblSueldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSueldo.Name = "lblSueldo";
             this.lblSueldo.Size = new System.Drawing.Size(193, 33);
@@ -214,7 +214,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(684, 517);
+            this.label9.Location = new System.Drawing.Point(684, 493);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 33);
@@ -226,7 +226,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
-            this.lblTotal.Location = new System.Drawing.Point(684, 582);
+            this.lblTotal.Location = new System.Drawing.Point(684, 538);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -237,7 +237,7 @@
             // txtHora
             // 
             this.txtHora.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.txtHora.Location = new System.Drawing.Point(908, 511);
+            this.txtHora.Location = new System.Drawing.Point(908, 487);
             this.txtHora.Margin = new System.Windows.Forms.Padding(4);
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(82, 40);
@@ -259,7 +259,7 @@
             this.btnConfirmarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmarPago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmarPago.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmarPago.Location = new System.Drawing.Point(690, 670);
+            this.btnConfirmarPago.Location = new System.Drawing.Point(690, 585);
             this.btnConfirmarPago.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmarPago.Name = "btnConfirmarPago";
             this.btnConfirmarPago.Size = new System.Drawing.Size(290, 67);
@@ -275,10 +275,10 @@
             this.btnCalcularPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularPago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcularPago.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularPago.Location = new System.Drawing.Point(1020, 465);
+            this.btnCalcularPago.Location = new System.Drawing.Point(1025, 444);
             this.btnCalcularPago.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcularPago.Name = "btnCalcularPago";
-            this.btnCalcularPago.Size = new System.Drawing.Size(249, 67);
+            this.btnCalcularPago.Size = new System.Drawing.Size(274, 82);
             this.btnCalcularPago.TabIndex = 98;
             this.btnCalcularPago.Text = "Calcular pago";
             this.btnCalcularPago.UseVisualStyleBackColor = false;
@@ -286,10 +286,9 @@
             // 
             // FormContabilidadGastosGenerarNomina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1312, 806);
+            this.ClientSize = new System.Drawing.Size(1312, 679);
             this.Controls.Add(this.btnCalcularPago);
             this.Controls.Add(this.btnConfirmarPago);
             this.Controls.Add(this.txtDias);

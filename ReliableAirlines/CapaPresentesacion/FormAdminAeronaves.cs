@@ -43,5 +43,10 @@ namespace CapaPresentesacion
             this.btnAdministrarAeronave.BackColor = Color.FromArgb(23, 185, 120);
             abrirFormularioHijo(new FormAdminAeronavesAeronave());
         }
+
+        private void panelAeronaves_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

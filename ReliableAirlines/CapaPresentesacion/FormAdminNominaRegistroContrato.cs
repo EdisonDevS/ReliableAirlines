@@ -47,5 +47,9 @@ namespace CapaPresentesacion
             
         }
 
+        private void FormAdminNominaRegistroContrato_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
